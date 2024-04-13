@@ -130,6 +130,7 @@ moa\classifiers\rules\RuleClassification.class
 moa\streams\filters\ReplacingMissingValuesFilter$MapUtil.class
 moa\streams\generators\SineGenerator$4.class
 moa\classifiers\rules\multilabel\outputselectors\OutputAttributesSelector.class
+edu\uow\ValuePosition.class
 moa\core\SizeOf.class
 moa\clusterers\outliers\MyBaseOutlierDetector$StdPrintMsg.class
 moa\tasks\MeasureStreamSpeed.class
@@ -221,6 +222,7 @@ moa\classifiers\meta\OnlineAccuracyUpdatedEnsemble.class
 moa\streams\generators\STAGGERGenerator$1.class
 moa\classifiers\lazy\neighboursearch\NearestNeighbourSearch$NeighborList.class
 moa\clusterers\outliers\MyBaseOutlierDetector$OutlierNotifier.class
+moa\options\ReflectionAlternative$1.class
 moa\classifiers\core\attributeclassobservers\BinaryTreeNumericAttributeClassObserverRegression.class
 moa\clusterers\ClusterGenerator.class
 moa\evaluation\BasicAUCImbalancedPerformanceEvaluator$Estimator$Score.class
@@ -374,6 +376,7 @@ moa\clusterers\outliers\utils\mtree\MTree$NodeTrait.class
 moa\classifiers\rules\multilabel\attributeclassobservers\MultiLabelBSTreeFloat$Node.class
 moa\evaluation\WindowClassificationPerformanceEvaluator.class
 moa\clusterers\meta\GeneralConfiguration.class
+edu\uow\Client$Fibonacci.class
 moa\classifiers\functions\AdaGrad.class
 moa\clusterers\meta\NumericalParameter.class
 moa\clusterers\outliers\utils\mtree\PartitionFunction.class
@@ -468,6 +471,7 @@ moa\evaluation\WindowClassificationPerformanceEvaluator$WindowEstimator.class
 moa\streams\MultiLabelFilteredStream.class
 moa\classifiers\lazy\SAMkNN.class
 moa\evaluation\CMM_GTAnalysis$CMMPoint.class
+edu\uow\Client$1.class
 moa\classifiers\core\statisticaltests\Cramer$CramerTest.class
 moa\classifiers\rules\multilabel\functions\AMRulesFunction.class
 moa\classifiers\rules\core\Rule.class
@@ -515,6 +519,7 @@ moa\classifiers\bayes\NaiveBayesMultinomial.class
 moa\core\Statistics.class
 moa\classifiers\rules\multilabel\attributeclassobservers\MultiLabelNominalAttributeObserver.class
 moa\classifiers\trees\FIMTDD.class
+moa\options\ReflectionAlternative.class
 moa\streams\generators\SineGenerator$1.class
 moa\classifiers\functions\SGD.class
 moa\classifiers\trees\iadem\IademException.class
@@ -651,6 +656,7 @@ moa\clusterers\clustream\Clustream.class
 moa\streams\clustering\SimpleCSVStream.class
 moa\classifiers\trees\iadem\IademGreenwaldKhannaQuantileSummary.class
 moa\classifiers\multitarget\BasicMultiLabelLearner.class
+edu\uow\OptionAndLevel.class
 moa\classifiers\lazy\neighboursearch\NearestNeighbourSearch.class
 moa\options\AbstractOptionHandler.class
 moa\streams\generators\MixedGenerator$1.class
@@ -662,6 +668,7 @@ moa\evaluation\BasicClassificationPerformanceEvaluator.class
 moa\evaluation\BasicRegressionPerformanceEvaluator.class
 moa\clusterers\clustree\ClusTree.class
 moa\classifiers\rules\multilabel\functions\DominantLabelsClassifier.class
+moa\options\ClassOption$1.class
 moa\classifiers\core\conditionaltests\NumericAttributeBinaryTest.class
 moa\classifiers\meta\LimAttClassifier.class
 moa\core\ObjectRepository.class
@@ -743,6 +750,7 @@ moa\clusterers\outliers\Angiulli\ApproxSTORM$ISBNodeAppr.class
 moa\tasks\EvaluatePeriodicHeldOutTest.class
 moa\tasks\ipynb\NotebookCellBuilder.class
 moa\classifiers\meta\AdaptiveRandomForestRegressor.class
+edu\uow\OptionHashMap$1MyIterator.class
 moa\classifiers\core\driftdetection\DDM.class
 moa\evaluation\WindowAUCImbalancedPerformanceEvaluator$Estimator$Score.class
 moa\clusterers\outliers\Angiulli\StreamObj.class
@@ -763,6 +771,7 @@ moa\classifiers\meta\OzaBoostAdwin.class
 moa\classifiers\lazy\neighboursearch\DistanceFunction.class
 moa\classifiers\trees\HoeffdingTree$LearningNodeNB.class
 moa\evaluation\StatisticalCollection.class
+edu\uow\OptionHashMap.class
 moa\recommender\rc\predictor\impl\BRISMFPredictor.class
 moa\learners\featureanalysis\FeatureImportanceClassifier.class
 moa\tasks\EvaluateModelMultiLabel.class

@@ -1,0 +1,209 @@
+body{
+	
+}
+
+.extra-large {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.customLabel{
+	margin-right: 10px;
+	
+}
+
+/* Apple-style button */
+.apple-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0070c9; /* Apple's default blue color */
+    color: #fff;
+    border: 2px solid #0070c9;*/ /* Border color matches background initially */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.apple-button:hover {
+    background-color: #005499; /* Darker blue on hover */
+    border-color: #005499;
+}
+
+/* Apple-style radio button */
+.apple-radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.apple-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.apple-radio-label {
+    position: relative;
+    padding-left: 30px; /* Adjust the spacing between the radio button and label */
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px; /* Adjust the line height as needed */
+}
+
+.apple-radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Size of the radio button */
+    width: 20px; /* Size of the radio button */
+    background-color: #fff; /* Background color of the radio button */
+    border: 2px solid #0070c9; /* Border color of the radio button */
+    border-radius: 50%; /* Make it a circle */
+}
+
+/* Style the radio button when checked */
+.apple-radio input:checked + .apple-radio-label .apple-radio-checkmark {
+    background-color: #0070c9; /* Background color when checked */
+    border-color: #0070c9; /* Border color when checked */
+}
+
+/* Hide the default browser styles */
+.apple-radio input:checked + .apple-radio-label:before {
+    content: none;
+}
+
+
+/* Container styling */
+.select-container {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  outline: 2px solid transparent; /* Slight outline */
+
+}
+
+/* Select element styling */
+.select-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Arrow icon styling */
+.select-container::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333; /* Arrow color */
+  transition: transform 0.3s ease;
+}
+
+/* Arrow icon rotation on focus */
+.select-container:focus-within::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Border and shadow on focus */
+.select-container:focus-within {
+  box-shadow: 0 0 0 2px #3498db; /* Blue border */
+}
+
+/* Hover effect */
+.select-container:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Options styling */
+.select-container select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Option hover effect */
+.select-container select option:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+
+/* Style the table */
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the table header */
+.table-container th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the table rows */
+.table-container tr {
+  border: 1px solid #ddd;
+}
+
+/* Style the table data cells */
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style alternate rows for better readability */
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style when table cell is hovered */
+.table-container td:hover {
+  background-color: #e6e6e6;
+}
+
+/* Modern input style */
+  input[type="number"] {
+    width: 100px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    outline: none;
+  }
+
+  /* Input hover effect */
+  input[type="number"]:hover {
+    border-color: #aaa;
+  }
+
+  /* Input focus effect */
+  input[type="number"]:focus {
+    border-color: #3498db;
+  }
+
+
+

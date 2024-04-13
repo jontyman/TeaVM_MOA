@@ -1,0 +1,147 @@
+<?import java.util.Arrays?>
+<?import java.util.Map?>
+<?import java.util.HashMap?>
+<?import edu.uow.OptionHashMap?>
+<?import com.github.javacliparser.IntOption?>
+<?import com.github.javacliparser.FloatOption?>
+<?import com.github.javacliparser.FlagOption?>
+<?import moa.options.ClassOption?>
+<?import com.github.javacliparser.MultiChoiceOption?>
+<?import moa.classifiers.trees.HoeffdingTree?>
+
+<h1 class="extra-large">MOA</h1>
+
+<label for="evaluator" class="customLabel">Choose function</label>
+<div class="select-container">
+  <select name="evaluator" id="evaluator" id="h" html:value="evaluator" html:change="evaluator">
+    <option value="runWithoutStream">runWithoutStream</option>
+    <option value="runRBF">runRBF</option>
+	<option value="runSRP">runSRP</option>
+    <option value="runWithoutStreamNumeric">runWithoutStreamNumeric</option>
+	<option value="test">Test</option>
+
+  </select>
+  </div>
+  <br><br>
+  
+  <p>
+  Evaluator is <html:text value="evaluator"/>
+</p>
+
+<button class="apple-button" event:click="handleClick()">Start function</button>
+
+<table class="table-container" border="1">
+  <tr>
+    <th>Mean Error</th>
+    <th>Square Error </th>
+
+  </tr>
+  <std:foreach var="mError" index="k" in="meanErrorArr">
+   
+    <tr>
+      <td><html:text value="meanErrorArr.get(k)"/></td>
+      <td><html:text value="squareErrorArr.get(k)"/></td>
+    </tr>
+  </std:foreach>
+</table>
+
+<table class="table-container" border="1">
+  <tr>
+    <th>Accuracy</th>
+	<th>Kappa Stat</th>
+	<th>Kappa Temporal Stat</th>
+	<th>Kappa M Stat</th>
+
+  </tr>
+  <std:foreach var="mError" index="m" in="accuracyArr">
+  
+  
+    <tr>
+      <td><html:text value="accuracyArr.get(m)"/></td>
+	  <td><html:text value="kappaStatArr.get(m)"/></td>
+	  <td><html:text value="kappaTemporalStatArr.get(m)"/></td>
+	  <td><html:text value="kappaMStatArr.get(m)"/></td>
+
+    </tr>
+  </std:foreach>
+</table>
+
+
+
+<h1>Dynamic Options</h1>
+
+ <std:foreach var="optionLevel" index="v" in="optHMap">
+  <div attr:style="'margin-left: calc('+ (optionLevel.level).toString() + 'px * 150)'">
+ <std:if condition="optionLevel.option instanceof IntOption">
+  <!--<div>
+  <html:text value="(optionLevel.option).getName()"/>
+</div>-->
+ <span><html:text value="(optionLevel.option).getName()"></span>
+<input type="number" id="check{{optionLevel.id_dom}}"  min="0" max="100000000"  html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)"/>
+</std:if>
+
+<std:if condition="optionLevel.option instanceof FloatOption">
+  <!--<div>
+  <html:text value="(optionLevel.option).getName()"/>
+</div>-->
+ <span><html:text value="(optionLevel.option).getName()"></span>
+<input type="number" id="check{{optionLevel.id_dom}}"  min="0" max="1" step="0.01"  html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)"/>
+</std:if>
+
+<std:if condition="optionLevel.option instanceof FlagOption">
+   <span><html:text value="(optionLevel.option).getName()"></span>
+	<input type="checkbox" id="check{{optionLevel.id_dom}}" html:checked="Boolean.parseBoolean((optionLevel.option).getValueAsCLIString())" html:checked-change="newValue->(optionLevel.option).setValueViaCLIString(Boolean.toString(newValue))"/>
+</std:if>
+
+<std:if condition="optionLevel.option instanceof ClassOption">
+  <!--<div>
+  Class Option Name is: <i><html:text value="(optionLevel.option).getName()"/></i>
+</div>-->
+
+<label for="check{{optionLevel.id_dom}}" class="customLabel"><b><html:text value="(optionLevel.option).getName()"/></b></label>
+	<div class="select-container">
+  <select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">
+	<std:foreach var="optName3" index="r" in="((ClassOption)(optionLevel.option)).getListClasses()">
+	<option html:value="optName3"><html:text value="optName3"></option>
+	</std:foreach>
+  </select>
+  </div>
+     <span><html:text value="(optionLevel.option).getValueAsCLIString()"></span>
+  <br><br>
+  
+
+  
+</std:if>
+
+<std:if condition="(optionLevel.option) instanceof MultiChoiceOption">
+  <!--<div>
+  Option Name is: <i><html:text value="(optionLevel.option).getName()"/></i>
+</div>-->
+
+<label for="check{{optionLevel.id_dom}}" class="customLabel"><html:text value="(optionLevel.option).getName()"/></label>
+	<div class="select-container">
+  <select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">
+	<std:foreach var="optName2" index="r" in="Arrays.asList(((MultiChoiceOption)(optionLevel.option)).getOptionLabels())">
+	<option html:value="optName2"><html:text value="optName2"></option>
+	</std:foreach>
+  </select>
+  </div>
+  <br><br>
+
+
+</std:if>
+
+</div>
+ </std:foreach>
+ 
+ 
+ <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+
+
+
+
+
+
