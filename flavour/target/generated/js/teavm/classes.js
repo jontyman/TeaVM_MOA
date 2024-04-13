@@ -11242,18 +11242,7 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jt_DecimalFormat$CurrencyField.$meta.fields = [];
-    jt_DecimalFormat$PercentField.$meta.fields = [];
-    jt_DecimalFormat$PerMillField.$meta.fields = [];
-    jt_DecimalFormat$TextField.$meta.fields = [
-        {
-            name : "text",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
+    jt_DecimalFormat$MinusField.$meta.fields = [];
     otcit_DateTimeZoneProvider$Score.$meta.fields = [
         {
             name : "tz",
@@ -11270,75 +11259,110 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jt_DecimalFormat$MinusField.$meta.fields = [];
-    mct_HoeffdingTree$LearningNodeNB.$meta.fields = [];
-    mct_HoeffdingTree$ActiveLearningNode.$meta.fields = [
+    jt_DecimalFormat$CurrencyField.$meta.fields = [];
+    jt_DecimalFormat$PerMillField.$meta.fields = [];
+    jt_DecimalFormat$TextField.$meta.fields = [
         {
-            name : "weightSeenAtLastSplitEvaluation",
+            name : "text",
             modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
+            accessLevel : 1,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    jt_DecimalFormat$PercentField.$meta.fields = [];
+    eu_ValuePosition.$meta.fields = [
+        {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_arraycls(jl_String),
             getter : null,
             setter : null
         }, {
-            name : "attributeObservers",
+            name : "position",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    otft_Templates$RootComponent.$meta.fields = [
+        {
+            name : "inner",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_Component,
+            getter : null,
+            setter : null
+        }];
+    otft_AbstractComponent.$meta.fields = [
+        {
+            name : "slot",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_Slot,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$GeneralTimezone.$meta.fields = [];
+    jt_DateFormatElement$BaseTimezone.$meta.fields = [
+        {
+            name : "locale",
+            modifiers : 0,
+            accessLevel : 2,
+            type : ju_Locale,
+            getter : null,
+            setter : null
+        }, {
+            name : "searchTrie",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jt_DateFormatElement$TrieNode,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement.$meta.fields = [];
+    mcca_GaussianNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "minValueObservedPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "maxValueObservedPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "attValDistPerClass",
             modifiers : 0,
             accessLevel : 2,
             type : mc_AutoExpandVector,
             getter : null,
             setter : null
         }, {
-            name : "isInitialized",
+            name : "numBinsOption",
             modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
+            accessLevel : 3,
+            type : cgj_IntOption,
             getter : null,
             setter : null
         }];
-    mct_HoeffdingTree$LearningNode.$meta.fields = [];
-    mct_HoeffdingTree$Node.$meta.fields = [
+    mo_AbstractOptionHandler.$meta.fields = [
         {
-            name : "observedClassDistribution",
+            name : "config",
             modifiers : 0,
             accessLevel : 2,
-            type : mc_DoubleVector,
+            type : mo_OptionsHandler,
             getter : null,
             setter : null
         }];
     mc_AbstractMOAObject.$meta.fields = [];
-    jt_DateFormatElement$AmPmText.$meta.fields = [
-        {
-            name : "ampms",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement.$meta.fields = [];
-    jl_Double.$meta.fields = [
-        {
-            name : "NaN",
-            modifiers : 516,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "TYPE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
     jt_DateFormatElement$NumericHour.$meta.fields = [
         {
             name : "limit",
@@ -11364,343 +11388,28 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mcti_IademGreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [];
-    mcca_GreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [
+    ju_ArrayList.$meta.fields = [
         {
-            name : "attValDistPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "numTuplesOption",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
-            getter : null,
-            setter : null
-        }];
-    mo_AbstractOptionHandler.$meta.fields = [
-        {
-            name : "config",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mo_OptionsHandler,
-            getter : null,
-            setter : null
-        }];
-    mcti_IademGreenwaldKhannaQuantileSummary.$meta.fields = [];
-    jlr_Field.$meta.fields = [
-        {
-            name : "declaringClass",
+            name : "array",
             modifiers : 0,
             accessLevel : 1,
-            type : jl_Class,
+            type : $rt_arraycls(jl_Object),
             getter : null,
             setter : null
         }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "modifiers",
+            name : "size",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
             getter : null,
             setter : null
-        }, {
-            name : "accessLevel",
-            modifiers : 0,
-            accessLevel : 1,
+        }];
+    ju_AbstractList.$meta.fields = [
+        {
+            name : "modCount",
+            modifiers : 12288,
+            accessLevel : 2,
             type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "type",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "getter",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otcir_JSFieldGetter,
-            getter : null,
-            setter : null
-        }, {
-            name : "setter",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otcir_JSFieldSetter,
-            getter : null,
-            setter : null
-        }];
-    cylsi_Attribute.$meta.fields = [
-        {
-            name : "isNominal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "isNumeric",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "isDate",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "m_DateFormat",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jt_SimpleDateFormat,
-            getter : null,
-            setter : null
-        }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "attributeValues",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }];
-    otft_DomComponentTemplate.$meta.fields = [
-        {
-            name : "handler",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_DomComponentHandler,
-            getter : null,
-            setter : null
-        }, {
-            name : "renderables",
-            modifiers : 0,
-            accessLevel : 1,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }];
-    mc_Measurement.$meta.fields = [
-        {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$LearningNodeNBAdaptive.$meta.fields = [
-        {
-            name : "mcCorrectWeight",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "nbCorrectWeight",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    otfch_CheckedChangeBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjdh_HTMLInputElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "listener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ValueChangeListener,
-            getter : null,
-            setter : null
-        }, {
-            name : "bound",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "nativeListener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjde_EventListener,
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_4.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    otfch_TextComponent.$meta.fields = [
-        {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "textSlot",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_NodeHolder,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "cacheInitialized",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mcti_IademGaussianNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "valueCount",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "classDist",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }];
-    otfca_ComputedAttribute.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjdh_HTMLElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$EraText.$meta.fields = [
-        {
-            name : "eras",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$SplitNode.$meta.fields = [
-        {
-            name : "splitTest",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mccc_InstanceConditionalTest,
-            getter : null,
-            setter : null
-        }, {
-            name : "children",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }];
-    cgj_FloatOption.$meta.fields = [
-        {
-            name : "currentVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "defaultVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "minVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "maxVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
             getter : null,
             setter : null
         }];
@@ -11734,35 +11443,12 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    eu_OptionAndLevel.$meta.fields = [
+    otft_ValueChangeListener$proxy$4_0_1.$meta.fields = [
         {
-            name : "level",
+            name : "proxyCapture0",
             modifiers : 0,
             accessLevel : 3,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "option",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_Option,
-            getter : null,
-            setter : null
-        }];
-    jl_Long.$meta.fields = [
-        {
-            name : "TYPE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_longcls(),
+            type : otfte_VariableImpl,
             getter : null,
             setter : null
         }];
@@ -11782,38 +11468,7 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mo_ClassOption.$meta.fields = [
-        {
-            name : "app",
-            modifiers : 512,
-            accessLevel : 3,
-            type : ju_Map,
-            getter : null,
-            setter : null
-        }];
-    otfch_CheckedBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjdh_HTMLInputElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
+    mcca_NullAttributeClassObserver.$meta.fields = [];
     mc_GaussianEstimator.$meta.fields = [
         {
             name : "weightSum",
@@ -11844,91 +11499,39 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mcc_AttributeSplitSuggestion.$meta.fields = [
+    mct_HoeffdingTree$SplitNode.$meta.fields = [
         {
             name : "splitTest",
             modifiers : 0,
-            accessLevel : 3,
+            accessLevel : 2,
             type : mccc_InstanceConditionalTest,
             getter : null,
             setter : null
         }, {
-            name : "resultingClassDistributions",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_arraycls($rt_arraycls($rt_doublecls())),
-            getter : null,
-            setter : null
-        }, {
-            name : "merit",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$WeekdayText.$meta.fields = [
-        {
-            name : "weeks",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "shortWeeks",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "abbreviated",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_5.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_0.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }];
-    mcca_NullAttributeClassObserver.$meta.fields = [];
-    mcca_BinaryTreeNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "root",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mcca_BinaryTreeNumericAttributeClassObserver$Node,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$NumericMonth.$meta.fields = [];
-    jt_DateFormatElement$GeneralTimezone.$meta.fields = [];
-    cgj_FlagOption.$meta.fields = [
-        {
-            name : "isSet",
+            name : "children",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_booleancls(),
+            type : mc_AutoExpandVector,
             getter : null,
             setter : null
         }];
+    jl_Long.$meta.fields = [
+        {
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }];
+    otfce_MouseBinder.$meta.fields = [];
     otfcs_ForEachComponent.$meta.fields = [
         {
             name : "collection",
@@ -11973,160 +11576,22 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    otfch_ValueChangeBinder.$meta.fields = [
+    jt_DateFormatElement$Year.$meta.fields = [
         {
-            name : "target",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ModifierTarget,
-            getter : null,
-            setter : null
-        }, {
-            name : "listener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ValueChangeListener,
-            getter : null,
-            setter : null
-        }, {
-            name : "bound",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mcti_IademVFMLNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "binList",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }, {
-            name : "classDist",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }];
-    mcca_VFMLNumericAttributeClassObserver$Bin.$meta.fields = [
-        {
-            name : "lowerBound",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "upperBound",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "classWeights",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "boundaryClass",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "boundaryWeight",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "this$0",
-            modifiers : 36,
-            accessLevel : 0,
-            type : mcca_VFMLNumericAttributeClassObserver,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$Iso8601Timezone.$meta.fields = [
-        {
-            name : "size",
+            name : "field",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
             getter : null,
             setter : null
         }];
-    jt_DateFormatElement$Rfc822Timezone.$meta.fields = [];
-    jt_DateFormatElement$MonthText.$meta.fields = [
+    mcti_IademGreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [];
+    cgj_FlagOption.$meta.fields = [
         {
-            name : "months",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "shortMonths",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "abbreviated",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    otfch_ValueBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 0,
-            type : otjdh_HTMLInputElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }];
-    mc_DoubleVector.$meta.fields = [
-        {
-            name : "array",
+            name : "isSet",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_arraycls($rt_doublecls()),
-            getter : null,
-            setter : null
-        }];
-    otft_Templates$RootComponent.$meta.fields = [
-        {
-            name : "inner",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_Component,
+            type : $rt_booleancls(),
             getter : null,
             setter : null
         }];
@@ -12153,7 +11618,69 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    otft_ValueChangeListener$proxy$4_0_2.$meta.fields = [
+    otfch_ValueBinder.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 0,
+            type : otjdh_HTMLInputElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$ActiveLearningNode.$meta.fields = [
+        {
+            name : "weightSeenAtLastSplitEvaluation",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attributeObservers",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "isInitialized",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$LearningNodeNBAdaptive.$meta.fields = [
+        {
+            name : "mcCorrectWeight",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "nbCorrectWeight",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_5.$meta.fields = [
         {
             name : "proxyCapture0",
             modifiers : 0,
@@ -12162,110 +11689,229 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mcti_IademVFMLNumericAttributeClassObserver$Bin.$meta.fields = [
+    mct_HoeffdingTree$InactiveLearningNode.$meta.fields = [];
+    cylsi_Attribute.$meta.fields = [
         {
-            name : "lowerBound",
+            name : "isNominal",
             modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
+            accessLevel : 2,
+            type : $rt_booleancls(),
             getter : null,
             setter : null
         }, {
-            name : "upperBound",
+            name : "isNumeric",
             modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
+            accessLevel : 2,
+            type : $rt_booleancls(),
             getter : null,
             setter : null
         }, {
-            name : "classWeights",
+            name : "isDate",
             modifiers : 0,
-            accessLevel : 3,
+            accessLevel : 2,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "m_DateFormat",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jt_SimpleDateFormat,
+            getter : null,
+            setter : null
+        }, {
+            name : "name",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }, {
+            name : "attributeValues",
+            modifiers : 0,
+            accessLevel : 2,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }];
+    otfch_TextComponent.$meta.fields = [
+        {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "textSlot",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_NodeHolder,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "cacheInitialized",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mcti_IademVFMLNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "binList",
+            modifiers : 0,
+            accessLevel : 2,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }, {
+            name : "classDist",
+            modifiers : 0,
+            accessLevel : 2,
             type : mc_DoubleVector,
             getter : null,
             setter : null
-        }, {
-            name : "boundaryClass",
+        }];
+    mct_HoeffdingTree$LearningNodeNB.$meta.fields = [];
+    mcca_FIMTDDNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "root",
             modifiers : 0,
-            accessLevel : 3,
+            accessLevel : 2,
+            type : mcca_FIMTDDNumericAttributeClassObserver$Node,
+            getter : null,
+            setter : null
+        }, {
+            name : "sumTotalLeft",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumTotalRight",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumSqTotalLeft",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumSqTotalRight",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "countRightTotal",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "countLeftTotal",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    otfch_CheckedChangeBinder.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjdh_HTMLInputElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "listener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ValueChangeListener,
+            getter : null,
+            setter : null
+        }, {
+            name : "bound",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "nativeListener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjde_EventListener,
+            getter : null,
+            setter : null
+        }];
+    cgj_IntOption.$meta.fields = [
+        {
+            name : "currentVal",
+            modifiers : 0,
+            accessLevel : 2,
             type : $rt_intcls(),
             getter : null,
             setter : null
         }, {
-            name : "boundaryWeight",
+            name : "defaultVal",
             modifiers : 0,
-            accessLevel : 3,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "minVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "maxVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    cylsi_InstanceImpl.$meta.fields = [
+        {
+            name : "weight",
+            modifiers : 0,
+            accessLevel : 2,
             type : $rt_doublecls(),
             getter : null,
             setter : null
         }, {
-            name : "this$0",
-            modifiers : 36,
-            accessLevel : 0,
-            type : mcti_IademVFMLNumericAttributeClassObserver,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$NumericWeekday.$meta.fields = [];
-    mcca_NominalAttributeClassObserver.$meta.fields = [
-        {
-            name : "totalWeightObserved",
+            name : "instanceData",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_doublecls(),
+            type : cylsi_InstanceData,
             getter : null,
             setter : null
         }, {
-            name : "missingWeightObserved",
+            name : "instanceHeader",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "attValDistPerClass",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$ConstantText.$meta.fields = [
-        {
-            name : "textConstant",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
-    mcca_GaussianNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "minValueObservedPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "maxValueObservedPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "attValDistPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "numBinsOption",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
+            type : cylsi_InstancesHeader,
             getter : null,
             setter : null
         }];
@@ -12341,182 +11987,131 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jl_Boolean.$meta.fields = [
+    mcca_VFMLNumericAttributeClassObserver$Bin.$meta.fields = [
         {
-            name : "TRUE",
-            modifiers : 516,
+            name : "lowerBound",
+            modifiers : 0,
             accessLevel : 3,
-            type : jl_Boolean,
+            type : $rt_doublecls(),
             getter : null,
             setter : null
         }, {
-            name : "FALSE",
-            modifiers : 516,
+            name : "upperBound",
+            modifiers : 0,
             accessLevel : 3,
-            type : jl_Boolean,
+            type : $rt_doublecls(),
             getter : null,
             setter : null
         }, {
-            name : "TYPE",
-            modifiers : 516,
+            name : "classWeights",
+            modifiers : 0,
             accessLevel : 3,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryClass",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryWeight",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "this$0",
+            modifiers : 36,
+            accessLevel : 0,
+            type : mcca_VFMLNumericAttributeClassObserver,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$ConstantText.$meta.fields = [
+        {
+            name : "textConstant",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    mcca_NominalAttributeClassObserver.$meta.fields = [
+        {
+            name : "totalWeightObserved",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "missingWeightObserved",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attValDistPerClass",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$NumericWeekday.$meta.fields = [];
+    jlr_Field.$meta.fields = [
+        {
+            name : "declaringClass",
+            modifiers : 0,
+            accessLevel : 1,
             type : jl_Class,
             getter : null,
             setter : null
         }, {
-            name : "value",
+            name : "name",
             modifiers : 0,
             accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mcca_FIMTDDNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "root",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mcca_FIMTDDNumericAttributeClassObserver$Node,
+            type : jl_String,
             getter : null,
             setter : null
         }, {
-            name : "sumTotalLeft",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumTotalRight",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumSqTotalLeft",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumSqTotalRight",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "countRightTotal",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "countLeftTotal",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$Year.$meta.fields = [
-        {
-            name : "field",
+            name : "modifiers",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
             getter : null,
             setter : null
-        }];
-    cgj_IntOption.$meta.fields = [
-        {
-            name : "currentVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
         }, {
-            name : "defaultVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "minVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "maxVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    mcrca_FIMTDDNumericAttributeClassLimitObserver.$meta.fields = [
-        {
-            name : "maxNodesOption",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
-            getter : null,
-            setter : null
-        }];
-    otfce_MouseBinder.$meta.fields = [];
-    cylsi_InstanceImpl.$meta.fields = [
-        {
-            name : "weight",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "instanceData",
-            modifiers : 0,
-            accessLevel : 2,
-            type : cylsi_InstanceData,
-            getter : null,
-            setter : null
-        }, {
-            name : "instanceHeader",
-            modifiers : 0,
-            accessLevel : 2,
-            type : cylsi_InstancesHeader,
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_1.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$InactiveLearningNode.$meta.fields = [];
-    ju_ArrayList.$meta.fields = [
-        {
-            name : "array",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_arraycls(jl_Object),
-            getter : null,
-            setter : null
-        }, {
-            name : "size",
+            name : "accessLevel",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "type",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "getter",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otcir_JSFieldGetter,
+            getter : null,
+            setter : null
+        }, {
+            name : "setter",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otcir_JSFieldSetter,
             getter : null,
             setter : null
         }];
@@ -12550,19 +12145,432 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    eu_ValuePosition.$meta.fields = [
+    mcti_IademGaussianNumericAttributeClassObserver.$meta.fields = [
         {
+            name : "valueCount",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "classDist",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$EraText.$meta.fields = [
+        {
+            name : "eras",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }];
+    otft_DomComponentTemplate.$meta.fields = [
+        {
+            name : "handler",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_DomComponentHandler,
+            getter : null,
+            setter : null
+        }, {
+            name : "renderables",
+            modifiers : 0,
+            accessLevel : 1,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$AmPmText.$meta.fields = [
+        {
+            name : "ampms",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }];
+    otfch_ValueChangeBinder.$meta.fields = [
+        {
+            name : "target",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ModifierTarget,
+            getter : null,
+            setter : null
+        }, {
+            name : "listener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ValueChangeListener,
+            getter : null,
+            setter : null
+        }, {
+            name : "bound",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mcca_BinaryTreeNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "root",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mcca_BinaryTreeNumericAttributeClassObserver$Node,
+            getter : null,
+            setter : null
+        }];
+    mc_DoubleVector.$meta.fields = [
+        {
+            name : "array",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_arraycls($rt_doublecls()),
+            getter : null,
+            setter : null
+        }];
+    otfch_CheckedBinder.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjdh_HTMLInputElement,
+            getter : null,
+            setter : null
+        }, {
             name : "value",
             modifiers : 0,
             accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mc_Measurement.$meta.fields = [
+        {
+            name : "name",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$MonthText.$meta.fields = [
+        {
+            name : "months",
+            modifiers : 0,
+            accessLevel : 0,
             type : $rt_arraycls(jl_String),
             getter : null,
             setter : null
         }, {
-            name : "position",
+            name : "shortMonths",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "abbreviated",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$NumericMonth.$meta.fields = [];
+    jt_DateFormatElement$WeekdayText.$meta.fields = [
+        {
+            name : "weeks",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "shortWeeks",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "abbreviated",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_2.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    mcti_IademVFMLNumericAttributeClassObserver$Bin.$meta.fields = [
+        {
+            name : "lowerBound",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "upperBound",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "classWeights",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryClass",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryWeight",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "this$0",
+            modifiers : 36,
+            accessLevel : 0,
+            type : mcti_IademVFMLNumericAttributeClassObserver,
+            getter : null,
+            setter : null
+        }];
+    jl_Boolean.$meta.fields = [
+        {
+            name : "TRUE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Boolean,
+            getter : null,
+            setter : null
+        }, {
+            name : "FALSE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Boolean,
+            getter : null,
+            setter : null
+        }, {
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    otfca_ComputedAttribute.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjdh_HTMLElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "name",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    cgj_FloatOption.$meta.fields = [
+        {
+            name : "currentVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "defaultVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "minVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "maxVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    eu_OptionAndLevel.$meta.fields = [
+        {
+            name : "level",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "option",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_Option,
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_4.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_0.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }];
+    mo_ClassOption.$meta.fields = [
+        {
+            name : "app",
+            modifiers : 512,
+            accessLevel : 3,
+            type : ju_Map,
+            getter : null,
+            setter : null
+        }];
+    jl_Double.$meta.fields = [
+        {
+            name : "NaN",
+            modifiers : 516,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    mcc_AttributeSplitSuggestion.$meta.fields = [
+        {
+            name : "splitTest",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mccc_InstanceConditionalTest,
+            getter : null,
+            setter : null
+        }, {
+            name : "resultingClassDistributions",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_arraycls($rt_arraycls($rt_doublecls())),
+            getter : null,
+            setter : null
+        }, {
+            name : "merit",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    mcti_IademGreenwaldKhannaQuantileSummary.$meta.fields = [];
+    jt_DateFormatElement$Iso8601Timezone.$meta.fields = [
+        {
+            name : "size",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$Rfc822Timezone.$meta.fields = [];
+    mcrca_FIMTDDNumericAttributeClassLimitObserver.$meta.fields = [
+        {
+            name : "maxNodesOption",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_IntOption,
             getter : null,
             setter : null
         }];
@@ -12585,54 +12593,6 @@ function jl_Class_createMetadata() {
             name : "hashCode",
             modifiers : 12288,
             accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    mc_GreenwaldKhannaQuantileSummary.$meta.fields = [
-        {
-            name : "summary",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_arraycls(mc_GreenwaldKhannaQuantileSummary$Tuple),
-            getter : null,
-            setter : null
-        }, {
-            name : "numTuples",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "numObservations",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_longcls(),
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$BaseTimezone.$meta.fields = [
-        {
-            name : "locale",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_Locale,
-            getter : null,
-            setter : null
-        }, {
-            name : "searchTrie",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jt_DateFormatElement$TrieNode,
-            getter : null,
-            setter : null
-        }];
-    ju_AbstractList.$meta.fields = [
-        {
-            name : "modCount",
-            modifiers : 12288,
-            accessLevel : 2,
             type : $rt_intcls(),
             getter : null,
             setter : null
@@ -12661,6 +12621,87 @@ function jl_Class_createMetadata() {
             setter : null
         }, {
             name : "nullString",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$LearningNode.$meta.fields = [];
+    mc_GreenwaldKhannaQuantileSummary.$meta.fields = [
+        {
+            name : "summary",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_arraycls(mc_GreenwaldKhannaQuantileSummary$Tuple),
+            getter : null,
+            setter : null
+        }, {
+            name : "numTuples",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "numObservations",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }];
+    mcca_GreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "attValDistPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "numTuplesOption",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_IntOption,
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$Node.$meta.fields = [
+        {
+            name : "observedClassDistribution",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }];
+    jlr_AccessibleObject.$meta.fields = [];
+    ju_AbstractCollection.$meta.fields = [];
+    cgj_AbstractOption.$meta.fields = [
+        {
+            name : "illegalNameCharacters",
+            modifiers : 516,
+            accessLevel : 3,
+            type : $rt_arraycls($rt_charcls()),
+            getter : null,
+            setter : null
+        }, {
+            name : "name",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }, {
+            name : "cliChar",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_charcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "purpose",
             modifiers : 0,
             accessLevel : 2,
             type : jl_String,
@@ -12704,16 +12745,6 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    otft_AbstractComponent.$meta.fields = [
-        {
-            name : "slot",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_Slot,
-            getter : null,
-            setter : null
-        }];
-    jlr_AccessibleObject.$meta.fields = [];
     jl_Enum.$meta.fields = [
         {
             name : "name",
@@ -12730,87 +12761,7 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    cgj_AbstractOption.$meta.fields = [
-        {
-            name : "illegalNameCharacters",
-            modifiers : 516,
-            accessLevel : 3,
-            type : $rt_arraycls($rt_charcls()),
-            getter : null,
-            setter : null
-        }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "cliChar",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_charcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "purpose",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
-    ju_AbstractCollection.$meta.fields = [];
-    mccc_NominalAttributeMultiwayTest.$meta.fields = [
-        {
-            name : "attIndex",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
     mcti_IademNumericAttributeBinaryTest.$meta.fields = [];
-    mccc_NominalAttributeBinaryTest.$meta.fields = [
-        {
-            name : "attIndex",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "attValue",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    mc_AutoExpandVector.$meta.fields = [];
-    mc_GreenwaldKhannaQuantileSummary$Tuple.$meta.fields = [
-        {
-            name : "v",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "g",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_longcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "delta",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_longcls(),
-            getter : null,
-            setter : null
-        }];
     mccc_NumericAttributeBinaryTest.$meta.fields = [
         {
             name : "attIndex",
@@ -12834,8 +12785,57 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mccc_InstanceConditionalTest.$meta.fields = [];
+    mc_GreenwaldKhannaQuantileSummary$Tuple.$meta.fields = [
+        {
+            name : "v",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "g",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "delta",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }];
+    mccc_NominalAttributeMultiwayTest.$meta.fields = [
+        {
+            name : "attIndex",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    mc_AutoExpandVector.$meta.fields = [];
+    mccc_NominalAttributeBinaryTest.$meta.fields = [
+        {
+            name : "attIndex",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attValue",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
     mccc_InstanceConditionalBinaryTest.$meta.fields = [];
+    mccc_InstanceConditionalTest.$meta.fields = [];
     ju_IdentityHashMap$HashEntry.$meta.fields = [
         {
             name : "origKeyHash",
@@ -25484,11 +25484,11 @@ function otft_DomComponentHandler$proxy$4_0_7_buildDom(var$0, var$1) {
     var$3.$text1($rt_s(420));
     var$1 = var$1.$close().$text1($rt_s(420));
     var$1 = var$1.$close().$text1($rt_s(474));
-    var$1 = var$1.$openSlot($rt_s(475));
+    var$1 = var$1.$openSlot($rt_s(475)).$text1($rt_s(476));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
     var$3.$setValue1(juf_Supplier$proxy$4_0_27__init_(var$2));
     var$1 = var$1.$add7(var$3).$close().$text1($rt_s(420));
-    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(476));
+    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(477));
 }
 function otft_DomComponentHandler$proxy$4_0_7__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -25510,12 +25510,12 @@ function otft_DomComponentHandler$proxy$4_0_6_buildDom(var$0, var$1) {
     var var$2, var$3;
     var$2 = var$0.$proxyCapture040;
     var$1 = var$1;
-    var$1 = var$1.$text1($rt_s(477));
+    var$1 = var$1.$text1($rt_s(478));
     var$1 = var$1.$openSlot($rt_s(475));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
     var$3.$setValue1(juf_Supplier$proxy$4_0_19__init_(var$2));
     var$1 = var$1.$add7(var$3).$close().$text1($rt_s(260));
-    var$1.$open0($rt_s(478)).$attribute0($rt_s(479), $rt_s(480)).$attribute0($rt_s(444), $rt_s(472)).$add6(otft_Modifier$proxy$4_0_8__init_(var$2)).$add6(otft_Modifier$proxy$4_0_9__init_(var$2)).$close().$text1($rt_s(432));
+    var$1.$open0($rt_s(479)).$attribute0($rt_s(480), $rt_s(481)).$attribute0($rt_s(444), $rt_s(472)).$add6(otft_Modifier$proxy$4_0_8__init_(var$2)).$add6(otft_Modifier$proxy$4_0_9__init_(var$2)).$close().$text1($rt_s(432));
 }
 function otft_DomComponentHandler$proxy$4_0_6__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -25542,8 +25542,8 @@ function otft_DomComponentHandler$proxy$4_0_5_buildDom(var$0, var$1) {
     var$1 = var$1.$openSlot($rt_s(475));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
     var$3.$setValue1(juf_Supplier$proxy$4_0_16__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(478));
-    var$1.$attribute0($rt_s(479), $rt_s(481)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(482), $rt_s(62)).$attribute0($rt_s(483), $rt_s(118)).$attribute0($rt_s(484), $rt_s(485)).$add6(otft_Modifier$proxy$4_0_6__init_(var$2)).$add6(otft_Modifier$proxy$4_0_7__init_(var$2)).$close().$text1($rt_s(432));
+    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(479));
+    var$1.$attribute0($rt_s(480), $rt_s(482)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(483), $rt_s(62)).$attribute0($rt_s(484), $rt_s(118)).$attribute0($rt_s(485), $rt_s(486)).$add6(otft_Modifier$proxy$4_0_6__init_(var$2)).$add6(otft_Modifier$proxy$4_0_7__init_(var$2)).$close().$text1($rt_s(432));
 }
 function otft_DomComponentHandler$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -25569,8 +25569,8 @@ function otft_DomComponentHandler$proxy$4_0_4_buildDom(var$0, var$1) {
     var$1 = var$1.$openSlot($rt_s(475));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
     var$3.$setValue1(juf_Supplier$proxy$4_0_13__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(478));
-    var$1.$attribute0($rt_s(479), $rt_s(481)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(482), $rt_s(62)).$attribute0($rt_s(483), $rt_s(486)).$add6(otft_Modifier$proxy$4_0_4__init_(var$2)).$add6(otft_Modifier$proxy$4_0_5__init_(var$2)).$close().$text1($rt_s(432));
+    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(479));
+    var$1.$attribute0($rt_s(480), $rt_s(482)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(483), $rt_s(62)).$attribute0($rt_s(484), $rt_s(487)).$add6(otft_Modifier$proxy$4_0_4__init_(var$2)).$add6(otft_Modifier$proxy$4_0_5__init_(var$2)).$close().$text1($rt_s(432));
 }
 function otft_DomComponentHandler$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -25609,7 +25609,7 @@ function otft_DomComponentHandler$proxy$4_0_9_buildDom(var$0, var$1) {
     var$3 = var$3.$text1($rt_s(420));
     var$3.$close().$text1($rt_s(420));
     var$1 = var$1.$close().$text1($rt_s(420));
-    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(487));
+    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(488));
 }
 function otft_DomComponentHandler$proxy$4_0_9__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -25897,7 +25897,7 @@ function jm_Multiplication_powerOf10($exp) {
         return jm_Multiplication_bigFivePows.data[1].$pow0($intExp).$shiftLeft1($intExp);
     $byteArraySize = Long_add(Long_fromInt(1), Long_fromNumber(Long_toNumber($exp) / 2.4082399653118496));
     if (Long_gt($byteArraySize, Long_fromInt(1000000)))
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(488)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(489)));
     if (Long_le($exp, Long_fromInt(2147483647)))
         return jm_Multiplication_bigFivePows.data[1].$pow0($intExp).$shiftLeft1($intExp);
     $powerOfFive = jm_Multiplication_bigFivePows.data[1].$pow0(2147483647);
@@ -26072,7 +26072,7 @@ function juf_Supplier$proxy$4_0_11_get(var$0) {
     var var$1, var$2, var$3, var$4, var$5;
     var$1 = var$0.$proxyCapture049;
     var$2 = $rt_createArray(jl_Object, 1).data;
-    var$2[0] = $rt_s(489);
+    var$2[0] = $rt_s(490);
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$4 = $rt_createArray(jl_Object, 1);
     var$5 = var$1.$value1;
@@ -26080,7 +26080,7 @@ function juf_Supplier$proxy$4_0_11_get(var$0) {
     var$4[0] = jl_Integer_valueOf(var$5.$level);
     var$3[0] = jl_Integer_valueOf(var$4[0].$intValue()).$toString();
     var$4 = $rt_createArray(jl_Object, 1).data;
-    var$4[0] = $rt_s(490);
+    var$4[0] = $rt_s(491);
     return jl_StringBuilder__init_().$append(var$4[0]).$append(var$3[0]).$append(var$2[0]).$toString();
 }
 function juf_Supplier$proxy$4_0_11__init_0(var$0, var$1) {
@@ -26805,11 +26805,11 @@ function mo_AbstractClassOption_materializeObject($this, $monitor, $repository) 
         if (!var$3.$isInstance0(var$4)) {
             if ($this.$currentValue instanceof jl_String) {
                 if ($repository === null)
-                    $rt_throw(jl_RuntimeException__init_($rt_s(491)));
+                    $rt_throw(jl_RuntimeException__init_($rt_s(492)));
                 $inmemObj = $repository.$getObjectNamed($this.$currentValue);
                 if ($inmemObj !== null)
                     return $inmemObj;
-                $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(492)).$append3($this.$currentValue).$append($rt_s(493)).$toString()));
+                $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(493)).$append3($this.$currentValue).$append($rt_s(494)).$toString()));
             }
             if ($rt_isInstance($this.$currentValue, mt_Task)) {
                 $task = $this.$currentValue;
@@ -26817,11 +26817,11 @@ function mo_AbstractClassOption_materializeObject($this, $monitor, $repository) 
                 return $result;
             }
             var$4 = new jl_RuntimeException;
-            var$3 = jl_StringBuilder__init_().$append($rt_s(494));
+            var$3 = jl_StringBuilder__init_().$append($rt_s(495));
             var$8 = $this.$requiredType;
-            var$3 = var$3.$append(var$8.$getName()).$append($rt_s(495));
+            var$3 = var$3.$append(var$8.$getName()).$append($rt_s(496));
             var$8 = $this.$currentValue;
-            jl_RuntimeException__init_4(var$4, var$3.$append(jl_Object_getClass(var$8).$getName()).$append($rt_s(496)).$toString());
+            jl_RuntimeException__init_4(var$4, var$3.$append(jl_Object_getClass(var$8).$getName()).$append($rt_s(497)).$toString());
             $rt_throw(var$4);
         }
     }
@@ -26833,10 +26833,10 @@ function mo_AbstractClassOption_getDefaultCLIString($this) {
 function mo_AbstractClassOption_classToCLIString($aClass, $requiredType) {
     var $className, $packageName, var$5, var$6, var$7;
     $className = $aClass.$getName();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(497)).$append($className).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(498)).$append($className).$toString());
     $packageName = $requiredType.$getPackage0().$getName();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(498)).$append($packageName).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(499)).$append1($packageName.$length()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(499)).$append($packageName).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(500)).$append1($packageName.$length()).$toString());
     if ($className.$startsWith0($packageName))
         $className = $className.$substring0($packageName.$length(), $className.$length());
     else if ($rt_cls(mt_Task).$isAssignableFrom($aClass)) {
@@ -26887,7 +26887,7 @@ function mo_ClassOption_getListClasses0($this) {
 }
 function mo_ClassOption_helloWorld() {
     mo_ClassOption_$callClinit();
-    jl_System_out().$println1($rt_s(500));
+    jl_System_out().$println1($rt_s(501));
 }
 function mo_ClassOption__init_0($this, $name, $cliChar, $purpose, $requiredType, $defaultCLIString) {
     mo_ClassOption_$callClinit();
@@ -26904,7 +26904,7 @@ function mo_ClassOption_setValueViaCLIString($this, $s) {
         if ($this.$nullString !== null && !($s !== null && $s.$length() && !$s.$equals($this.$nullString)))
             $this.$currentValue = null;
         else {
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(501)).$append($s).$append($rt_s(502)).$append($this.$requiredType.$getName()).$toString());
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(502)).$append($s).$append($rt_s(503)).$append($this.$requiredType.$getName()).$toString());
             try {
                 $this.$currentValue = mo_ClassOption_cliStringToObject($s, $this.$requiredType, null, $rt_createArray(jl_String, 0));
                 break a;
@@ -26912,7 +26912,7 @@ function mo_ClassOption_setValueViaCLIString($this, $s) {
                 $$je = $rt_wrapException($$e);
                 if ($$je instanceof jl_Exception) {
                     $e = $$je;
-                    $rt_throw(jl_IllegalArgumentException__init_2(jl_StringBuilder__init_().$append($rt_s(503)).$append($this.$getName()).$append($rt_s(504)).$append($e.$getMessage()).$toString(), $e));
+                    $rt_throw(jl_IllegalArgumentException__init_2(jl_StringBuilder__init_().$append($rt_s(504)).$append($this.$getName()).$append($rt_s(505)).$append($e.$getMessage()).$toString(), $e));
                 } else {
                     throw $$e;
                 }
@@ -26926,17 +26926,17 @@ function mo_ClassOption_objectToCLIString($obj, $requiredType) {
     if ($obj === null)
         return $rt_s(17);
     if ($obj instanceof ji_File) {
-        jl_System_out().$println1($rt_s(505));
-        return jl_StringBuilder__init_().$append($rt_s(506)).$append($obj.$getPath()).$toString();
+        jl_System_out().$println1($rt_s(506));
+        return jl_StringBuilder__init_().$append($rt_s(507)).$append($obj.$getPath()).$toString();
     }
     if ($obj instanceof jl_String) {
-        jl_System_out().$println1($rt_s(507));
-        return jl_StringBuilder__init_().$append($rt_s(508)).$append3($obj).$toString();
+        jl_System_out().$println1($rt_s(508));
+        return jl_StringBuilder__init_().$append($rt_s(509)).$append3($obj).$toString();
     }
     $className = mo_AbstractClassOption_classToCLIString(jl_Object_getClass($obj), $requiredType);
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(509)).$append($className).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(510)).$append($className).$toString());
     if ($rt_isInstance($obj, mo_OptionHandler)) {
-        jl_System_out().$println1($rt_s(510));
+        jl_System_out().$println1($rt_s(511));
         $subOptions = $obj.$getOptions().$getAsCLIString();
         if ($subOptions.$length() > 0)
             return jl_StringBuilder__init_().$append($className).$append($rt_s(29)).$append($subOptions).$toString();
@@ -26946,10 +26946,10 @@ function mo_ClassOption_objectToCLIString($obj, $requiredType) {
 function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOptions, $additionalPackagesToSearch) {
     var var$5, $firstSpaceIndex, $className, $classOptions, var$9, var$10, $classObject, $classInstance, $classInstance2, var$14, $ex, $options, var$17, $option, $$je;
     mo_ClassOption_$callClinit();
-    if ($cliString.$startsWith0($rt_s(506)))
-        return ji_File__init_($cliString.$substring($rt_s(506).$length()));
-    if ($cliString.$startsWith0($rt_s(508)))
-        return $cliString.$substring($rt_s(508).$length());
+    if ($cliString.$startsWith0($rt_s(507)))
+        return ji_File__init_($cliString.$substring($rt_s(507).$length()));
+    if ($cliString.$startsWith0($rt_s(509)))
+        return $cliString.$substring($rt_s(509).$length());
     var$5 = $cliString.$trim();
     $firstSpaceIndex = var$5.$indexOf2(32, 0);
     if ($firstSpaceIndex > 0) {
@@ -26964,9 +26964,9 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
     var$9[var$10 - 1 | 0] = $rt_cls(mt_Task).$getPackage0().$getName();
     $classObject = mo_ClassOption_app.$get1(var$5);
     if ($classObject === null)
-        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(511)).$append(var$5).$toString()));
+        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(512)).$append(var$5).$toString()));
     if ($classObject !== null)
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(512)).$append($classObject.$getName()).$toString());
+        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(513)).$append($classObject.$getName()).$toString());
     $classInstance = jl_Object__init_();
     $classInstance2 = jl_Object__init_();
     a: {
@@ -26981,14 +26981,14 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
                 throw $$e;
             }
         }
-        $rt_throw(jl_Exception__init_1(jl_StringBuilder__init_().$append($rt_s(513)).$append(var$5).$toString(), $ex));
+        $rt_throw(jl_Exception__init_1(jl_StringBuilder__init_().$append($rt_s(514)).$append(var$5).$toString(), $ex));
     }
     b: {
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(514)).$append(var$14.$toString()).$toString());
+        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(515)).$append(var$14.$toString()).$toString());
         $options = cgj_Options__init_();
         if ($externalOptions !== null) {
             var$9 = $externalOptions.data;
-            jl_System_out().$println1($rt_s(515));
+            jl_System_out().$println1($rt_s(516));
             var$10 = var$9.length;
             var$17 = 0;
             while (true) {
@@ -27001,11 +27001,11 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
         }
     }
     if ($externalOptions === null)
-        jl_System_out().$println1($rt_s(516));
-    if (!$rt_isInstance(var$14, mo_OptionHandler))
         jl_System_out().$println1($rt_s(517));
-    else
+    if (!$rt_isInstance(var$14, mo_OptionHandler))
         jl_System_out().$println1($rt_s(518));
+    else
+        jl_System_out().$println1($rt_s(519));
     return var$14;
 }
 function mo_ClassOption__clinit_() {
@@ -27103,8 +27103,8 @@ function eu_Client$1__init_(var_0) {
 function eu_Client$1__init_0($this, $this$0) {
     $this.$this$016 = $this$0;
     ju_HashMap__init_0($this);
-    $this.$put($rt_s(168), $rt_s(519));
-    $this.$put($rt_s(520), $rt_s(521));
+    $this.$put($rt_s(168), $rt_s(520));
+    $this.$put($rt_s(521), $rt_s(522));
 }
 function ju_LinkedList$SequentialListIterator() {
     var a = this; jl_Object.call(a);
@@ -27707,7 +27707,7 @@ function ji_File_fixSlashes($origPath) {
     $length = $origPath.$length();
     $newLength = 0;
     if (ji_File_fs().$isWindows() && $length == 3 && ji_File_isDriveLetter($origPath.$charAt(0)) && $origPath.$charAt(1) == 58 && !($origPath.$charAt(2) != 47 && $origPath.$charAt(2) != 92))
-        return jl_StringBuilder__init_().$append($origPath.$substring0(0, 2)).$append($rt_s(522)).$toString();
+        return jl_StringBuilder__init_().$append($origPath.$substring0(0, 2)).$append($rt_s(523)).$toString();
     $foundSlash = 0;
     $newPath = $origPath.$toCharArray();
     $i = 0;
@@ -27884,7 +27884,7 @@ function mct_HoeffdingTree$SplitNode_describeSubtree($this, $ht, $out, $indent) 
     while ($branch < $this.$numChildren()) {
         $child = $this.$getChild($branch);
         if ($child !== null) {
-            mc_StringUtils_appendIndented($out, $indent, $rt_s(523));
+            mc_StringUtils_appendIndented($out, $indent, $rt_s(524));
             var$6 = $this.$splitTest0;
             var$7 = $ht.$getModelContext();
             $out.$append(var$6.$describeConditionForBranch($branch, var$7));
@@ -28064,22 +28064,22 @@ function mcb_NaiveBayes_getModelDescription($this, $out, $indent) {
     var $i, var$4, var$5, var$6, $j;
     $i = 0;
     while ($i < $this.$observedClassDistribution0.$numValues()) {
-        mc_StringUtils_appendIndented($out, $indent, $rt_s(524));
+        mc_StringUtils_appendIndented($out, $indent, $rt_s(525));
         $out.$append($this.$getClassNameString());
         $out.$append($rt_s(3));
         $out.$append($this.$getClassLabelString($i));
         $out.$append($rt_s(372));
         var$4 = $indent + 1 | 0;
-        mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(525));
+        mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(526));
         $out.$append7($this.$observedClassDistribution0.$getValue($i));
-        $out.$append($rt_s(526));
+        $out.$append($rt_s(527));
         var$5 = $this.$observedClassDistribution0.$getValue($i);
         var$6 = $this.$observedClassDistribution0;
         var$5 = var$5 / var$6.$sumOfValues();
         $out.$append7(var$5);
         $j = 0;
         while ($j < $this.$attributeObservers0.$size()) {
-            mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(524));
+            mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(525));
             $out.$append($this.$getAttributeNameString0($j));
             $out.$append($rt_s(7));
             $out.$append3($this.$attributeObservers0.$get($j));
@@ -28159,8 +28159,8 @@ function jl_Enum_compareTo($this, $o) {
     if (jl_Enum_getDeclaringClass($o) === jl_Enum_getDeclaringClass($this))
         return jl_Integer_compare($this.$ordinal0, jl_Enum_ordinal($o));
     var$2 = new jl_IllegalArgumentException;
-    var$3 = jl_StringBuilder__init_().$append($rt_s(527));
-    jl_IllegalArgumentException__init_4(var$2, var$3.$append(jl_Enum_getDeclaringClass($this).$getName()).$append($rt_s(528)).$append(jl_Enum_getDeclaringClass($o).$getName()).$toString());
+    var$3 = jl_StringBuilder__init_().$append($rt_s(528));
+    jl_IllegalArgumentException__init_4(var$2, var$3.$append(jl_Enum_getDeclaringClass($this).$getName()).$append($rt_s(529)).$append(jl_Enum_getDeclaringClass($o).$getName()).$toString());
     $rt_throw(var$2);
 }
 function jl_Enum_compareTo0($this, var$1) {
@@ -28470,14 +28470,14 @@ function jm_RoundingMode__init_0($this, var$1, var$2, $rm) {
 }
 function jm_RoundingMode__clinit_() {
     var var$1, var$2;
-    jm_RoundingMode_UP = jm_RoundingMode__init_($rt_s(529), 0, 0);
-    jm_RoundingMode_DOWN = jm_RoundingMode__init_($rt_s(530), 1, 1);
-    jm_RoundingMode_CEILING = jm_RoundingMode__init_($rt_s(531), 2, 2);
-    jm_RoundingMode_FLOOR = jm_RoundingMode__init_($rt_s(532), 3, 3);
-    jm_RoundingMode_HALF_UP = jm_RoundingMode__init_($rt_s(533), 4, 4);
-    jm_RoundingMode_HALF_DOWN = jm_RoundingMode__init_($rt_s(534), 5, 5);
-    jm_RoundingMode_HALF_EVEN = jm_RoundingMode__init_($rt_s(535), 6, 6);
-    jm_RoundingMode_UNNECESSARY = jm_RoundingMode__init_($rt_s(536), 7, 7);
+    jm_RoundingMode_UP = jm_RoundingMode__init_($rt_s(530), 0, 0);
+    jm_RoundingMode_DOWN = jm_RoundingMode__init_($rt_s(531), 1, 1);
+    jm_RoundingMode_CEILING = jm_RoundingMode__init_($rt_s(532), 2, 2);
+    jm_RoundingMode_FLOOR = jm_RoundingMode__init_($rt_s(533), 3, 3);
+    jm_RoundingMode_HALF_UP = jm_RoundingMode__init_($rt_s(534), 4, 4);
+    jm_RoundingMode_HALF_DOWN = jm_RoundingMode__init_($rt_s(535), 5, 5);
+    jm_RoundingMode_HALF_EVEN = jm_RoundingMode__init_($rt_s(536), 6, 6);
+    jm_RoundingMode_UNNECESSARY = jm_RoundingMode__init_($rt_s(537), 7, 7);
     var$1 = $rt_createArray(jm_RoundingMode, 8);
     var$2 = var$1.data;
     var$2[0] = jm_RoundingMode_UP;
@@ -29004,18 +29004,18 @@ function jlr_Modifier_getModifierNames() {
     if (jlr_Modifier_modifierNames === null) {
         var$1 = $rt_createArray(jl_String, 12);
         var$2 = var$1.data;
-        var$2[0] = $rt_s(537);
-        var$2[1] = $rt_s(538);
-        var$2[2] = $rt_s(539);
-        var$2[3] = $rt_s(540);
-        var$2[4] = $rt_s(541);
-        var$2[5] = $rt_s(542);
-        var$2[6] = $rt_s(543);
-        var$2[7] = $rt_s(544);
-        var$2[8] = $rt_s(545);
-        var$2[9] = $rt_s(546);
-        var$2[10] = $rt_s(547);
-        var$2[11] = $rt_s(548);
+        var$2[0] = $rt_s(538);
+        var$2[1] = $rt_s(539);
+        var$2[2] = $rt_s(540);
+        var$2[3] = $rt_s(541);
+        var$2[4] = $rt_s(542);
+        var$2[5] = $rt_s(543);
+        var$2[6] = $rt_s(544);
+        var$2[7] = $rt_s(545);
+        var$2[8] = $rt_s(546);
+        var$2[9] = $rt_s(547);
+        var$2[10] = $rt_s(548);
+        var$2[11] = $rt_s(549);
         jlr_Modifier_modifierNames = var$1;
     }
     return jlr_Modifier_modifierNames;
@@ -29588,7 +29588,7 @@ function mc_Utils_quote($string) {
         $quote = 1;
     }
     if (!($quote != 1 && $string.$indexOf(123) == (-1) && $string.$indexOf(125) == (-1) && $string.$indexOf(44) == (-1) && !$string.$equals($rt_s(32)) && $string.$indexOf(32) == (-1) && !$string.$equals($rt_s(17))))
-        $string = $rt_s(549).$concat($string).$concat($rt_s(549));
+        $string = $rt_s(550).$concat($string).$concat($rt_s(550));
     return $string;
 }
 function mc_Utils_backQuoteChars($string) {
@@ -29606,14 +29606,14 @@ function mc_Utils_backQuoteChars($string) {
     var$3[7] = 30;
     $charsReplace = $rt_createArray(jl_String, 8);
     var$5 = $charsReplace.data;
-    var$5[0] = $rt_s(550);
-    var$5[1] = $rt_s(551);
-    var$5[2] = $rt_s(552);
-    var$5[3] = $rt_s(553);
-    var$5[4] = $rt_s(554);
-    var$5[5] = $rt_s(555);
-    var$5[6] = $rt_s(556);
-    var$5[7] = $rt_s(557);
+    var$5[0] = $rt_s(551);
+    var$5[1] = $rt_s(552);
+    var$5[2] = $rt_s(553);
+    var$5[3] = $rt_s(554);
+    var$5[4] = $rt_s(555);
+    var$5[5] = $rt_s(556);
+    var$5[6] = $rt_s(557);
+    var$5[7] = $rt_s(558);
     $i = 0;
     while ($i < var$3.length) {
         if ($string.$indexOf(var$3[$i]) != (-1)) {
@@ -29833,7 +29833,7 @@ function jt_SimpleDatePatternParser_parsePattern($this, $pattern) {
                         case 88:
                             $rep = jt_SimpleDatePatternParser_parseRepetitions($this);
                             if ($rep > 3)
-                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(558)).$append1($this.$index4).$toString()));
+                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(559)).$append1($this.$index4).$toString()));
                             $this.$elements0.$add(jt_DateFormatElement$Iso8601Timezone__init_($rep));
                             break a;
                         case 89:
@@ -30156,7 +30156,7 @@ function sa_SizeOfAgent_sizeOf($o) {
         return sa_SizeOfAgent_inst.$getObjectSize($o);
     if (sa_SizeOfAgent_messageDisplayed === null) {
         sa_SizeOfAgent_messageDisplayed = jl_Boolean_valueOf(1);
-        jl_System_err().$println1($rt_s(559));
+        jl_System_err().$println1($rt_s(560));
     }
     return Long_ZERO;
 }
@@ -30995,10 +30995,10 @@ $rt_stringPool(["Can\'t enter monitor from another thread synchronously", "@", "
 "FIMTDDNumericAttributeClassObserver", "FIMTDDNumericAttributeClassLimitObserver", "VFMLNumericAttributeClassObserver", "IademGaussianNumericAttributeClassObserver", "IademGreenwaldKhannaNumericAttributeClassObserver", "IademVFMLNumericAttributeClassObserver", "GiniSplitCriterion", "InfoGainSplitCriterionMultilabel", "SDRSplitCriterion", "AMRulesSplitCriterion", "SDRSplitCriterionAMRules", "SDRSplitCriterionAMRulesNode", "VarianceReductionSplitCriterion", "VarianceRatioSplitCriterion", "VRSplitCriterion", "ADWINChangeDetector",
 "[class]", "[class:", "<class ", ":", ">", "[att ", "{val ", "en", "CA", "fr", "zh", "CN", "FR", "de", "DE", "it", "IT", "ja", "JP", "ko", "KR", "TW", "GB", "US", "UTC", "GMT", "00", "The last byte in src ", "Duplicate option name: ", "Duplicate option command line character: ", " (", "Can\'t set attribute to root node", "Can\'t apply modifier to root node", "GMT+00:00", "@attribute", "numeric", "UNKNOW", "date", "Either src or dest is null", "java.version", "1.8", "os.name", "TeaVM", "file.separator", "/",
 "path.separator", "line.separator", "java.io.tmpdir", "java.vm.version", "user.home", "/tmp", "\r\n  ", "div", "\r\n ", "\r\n\r\n", "\r\n  \r\n  \r\n    ", "tr", "\r\n      ", "td", "\r\n\t  ", "\r\n\r\n    ", "\r\n   \r\n    ", "\r\n    ", "\r\n", "h1", "extra-large", "MOA", "label", "for", "evaluator", "customLabel", "Choose function", "select-container", "select", "name", "id", "h", "value", "Test", "\r\n\r\n  ", "br", "\r\n  \r\n  ", "p", "\r\n  Evaluator is ", "button", "apple-button", "Start function",
-"table", "table-container", "border", "Mean Error", "Square Error ", "Accuracy", "Kappa Stat", "Kappa Temporal Stat", "Kappa M Stat", "\r\n\r\n\r\n\r\n", "Dynamic Options", "\r\n\r\n ", "\r\n \r\n \r\n ", "canvas", "myChart", "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", "check{{optionLevel.id_dom}}", "b", "\r\n     ", "span", "\r\n  \r\n\r\n  \r\n", "\r\n   ", "input", "type", "checkbox", "number", "min", "max", "step", "0.01", "100000000", "\r\n\r\n\r\n", "power of ten too big", "px * 150)", "margin-left: calc(", "No object repository available.",
-"No object named ", " found in repository.", "Could not materialize object of required type ", ", found ", " instead.", "Class to CLI class name is:", "Class to CLI required type is:", "packageNameLength is: ", "Hello World", "String S is: ", " Required type is: ", "Problems with option: ", "Error: ", "objectToCLIString Is file", "file:", "objectToCLIString Is string", "inmem:", "className is ", "objectToCLIString Is an optionhandler", "Unknown class name: ", "class<?> classObject class name is: ", "Problem creating instance of class: ",
-"classInstance2 class name is ", "External options found", "No external options", "Class Instance 2 not an option handler", "Class Instance 2 is an option handler", "value1", "key2", "value2", "\\", "if ", "Observations for ", "Total observed weight = ", " / prob = ", "Can\'t compare ", " to ", "UP", "DOWN", "CEILING", "FLOOR", "HALF_UP", "HALF_DOWN", "HALF_EVEN", "UNNECESSARY", "public", "protected", "private", "abstract", "static", "final", "transient", "volatile", "synchronized", "native", "strictfp", "interface",
-"\'", "\\\\", "\\\'", "\\t", "\\n", "\\r", "\\\"", "\\%", "\\u001E", "Wrong number of repetitions of X pattern at ", "Can not access instrumentation environment.\nPlease check if jar file containing SizeOfAgent class is \nspecified in the java\'s \"-javaagent\" command line argument."]);
+"table", "table-container", "border", "Mean Error", "Square Error ", "Accuracy", "Kappa Stat", "Kappa Temporal Stat", "Kappa M Stat", "\r\n\r\n\r\n\r\n", "Dynamic Options", "\r\n\r\n ", "\r\n \r\n \r\n ", "canvas", "myChart", "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", "check{{optionLevel.id_dom}}", "b", "\r\n     ", "span", "cliString is: ", "\r\n  \r\n\r\n  \r\n", "\r\n   ", "input", "type", "checkbox", "number", "min", "max", "step", "0.01", "100000000", "\r\n\r\n\r\n", "power of ten too big", "px * 150)", "margin-left: calc(",
+"No object repository available.", "No object named ", " found in repository.", "Could not materialize object of required type ", ", found ", " instead.", "Class to CLI class name is:", "Class to CLI required type is:", "packageNameLength is: ", "Hello World", "String S is: ", " Required type is: ", "Problems with option: ", "Error: ", "objectToCLIString Is file", "file:", "objectToCLIString Is string", "inmem:", "className is ", "objectToCLIString Is an optionhandler", "Unknown class name: ", "class<?> classObject class name is: ",
+"Problem creating instance of class: ", "classInstance2 class name is ", "External options found", "No external options", "Class Instance 2 not an option handler", "Class Instance 2 is an option handler", "value1", "key2", "value2", "\\", "if ", "Observations for ", "Total observed weight = ", " / prob = ", "Can\'t compare ", " to ", "UP", "DOWN", "CEILING", "FLOOR", "HALF_UP", "HALF_DOWN", "HALF_EVEN", "UNNECESSARY", "public", "protected", "private", "abstract", "static", "final", "transient", "volatile", "synchronized",
+"native", "strictfp", "interface", "\'", "\\\\", "\\\'", "\\t", "\\n", "\\r", "\\\"", "\\%", "\\u001E", "Wrong number of repetitions of X pattern at ", "Can not access instrumentation environment.\nPlease check if jar file containing SizeOfAgent class is \nspecified in the java\'s \"-javaagent\" command line argument."]);
 jl_String.prototype.toString = function() {
     return $rt_ustr(this);
 };
