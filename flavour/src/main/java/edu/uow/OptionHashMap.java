@@ -78,6 +78,8 @@ public class OptionHashMap implements Iterable<OptionAndLevel> {
     // For iterator
     public Map<Option,Object> optHashMap = new HashMap<>();
 	public boolean mapInit=false;
+	public boolean mapEmpty=true;
+
 
     void insertOption(Option a) {
 
@@ -116,6 +118,7 @@ public class OptionHashMap implements Iterable<OptionAndLevel> {
 
     public OptionHashMap(Option[] arrOptions){
 		mapInit=true;
+		mapEmpty=false;
         for(Option option: arrOptions){
             insertOption(option);
         }
@@ -124,9 +127,14 @@ public class OptionHashMap implements Iterable<OptionAndLevel> {
 	
 	public OptionHashMap(){
 		mapInit=true;
+		mapEmpty=true;
 		optHashMap = new HashMap<>();
 
     }
+	
+	public boolean isEmpty(){
+		return this.mapEmpty;
+	}
 
 		/* for (Option option: optHashMap){
 			handleOption(option);

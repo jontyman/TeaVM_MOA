@@ -991,7 +991,13 @@ function juf_Supplier$proxy$4_0_1__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_1_get(var$0) {
-    return var$0.$proxyCapture00.$getEvaluator();
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture00;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$3 = var$1.$getClickCount() < 1 ? 0 : 1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$3);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_1__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
@@ -2048,6 +2054,26 @@ function jt_DateFormatElement$Year_hashCode($this) {
     var$1.data[0] = jl_Integer_valueOf($this.$field);
     return ju_Objects_hash(var$1);
 }
+function otft_Fragment() {
+}
+function otft_Fragment$proxy$4_0_14() {
+    jl_Object.call(this);
+    this.$proxyCapture01 = null;
+}
+function otft_Fragment$proxy$4_0_14__init_(var_0) {
+    var var_1 = new otft_Fragment$proxy$4_0_14();
+    otft_Fragment$proxy$4_0_14__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_Fragment$proxy$4_0_14_create(var$0) {
+    var var$1;
+    var$1 = var$0.$proxyCapture01.$create();
+    return var$1;
+}
+function otft_Fragment$proxy$4_0_14__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture01 = var$1;
+}
 function mc_Statistics() {
     jl_Object.call(this);
 }
@@ -2266,29 +2292,30 @@ function mc_Statistics__clinit_() {
     var$2[7] = 6.790194080099813E-9;
     mc_Statistics_Q2 = var$1;
 }
-function otft_Fragment() {
-}
 function otft_Fragment$proxy$4_0_11() {
-    jl_Object.call(this);
-    this.$proxyCapture01 = null;
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture02 = null;
+    a.$proxyCapture1 = null;
 }
-function otft_Fragment$proxy$4_0_11__init_(var_0) {
-    var var_1 = new otft_Fragment$proxy$4_0_11();
-    otft_Fragment$proxy$4_0_11__init_0(var_1, var_0);
-    return var_1;
+function otft_Fragment$proxy$4_0_11__init_(var_0, var_1) {
+    var var_2 = new otft_Fragment$proxy$4_0_11();
+    otft_Fragment$proxy$4_0_11__init_0(var_2, var_0, var_1);
+    return var_2;
 }
 function otft_Fragment$proxy$4_0_11_create(var$0) {
-    var var$1;
-    var$1 = var$0.$proxyCapture01.$create();
-    return var$1;
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture02;
+    var$2 = var$0.$proxyCapture1;
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_11__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_(), var$2));
 }
-function otft_Fragment$proxy$4_0_11__init_0(var$0, var$1) {
+function otft_Fragment$proxy$4_0_11__init_0(var$0, var$1, var$2) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture01 = var$1;
+    var$0.$proxyCapture02 = var$1;
+    var$0.$proxyCapture1 = var$2;
 }
 function otft_Fragment$proxy$4_0_10() {
     jl_Object.call(this);
-    this.$proxyCapture02 = null;
+    this.$proxyCapture03 = null;
 }
 function otft_Fragment$proxy$4_0_10__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_10();
@@ -2296,13 +2323,11 @@ function otft_Fragment$proxy$4_0_10__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_10_create(var$0) {
-    var var$1;
-    var$1 = var$0.$proxyCapture02;
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_10__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_10__init_(var$0.$proxyCapture03));
 }
 function otft_Fragment$proxy$4_0_10__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture02 = var$1;
+    var$0.$proxyCapture03 = var$1;
 }
 function otp_PlatformQueue() {
     jl_Object.call(this);
@@ -2320,6 +2345,43 @@ function otp_PlatformQueue_add$static($this, $e) {
 }
 function otp_PlatformQueue_remove$static($this) {
     return $this.shift();
+}
+function otft_Fragment$proxy$4_0_13() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture04 = null;
+    a.$proxyCapture10 = null;
+}
+function otft_Fragment$proxy$4_0_13__init_(var_0, var_1) {
+    var var_2 = new otft_Fragment$proxy$4_0_13();
+    otft_Fragment$proxy$4_0_13__init_0(var_2, var_0, var_1);
+    return var_2;
+}
+function otft_Fragment$proxy$4_0_13_create(var$0) {
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture04;
+    var$2 = var$0.$proxyCapture10;
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_13__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_(), var$2));
+}
+function otft_Fragment$proxy$4_0_13__init_0(var$0, var$1, var$2) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture04 = var$1;
+    var$0.$proxyCapture10 = var$2;
+}
+function otft_Fragment$proxy$4_0_12() {
+    jl_Object.call(this);
+    this.$proxyCapture05 = null;
+}
+function otft_Fragment$proxy$4_0_12__init_(var_0) {
+    var var_1 = new otft_Fragment$proxy$4_0_12();
+    otft_Fragment$proxy$4_0_12__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_Fragment$proxy$4_0_12_create(var$0) {
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_12__init_(var$0.$proxyCapture05));
+}
+function otft_Fragment$proxy$4_0_12__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture05 = var$1;
 }
 function cgj_Configurable() {
 }
@@ -3259,54 +3321,36 @@ function otcit_DateTimeZoneProvider$1_compare0($this, var$1, var$2) {
     return otcit_DateTimeZoneProvider$1_compare($this, var$1, var$2);
 }
 function juf_Supplier$proxy$4_0_8() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture03 = null;
-    a.$proxyCapture1 = null;
+    jl_Object.call(this);
+    this.$proxyCapture06 = null;
 }
-function juf_Supplier$proxy$4_0_8__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_8();
-    juf_Supplier$proxy$4_0_8__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_8__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_8();
+    juf_Supplier$proxy$4_0_8__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_8_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture03;
-    var$2 = var$0.$proxyCapture1;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$kappaTemporalStatArr.$get(var$3[0].$intValue());
+    return var$0.$proxyCapture06.$value1.$option.$getName();
 }
-function juf_Supplier$proxy$4_0_8__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_8__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture03 = var$1;
-    var$0.$proxyCapture1 = var$2;
+    var$0.$proxyCapture06 = var$1;
 }
 function juf_Supplier$proxy$4_0_9() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture04 = null;
-    a.$proxyCapture10 = null;
+    jl_Object.call(this);
+    this.$proxyCapture07 = null;
 }
-function juf_Supplier$proxy$4_0_9__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_9();
-    juf_Supplier$proxy$4_0_9__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_9__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_9();
+    juf_Supplier$proxy$4_0_9__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_9_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture04;
-    var$2 = var$0.$proxyCapture10;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$kappaMStatArr.$get(var$3[0].$intValue());
+    return var$0.$proxyCapture07.$value1.$option.$getValueAsCLIString();
 }
-function juf_Supplier$proxy$4_0_9__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_9__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture04 = var$1;
-    var$0.$proxyCapture10 = var$2;
+    var$0.$proxyCapture07 = var$1;
 }
 function jn_ByteOrder() {
     jl_Object.call(this);
@@ -3333,83 +3377,68 @@ function jn_ByteOrder__clinit_() {
     jn_ByteOrder_LITTLE_ENDIAN = jn_ByteOrder__init_($rt_s(22));
 }
 function juf_Supplier$proxy$4_0_6() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture05 = null;
-    a.$proxyCapture11 = null;
+    jl_Object.call(this);
+    this.$proxyCapture08 = null;
 }
-function juf_Supplier$proxy$4_0_6__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_6();
-    juf_Supplier$proxy$4_0_6__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_6__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_6();
+    juf_Supplier$proxy$4_0_6__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_6_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture05;
-    var$2 = var$0.$proxyCapture11;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$accuracyArr.$get(var$3[0].$intValue());
+    return var$0.$proxyCapture08.$value1.$option.$getValueAsCLIString();
 }
-function juf_Supplier$proxy$4_0_6__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_6__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture05 = var$1;
-    var$0.$proxyCapture11 = var$2;
+    var$0.$proxyCapture08 = var$1;
 }
 function juf_Supplier$proxy$4_0_7() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture06 = null;
-    a.$proxyCapture12 = null;
+    jl_Object.call(this);
+    this.$proxyCapture09 = null;
 }
-function juf_Supplier$proxy$4_0_7__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_7();
-    juf_Supplier$proxy$4_0_7__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_7__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_7();
+    juf_Supplier$proxy$4_0_7__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_7_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture06;
-    var$2 = var$0.$proxyCapture12;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$kappaStatArr.$get(var$3[0].$intValue());
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture09;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$1 = var$1.$value1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_FloatOption);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
-function juf_Supplier$proxy$4_0_7__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_7__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture06 = var$1;
-    var$0.$proxyCapture12 = var$2;
+    var$0.$proxyCapture09 = var$1;
 }
 function juf_Supplier$proxy$4_0_4() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture07 = null;
-    a.$proxyCapture13 = null;
+    jl_Object.call(this);
+    this.$proxyCapture010 = null;
 }
-function juf_Supplier$proxy$4_0_4__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_4();
-    juf_Supplier$proxy$4_0_4__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_4__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_4();
+    juf_Supplier$proxy$4_0_4__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_4_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture07;
-    var$2 = var$0.$proxyCapture13;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$squareErrorArr.$get(var$3[0].$intValue());
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture010;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$1 = var$1.$value1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_IntOption);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
-function juf_Supplier$proxy$4_0_4__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture07 = var$1;
-    var$0.$proxyCapture13 = var$2;
+    var$0.$proxyCapture010 = var$1;
 }
 function juf_Supplier$proxy$4_0_5() {
     jl_Object.call(this);
-    this.$proxyCapture08 = null;
+    this.$proxyCapture011 = null;
 }
 function juf_Supplier$proxy$4_0_5__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_5();
@@ -3417,15 +3446,15 @@ function juf_Supplier$proxy$4_0_5__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_5_get(var$0) {
-    return var$0.$proxyCapture08.$accuracyArr;
+    return var$0.$proxyCapture011.$value1.$option.$getName();
 }
 function juf_Supplier$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture08 = var$1;
+    var$0.$proxyCapture011 = var$1;
 }
 function juf_Supplier$proxy$4_0_2() {
     jl_Object.call(this);
-    this.$proxyCapture09 = null;
+    this.$proxyCapture012 = null;
 }
 function juf_Supplier$proxy$4_0_2__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_2();
@@ -3433,36 +3462,39 @@ function juf_Supplier$proxy$4_0_2__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_2_get(var$0) {
-    return var$0.$proxyCapture09.$meanErrorArr;
+    return var$0.$proxyCapture012.$optHMap;
 }
 function juf_Supplier$proxy$4_0_2__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture09 = var$1;
+    var$0.$proxyCapture012 = var$1;
 }
 function juf_Supplier$proxy$4_0_3() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture010 = null;
-    a.$proxyCapture14 = null;
+    jl_Object.call(this);
+    this.$proxyCapture013 = null;
 }
-function juf_Supplier$proxy$4_0_3__init_(var_0, var_1) {
-    var var_2 = new juf_Supplier$proxy$4_0_3();
-    juf_Supplier$proxy$4_0_3__init_0(var_2, var_0, var_1);
-    return var_2;
+function juf_Supplier$proxy$4_0_3__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_3();
+    juf_Supplier$proxy$4_0_3__init_0(var_1, var_0);
+    return var_1;
 }
 function juf_Supplier$proxy$4_0_3_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture010;
-    var$2 = var$0.$proxyCapture14;
-    var$3 = $rt_createArray(jl_Object, 1);
-    var$2 = var$2.$value1;
-    var$3 = var$3.data;
-    var$3[0] = var$2;
-    return var$1.$meanErrorArr.$get(var$3[0].$intValue());
+    var var$1, var$2, var$3, var$4, var$5;
+    var$1 = var$0.$proxyCapture013;
+    var$2 = $rt_createArray(jl_Object, 1).data;
+    var$2[0] = $rt_s(23);
+    var$3 = $rt_createArray(jl_Object, 1).data;
+    var$4 = $rt_createArray(jl_Object, 1);
+    var$5 = var$1.$value1;
+    var$4 = var$4.data;
+    var$4[0] = jl_Integer_valueOf(var$5.$level);
+    var$3[0] = jl_Integer_valueOf(var$4[0].$intValue()).$toString();
+    var$4 = $rt_createArray(jl_Object, 1).data;
+    var$4[0] = $rt_s(24);
+    return jl_StringBuilder__init_().$append(var$4[0]).$append(var$3[0]).$append(var$2[0]).$toString();
 }
-function juf_Supplier$proxy$4_0_3__init_0(var$0, var$1, var$2) {
+function juf_Supplier$proxy$4_0_3__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture010 = var$1;
-    var$0.$proxyCapture14 = var$2;
+    var$0.$proxyCapture013 = var$1;
 }
 function otfr_Route() {
 }
@@ -3529,7 +3561,7 @@ function ju_Currency_getInstance($currencyCode) {
     $currency = ju_Currency_currencies.$get1($currencyCode);
     if ($currency !== null)
         return $currency;
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(23)).$append($currencyCode).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(25)).$append($currencyCode).$toString()));
 }
 function ju_Currency_getInstance0($locale) {
     var $coutry, $countryMap, var$4;
@@ -3633,15 +3665,15 @@ function mo_OptionsHandler_prepareClassOptions($this, $monitor, $repository) {
         $option = var$4[var$6];
         if ($option instanceof mo_ClassOption) {
             $classOption = $option;
-            var$9 = jl_StringBuilder__init_().$append($rt_s(24));
-            var$9 = var$9.$append($classOption.$getName()).$append($rt_s(25)).$toString();
+            var$9 = jl_StringBuilder__init_().$append($rt_s(26));
+            var$9 = var$9.$append($classOption.$getName()).$append($rt_s(27)).$toString();
             $monitor.$setCurrentActivity(var$9, (-1.0));
             $optionObj = $classOption.$materializeObject($monitor, $repository);
             if ($monitor.$taskShouldAbort())
                 return;
             if ($rt_isInstance($optionObj, mo_OptionHandler)) {
-                var$9 = jl_StringBuilder__init_().$append($rt_s(26));
-                var$9 = var$9.$append($classOption.$getName()).$append($rt_s(25)).$toString();
+                var$9 = jl_StringBuilder__init_().$append($rt_s(28));
+                var$9 = var$9.$append($classOption.$getName()).$append($rt_s(27)).$toString();
                 $monitor.$setCurrentActivity(var$9, (-1.0));
                 $optionObj.$prepareForUse0($monitor, $repository);
                 if ($monitor.$taskShouldAbort())
@@ -3709,7 +3741,7 @@ function mccc_NominalAttributeBinaryTest_describeConditionForBranch($this, $bran
     if ($branch && $branch != 1)
         $rt_throw(jl_IndexOutOfBoundsException__init_());
     var$3 = jl_StringBuilder__init_().$append(cylsi_InstancesHeader_getInputAttributeNameString($context, $this.$attIndex));
-    var$3 = var$3.$append($branch ? $rt_s(27) : $rt_s(3));
+    var$3 = var$3.$append($branch ? $rt_s(29) : $rt_s(3));
     var$4 = $this.$attIndex;
     var$5 = $this.$attValue;
     var$3 = var$3.$append(cylsi_InstancesHeader_getNominalValueString($context, var$4, var$5)).$toString();
@@ -4150,10 +4182,10 @@ function cylsi_MultiLabelPrediction_toString($this) {
     $sb = jl_StringBuffer__init_();
     $i = 0;
     while ($i < $this.$prediction.data.length) {
-        $sb.$append6(jl_StringBuilder__init_().$append($rt_s(28)).$append1($i).$append($rt_s(7)).$toString());
+        $sb.$append6(jl_StringBuilder__init_().$append($rt_s(30)).$append1($i).$append($rt_s(7)).$toString());
         $c = 0;
         while ($c < $this.$prediction.data[$i].$numValues()) {
-            $sb.$append6(jl_StringBuilder__init_().$append7(($this.$prediction.data[$i].$getValue($c) * 1000.0 | 0) / 1000.0).$append($rt_s(29)).$toString());
+            $sb.$append6(jl_StringBuilder__init_().$append7(($this.$prediction.data[$i].$getValue($c) * 1000.0 | 0) / 1000.0).$append($rt_s(31)).$toString());
             $c = $c + 1 | 0;
         }
         $i = $i + 1 | 0;
@@ -4221,7 +4253,7 @@ function ju_Calendar_resolveFirstDayOfWeek($locale) {
         return ju_Calendar_firstDayOfWeekCache;
     $country = otciu_CLDRHelper_resolveCountry(ju_Locale_getLanguage($locale), ju_Locale_getCountry($locale));
     $dayMap = otciu_CLDRHelper_getFirstDayOfWeek();
-    ju_Calendar_firstDayOfWeekCache = $dayMap.hasOwnProperty($rt_ustr($country)) ? $dayMap[$rt_ustr($country)].value : $dayMap[$rt_ustr($rt_s(30))].value;
+    ju_Calendar_firstDayOfWeekCache = $dayMap.hasOwnProperty($rt_ustr($country)) ? $dayMap[$rt_ustr($country)].value : $dayMap[$rt_ustr($rt_s(32))].value;
     return ju_Calendar_firstDayOfWeekCache;
 }
 function ju_Calendar_resolveMinimalDaysInFirstWeek($locale) {
@@ -4234,7 +4266,7 @@ function ju_Calendar_resolveMinimalDaysInFirstWeek($locale) {
     if ($dayMap.hasOwnProperty($rt_ustr($country)))
         var$4 = $dayMap[$rt_ustr($country)].value;
     else {
-        var$5 = $dayMap[$rt_ustr($rt_s(30))];
+        var$5 = $dayMap[$rt_ustr($rt_s(32))];
         var$4 = var$5.value;
     }
     ju_Calendar_minimalDaysInFirstWeekCache = var$4;
@@ -4339,14 +4371,14 @@ function ju_Calendar_setTimeInMillis($this, $milliseconds) {
 function ju_Calendar_toString($this) {
     var $result, var$2, var$3, var$4, $i;
     $result = new jl_StringBuilder;
-    var$2 = jl_StringBuilder__init_().$append(jl_Object_getClass($this).$getName()).$append($rt_s(31));
+    var$2 = jl_StringBuilder__init_().$append(jl_Object_getClass($this).$getName()).$append($rt_s(33));
     if (!$this.$isTimeSet)
-        var$3 = $rt_s(32);
+        var$3 = $rt_s(34);
     else {
         var$4 = $this.$time;
         var$3 = jl_String_valueOf0(var$4);
     }
-    jl_StringBuilder__init_1($result, var$2.$append(var$3).$append($rt_s(33)).$append8($this.$areFieldsSet).$append($rt_s(34)).$append8($this.$lenient).$append($rt_s(35)).$append1($this.$firstDayOfWeek).$append($rt_s(36)).$append1($this.$minimalDaysInFirstWeek).$toString());
+    jl_StringBuilder__init_1($result, var$2.$append(var$3).$append($rt_s(35)).$append8($this.$areFieldsSet).$append($rt_s(36)).$append8($this.$lenient).$append($rt_s(37)).$append1($this.$firstDayOfWeek).$append($rt_s(38)).$append1($this.$minimalDaysInFirstWeek).$toString());
     $i = 0;
     while ($i < 17) {
         $result.$append2(44);
@@ -4365,23 +4397,23 @@ function ju_Calendar__clinit_() {
     var var$1, var$2;
     var$1 = $rt_createArray(jl_String, 17);
     var$2 = var$1.data;
-    var$2[0] = $rt_s(37);
-    var$2[1] = $rt_s(38);
-    var$2[2] = $rt_s(39);
-    var$2[3] = $rt_s(40);
-    var$2[4] = $rt_s(41);
-    var$2[5] = $rt_s(42);
-    var$2[6] = $rt_s(43);
-    var$2[7] = $rt_s(44);
-    var$2[8] = $rt_s(45);
-    var$2[9] = $rt_s(46);
-    var$2[10] = $rt_s(47);
-    var$2[11] = $rt_s(48);
-    var$2[12] = $rt_s(49);
-    var$2[13] = $rt_s(50);
-    var$2[14] = $rt_s(51);
-    var$2[15] = $rt_s(52);
-    var$2[16] = $rt_s(53);
+    var$2[0] = $rt_s(39);
+    var$2[1] = $rt_s(40);
+    var$2[2] = $rt_s(41);
+    var$2[3] = $rt_s(42);
+    var$2[4] = $rt_s(43);
+    var$2[5] = $rt_s(44);
+    var$2[6] = $rt_s(45);
+    var$2[7] = $rt_s(46);
+    var$2[8] = $rt_s(47);
+    var$2[9] = $rt_s(48);
+    var$2[10] = $rt_s(49);
+    var$2[11] = $rt_s(50);
+    var$2[12] = $rt_s(51);
+    var$2[13] = $rt_s(52);
+    var$2[14] = $rt_s(53);
+    var$2[15] = $rt_s(54);
+    var$2[16] = $rt_s(55);
     ju_Calendar_fieldNames = var$1;
     ju_Calendar_firstDayOfWeekCache = (-1);
     ju_Calendar_minimalDaysInFirstWeekCache = (-1);
@@ -4530,7 +4562,7 @@ function jl_AbstractStringBuilder_insert($this, $index, $string) {
     var $i, var$4, var$5;
     if ($index >= 0 && $index <= $this.$length0) {
         if ($string === null)
-            $string = $rt_s(54);
+            $string = $rt_s(56);
         else if ($string.$isEmpty())
             return $this;
         $this.$ensureCapacity($this.$length0 + $string.$length() | 0);
@@ -4884,13 +4916,13 @@ function jl_AbstractStringBuilder_append5($this, $obj) {
     return $this.$insert5($this.$length0, $obj);
 }
 function jl_AbstractStringBuilder_insert5($this, $index, $obj) {
-    return $this.$insert($index, $obj === null ? $rt_s(54) : $obj.$toString());
+    return $this.$insert($index, $obj === null ? $rt_s(56) : $obj.$toString());
 }
 function jl_AbstractStringBuilder_append6($this, $b) {
     return $this.$insert6($this.$length0, $b);
 }
 function jl_AbstractStringBuilder_insert6($this, $index, $b) {
-    return $this.$insert($index, !$b ? $rt_s(55) : $rt_s(56));
+    return $this.$insert($index, !$b ? $rt_s(57) : $rt_s(58));
 }
 function jl_AbstractStringBuilder_ensureCapacity($this, $capacity) {
     var $newLength, var$3;
@@ -4913,7 +4945,7 @@ function jl_AbstractStringBuilder_length($this) {
 function jl_AbstractStringBuilder_getChars($this, $srcBegin, $srcEnd, $dst, $dstBegin) {
     var var$5, var$6, var$7, var$8;
     if ($srcBegin > $srcEnd)
-        $rt_throw(jl_IndexOutOfBoundsException__init_1($rt_s(57)));
+        $rt_throw(jl_IndexOutOfBoundsException__init_1($rt_s(59)));
     while ($srcBegin < $srcEnd) {
         var$5 = $dst.data;
         var$6 = $dstBegin + 1 | 0;
@@ -5022,7 +5054,7 @@ function jn_Buffer_position0($this, $newPosition) {
             $this.$mark = 0;
         return $this;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(58)).$append1($newPosition).$append($rt_s(59)).$append1($this.$limit).$append($rt_s(13)).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(60)).$append1($newPosition).$append($rt_s(61)).$append1($this.$limit).$append($rt_s(13)).$toString()));
 }
 function jn_Buffer_clear($this) {
     $this.$position = 0;
@@ -5151,7 +5183,7 @@ function otft_Modifier() {
 }
 function otft_Modifier$proxy$4_0_1() {
     jl_Object.call(this);
-    this.$proxyCapture011 = null;
+    this.$proxyCapture014 = null;
 }
 function otft_Modifier$proxy$4_0_1__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_1();
@@ -5160,14 +5192,14 @@ function otft_Modifier$proxy$4_0_1__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_1_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture011;
+    var$2 = var$0.$proxyCapture014;
     var$1 = otfch_ValueChangeBinder__init_(var$1);
     var$1.$setListener(otft_ValueChangeListener$proxy$4_0_0__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_1__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture011 = var$1;
+    var$0.$proxyCapture014 = var$1;
 }
 function ju_SortedMap() {
 }
@@ -5378,7 +5410,7 @@ function ju_TreeMap_access$100($x0, $x1) {
 }
 function otft_Modifier$proxy$4_0_0() {
     jl_Object.call(this);
-    this.$proxyCapture012 = null;
+    this.$proxyCapture015 = null;
 }
 function otft_Modifier$proxy$4_0_0__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_0();
@@ -5387,14 +5419,14 @@ function otft_Modifier$proxy$4_0_0__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_0_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture012;
+    var$2 = var$0.$proxyCapture015;
     var$1 = otfch_ValueBinder__init_(var$1);
     var$1.$setValue1(juf_Supplier$proxy$4_0_0__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_0__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture012 = var$1;
+    var$0.$proxyCapture015 = var$1;
 }
 function otjdx_Node() {
 }
@@ -5420,7 +5452,7 @@ function otjdh_HTMLElement() {
 }
 function otft_Modifier$proxy$4_0_5() {
     jl_Object.call(this);
-    this.$proxyCapture013 = null;
+    this.$proxyCapture016 = null;
 }
 function otft_Modifier$proxy$4_0_5__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_5();
@@ -5429,14 +5461,14 @@ function otft_Modifier$proxy$4_0_5__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_5_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture013;
-    var$1 = otfch_ValueChangeBinder__init_(var$1);
-    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_1__init_(var$2));
+    var$2 = var$0.$proxyCapture016;
+    var$1 = otfch_ValueBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_6__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture013 = var$1;
+    var$0.$proxyCapture016 = var$1;
 }
 function ju_ArrayList() {
     var a = this; ju_AbstractList.call(a);
@@ -5582,7 +5614,7 @@ function mc_FastVector_addElement($this, $element) {
 }
 function otft_Modifier$proxy$4_0_4() {
     jl_Object.call(this);
-    this.$proxyCapture014 = null;
+    this.$proxyCapture017 = null;
 }
 function otft_Modifier$proxy$4_0_4__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_4();
@@ -5591,18 +5623,19 @@ function otft_Modifier$proxy$4_0_4__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_4_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture014;
-    var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_14__init_(var$2));
+    var$2 = var$0.$proxyCapture017;
+    var$1 = otfca_ComputedAttribute__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_3__init_(var$2));
+    var$1.$setName($rt_s(62));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture014 = var$1;
+    var$0.$proxyCapture017 = var$1;
 }
 function otft_Modifier$proxy$4_0_3() {
     jl_Object.call(this);
-    this.$proxyCapture015 = null;
+    this.$proxyCapture018 = null;
 }
 function otft_Modifier$proxy$4_0_3__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_3();
@@ -5611,19 +5644,19 @@ function otft_Modifier$proxy$4_0_3__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_3_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture015;
-    var$1 = otfca_ComputedAttribute__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_11__init_(var$2));
-    var$1.$setName($rt_s(60));
+    var$2 = var$0.$proxyCapture018;
+    var$1 = otfce_MouseBinder__init_(var$1);
+    var$1.$setHandler(juf_Consumer$proxy$4_0_1__init_(var$2));
+    var$1.$setEventName($rt_s(63));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_3__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture015 = var$1;
+    var$0.$proxyCapture018 = var$1;
 }
 function otft_Modifier$proxy$4_0_2() {
     jl_Object.call(this);
-    this.$proxyCapture016 = null;
+    this.$proxyCapture019 = null;
 }
 function otft_Modifier$proxy$4_0_2__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_2();
@@ -5632,19 +5665,19 @@ function otft_Modifier$proxy$4_0_2__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_2_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture016;
+    var$2 = var$0.$proxyCapture019;
     var$1 = otfce_MouseBinder__init_(var$1);
     var$1.$setHandler(juf_Consumer$proxy$4_0_0__init_(var$2));
-    var$1.$setEventName($rt_s(61));
+    var$1.$setEventName($rt_s(63));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_2__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture016 = var$1;
+    var$0.$proxyCapture019 = var$1;
 }
 function otft_Modifier$proxy$4_0_9() {
     jl_Object.call(this);
-    this.$proxyCapture017 = null;
+    this.$proxyCapture020 = null;
 }
 function otft_Modifier$proxy$4_0_9__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_9();
@@ -5653,18 +5686,18 @@ function otft_Modifier$proxy$4_0_9__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_9_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture017;
-    var$1 = otfch_CheckedChangeBinder__init_(var$1);
-    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_3__init_(var$2));
+    var$2 = var$0.$proxyCapture020;
+    var$1 = otfch_CheckedBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_12__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_9__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture017 = var$1;
+    var$0.$proxyCapture020 = var$1;
 }
 function otft_Modifier$proxy$4_0_8() {
     jl_Object.call(this);
-    this.$proxyCapture018 = null;
+    this.$proxyCapture021 = null;
 }
 function otft_Modifier$proxy$4_0_8__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_8();
@@ -5673,18 +5706,18 @@ function otft_Modifier$proxy$4_0_8__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_8_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture018;
-    var$1 = otfch_CheckedBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_20__init_(var$2));
+    var$2 = var$0.$proxyCapture021;
+    var$1 = otfch_ValueChangeBinder__init_(var$1);
+    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_2__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_8__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture018 = var$1;
+    var$0.$proxyCapture021 = var$1;
 }
 function otft_Modifier$proxy$4_0_7() {
     jl_Object.call(this);
-    this.$proxyCapture019 = null;
+    this.$proxyCapture022 = null;
 }
 function otft_Modifier$proxy$4_0_7__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_7();
@@ -5693,20 +5726,20 @@ function otft_Modifier$proxy$4_0_7__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_7_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture019;
-    var$1 = otfch_ValueChangeBinder__init_(var$1);
-    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_2__init_(var$2));
+    var$2 = var$0.$proxyCapture022;
+    var$1 = otfch_ValueBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_9__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_7__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture019 = var$1;
+    var$0.$proxyCapture022 = var$1;
 }
 function mt_Task() {
 }
 function otft_Modifier$proxy$4_0_6() {
     jl_Object.call(this);
-    this.$proxyCapture020 = null;
+    this.$proxyCapture023 = null;
 }
 function otft_Modifier$proxy$4_0_6__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_6();
@@ -5715,14 +5748,14 @@ function otft_Modifier$proxy$4_0_6__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_6_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture020;
-    var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_17__init_(var$2));
+    var$2 = var$0.$proxyCapture023;
+    var$1 = otfch_ValueChangeBinder__init_(var$1);
+    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_1__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_6__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture020 = var$1;
+    var$0.$proxyCapture023 = var$1;
 }
 function jl_UnsupportedOperationException() {
     jl_RuntimeException.call(this);
@@ -6143,7 +6176,7 @@ function otci_IntegerUtil__init_0($this) {
 function otci_IntegerUtil_toUnsignedLogRadixString($value, $radixLog2) {
     var $radix, $mask, $sz, $chars, $pos, $target, var$9, $target_0;
     if (!$value)
-        return $rt_s(62);
+        return $rt_s(64);
     $radix = 1 << $radixLog2;
     $mask = $radix - 1 | 0;
     $sz = (((32 - jl_Integer_numberOfLeadingZeros($value) | 0) + $radixLog2 | 0) - 1 | 0) / $radixLog2 | 0;
@@ -6183,7 +6216,7 @@ function mc_AbstractClassifier__init_0($this) {
     $this.$trainingWeightSeenByModel = 0.0;
     $this.$randomSeed = 1;
     if ($this.$isRandomizable())
-        $this.$randomSeedOption = cgj_IntOption__init_($rt_s(63), 114, $rt_s(64), 1);
+        $this.$randomSeedOption = cgj_IntOption__init_($rt_s(65), 114, $rt_s(66), 1);
 }
 function mc_AbstractClassifier_prepareForUseImpl($this, $monitor, $repository) {
     if ($this.$randomSeedOption !== null)
@@ -6200,7 +6233,7 @@ function mc_AbstractClassifier_getPredictionForInstance($this, $inst) {
 function mc_AbstractClassifier_setModelContext($this, $ih) {
     var var$2;
     if ($ih !== null && $ih.$classIndex() < 0)
-        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(65)));
+        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(67)));
     a: {
         if ($this.$trainingHasStarted() && $this.$modelContext !== null) {
             if ($ih === null)
@@ -6212,7 +6245,7 @@ function mc_AbstractClassifier_setModelContext($this, $ih) {
         $this.$modelContext = $ih;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(66)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(68)));
 }
 function mc_AbstractClassifier_getModelContext($this) {
     return $this.$modelContext;
@@ -6242,8 +6275,8 @@ function mc_AbstractClassifier_trainOnInstance($this, $inst) {
 function mc_AbstractClassifier_getModelMeasurements($this) {
     var $measurementList, $modelMeasurements, $subModels, var$4, var$5, $subMeasurements, var$7, $subModel, $avgMeasurements;
     $measurementList = ju_LinkedList__init_();
-    $measurementList.$add(mc_Measurement__init_($rt_s(67), $this.$trainingWeightSeenByModel0()));
-    $measurementList.$add(mc_Measurement__init_($rt_s(68), $this.$measureByteSize0()));
+    $measurementList.$add(mc_Measurement__init_($rt_s(69), $this.$trainingWeightSeenByModel0()));
+    $measurementList.$add(mc_Measurement__init_($rt_s(70), $this.$measureByteSize0()));
     $modelMeasurements = $this.$getModelMeasurementsImpl();
     if ($modelMeasurements !== null)
         $measurementList.$addAll(ju_Arrays_asList($modelMeasurements));
@@ -6267,16 +6300,16 @@ function mc_AbstractClassifier_getModelMeasurements($this) {
     return $measurementList.$toArray($rt_createArray(mc_Measurement, $measurementList.$size()));
 }
 function mc_AbstractClassifier_getDescription($this, $out, $indent) {
-    mc_StringUtils_appendIndented($out, $indent, $rt_s(69));
+    mc_StringUtils_appendIndented($out, $indent, $rt_s(71));
     $out.$append(jl_Object_getClass($this).$getName());
     mc_StringUtils_appendNewline($out);
     mc_Measurement_getMeasurementsDescription($this.$getModelMeasurements(), $out, $indent);
-    mc_StringUtils_appendNewlineIndented($out, $indent, $rt_s(70));
+    mc_StringUtils_appendNewlineIndented($out, $indent, $rt_s(72));
     mc_StringUtils_appendNewline($out);
     if ($this.$trainingHasStarted())
         $this.$getModelDescription($out, $indent);
     else
-        mc_StringUtils_appendIndented($out, $indent, $rt_s(71));
+        mc_StringUtils_appendIndented($out, $indent, $rt_s(73));
 }
 function mc_AbstractClassifier_getSublearners($this) {
     return $this.$getSubClassifiers();
@@ -6398,43 +6431,43 @@ function mcm_StreamingRandomPatches_getOptions($this) {
 function mcm_StreamingRandomPatches__init_0($this) {
     var var$1, var$2, var$3, var$4, var$5;
     mc_AbstractClassifier__init_0($this);
-    $this.$baseLearnerOption = mo_ClassOption__init_($rt_s(72), 108, $rt_s(73), $rt_cls(mc_Classifier), $rt_s(74));
-    $this.$ensembleSizeOption = cgj_IntOption__init_0($rt_s(75), 115, $rt_s(76), 100, 1, 2147483647);
+    $this.$baseLearnerOption = mo_ClassOption__init_($rt_s(74), 108, $rt_s(75), $rt_cls(mc_Classifier), $rt_s(76));
+    $this.$ensembleSizeOption = cgj_IntOption__init_0($rt_s(77), 115, $rt_s(78), 100, 1, 2147483647);
     var$1 = new cgj_MultiChoiceOption;
     var$2 = $rt_createArray(jl_String, 4);
     var$3 = var$2.data;
-    var$3[0] = $rt_s(77);
-    var$3[1] = $rt_s(78);
-    var$3[2] = $rt_s(79);
-    var$3[3] = $rt_s(80);
+    var$3[0] = $rt_s(79);
+    var$3[1] = $rt_s(80);
+    var$3[2] = $rt_s(81);
+    var$3[3] = $rt_s(82);
     var$3 = $rt_createArray(jl_String, 4);
     var$4 = var$3.data;
-    var$4[0] = $rt_s(81);
-    var$4[1] = $rt_s(82);
-    var$4[2] = $rt_s(83);
-    var$4[3] = $rt_s(84);
-    cgj_MultiChoiceOption__init_(var$1, $rt_s(85), 111, $rt_s(86), var$2, var$3, 3);
+    var$4[0] = $rt_s(83);
+    var$4[1] = $rt_s(84);
+    var$4[2] = $rt_s(85);
+    var$4[3] = $rt_s(86);
+    cgj_MultiChoiceOption__init_(var$1, $rt_s(87), 111, $rt_s(88), var$2, var$3, 3);
     $this.$subspaceModeOption = var$1;
-    $this.$subspaceSizeOption = cgj_IntOption__init_0($rt_s(87), 109, $rt_s(88), 60, (-2147483648), 2147483647);
+    $this.$subspaceSizeOption = cgj_IntOption__init_0($rt_s(89), 109, $rt_s(90), 60, (-2147483648), 2147483647);
     var$5 = new cgj_MultiChoiceOption;
     var$2 = $rt_createArray(jl_String, 3);
     var$3 = var$2.data;
-    var$3[0] = $rt_s(89);
-    var$3[1] = $rt_s(90);
-    var$3[2] = $rt_s(91);
+    var$3[0] = $rt_s(91);
+    var$3[1] = $rt_s(92);
+    var$3[2] = $rt_s(93);
     var$3 = $rt_createArray(jl_String, 3);
     var$4 = var$3.data;
-    var$4[0] = $rt_s(92);
-    var$4[1] = $rt_s(93);
-    var$4[2] = $rt_s(94);
-    cgj_MultiChoiceOption__init_(var$5, $rt_s(95), 116, $rt_s(96), var$2, var$3, 2);
+    var$4[0] = $rt_s(94);
+    var$4[1] = $rt_s(95);
+    var$4[2] = $rt_s(96);
+    cgj_MultiChoiceOption__init_(var$5, $rt_s(97), 116, $rt_s(98), var$2, var$3, 2);
     $this.$trainingMethodOption = var$5;
-    $this.$lambdaOption = cgj_FloatOption__init_($rt_s(97), 97, $rt_s(98), 6.0, 1.0, 3.4028234663852886E38);
-    $this.$driftDetectionMethodOption = mo_ClassOption__init_($rt_s(99), 120, $rt_s(100), $rt_cls(mccd_ChangeDetector), $rt_s(101));
-    $this.$warningDetectionMethodOption = mo_ClassOption__init_($rt_s(102), 112, $rt_s(103), $rt_cls(mccd_ChangeDetector), $rt_s(104));
-    $this.$disableWeightedVote = cgj_FlagOption__init_($rt_s(105), 119, $rt_s(106));
-    $this.$disableDriftDetectionOption = cgj_FlagOption__init_($rt_s(107), 117, $rt_s(108));
-    $this.$disableBackgroundLearnerOption = cgj_FlagOption__init_($rt_s(109), 113, $rt_s(110));
+    $this.$lambdaOption = cgj_FloatOption__init_($rt_s(99), 97, $rt_s(100), 6.0, 1.0, 3.4028234663852886E38);
+    $this.$driftDetectionMethodOption = mo_ClassOption__init_($rt_s(101), 120, $rt_s(102), $rt_cls(mccd_ChangeDetector), $rt_s(103));
+    $this.$warningDetectionMethodOption = mo_ClassOption__init_($rt_s(104), 112, $rt_s(105), $rt_cls(mccd_ChangeDetector), $rt_s(106));
+    $this.$disableWeightedVote = cgj_FlagOption__init_($rt_s(107), 119, $rt_s(108));
+    $this.$disableDriftDetectionOption = cgj_FlagOption__init_($rt_s(109), 117, $rt_s(110));
+    $this.$disableBackgroundLearnerOption = cgj_FlagOption__init_($rt_s(111), 113, $rt_s(112));
     $this.$ensembleSizeOption.$setValue2(100);
     $this.$subspaceModeOption.$setChosenIndex(1);
     $this.$subspaceSizeOption.$setValue2(60);
@@ -6714,7 +6747,7 @@ function cgj_AbstractOption__init_0($this, $name, $cliChar, $purpose) {
         $this.$purpose = $purpose;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(111)).$append($name).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(113)).$append($name).$toString()));
 }
 function cgj_AbstractOption_getName($this) {
     return $this.$name2;
@@ -6723,7 +6756,7 @@ function cgj_AbstractOption_getCLIChar($this) {
     return $this.$cliChar;
 }
 function cgj_AbstractOption_resetToDefault($this) {
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(112)).$append($this.$getDefaultCLIString()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(114)).$append($this.$getDefaultCLIString()).$toString());
     $this.$setValueViaCLIString($this.$getDefaultCLIString());
 }
 function cgj_AbstractOption__clinit_() {
@@ -6757,12 +6790,12 @@ function cgj_FloatOption__init_0($this, $name, $cliChar, $purpose, $defaultVal, 
 }
 function cgj_FloatOption_setValue($this, $v) {
     if ($v < $this.$minVal)
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(113)).$append($this.$getName()).$append($rt_s(114)).$append7($this.$minVal).$append($rt_s(115)).$append7($v).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(115)).$append($this.$getName()).$append($rt_s(116)).$append7($this.$minVal).$append($rt_s(117)).$append7($v).$toString()));
     if ($v <= $this.$maxVal) {
         $this.$currentVal = $v;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(113)).$append($this.$getName()).$append($rt_s(116)).$append7($this.$maxVal).$append($rt_s(115)).$append7($v).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(115)).$append($this.$getName()).$append($rt_s(118)).$append7($this.$maxVal).$append($rt_s(117)).$append7($v).$toString()));
 }
 function cgj_FloatOption_getValue($this) {
     return $this.$currentVal;
@@ -6861,7 +6894,7 @@ function eu_Client_main($args) {
     var $client;
     eu_Client_$callClinit();
     $client = eu_Client__init_();
-    $client.$bind1($rt_s(117));
+    $client.$bind1($rt_s(119));
 }
 function eu_Client_getEvaluator($this) {
     return $this.$evaluator0;
@@ -6927,11 +6960,11 @@ function eu_Client__init_0($this) {
     $this.$binarySplits = 1;
     $this.$mapTitleToAuthor = ju_HashMap__init_();
     $this.$text = $rt_s(17);
-    $this.$value3 = $rt_s(118);
+    $this.$value3 = $rt_s(120);
     $this.$clickCount = 0;
-    $this.$mapTitleToAuthor.$put($rt_s(119), $rt_s(120));
     $this.$mapTitleToAuthor.$put($rt_s(121), $rt_s(122));
     $this.$mapTitleToAuthor.$put($rt_s(123), $rt_s(124));
+    $this.$mapTitleToAuthor.$put($rt_s(125), $rt_s(126));
 }
 function eu_Client_handleClick($this) {
     var var$1, var$2, $e, $$je;
@@ -6939,7 +6972,7 @@ function eu_Client_handleClick($this) {
         try {
             $this.$clickCount = $this.$clickCount + 1 | 0;
             if ($this.$chartPresent) {
-                eu_Client_destroyChartWithoutImport$js_body$_56("myChart");
+                eu_Client_destroyChartWithoutImport$js_body$_60("myChart");
                 $this.$chartPresent = 0;
             }
             b: {
@@ -6955,31 +6988,32 @@ function eu_Client_handleClick($this) {
                 $this.$kappaStatArr = ju_ArrayList__init_();
                 $this.$kappaTemporalStatArr = ju_ArrayList__init_();
                 $this.$kappaMStatArr = ju_ArrayList__init_();
+                $this.$optHMap = eu_OptionHashMap__init_();
                 var$1 = $this.$evaluator0;
                 var$2 = (-1);
                 switch (var$1.$hashCode()) {
                     case -919834197:
-                        if (!var$1.$equals($rt_s(125)))
+                        if (!var$1.$equals($rt_s(127)))
                             break b;
                         var$2 = 1;
                         break b;
                     case -919832730:
-                        if (!var$1.$equals($rt_s(126)))
+                        if (!var$1.$equals($rt_s(128)))
                             break b;
                         var$2 = 2;
                         break b;
                     case -846809699:
-                        if (!var$1.$equals($rt_s(127)))
+                        if (!var$1.$equals($rt_s(129)))
                             break b;
                         var$2 = 0;
                         break b;
                     case -444013904:
-                        if (!var$1.$equals($rt_s(128)))
+                        if (!var$1.$equals($rt_s(130)))
                             break b;
                         var$2 = 3;
                         break b;
                     case 3556498:
-                        if (!var$1.$equals($rt_s(129)))
+                        if (!var$1.$equals($rt_s(131)))
                             break b;
                         var$2 = 4;
                         break b;
@@ -6991,20 +7025,19 @@ function eu_Client_handleClick($this) {
                     case 0:
                         break;
                     case 1:
-                        if ($this.$prevEvaluator !== $this.$evaluator0)
-                            $this.$learner = mct_HoeffdingTree__init_(33554432, 0, 1, 1000000, 200, 0.0, 0.05000000074505806, 0, 0, 0, 0, 2, 0);
-                        $this.$runRBF();
+                        $this.$learner = mct_HoeffdingTree__init_(33554432, 0, 1, 1000000, 200, 0.0, 0.05000000074505806, 0, 0, 0, 0, 2, 0);
+                        $this.$populateOptions();
                         break c;
                     case 2:
-                        if ($this.$prevEvaluator !== $this.$evaluator0)
-                            $this.$learner = mcm_StreamingRandomPatches__init_();
-                        $this.$runRBF();
+                        $this.$learner = mcm_StreamingRandomPatches__init_();
+                        $this.$populateOptions();
                         break c;
                     case 3:
                         $this.$runWithoutStreamNumeric();
                         break c;
                     case 4:
-                        $this.$runTest();
+                        $this.$learner = mct_HoeffdingTree__init_(33554432, 0, 1, 1000000, 200, 0.0, 0.05000000074505806, 0, 0, 0, 0, 2, 0);
+                        $this.$populateOptions();
                         break c;
                     default:
                         $this.$runWithoutStream();
@@ -7023,9 +7056,94 @@ function eu_Client_handleClick($this) {
         }
         return;
     }
-    jl_System_out().$println1($rt_s(130));
+    jl_System_out().$println1($rt_s(132));
     $e.$printStackTrace(jl_System_err());
     $rt_throw($e);
+}
+function eu_Client_resetGUI($this) {
+    $this.$numInstanceArr = ju_ArrayList__init_();
+    $this.$accuracy = 0.0;
+    $this.$meanError = 0.0;
+    $this.$squareError = 0.0;
+    $this.$kappaStat = 0.0;
+    $this.$kappaTemporalStat = 0.0;
+    $this.$accuracyArr = ju_ArrayList__init_();
+    $this.$meanErrorArr = ju_ArrayList__init_();
+    $this.$squareErrorArr = ju_ArrayList__init_();
+    $this.$kappaStatArr = ju_ArrayList__init_();
+    $this.$kappaTemporalStatArr = ju_ArrayList__init_();
+    $this.$kappaMStatArr = ju_ArrayList__init_();
+    if ($this.$chartPresent) {
+        eu_Client_destroyChartWithoutImport$js_body$_60("myChart");
+        $this.$chartPresent = 0;
+    }
+}
+function eu_Client_handleClick2($this) {
+    eu_Client_resetGUI($this);
+    $this.$startRBF();
+}
+function eu_Client_getClickCount($this) {
+    return $this.$clickCount;
+}
+function eu_Client_populateOptions($this) {
+    var var$1, $i;
+    $this.$learner.$prepareForUse();
+    $this.$optHMap = eu_OptionHashMap__init_();
+    $this.$arrOptions = $this.$learner.$getOptions().$getOptionArray();
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(133)).$append($this.$arrOptions.data[0].$getValueAsCLIString()).$toString());
+    $this.$optHMap = eu_OptionHashMap__init_0($this.$arrOptions);
+    $this.$optHMap.$iterator();
+    var$1 = $this.$optHMap.$iterator();
+    while (var$1.$hasNext()) {
+        $i = var$1.$next();
+        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(134)).$append($i.$option.$getValueAsCLIString()).$toString());
+    }
+    otft_Templates_update();
+}
+function eu_Client_startRBF($this) {
+    var $stream, $bClass, $numInstance, $isTesting, $counter, $j, $trainInst, $df, $temp, $temp2, $temp3, $temp4, var$13, var$14, var$15;
+    $this.$prevEvaluator = $this.$evaluator0;
+    $stream = msg_RandomRBFGenerator__init_(1, 1, 2, 10, 50);
+    $bClass = me_BasicClassificationPerformanceEvaluator__init_();
+    $stream.$prepareForUseImpl(mt_NullMonitor__init_(), null);
+    $numInstance = 100;
+    $isTesting = 1;
+    $counter = 0;
+    $this.$chartPresent = 1;
+    eu_Client_initLineGraphWithoutImport$js_body$_57("Accuracy");
+    $j = 0;
+    while ($j < $numInstance) {
+        $trainInst = $stream.$nextInstance();
+        if ($isTesting) {
+            $bClass.$addResult($trainInst, $this.$learner.$getVotesForInstance($trainInst));
+            $this.$learner.$correctlyClassifies($trainInst);
+        }
+        $counter = $counter + 1 | 0;
+        $df = jt_DecimalFormat__init_($rt_s(135));
+        if ($counter >= $this.$sampleFrequency) {
+            $counter = 0;
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(136)).$append7($bClass.$getFractionCorrectlyClassified() * 100.0).$toString());
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(137)).$append7($bClass.$getKappaStatistic()).$toString());
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(138)).$append7($bClass.$getKappaTemporalStatistic()).$toString());
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(139)).$append7($bClass.$getKappaMStatistic()).$toString());
+            $temp = $bClass.$getFractionCorrectlyClassified() * 100.0;
+            $temp2 = $bClass.$getKappaStatistic();
+            $temp3 = $bClass.$getKappaTemporalStatistic();
+            $temp4 = $bClass.$getKappaMStatistic();
+            $this.$accuracyArr.$add(jl_Double_valueOf($temp));
+            $this.$kappaStatArr.$add(jl_Double_valueOf($temp2));
+            $this.$kappaTemporalStatArr.$add(jl_Double_valueOf($temp3));
+            $this.$kappaMStatArr.$add(jl_Double_valueOf($temp4));
+            var$13 = $this.$numInstanceArr;
+            var$14 = $j + 1 | 0;
+            var$13.$add(jl_Integer_valueOf(var$14));
+            var$13 = jl_Integer_toString0(var$14);
+            var$15 = jl_Double_toString($temp);
+            eu_Client_updateLineGraphWithoutImport$js_body$_58($rt_ustr(var$13), $rt_ustr(var$15));
+        }
+        $this.$learner.$trainOnInstance0($trainInst);
+        $j = $j + 1 | 0;
+    }
 }
 function eu_Client_runWithoutStream($this) {
     var $r, $randomSeed, $testMathRandom, $attributes, var$5, $numAttributes, var$7, var$8, $nominalClassValues, $nominalClassAttName, $arrayAttribute, $i, var$13, $generateRandDouble, $informationStr, $numInstance, $multiInst, $numberSamplesCorrect, $numberSamples, $isTesting, $j, $arrayDoubles, $a, $multiInstHeader, $learner, $k, $trainInst;
@@ -7036,23 +7154,23 @@ function eu_Client_runWithoutStream($this) {
     jl_System_out().$println2($testMathRandom);
     $attributes = $rt_createArray(jl_String, 10);
     var$5 = $attributes.data;
-    var$5[0] = $rt_s(131);
-    var$5[1] = $rt_s(132);
-    var$5[2] = $rt_s(133);
-    var$5[3] = $rt_s(134);
-    var$5[4] = $rt_s(135);
-    var$5[5] = $rt_s(136);
-    var$5[6] = $rt_s(137);
-    var$5[7] = $rt_s(138);
-    var$5[8] = $rt_s(139);
-    var$5[9] = $rt_s(140);
+    var$5[0] = $rt_s(140);
+    var$5[1] = $rt_s(141);
+    var$5[2] = $rt_s(142);
+    var$5[3] = $rt_s(143);
+    var$5[4] = $rt_s(144);
+    var$5[5] = $rt_s(145);
+    var$5[6] = $rt_s(146);
+    var$5[7] = $rt_s(147);
+    var$5[8] = $rt_s(148);
+    var$5[9] = $rt_s(149);
     $numAttributes = var$5.length;
     var$7 = $rt_createArray(jl_String, 2);
     var$8 = var$7.data;
-    var$8[0] = $rt_s(141);
-    var$8[1] = $rt_s(142);
+    var$8[0] = $rt_s(150);
+    var$8[1] = $rt_s(151);
     $nominalClassValues = ju_Arrays_asList(var$7);
-    $nominalClassAttName = $rt_s(143);
+    $nominalClassAttName = $rt_s(152);
     $arrayAttribute = $rt_createArray(cylsi_Attribute, $numAttributes);
     $i = 0;
     while (true) {
@@ -7064,10 +7182,10 @@ function eu_Client_runWithoutStream($this) {
     }
     var$5 = $arrayAttribute.data;
     var$5[var$13] = cylsi_Attribute__init_0($nominalClassAttName, $nominalClassValues);
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(144)).$append8(var$5[var$13].$isNominal()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(153)).$append8(var$5[var$13].$isNominal()).$toString());
     $generateRandDouble = $r.$nextDouble() * 2.0;
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(145)).$append7($generateRandDouble).$append($rt_s(146)).$append7(jl_Math_floor($generateRandDouble)).$toString());
-    $informationStr = $rt_s(147);
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(154)).$append7($generateRandDouble).$append($rt_s(155)).$append7(jl_Math_floor($generateRandDouble)).$toString());
+    $informationStr = $rt_s(156);
     $numInstance = 100;
     $multiInst = cylsi_Instances__init_($informationStr, $arrayAttribute, $numInstance);
     $numberSamplesCorrect = 0;
@@ -7094,8 +7212,8 @@ function eu_Client_runWithoutStream($this) {
     }
     $multiInst.$setClassIndex(var$13);
     $multiInstHeader = cylsi_InstancesHeader__init_($multiInst);
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(148)).$append7($multiInst.$get2(2).$weight()).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(149)).$append1($multiInst.$numClasses()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(157)).$append7($multiInst.$get2(2).$weight()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(158)).$append1($multiInst.$numClasses()).$toString());
     $learner = mct_HoeffdingTree__init_(33554432, 0, 1, 1000000, 200, 0.0, 0.05000000074505806, 0, 0, 0, 0, 2, 0);
     $learner.$setModelContext($multiInstHeader);
     $k = 0;
@@ -7109,77 +7227,8 @@ function eu_Client_runWithoutStream($this) {
         $k = $k + 1 | 0;
     }
     $this.$accuracy = 100.0 * $numberSamplesCorrect / $numberSamples;
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(150)).$append7($this.$accuracy).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(159)).$append7($this.$accuracy).$toString());
     jl_System_out().$println1(cgj_StringUtils_doubleToString(4.7777777778, 2));
-}
-function eu_Client_runRBF($this) {
-    var $stream, $bClass, $iterator, var$4, $i, $numInstance, $numberSamplesCorrect, $numberSamples, $isTesting, $counter, $j, $trainInst, $df, $temp, $temp2, $temp3, $temp4, var$18, var$19;
-    $this.$prevEvaluator = $this.$evaluator0;
-    $stream = msg_RandomRBFGenerator__init_(1, 1, 2, 10, 50);
-    $bClass = me_BasicClassificationPerformanceEvaluator__init_();
-    $stream.$prepareForUseImpl(mt_NullMonitor__init_(), null);
-    $this.$learner.$prepareForUse();
-    $this.$arrOptions = $this.$learner.$getOptions().$getOptionArray();
-    $this.$optHMap = eu_OptionHashMap__init_0($this.$arrOptions);
-    $iterator = $this.$optHMap.$iterator();
-    var$4 = $this.$optHMap.$iterator();
-    while (var$4.$hasNext()) {
-        $i = var$4.$next();
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(151)).$append($i.$option.$getValueAsCLIString()).$toString());
-    }
-    while ($iterator.$hasNext()) {
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(152)).$append($iterator.$next().$option.$getValueAsCLIString()).$toString());
-    }
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(153)).$append($this.$arrOptions.data[0].$getValueAsCLIString()).$toString());
-    $this.$identifyOptionType();
-    $this.$learner.$setModelContext($stream.$getHeader());
-    $numInstance = 100;
-    $numberSamplesCorrect = 0;
-    $numberSamples = 0;
-    $isTesting = 1;
-    $counter = 0;
-    $this.$chartPresent = 1;
-    eu_Client_initLineGraphWithoutImport$js_body$_53("Accuracy");
-    $j = 0;
-    while ($j < $numInstance) {
-        $trainInst = $stream.$nextInstance();
-        if ($isTesting) {
-            $bClass.$addResult($trainInst, $this.$learner.$getVotesForInstance($trainInst));
-            if ($this.$learner.$correctlyClassifies($trainInst))
-                $numberSamplesCorrect = $numberSamplesCorrect + 1 | 0;
-        }
-        $numberSamples = $numberSamples + 1 | 0;
-        $counter = $counter + 1 | 0;
-        $df = jt_DecimalFormat__init_($rt_s(154));
-        if ($counter >= $this.$sampleFrequency) {
-            $counter = 0;
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(155)).$append7($bClass.$getFractionCorrectlyClassified() * 100.0).$toString());
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(156)).$append7($bClass.$getKappaStatistic()).$toString());
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(157)).$append7($bClass.$getKappaTemporalStatistic()).$toString());
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(158)).$append7($bClass.$getKappaMStatistic()).$toString());
-            $temp = $bClass.$getFractionCorrectlyClassified() * 100.0;
-            $temp2 = $bClass.$getKappaStatistic();
-            $temp3 = $bClass.$getKappaTemporalStatistic();
-            $temp4 = $bClass.$getKappaMStatistic();
-            $this.$accuracyArr.$add(jl_Double_valueOf($temp));
-            $this.$kappaStatArr.$add(jl_Double_valueOf($temp2));
-            $this.$kappaTemporalStatArr.$add(jl_Double_valueOf($temp3));
-            $this.$kappaMStatArr.$add(jl_Double_valueOf($temp4));
-            var$4 = $this.$numInstanceArr;
-            var$18 = $j + 1 | 0;
-            var$4.$add(jl_Integer_valueOf(var$18));
-            var$4 = jl_Integer_toString0(var$18);
-            var$19 = jl_Double_toString($temp);
-            eu_Client_updateLineGraphWithoutImport$js_body$_54($rt_ustr(var$4), $rt_ustr(var$19));
-        }
-        $this.$learner.$trainOnInstance0($trainInst);
-        $j = $j + 1 | 0;
-    }
-    $this.$accuracy = 100.0 * $numberSamplesCorrect / $numberSamples;
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(150)).$append7($this.$accuracy).$toString());
-    $this.$kappaStat = $bClass.$getKappaStatistic() * 100.0;
-    $this.$kappaTemporalStat = $bClass.$getKappaTemporalStatistic() * 100.0;
-    $this.$kappaMStat = $bClass.$getKappaMStatistic() * 100.0;
 }
 function eu_Client_runWithoutStreamNumeric($this) {
     var $bEval, $r, $randomSeed, $testMathRandom, $attributes, var$6, $numAttributes, var$8, var$9, $arrayAttribute, $i, var$12, var$13, var$14, $generateRandDouble, $informationStr, $numInstance, $multiInst, $isTesting, $j, $arrayDoubles, $a, $multiInstHeader, $learner, $counter, $trainInst, $temp, $temp2;
@@ -7191,21 +7240,21 @@ function eu_Client_runWithoutStreamNumeric($this) {
     jl_System_out().$println2($testMathRandom);
     $attributes = $rt_createArray(jl_String, 10);
     var$6 = $attributes.data;
-    var$6[0] = $rt_s(131);
-    var$6[1] = $rt_s(132);
-    var$6[2] = $rt_s(133);
-    var$6[3] = $rt_s(134);
-    var$6[4] = $rt_s(135);
-    var$6[5] = $rt_s(136);
-    var$6[6] = $rt_s(137);
-    var$6[7] = $rt_s(138);
-    var$6[8] = $rt_s(139);
-    var$6[9] = $rt_s(140);
+    var$6[0] = $rt_s(140);
+    var$6[1] = $rt_s(141);
+    var$6[2] = $rt_s(142);
+    var$6[3] = $rt_s(143);
+    var$6[4] = $rt_s(144);
+    var$6[5] = $rt_s(145);
+    var$6[6] = $rt_s(146);
+    var$6[7] = $rt_s(147);
+    var$6[8] = $rt_s(148);
+    var$6[9] = $rt_s(149);
     $numAttributes = var$6.length;
     var$8 = $rt_createArray(jl_String, 2);
     var$9 = var$8.data;
-    var$9[0] = $rt_s(141);
-    var$9[1] = $rt_s(142);
+    var$9[0] = $rt_s(150);
+    var$9[1] = $rt_s(151);
     ju_Arrays_asList(var$8);
     $arrayAttribute = $rt_createArray(cylsi_Attribute, $numAttributes);
     $i = 0;
@@ -7215,12 +7264,12 @@ function eu_Client_runWithoutStreamNumeric($this) {
     }
     var$6 = $arrayAttribute.data;
     var$12 = jl_System_out();
-    var$13 = jl_StringBuilder__init_().$append($rt_s(159));
+    var$13 = jl_StringBuilder__init_().$append($rt_s(160));
     var$14 = $numAttributes - 1 | 0;
     var$12.$println1(var$13.$append8(var$6[var$14].$isNumeric()).$toString());
     $generateRandDouble = $r.$nextDouble() * 2.0;
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(145)).$append7($generateRandDouble).$append($rt_s(146)).$append7(jl_Math_floor($generateRandDouble)).$toString());
-    $informationStr = $rt_s(147);
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(154)).$append7($generateRandDouble).$append($rt_s(155)).$append7(jl_Math_floor($generateRandDouble)).$toString());
+    $informationStr = $rt_s(156);
     $numInstance = 100;
     $multiInst = cylsi_Instances__init_($informationStr, $arrayAttribute, $numInstance);
     $isTesting = 1;
@@ -7245,8 +7294,8 @@ function eu_Client_runWithoutStreamNumeric($this) {
     }
     $multiInst.$setClassIndex(var$14);
     $multiInstHeader = cylsi_InstancesHeader__init_($multiInst);
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(148)).$append7($multiInst.$get2(2).$weight()).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(149)).$append1($multiInst.$numClasses()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(157)).$append7($multiInst.$get2(2).$weight()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(158)).$append1($multiInst.$numClasses()).$toString());
     $learner = mct_HoeffdingTree__init_(33554432, 0, 1, 1000000, 200, 0.0, 0.05000000074505806, 0, 0, 0, 0, 2, 0);
     $learner.$setModelContext($multiInstHeader);
     $counter = 0;
@@ -7259,8 +7308,8 @@ function eu_Client_runWithoutStreamNumeric($this) {
             $counter = $counter + 1 | 0;
             if ($counter >= $this.$sampleFrequency) {
                 $counter = 0;
-                jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(160)).$append7($bEval.$getMeanError()).$toString());
-                jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(161)).$append7($bEval.$getSquareError()).$toString());
+                jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(161)).$append7($bEval.$getMeanError()).$toString());
+                jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(162)).$append7($bEval.$getSquareError()).$toString());
                 $temp = $bEval.$getMeanError();
                 $temp2 = $bEval.$getSquareError();
                 $this.$meanErrorArr.$add(jl_Double_valueOf($temp));
@@ -7272,54 +7321,18 @@ function eu_Client_runWithoutStreamNumeric($this) {
         $j = $j + 1 | 0;
     }
     $this.$meanError = $bEval.$getMeanError();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(162)).$append7($this.$meanError).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(163)).$append($this.$numInstanceArr.$toString()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(163)).$append7($this.$meanError).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(164)).$append($this.$numInstanceArr.$toString()).$toString());
     var$12 = $this.$numInstanceArr.$toString();
     var$13 = $this.$meanErrorArr.$toString();
-    eu_Client_plotLineGraphWithInp$js_body$_50($rt_ustr(var$12), $rt_ustr(var$13), "Mean Error");
+    eu_Client_plotLineGraphWithInp$js_body$_54($rt_ustr(var$12), $rt_ustr(var$13), "Mean Error");
     $this.$squareError = $bEval.$getSquareError();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(164)).$append7($this.$squareError).$toString());
-}
-function eu_Client_identifyOptionType($this) {
-    var $i, $a;
-    $i = 0;
-    while ($i < $this.$arrOptions.data.length) {
-        $this.$optionsNames.$add($this.$arrOptions.data[$i].$getName());
-        $this.$optionsTypes.$add(jl_Object_getClass($this.$arrOptions.data[$i]).$getSimpleName());
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(165)).$append($this.$optionsTypes.$get($i)).$append($rt_s(166)).$toString());
-        if ($this.$arrOptions.data[$i] instanceof cgj_MultiChoiceOption) {
-            $this.$arrMultiChoice.$add($this.$arrOptions.data[$i]);
-            $this.$mpMultiChoice.$put(jl_Integer_valueOf($i), $this.$arrOptions.data[$i]);
-            $this.$mpStrMultiChoice.$put(jl_Integer_valueOf($i), $this.$arrOptions.data[$i].$getOptionLabels());
-            $a = $this.$arrOptions.data[$i].$getOptionLabels();
-            $this.$valuePos.$add(eu_ValuePosition__init_($a, $i));
-        } else if ($this.$arrOptions.data[$i] instanceof mo_ClassOption) {
-            $this.$arrClass.$add($this.$arrOptions.data[$i]);
-            $this.$mpStrClass.$put(jl_Integer_valueOf($i), $this.$arrOptions.data[$i].$getListClasses().$toArray($rt_createArray(jl_String, 0)));
-        }
-        $i = $i + 1 | 0;
-    }
-}
-function eu_Client_runTest($this) {
-    var $htTest, $required, $requiredType, var$4, $entry;
-    jl_System_out().$println1($rt_s(167));
-    $htTest = $rt_cls(mcca_GaussianNumericAttributeClassObserver);
-    $required = $rt_cls(mcca_NumericAttributeClassObserver);
-    $requiredType = $rt_cls(mcca_NumericAttributeClassObserver);
-    var$4 = $this.$myMap.$entrySet().$iterator();
-    while (var$4.$hasNext()) {
-        $entry = var$4.$next();
-        jl_System_out().$println1($entry.$getValue1());
-    }
-    jl_System_out().$println1($this.$myMap.$get1($rt_s(168)));
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(169)).$append8($required.$isAssignableFrom($htTest)).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(170)).$append(mo_ClassOption_getListClasses($requiredType).$toString()).$toString());
-    mo_ClassOption_helloWorld();
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(165)).$append7($this.$squareError).$toString());
 }
 function eu_Client__clinit_() {
-    eu_Client_toastMessage = $rt_s(171);
+    eu_Client_toastMessage = $rt_s(166);
 }
-function eu_Client_plotLineGraphWithInp$js_body$_50(var$1, var$2, var$3) {
+function eu_Client_plotLineGraphWithInp$js_body$_54(var$1, var$2, var$3) {
     (import('https://cdn.jsdelivr.net/npm/chart.js')).then(function({ default : chartJs }) {
         const addedXDataSet = JSON.parse(var$1);
         const addedYDataSet = JSON.parse(var$2);
@@ -7328,14 +7341,14 @@ function eu_Client_plotLineGraphWithInp$js_body$_50(var$1, var$2, var$3) {
         new Chart(ctx, { type : 'line', data : { labels : addedXDataSet, datasets : [{ label : var$3, data : addedYDataSet, borderWidth : 1 }] }, options : { scales : { y : { beginAtZero : true } } } });
     });
 }
-function eu_Client_initLineGraphWithoutImport$js_body$_53(var$1) {
+function eu_Client_initLineGraphWithoutImport$js_body$_57(var$1) {
     var addedXDataSet = [];
     const addedYDataSet = [];
     console.log('new data is: ' + addedXDataSet);
     const ctx = document.getElementById('myChart');
     new Chart(ctx, { type : 'line', data : { labels : addedXDataSet, datasets : [{ label : var$1, data : addedYDataSet, borderWidth : 1 }] }, options : { scales : { y : { beginAtZero : true } } } });
 }
-function eu_Client_updateLineGraphWithoutImport$js_body$_54(var$1, var$2) {
+function eu_Client_updateLineGraphWithoutImport$js_body$_58(var$1, var$2) {
     const yAxisParse = JSON.parse(var$2);
     const xAxisParse = JSON.parse(var$1);
     const ctx = Chart.getChart('myChart');
@@ -7346,7 +7359,7 @@ function eu_Client_updateLineGraphWithoutImport$js_body$_54(var$1, var$2) {
     });
     ctx.update();
 }
-function eu_Client_destroyChartWithoutImport$js_body$_56(var$1) {
+function eu_Client_destroyChartWithoutImport$js_body$_60(var$1) {
     const chart = Chart.getChart(var$1);
     console.log('Destroying chart' + chart);
     if (chart) {
@@ -7397,7 +7410,7 @@ function otcit_DateTimeZone__init_0($this, $id) {
         $this.$iID = $id;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(172)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(167)));
 }
 function otcit_DateTimeZone_getID($this) {
     return $this.$iID;
@@ -7479,7 +7492,7 @@ function otcit_StorableDateTimeZone_read($id, $text) {
         }
         return otcit_DateTimeZoneBuilder$PrecalculatedZone_readZone($id, $flow);
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(173)).$append1($type).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(168)).$append1($type).$toString()));
 }
 function ju_Hashtable$HashIterator() {
     var a = this; jl_Object.call(a);
@@ -7955,7 +7968,7 @@ function jnc_CharsetEncoder_checkReplacement($this, $replacement) {
         if (var$2 && var$2 >= $this.$maxBytesPerChar)
             return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(174)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(169)));
 }
 function jnc_CharsetEncoder_onMalformedInput($this, $newAction) {
     if ($newAction !== null) {
@@ -7963,7 +7976,7 @@ function jnc_CharsetEncoder_onMalformedInput($this, $newAction) {
         $this.$implOnMalformedInput($newAction);
         return $this;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(175)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(170)));
 }
 function jnc_CharsetEncoder_implOnMalformedInput($this, $newAction) {
     return;
@@ -7974,7 +7987,7 @@ function jnc_CharsetEncoder_onUnmappableCharacter($this, $newAction) {
         $this.$implOnUnmappableCharacter($newAction);
         return $this;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(175)));
+    $rt_throw(jl_IllegalArgumentException__init_0($rt_s(170)));
 }
 function jnc_CharsetEncoder_implOnUnmappableCharacter($this, $newAction) {
     return;
@@ -8082,10 +8095,10 @@ function me_BasicClassificationPerformanceEvaluator__init_() {
 }
 function me_BasicClassificationPerformanceEvaluator__init_0($this) {
     mo_AbstractOptionHandler__init_0($this);
-    $this.$precisionRecallOutputOption = cgj_FlagOption__init_($rt_s(176), 111, $rt_s(177));
-    $this.$precisionPerClassOption = cgj_FlagOption__init_($rt_s(178), 112, $rt_s(179));
-    $this.$recallPerClassOption = cgj_FlagOption__init_($rt_s(180), 114, $rt_s(181));
-    $this.$f1PerClassOption = cgj_FlagOption__init_($rt_s(182), 102, $rt_s(183));
+    $this.$precisionRecallOutputOption = cgj_FlagOption__init_($rt_s(171), 111, $rt_s(172));
+    $this.$precisionPerClassOption = cgj_FlagOption__init_($rt_s(173), 112, $rt_s(174));
+    $this.$recallPerClassOption = cgj_FlagOption__init_($rt_s(175), 114, $rt_s(176));
+    $this.$f1PerClassOption = cgj_FlagOption__init_($rt_s(177), 102, $rt_s(178));
 }
 function me_BasicClassificationPerformanceEvaluator_reset($this) {
     $this.$reset($this.$numClasses0);
@@ -8172,13 +8185,13 @@ function me_BasicClassificationPerformanceEvaluator_getMajorityClass($this) {
 function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($this) {
     var $measurements, $i, var$3, var$4, $result;
     $measurements = ju_ArrayList__init_();
-    $measurements.$add(mc_Measurement__init_($rt_s(184), $this.$getTotalWeightObserved()));
-    $measurements.$add(mc_Measurement__init_($rt_s(185), $this.$getFractionCorrectlyClassified() * 100.0));
-    $measurements.$add(mc_Measurement__init_($rt_s(186), $this.$getKappaStatistic() * 100.0));
-    $measurements.$add(mc_Measurement__init_($rt_s(187), $this.$getKappaTemporalStatistic() * 100.0));
-    $measurements.$add(mc_Measurement__init_($rt_s(188), $this.$getKappaMStatistic() * 100.0));
+    $measurements.$add(mc_Measurement__init_($rt_s(179), $this.$getTotalWeightObserved()));
+    $measurements.$add(mc_Measurement__init_($rt_s(180), $this.$getFractionCorrectlyClassified() * 100.0));
+    $measurements.$add(mc_Measurement__init_($rt_s(181), $this.$getKappaStatistic() * 100.0));
+    $measurements.$add(mc_Measurement__init_($rt_s(182), $this.$getKappaTemporalStatistic() * 100.0));
+    $measurements.$add(mc_Measurement__init_($rt_s(183), $this.$getKappaMStatistic() * 100.0));
     if ($this.$precisionRecallOutputOption.$isSet())
-        $measurements.$add(mc_Measurement__init_($rt_s(189), $this.$getF1Statistic() * 100.0));
+        $measurements.$add(mc_Measurement__init_($rt_s(184), $this.$getF1Statistic() * 100.0));
     a: {
         if ($this.$f1PerClassOption.$isSet()) {
             $i = 0;
@@ -8186,7 +8199,7 @@ function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($
                 if ($i >= $this.$numClasses0)
                     break a;
                 var$3 = new mc_Measurement;
-                var$4 = jl_StringBuilder__init_().$append($rt_s(190)).$append1($i).$append($rt_s(191)).$toString();
+                var$4 = jl_StringBuilder__init_().$append($rt_s(185)).$append1($i).$append($rt_s(186)).$toString();
                 mc_Measurement__init_0(var$3, var$4, 100.0 * $this.$getF1Statistic0($i));
                 $measurements.$add(var$3);
                 $i = $i + 1 | 0;
@@ -8194,7 +8207,7 @@ function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($
         }
     }
     if ($this.$precisionRecallOutputOption.$isSet())
-        $measurements.$add(mc_Measurement__init_($rt_s(192), $this.$getPrecisionStatistic() * 100.0));
+        $measurements.$add(mc_Measurement__init_($rt_s(187), $this.$getPrecisionStatistic() * 100.0));
     b: {
         if ($this.$precisionPerClassOption.$isSet()) {
             $i = 0;
@@ -8202,7 +8215,7 @@ function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($
                 if ($i >= $this.$numClasses0)
                     break b;
                 var$3 = new mc_Measurement;
-                var$4 = jl_StringBuilder__init_().$append($rt_s(193)).$append1($i).$append($rt_s(191)).$toString();
+                var$4 = jl_StringBuilder__init_().$append($rt_s(188)).$append1($i).$append($rt_s(186)).$toString();
                 mc_Measurement__init_0(var$3, var$4, 100.0 * $this.$getPrecisionStatistic0($i));
                 $measurements.$add(var$3);
                 $i = $i + 1 | 0;
@@ -8210,7 +8223,7 @@ function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($
         }
     }
     if ($this.$precisionRecallOutputOption.$isSet())
-        $measurements.$add(mc_Measurement__init_($rt_s(194), $this.$getRecallStatistic() * 100.0));
+        $measurements.$add(mc_Measurement__init_($rt_s(189), $this.$getRecallStatistic() * 100.0));
     c: {
         if ($this.$recallPerClassOption.$isSet()) {
             $i = 0;
@@ -8218,7 +8231,7 @@ function me_BasicClassificationPerformanceEvaluator_getPerformanceMeasurements($
                 if ($i >= $this.$numClasses0)
                     break c;
                 var$3 = new mc_Measurement;
-                var$4 = jl_StringBuilder__init_().$append($rt_s(195)).$append1($i).$append($rt_s(191)).$toString();
+                var$4 = jl_StringBuilder__init_().$append($rt_s(190)).$append1($i).$append($rt_s(186)).$toString();
                 mc_Measurement__init_0(var$3, var$4, 100.0 * $this.$getRecallStatistic0($i));
                 $measurements.$add(var$3);
                 $i = $i + 1 | 0;
@@ -8339,7 +8352,7 @@ function mcca_VFMLNumericAttributeClassObserver__init_() {
 function mcca_VFMLNumericAttributeClassObserver__init_0($this) {
     mo_AbstractOptionHandler__init_0($this);
     $this.$binList = ju_ArrayList__init_();
-    $this.$numBinsOption = cgj_IntOption__init_0($rt_s(196), 110, $rt_s(197), 10, 1, 2147483647);
+    $this.$numBinsOption = cgj_IntOption__init_0($rt_s(191), 110, $rt_s(192), 10, 1, 2147483647);
 }
 function mcca_VFMLNumericAttributeClassObserver_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -8793,17 +8806,19 @@ function otp_Platform_prepareNewInstance() {
     jl_NegativeArraySizeException[c] = jl_NegativeArraySizeException__init_0;
     otft_ContainerSlot[c] = otft_ContainerSlot__init_;
     ju_ArrayDeque[c] = ju_ArrayDeque__init_;
+    otft_Fragment$proxy$4_0_1[c] = otft_Fragment$proxy$4_0_1__init_;
     ju_LinkedList[c] = ju_LinkedList__init_1;
     otft_DomBuilder$Item[c] = otft_DomBuilder$Item__init_;
     jl_IllegalStateException[c] = jl_IllegalStateException__init_1;
     ju_NoSuchElementException[c] = ju_NoSuchElementException__init_0;
-    ju_Objects[c] = ju_Objects__init_0;
     ju_LinkedList$Entry[c] = ju_LinkedList$Entry__init_;
+    otft_DomComponentHandler$proxy$4_0_1[c] = otft_DomComponentHandler$proxy$4_0_1__init_;
     otfte_VariableImpl[c] = otfte_VariableImpl__init_0;
+    ju_Objects[c] = ju_Objects__init_0;
     eu_OptionAndLevel[c] = eu_OptionAndLevel__init_;
     cgj_Options[c] = cgj_Options__init_0;
-    mcm_StreamingRandomPatches[c] = mcm_StreamingRandomPatches__init_0;
     mct_HoeffdingTree[c] = mct_HoeffdingTree__init_0;
+    mcm_StreamingRandomPatches[c] = mcm_StreamingRandomPatches__init_0;
     mcca_GaussianNumericAttributeClassObserver[c] = mcca_GaussianNumericAttributeClassObserver__init_;
     mcca_NominalAttributeClassObserver[c] = mcca_NominalAttributeClassObserver__init_;
     mccs_InfoGainSplitCriterion[c] = mccs_InfoGainSplitCriterion__init_;
@@ -8833,18 +8848,18 @@ function otp_Platform_prepareNewInstance() {
     mcrcs_VarianceRatioSplitCriterion[c] = mcrcs_VarianceRatioSplitCriterion__init_;
     mcrcs_VRSplitCriterion[c] = mcrcs_VRSplitCriterion__init_;
     mccd_ADWINChangeDetector[c] = mccd_ADWINChangeDetector__init_;
+    me_BasicClassificationPerformanceEvaluator[c] = me_BasicClassificationPerformanceEvaluator__init_0;
+    mt_NullMonitor[c] = mt_NullMonitor__init_0;
+    jt_DecimalFormat[c] = jt_DecimalFormat__init_0;
     ju_Random[c] = ju_Random__init_1;
     cylsi_Attribute[c] = cylsi_Attribute__init_1;
     cylsi_Instances[c] = cylsi_Instances__init_0;
     cylsi_InstancesHeader[c] = cylsi_InstancesHeader__init_0;
     me_BasicRegressionPerformanceEvaluator[c] = me_BasicRegressionPerformanceEvaluator__init_0;
-    me_BasicClassificationPerformanceEvaluator[c] = me_BasicClassificationPerformanceEvaluator__init_0;
-    mt_NullMonitor[c] = mt_NullMonitor__init_0;
-    jt_DecimalFormat[c] = jt_DecimalFormat__init_0;
+    jt_DecimalFormatSymbols[c] = jt_DecimalFormatSymbols__init_;
     cylsi_InstanceInformation[c] = cylsi_InstanceInformation__init_;
     cylsi_DenseInstanceData[c] = cylsi_DenseInstanceData__init_;
     cgj_StringUtils[c] = cgj_StringUtils__init_;
-    jt_DecimalFormatSymbols[c] = jt_DecimalFormatSymbols__init_;
     cylsi_AttributesInformation[c] = cylsi_AttributesInformation__init_;
     ju_Properties[c] = ju_Properties__init_;
     ju_Hashtable[c] = ju_Hashtable__init_;
@@ -8854,12 +8869,12 @@ function otp_Platform_prepareNewInstance() {
     ju_Hashtable$1[c] = ju_Hashtable$1__init_;
     ju_Hashtable$2[c] = ju_Hashtable$2__init_;
     cylsi_MultiLabelPrediction[c] = cylsi_MultiLabelPrediction__init_0;
-    jl_StringBuffer[c] = jl_StringBuffer__init_0;
     jl_AssertionError[c] = jl_AssertionError__init_0;
     jt_DecimalFormatParser[c] = jt_DecimalFormatParser__init_;
-    mc_Utils[c] = mc_Utils__init_;
+    jl_StringBuffer[c] = jl_StringBuffer__init_0;
     mc_MiscUtils[c] = mc_MiscUtils__init_0;
     msg_RandomRBFGenerator$Centroid[c] = msg_RandomRBFGenerator$Centroid__init_;
+    mc_Utils[c] = mc_Utils__init_;
     jl_NumberFormatException[c] = jl_NumberFormatException__init_1;
     ji_IOException[c] = ji_IOException__init_;
     jl_IllegalMonitorStateException[c] = jl_IllegalMonitorStateException__init_0;
@@ -8917,9 +8932,12 @@ function otp_Platform_prepareNewInstance() {
     otcit_DateTimeZoneBuilder[c] = otcit_DateTimeZoneBuilder__init_;
     mccd_ADWIN[c] = mccd_ADWIN__init_;
     wc_Utils[c] = wc_Utils__init_;
-    mc_SizeOf[c] = mc_SizeOf__init_0;
     wc_Utils$1[c] = wc_Utils$1__init_;
     jl_ThreadLocal[c] = jl_ThreadLocal__init_;
+    ju_TreeSet[c] = ju_TreeSet__init_;
+    ju_TreeMap[c] = ju_TreeMap__init_0;
+    mc_Statistics[c] = mc_Statistics__init_0;
+    mc_SizeOf[c] = mc_SizeOf__init_0;
     sa_SizeOfAgent[c] = sa_SizeOfAgent__init_;
     ju_IdentityHashMap[c] = ju_IdentityHashMap__init_;
     ju_Stack[c] = ju_Stack__init_;
@@ -8929,13 +8947,10 @@ function otp_Platform_prepareNewInstance() {
     jl_ArrayIndexOutOfBoundsException[c] = jl_ArrayIndexOutOfBoundsException__init_1;
     jlr_Modifier[c] = jlr_Modifier__init_;
     jl_IllegalAccessException[c] = jl_IllegalAccessException__init_;
-    ju_TreeSet[c] = ju_TreeSet__init_;
     ju_EmptyStackException[c] = ju_EmptyStackException__init_;
-    ju_TreeMap[c] = ju_TreeMap__init_0;
-    jt_DateFormatElement$TrieNode[c] = jt_DateFormatElement$TrieNode__init_;
     otcir_Converter[c] = otcir_Converter__init_;
     otcir_Flags[c] = otcir_Flags__init_;
-    mc_Statistics[c] = mc_Statistics__init_0;
+    jt_DateFormatElement$TrieNode[c] = jt_DateFormatElement$TrieNode__init_;
     ju_Hashtable$3$iterator$lambda$_5_0[c] = ju_Hashtable$3$iterator$lambda$_5_0__init_;
 }
 function otp_Platform_newInstanceImpl(var$1) {
@@ -9079,7 +9094,7 @@ function mccd_ADWINChangeDetector__init_0() {
 }
 function mccd_ADWINChangeDetector__init_($this) {
     mccd_AbstractChangeDetector__init_0($this);
-    $this.$deltaAdwinOption = cgj_FloatOption__init_($rt_s(198), 97, $rt_s(199), 0.002, 0.0, 1.0);
+    $this.$deltaAdwinOption = cgj_FloatOption__init_($rt_s(193), 97, $rt_s(194), 0.002, 0.0, 1.0);
 }
 function mccd_ADWINChangeDetector_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -9140,9 +9155,9 @@ function jnc_CodingErrorAction__init_0($this, $name) {
     $this.$name3 = $name;
 }
 function jnc_CodingErrorAction__clinit_() {
-    jnc_CodingErrorAction_IGNORE = jnc_CodingErrorAction__init_($rt_s(200));
-    jnc_CodingErrorAction_REPLACE = jnc_CodingErrorAction__init_($rt_s(201));
-    jnc_CodingErrorAction_REPORT = jnc_CodingErrorAction__init_($rt_s(202));
+    jnc_CodingErrorAction_IGNORE = jnc_CodingErrorAction__init_($rt_s(195));
+    jnc_CodingErrorAction_REPLACE = jnc_CodingErrorAction__init_($rt_s(196));
+    jnc_CodingErrorAction_REPORT = jnc_CodingErrorAction__init_($rt_s(197));
 }
 function jl_Boolean() {
     jl_Object.call(this);
@@ -9183,7 +9198,7 @@ function jl_Boolean_compare($x, $y) {
 }
 function jl_Boolean_parseBoolean($s) {
     jl_Boolean_$callClinit();
-    return $s !== null && $s.$toLowerCase().$equals($rt_s(56)) ? 1 : 0;
+    return $s !== null && $s.$toLowerCase().$equals($rt_s(58)) ? 1 : 0;
 }
 function jl_Boolean_booleanValue($this) {
     return $this.$value4;
@@ -9194,7 +9209,7 @@ function jl_Boolean_valueOf($value) {
 }
 function jl_Boolean_toString($value) {
     jl_Boolean_$callClinit();
-    return !$value ? $rt_s(55) : $rt_s(56);
+    return !$value ? $rt_s(57) : $rt_s(58);
 }
 function jl_Boolean_toString0($this) {
     return jl_Boolean_toString($this.$value4);
@@ -9472,7 +9487,7 @@ function sa_Statistics__init_($this) {
     $this.$count0 = 0;
 }
 function sa_Statistics_toString($this) {
-    return jl_StringBuilder__init_().$append($rt_s(203)).$append1($this.$count0).$append($rt_s(204)).$append13($this.$total).$append($rt_s(205)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(198)).$append1($this.$count0).$append($rt_s(199)).$append13($this.$total).$append($rt_s(200)).$toString();
 }
 function mcca_GaussianNumericAttributeClassObserver() {
     var a = this; mo_AbstractOptionHandler.call(a);
@@ -9491,7 +9506,7 @@ function mcca_GaussianNumericAttributeClassObserver__init_($this) {
     $this.$minValueObservedPerClass = mc_DoubleVector__init_0();
     $this.$maxValueObservedPerClass = mc_DoubleVector__init_0();
     $this.$attValDistPerClass = mc_AutoExpandVector__init_();
-    $this.$numBinsOption0 = cgj_IntOption__init_0($rt_s(196), 110, $rt_s(197), 10, 1, 2147483647);
+    $this.$numBinsOption0 = cgj_IntOption__init_0($rt_s(191), 110, $rt_s(192), 10, 1, 2147483647);
 }
 function mcca_GaussianNumericAttributeClassObserver_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -9687,7 +9702,7 @@ function mccs_InfoGainSplitCriterion__init_0() {
 }
 function mccs_InfoGainSplitCriterion__init_($this) {
     mo_AbstractOptionHandler__init_0($this);
-    $this.$minBranchFracOption = cgj_FloatOption__init_($rt_s(206), 102, $rt_s(207), 0.01, 0.0, 0.5);
+    $this.$minBranchFracOption = cgj_FloatOption__init_($rt_s(201), 102, $rt_s(202), 0.01, 0.0, 0.5);
 }
 function mccs_InfoGainSplitCriterion_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -9794,7 +9809,7 @@ function otft_ValueChangeListener() {
 }
 function otft_ValueChangeListener$proxy$4_0_1() {
     jl_Object.call(this);
-    this.$proxyCapture021 = null;
+    this.$proxyCapture024 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_1__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_1();
@@ -9803,7 +9818,7 @@ function otft_ValueChangeListener$proxy$4_0_1__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_1_changed(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture021.$value1;
+    var$2 = var$0.$proxyCapture024.$value1;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$3[0] = var$1;
     var$2.$option.$setValueViaCLIString(var$3[0]);
@@ -9811,7 +9826,7 @@ function otft_ValueChangeListener$proxy$4_0_1_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_1__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture021 = var$1;
+    var$0.$proxyCapture024 = var$1;
 }
 function jt_NumberFormat() {
     var a = this; jt_Format.call(a);
@@ -10494,7 +10509,7 @@ function jt_DecimalFormat_applyRounding($this, $mantissa, $mantissaLength, $expo
             case 5:
                 if (Long_eq(Long_rem($mantissa, $rounding), Long_ZERO))
                     break a;
-                $rt_throw(jl_ArithmeticException__init_0($rt_s(208)));
+                $rt_throw(jl_ArithmeticException__init_0($rt_s(203)));
             case 6:
                 var$6 = Long_rem($mantissa, $rounding);
                 var$7 = Long_div($signedRounding, Long_fromInt(2));
@@ -10559,7 +10574,7 @@ function jt_DecimalFormat_applyRounding0($this, $mantissa, $mantissaLength, $exp
             case 5:
                 if (!$mantissa.$remainder($rounding).$equals(jm_BigInteger_ZERO))
                     break a;
-                $rt_throw(jl_ArithmeticException__init_0($rt_s(208)));
+                $rt_throw(jl_ArithmeticException__init_0($rt_s(203)));
             case 6:
                 if ($mantissa.$remainder($rounding).$equals($signedRounding.$divide(jm_BigInteger_valueOf(Long_fromInt(2))))) {
                     $mantissa = $mantissa.$divide($rounding).$multiply0($rounding);
@@ -10782,7 +10797,7 @@ function jt_DecimalFormat__clinit_() {
 }
 function otft_ValueChangeListener$proxy$4_0_0() {
     jl_Object.call(this);
-    this.$proxyCapture022 = null;
+    this.$proxyCapture025 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_0__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_0();
@@ -10791,7 +10806,7 @@ function otft_ValueChangeListener$proxy$4_0_0__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_0_changed(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture022;
+    var$2 = var$0.$proxyCapture025;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$3[0] = var$1;
     var$2.$setEvaluator(var$3[0]);
@@ -10799,7 +10814,7 @@ function otft_ValueChangeListener$proxy$4_0_0_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_0__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture022 = var$1;
+    var$0.$proxyCapture025 = var$1;
 }
 function jt_DecimalFormat$FormatField() {
 }
@@ -10894,7 +10909,7 @@ function mcrcs_SDRSplitCriterionAMRules_getRangeOfMerit($this, $preSplitDist) {
 }
 function otft_ValueChangeListener$proxy$4_0_5() {
     jl_Object.call(this);
-    this.$proxyCapture023 = null;
+    this.$proxyCapture026 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_5__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_5();
@@ -10903,7 +10918,7 @@ function otft_ValueChangeListener$proxy$4_0_5__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_5_changed(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture023.$value1;
+    var$2 = var$0.$proxyCapture026.$value1;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$3[0] = var$1;
     var$2.$option.$setValueViaCLIString(var$3[0]);
@@ -10911,7 +10926,7 @@ function otft_ValueChangeListener$proxy$4_0_5_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture023 = var$1;
+    var$0.$proxyCapture026 = var$1;
 }
 function cylsi_AttributesInformation() {
     var a = this; jl_Object.call(a);
@@ -10998,12 +11013,12 @@ function cylsi_AttributesInformation_locateIndex($this, $index) {
 }
 function cylsi_AttributesInformation_defaultNumericAttribute($this) {
     if ($this.$defaultNumericAttribute === null)
-        $this.$defaultNumericAttribute = cylsi_Attribute__init_($rt_s(209));
+        $this.$defaultNumericAttribute = cylsi_Attribute__init_($rt_s(204));
     return $this.$defaultNumericAttribute;
 }
 function otft_ValueChangeListener$proxy$4_0_4() {
     jl_Object.call(this);
-    this.$proxyCapture024 = null;
+    this.$proxyCapture027 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_4__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_4();
@@ -11012,7 +11027,7 @@ function otft_ValueChangeListener$proxy$4_0_4__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_4_changed(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture024.$value1;
+    var$2 = var$0.$proxyCapture027.$value1;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$3[0] = var$1;
     var$2.$option.$setValueViaCLIString(var$3[0]);
@@ -11020,11 +11035,11 @@ function otft_ValueChangeListener$proxy$4_0_4_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture024 = var$1;
+    var$0.$proxyCapture027 = var$1;
 }
 function otft_ValueChangeListener$proxy$4_0_3() {
     jl_Object.call(this);
-    this.$proxyCapture025 = null;
+    this.$proxyCapture028 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_3__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_3();
@@ -11033,7 +11048,7 @@ function otft_ValueChangeListener$proxy$4_0_3__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_3_changed(var$0, var$1) {
     var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture025.$value1;
+    var$2 = var$0.$proxyCapture028.$value1;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$4 = $rt_createArray(jl_Object, 1).data;
     var$4[0] = jl_Boolean_valueOf(var$1.$booleanValue());
@@ -11043,11 +11058,11 @@ function otft_ValueChangeListener$proxy$4_0_3_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_3__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture025 = var$1;
+    var$0.$proxyCapture028 = var$1;
 }
 function otft_ValueChangeListener$proxy$4_0_2() {
     jl_Object.call(this);
-    this.$proxyCapture026 = null;
+    this.$proxyCapture029 = null;
 }
 function otft_ValueChangeListener$proxy$4_0_2__init_(var_0) {
     var var_1 = new otft_ValueChangeListener$proxy$4_0_2();
@@ -11056,7 +11071,7 @@ function otft_ValueChangeListener$proxy$4_0_2__init_(var_0) {
 }
 function otft_ValueChangeListener$proxy$4_0_2_changed(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture026.$value1;
+    var$2 = var$0.$proxyCapture029.$value1;
     var$3 = $rt_createArray(jl_Object, 1).data;
     var$3[0] = var$1;
     var$2.$option.$setValueViaCLIString(var$3[0]);
@@ -11064,7 +11079,7 @@ function otft_ValueChangeListener$proxy$4_0_2_changed(var$0, var$1) {
 }
 function otft_ValueChangeListener$proxy$4_0_2__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture026 = var$1;
+    var$0.$proxyCapture029 = var$1;
 }
 function wc_RevisionHandler() {
 }
@@ -11092,7 +11107,6 @@ function otfce_BaseEventBinder$_init_$lambda$_0_0_handleEvent$exported$0(var$0, 
 function jl_Class() {
     var a = this; jl_Object.call(a);
     a.$name5 = null;
-    a.$simpleName = null;
     a.$platformClass = null;
     a.$declaredFields = null;
 }
@@ -11131,36 +11145,6 @@ function jl_Class_getName($this) {
     if ($this.$name5 === null)
         $this.$name5 = otp_Platform_getName($this.$platformClass);
     return $this.$name5;
-}
-function jl_Class_getSimpleName($this) {
-    var $name, var$2, $lastDollar, $lastDot;
-    $name = jl_Class_getSimpleNameCache($this);
-    if ($name === null) {
-        if ($this.$isArray()) {
-            var$2 = jl_StringBuilder__init_().$append($this.$getComponentType().$getSimpleName()).$append($rt_s(14)).$toString();
-            jl_Class_setSimpleNameCache($this, var$2);
-            return var$2;
-        }
-        $name = otp_Platform_getName($this.$platformClass);
-        $lastDollar = $name.$lastIndexOf(36);
-        if ($lastDollar == (-1)) {
-            $lastDot = $name.$lastIndexOf(46);
-            if ($lastDot != (-1))
-                $name = $name.$substring($lastDot + 1 | 0);
-        } else {
-            $name = $name.$substring($lastDollar + 1 | 0);
-            if ($name.$charAt(0) >= 48 && $name.$charAt(0) <= 57)
-                $name = $rt_s(17);
-        }
-        jl_Class_setSimpleNameCache($this, $name);
-    }
-    return $name;
-}
-function jl_Class_getSimpleNameCache($this) {
-    return $this.$simpleName;
-}
-function jl_Class_setSimpleNameCache($this, $value) {
-    $this.$simpleName = $value;
 }
 function jl_Class_isPrimitive($this) {
     return otp_Platform_isPrimitive($this.$platformClass);
@@ -11232,162 +11216,85 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jl_Number.$meta.fields = [];
-    jl_Object.$meta.fields = [
+    mc_DoubleVector.$meta.fields = [
         {
-            name : "monitor",
+            name : "array",
             modifiers : 0,
-            accessLevel : 0,
-            type : jl_Object$Monitor,
+            accessLevel : 2,
+            type : $rt_arraycls($rt_doublecls()),
             getter : null,
             setter : null
         }];
-    jt_DecimalFormat$MinusField.$meta.fields = [];
-    otcit_DateTimeZoneProvider$Score.$meta.fields = [
+    mc_AutoExpandVector.$meta.fields = [];
+    mccc_NumericAttributeBinaryTest.$meta.fields = [
         {
-            name : "tz",
+            name : "attIndex",
             modifiers : 0,
-            accessLevel : 0,
-            type : otcit_DateTimeZone,
+            accessLevel : 2,
+            type : $rt_intcls(),
             getter : null,
             setter : null
         }, {
-            name : "value",
+            name : "attValue",
             modifiers : 0,
-            accessLevel : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "equalsPassesTest",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mcti_IademNumericAttributeBinaryTest.$meta.fields = [];
+    mccc_NominalAttributeMultiwayTest.$meta.fields = [
+        {
+            name : "attIndex",
+            modifiers : 0,
+            accessLevel : 2,
             type : $rt_intcls(),
             getter : null,
             setter : null
         }];
-    jt_DecimalFormat$CurrencyField.$meta.fields = [];
-    jt_DecimalFormat$PerMillField.$meta.fields = [];
-    jt_DecimalFormat$TextField.$meta.fields = [
+    mccc_NominalAttributeBinaryTest.$meta.fields = [
         {
-            name : "text",
+            name : "attIndex",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attValue",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    mc_AbstractMOAObject.$meta.fields = [];
+    jl_Number.$meta.fields = [];
+    mccc_InstanceConditionalBinaryTest.$meta.fields = [];
+    jl_Enum.$meta.fields = [
+        {
+            name : "name",
             modifiers : 0,
             accessLevel : 1,
             type : jl_String,
             getter : null,
             setter : null
-        }];
-    jt_DecimalFormat$PercentField.$meta.fields = [];
-    eu_ValuePosition.$meta.fields = [
-        {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
         }, {
-            name : "position",
+            name : "ordinal",
             modifiers : 0,
             accessLevel : 1,
             type : $rt_intcls(),
             getter : null,
             setter : null
         }];
-    otft_Templates$RootComponent.$meta.fields = [
-        {
-            name : "inner",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_Component,
-            getter : null,
-            setter : null
-        }];
-    otft_AbstractComponent.$meta.fields = [
-        {
-            name : "slot",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_Slot,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$GeneralTimezone.$meta.fields = [];
-    jt_DateFormatElement$BaseTimezone.$meta.fields = [
-        {
-            name : "locale",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_Locale,
-            getter : null,
-            setter : null
-        }, {
-            name : "searchTrie",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jt_DateFormatElement$TrieNode,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement.$meta.fields = [];
-    mcca_GaussianNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "minValueObservedPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "maxValueObservedPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "attValDistPerClass",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "numBinsOption",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
-            getter : null,
-            setter : null
-        }];
-    mo_AbstractOptionHandler.$meta.fields = [
-        {
-            name : "config",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mo_OptionsHandler,
-            getter : null,
-            setter : null
-        }];
-    mc_AbstractMOAObject.$meta.fields = [];
-    jt_DateFormatElement$NumericHour.$meta.fields = [
-        {
-            name : "limit",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$Numeric.$meta.fields = [
-        {
-            name : "field",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "length",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
+    mccc_InstanceConditionalTest.$meta.fields = [];
     ju_ArrayList.$meta.fields = [
         {
             name : "array",
@@ -11404,6 +11311,16 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
+    jl_Object.$meta.fields = [
+        {
+            name : "monitor",
+            modifiers : 0,
+            accessLevel : 0,
+            type : jl_Object$Monitor,
+            getter : null,
+            setter : null
+        }];
+    ju_AbstractCollection.$meta.fields = [];
     ju_AbstractList.$meta.fields = [
         {
             name : "modCount",
@@ -11413,283 +11330,74 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    cgj_MultiChoiceOption.$meta.fields = [
+    jt_DecimalFormat$PerMillField.$meta.fields = [];
+    jt_DecimalFormat$CurrencyField.$meta.fields = [];
+    jt_DecimalFormat$MinusField.$meta.fields = [];
+    jt_DecimalFormat$PercentField.$meta.fields = [];
+    jt_DecimalFormat$TextField.$meta.fields = [
         {
-            name : "optionLabels",
+            name : "text",
             modifiers : 0,
-            accessLevel : 2,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "optionDescriptions",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "defaultOptionIndex",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "chosenOptionIndex",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
+            accessLevel : 1,
+            type : jl_String,
             getter : null,
             setter : null
         }];
-    otft_ValueChangeListener$proxy$4_0_1.$meta.fields = [
+    otcit_DateTimeZoneProvider$Score.$meta.fields = [
         {
-            name : "proxyCapture0",
+            name : "tz",
             modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    mcca_VFMLNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "binList",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }, {
-            name : "numBinsOption",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
-            getter : null,
-            setter : null
-        }];
-    mcca_NullAttributeClassObserver.$meta.fields = [];
-    mc_GaussianEstimator.$meta.fields = [
-        {
-            name : "weightSum",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "mean",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "varianceSum",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "NORMAL_CONSTANT",
-            modifiers : 516,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$SplitNode.$meta.fields = [
-        {
-            name : "splitTest",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mccc_InstanceConditionalTest,
-            getter : null,
-            setter : null
-        }, {
-            name : "children",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }];
-    jl_Long.$meta.fields = [
-        {
-            name : "TYPE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Class,
+            accessLevel : 0,
+            type : otcit_DateTimeZone,
             getter : null,
             setter : null
         }, {
             name : "value",
             modifiers : 0,
-            accessLevel : 1,
+            accessLevel : 0,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    mc_GreenwaldKhannaQuantileSummary$Tuple.$meta.fields = [
+        {
+            name : "v",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "g",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "delta",
+            modifiers : 0,
+            accessLevel : 3,
             type : $rt_longcls(),
             getter : null,
             setter : null
         }];
-    otfce_MouseBinder.$meta.fields = [];
-    otfcs_ForEachComponent.$meta.fields = [
+    mc_Measurement.$meta.fields = [
         {
-            name : "collection",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "elementVariable",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "indexVariable",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "body",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_Fragment,
-            getter : null,
-            setter : null
-        }, {
-            name : "childComponents",
-            modifiers : 0,
-            accessLevel : 1,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }, {
-            name : "computedCollection",
-            modifiers : 0,
-            accessLevel : 1,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$Year.$meta.fields = [
-        {
-            name : "field",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    mcti_IademGreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [];
-    cgj_FlagOption.$meta.fields = [
-        {
-            name : "isSet",
+            name : "name",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$FoundNode.$meta.fields = [
-        {
-            name : "node",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mct_HoeffdingTree$Node,
-            getter : null,
-            setter : null
-        }, {
-            name : "parent",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mct_HoeffdingTree$SplitNode,
-            getter : null,
-            setter : null
-        }, {
-            name : "parentBranch",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    otfch_ValueBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 0,
-            type : otjdh_HTMLInputElement,
+            type : jl_String,
             getter : null,
             setter : null
         }, {
             name : "value",
             modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$ActiveLearningNode.$meta.fields = [
-        {
-            name : "weightSeenAtLastSplitEvaluation",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "attributeObservers",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "isInitialized",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$LearningNodeNBAdaptive.$meta.fields = [
-        {
-            name : "mcCorrectWeight",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "nbCorrectWeight",
-            modifiers : 0,
             accessLevel : 2,
             type : $rt_doublecls(),
             getter : null,
             setter : null
         }];
-    otft_ValueChangeListener$proxy$4_0_5.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$InactiveLearningNode.$meta.fields = [];
     cylsi_Attribute.$meta.fields = [
         {
             name : "isNominal",
@@ -11731,187 +11439,6 @@ function jl_Class_createMetadata() {
             modifiers : 0,
             accessLevel : 2,
             type : ju_List,
-            getter : null,
-            setter : null
-        }];
-    otfch_TextComponent.$meta.fields = [
-        {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "textSlot",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_NodeHolder,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "cacheInitialized",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mcti_IademVFMLNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "binList",
-            modifiers : 0,
-            accessLevel : 2,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }, {
-            name : "classDist",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$LearningNodeNB.$meta.fields = [];
-    mcca_FIMTDDNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "root",
-            modifiers : 0,
-            accessLevel : 2,
-            type : mcca_FIMTDDNumericAttributeClassObserver$Node,
-            getter : null,
-            setter : null
-        }, {
-            name : "sumTotalLeft",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumTotalRight",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumSqTotalLeft",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "sumSqTotalRight",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "countRightTotal",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "countLeftTotal",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }];
-    otfch_CheckedChangeBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjdh_HTMLInputElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "listener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ValueChangeListener,
-            getter : null,
-            setter : null
-        }, {
-            name : "bound",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "nativeListener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjde_EventListener,
-            getter : null,
-            setter : null
-        }];
-    cgj_IntOption.$meta.fields = [
-        {
-            name : "currentVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "defaultVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "minVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "maxVal",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    cylsi_InstanceImpl.$meta.fields = [
-        {
-            name : "weight",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "instanceData",
-            modifiers : 0,
-            accessLevel : 2,
-            type : cylsi_InstanceData,
-            getter : null,
-            setter : null
-        }, {
-            name : "instanceHeader",
-            modifiers : 0,
-            accessLevel : 2,
-            type : cylsi_InstancesHeader,
             getter : null,
             setter : null
         }];
@@ -11987,83 +11514,52 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mcca_VFMLNumericAttributeClassObserver$Bin.$meta.fields = [
+    jl_String.$meta.fields = [
         {
-            name : "lowerBound",
-            modifiers : 0,
+            name : "CASE_INSENSITIVE_ORDER",
+            modifiers : 516,
             accessLevel : 3,
-            type : $rt_doublecls(),
+            type : ju_Comparator,
             getter : null,
             setter : null
         }, {
-            name : "upperBound",
+            name : "characters",
             modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
+            accessLevel : 1,
+            type : $rt_arraycls($rt_charcls()),
             getter : null,
             setter : null
         }, {
-            name : "classWeights",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }, {
-            name : "boundaryClass",
-            modifiers : 0,
-            accessLevel : 3,
+            name : "hashCode",
+            modifiers : 12288,
+            accessLevel : 1,
             type : $rt_intcls(),
             getter : null,
             setter : null
-        }, {
-            name : "boundaryWeight",
-            modifiers : 0,
+        }];
+    jl_Double.$meta.fields = [
+        {
+            name : "NaN",
+            modifiers : 516,
             accessLevel : 3,
             type : $rt_doublecls(),
             getter : null,
             setter : null
         }, {
-            name : "this$0",
-            modifiers : 36,
-            accessLevel : 0,
-            type : mcca_VFMLNumericAttributeClassObserver,
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
             getter : null,
             setter : null
-        }];
-    jt_DateFormatElement$ConstantText.$meta.fields = [
-        {
-            name : "textConstant",
+        }, {
+            name : "value",
             modifiers : 0,
             accessLevel : 1,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
-    mcca_NominalAttributeClassObserver.$meta.fields = [
-        {
-            name : "totalWeightObserved",
-            modifiers : 0,
-            accessLevel : 2,
             type : $rt_doublecls(),
             getter : null,
             setter : null
-        }, {
-            name : "missingWeightObserved",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "attValDistPerClass",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mc_AutoExpandVector,
-            getter : null,
-            setter : null
         }];
-    jt_DateFormatElement$NumericWeekday.$meta.fields = [];
     jlr_Field.$meta.fields = [
         {
             name : "declaringClass",
@@ -12115,6 +11611,682 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
+    jlr_AccessibleObject.$meta.fields = [];
+    cylsi_InstanceImpl.$meta.fields = [
+        {
+            name : "weight",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "instanceData",
+            modifiers : 0,
+            accessLevel : 2,
+            type : cylsi_InstanceData,
+            getter : null,
+            setter : null
+        }, {
+            name : "instanceHeader",
+            modifiers : 0,
+            accessLevel : 2,
+            type : cylsi_InstancesHeader,
+            getter : null,
+            setter : null
+        }];
+    otfce_MouseBinder.$meta.fields = [];
+    otfch_CheckedChangeBinder.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjdh_HTMLInputElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "listener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ValueChangeListener,
+            getter : null,
+            setter : null
+        }, {
+            name : "bound",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "nativeListener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjde_EventListener,
+            getter : null,
+            setter : null
+        }];
+    otfcs_ForEachComponent.$meta.fields = [
+        {
+            name : "collection",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "elementVariable",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "indexVariable",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "body",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_Fragment,
+            getter : null,
+            setter : null
+        }, {
+            name : "childComponents",
+            modifiers : 0,
+            accessLevel : 1,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }, {
+            name : "computedCollection",
+            modifiers : 0,
+            accessLevel : 1,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_0.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }];
+    mcca_GaussianNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "minValueObservedPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "maxValueObservedPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "attValDistPerClass",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "numBinsOption",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_IntOption,
+            getter : null,
+            setter : null
+        }];
+    otfch_TextComponent.$meta.fields = [
+        {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "textSlot",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_NodeHolder,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "cacheInitialized",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$MonthText.$meta.fields = [
+        {
+            name : "months",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "shortMonths",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "abbreviated",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_1.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    mcti_IademGaussianNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "valueCount",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "classDist",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$WeekdayText.$meta.fields = [
+        {
+            name : "weeks",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "shortWeeks",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "abbreviated",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$Rfc822Timezone.$meta.fields = [];
+    otft_ValueChangeListener$proxy$4_0_2.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    jl_Boolean.$meta.fields = [
+        {
+            name : "TRUE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Boolean,
+            getter : null,
+            setter : null
+        }, {
+            name : "FALSE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Boolean,
+            getter : null,
+            setter : null
+        }, {
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$NumericWeekday.$meta.fields = [];
+    mcrca_FIMTDDNumericAttributeClassLimitObserver.$meta.fields = [
+        {
+            name : "maxNodesOption",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_IntOption,
+            getter : null,
+            setter : null
+        }];
+    otfch_ValueBinder.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 0,
+            type : otjdh_HTMLInputElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }];
+    mcca_FIMTDDNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "root",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mcca_FIMTDDNumericAttributeClassObserver$Node,
+            getter : null,
+            setter : null
+        }, {
+            name : "sumTotalLeft",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumTotalRight",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumSqTotalLeft",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "sumSqTotalRight",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "countRightTotal",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "countLeftTotal",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    cgj_IntOption.$meta.fields = [
+        {
+            name : "currentVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "defaultVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "minVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "maxVal",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$ConstantText.$meta.fields = [
+        {
+            name : "textConstant",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$FoundNode.$meta.fields = [
+        {
+            name : "node",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mct_HoeffdingTree$Node,
+            getter : null,
+            setter : null
+        }, {
+            name : "parent",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mct_HoeffdingTree$SplitNode,
+            getter : null,
+            setter : null
+        }, {
+            name : "parentBranch",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    otfca_ComputedAttribute.$meta.fields = [
+        {
+            name : "element",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otjdh_HTMLElement,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : juf_Supplier,
+            getter : null,
+            setter : null
+        }, {
+            name : "cachedValue",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "name",
+            modifiers : 0,
+            accessLevel : 1,
+            type : jl_String,
+            getter : null,
+            setter : null
+        }];
+    cgj_FlagOption.$meta.fields = [
+        {
+            name : "isSet",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mcca_VFMLNumericAttributeClassObserver$Bin.$meta.fields = [
+        {
+            name : "lowerBound",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "upperBound",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "classWeights",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryClass",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "boundaryWeight",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "this$0",
+            modifiers : 36,
+            accessLevel : 0,
+            type : mcca_VFMLNumericAttributeClassObserver,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$NumericHour.$meta.fields = [
+        {
+            name : "limit",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    mcc_AttributeSplitSuggestion.$meta.fields = [
+        {
+            name : "splitTest",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mccc_InstanceConditionalTest,
+            getter : null,
+            setter : null
+        }, {
+            name : "resultingClassDistributions",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_arraycls($rt_arraycls($rt_doublecls())),
+            getter : null,
+            setter : null
+        }, {
+            name : "merit",
+            modifiers : 0,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_5.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    mcti_IademVFMLNumericAttributeClassObserver.$meta.fields = [
+        {
+            name : "binList",
+            modifiers : 0,
+            accessLevel : 2,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }, {
+            name : "classDist",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_DoubleVector,
+            getter : null,
+            setter : null
+        }];
+    otft_ValueChangeListener$proxy$4_0_4.$meta.fields = [
+        {
+            name : "proxyCapture0",
+            modifiers : 0,
+            accessLevel : 3,
+            type : otfte_VariableImpl,
+            getter : null,
+            setter : null
+        }];
+    mcca_NullAttributeClassObserver.$meta.fields = [];
+    otft_Templates$RootComponent.$meta.fields = [
+        {
+            name : "inner",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_Component,
+            getter : null,
+            setter : null
+        }];
+    mcti_IademGreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [];
+    mo_ClassOption.$meta.fields = [
+        {
+            name : "app",
+            modifiers : 512,
+            accessLevel : 3,
+            type : ju_Map,
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$AmPmText.$meta.fields = [
+        {
+            name : "ampms",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }];
+    mcca_NominalAttributeClassObserver.$meta.fields = [
+        {
+            name : "totalWeightObserved",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "missingWeightObserved",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attValDistPerClass",
+            modifiers : 0,
+            accessLevel : 3,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }];
+    otfch_ValueChangeBinder.$meta.fields = [
+        {
+            name : "target",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ModifierTarget,
+            getter : null,
+            setter : null
+        }, {
+            name : "listener",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_ValueChangeListener,
+            getter : null,
+            setter : null
+        }, {
+            name : "bound",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    mcti_IademGreenwaldKhannaQuantileSummary.$meta.fields = [];
+    mct_HoeffdingTree$InactiveLearningNode.$meta.fields = [];
+    jt_DateFormatElement$EraText.$meta.fields = [
+        {
+            name : "eras",
+            modifiers : 0,
+            accessLevel : 0,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$Numeric.$meta.fields = [
+        {
+            name : "field",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "length",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
     otfcs_IfComponent.$meta.fields = [
         {
             name : "condition",
@@ -12145,189 +12317,114 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    mcti_IademGaussianNumericAttributeClassObserver.$meta.fields = [
+    mct_HoeffdingTree$LearningNodeNBAdaptive.$meta.fields = [
         {
-            name : "valueCount",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "classDist",
+            name : "mcCorrectWeight",
             modifiers : 0,
             accessLevel : 2,
-            type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$EraText.$meta.fields = [
-        {
-            name : "eras",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }];
-    otft_DomComponentTemplate.$meta.fields = [
-        {
-            name : "handler",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_DomComponentHandler,
+            type : $rt_doublecls(),
             getter : null,
             setter : null
         }, {
-            name : "renderables",
-            modifiers : 0,
-            accessLevel : 1,
-            type : ju_List,
-            getter : null,
-            setter : null
-        }];
-    jt_DateFormatElement$AmPmText.$meta.fields = [
-        {
-            name : "ampms",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }];
-    otfch_ValueChangeBinder.$meta.fields = [
-        {
-            name : "target",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ModifierTarget,
-            getter : null,
-            setter : null
-        }, {
-            name : "listener",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otft_ValueChangeListener,
-            getter : null,
-            setter : null
-        }, {
-            name : "bound",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mcca_BinaryTreeNumericAttributeClassObserver.$meta.fields = [
-        {
-            name : "root",
-            modifiers : 0,
-            accessLevel : 3,
-            type : mcca_BinaryTreeNumericAttributeClassObserver$Node,
-            getter : null,
-            setter : null
-        }];
-    mc_DoubleVector.$meta.fields = [
-        {
-            name : "array",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_arraycls($rt_doublecls()),
-            getter : null,
-            setter : null
-        }];
-    otfch_CheckedBinder.$meta.fields = [
-        {
-            name : "element",
-            modifiers : 0,
-            accessLevel : 1,
-            type : otjdh_HTMLInputElement,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
-            modifiers : 0,
-            accessLevel : 1,
-            type : juf_Supplier,
-            getter : null,
-            setter : null
-        }, {
-            name : "cachedValue",
-            modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    mc_Measurement.$meta.fields = [
-        {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
+            name : "nbCorrectWeight",
             modifiers : 0,
             accessLevel : 2,
             type : $rt_doublecls(),
             getter : null,
             setter : null
         }];
-    jt_DateFormatElement$MonthText.$meta.fields = [
-        {
-            name : "months",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "shortMonths",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "abbreviated",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
     jt_DateFormatElement$NumericMonth.$meta.fields = [];
-    jt_DateFormatElement$WeekdayText.$meta.fields = [
+    eu_OptionAndLevel.$meta.fields = [
         {
-            name : "weeks",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "shortWeeks",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_arraycls(jl_String),
-            getter : null,
-            setter : null
-        }, {
-            name : "abbreviated",
-            modifiers : 0,
-            accessLevel : 0,
-            type : $rt_booleancls(),
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_2.$meta.fields = [
-        {
-            name : "proxyCapture0",
+            name : "level",
             modifiers : 0,
             accessLevel : 3,
-            type : otfte_VariableImpl,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "option",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_Option,
+            getter : null,
+            setter : null
+        }];
+    mc_GaussianEstimator.$meta.fields = [
+        {
+            name : "weightSum",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "mean",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "varianceSum",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "NORMAL_CONSTANT",
+            modifiers : 516,
+            accessLevel : 3,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }];
+    jl_Long.$meta.fields = [
+        {
+            name : "TYPE",
+            modifiers : 516,
+            accessLevel : 3,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "value",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_longcls(),
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$ActiveLearningNode.$meta.fields = [
+        {
+            name : "weightSeenAtLastSplitEvaluation",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_doublecls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "attributeObservers",
+            modifiers : 0,
+            accessLevel : 2,
+            type : mc_AutoExpandVector,
+            getter : null,
+            setter : null
+        }, {
+            name : "isInitialized",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_booleancls(),
+            getter : null,
+            setter : null
+        }];
+    jt_DateFormatElement$Iso8601Timezone.$meta.fields = [
+        {
+            name : "size",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
             getter : null,
             setter : null
         }];
@@ -12375,42 +12472,38 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jl_Boolean.$meta.fields = [
+    mct_HoeffdingTree$LearningNodeNB.$meta.fields = [];
+    mcca_VFMLNumericAttributeClassObserver.$meta.fields = [
         {
-            name : "TRUE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Boolean,
-            getter : null,
-            setter : null
-        }, {
-            name : "FALSE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Boolean,
-            getter : null,
-            setter : null
-        }, {
-            name : "TYPE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
+            name : "binList",
             modifiers : 0,
-            accessLevel : 1,
-            type : $rt_booleancls(),
+            accessLevel : 2,
+            type : ju_List,
+            getter : null,
+            setter : null
+        }, {
+            name : "numBinsOption",
+            modifiers : 0,
+            accessLevel : 3,
+            type : cgj_IntOption,
             getter : null,
             setter : null
         }];
-    otfca_ComputedAttribute.$meta.fields = [
+    jt_DateFormatElement$Year.$meta.fields = [
+        {
+            name : "field",
+            modifiers : 0,
+            accessLevel : 1,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }];
+    otfch_CheckedBinder.$meta.fields = [
         {
             name : "element",
             modifiers : 0,
             accessLevel : 1,
-            type : otjdh_HTMLElement,
+            type : otjdh_HTMLInputElement,
             getter : null,
             setter : null
         }, {
@@ -12424,17 +12517,11 @@ function jl_Class_createMetadata() {
             name : "cachedValue",
             modifiers : 0,
             accessLevel : 1,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 1,
-            type : jl_String,
+            type : $rt_booleancls(),
             getter : null,
             setter : null
         }];
+    jt_DateFormatElement$GeneralTimezone.$meta.fields = [];
     cgj_FloatOption.$meta.fields = [
         {
             name : "currentVal",
@@ -12465,169 +12552,93 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    eu_OptionAndLevel.$meta.fields = [
+    mcca_BinaryTreeNumericAttributeClassObserver.$meta.fields = [
         {
-            name : "level",
+            name : "root",
             modifiers : 0,
             accessLevel : 3,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "option",
-            modifiers : 0,
-            accessLevel : 3,
-            type : cgj_Option,
+            type : mcca_BinaryTreeNumericAttributeClassObserver$Node,
             getter : null,
             setter : null
         }];
-    otft_ValueChangeListener$proxy$4_0_4.$meta.fields = [
+    otft_DomComponentTemplate.$meta.fields = [
         {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : otfte_VariableImpl,
-            getter : null,
-            setter : null
-        }];
-    otft_ValueChangeListener$proxy$4_0_0.$meta.fields = [
-        {
-            name : "proxyCapture0",
-            modifiers : 0,
-            accessLevel : 3,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }];
-    mo_ClassOption.$meta.fields = [
-        {
-            name : "app",
-            modifiers : 512,
-            accessLevel : 3,
-            type : ju_Map,
-            getter : null,
-            setter : null
-        }];
-    jl_Double.$meta.fields = [
-        {
-            name : "NaN",
-            modifiers : 516,
-            accessLevel : 3,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "TYPE",
-            modifiers : 516,
-            accessLevel : 3,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "value",
+            name : "handler",
             modifiers : 0,
             accessLevel : 1,
-            type : $rt_doublecls(),
+            type : otft_DomComponentHandler,
+            getter : null,
+            setter : null
+        }, {
+            name : "renderables",
+            modifiers : 0,
+            accessLevel : 1,
+            type : ju_List,
             getter : null,
             setter : null
         }];
-    mcc_AttributeSplitSuggestion.$meta.fields = [
+    mct_HoeffdingTree$SplitNode.$meta.fields = [
         {
             name : "splitTest",
             modifiers : 0,
-            accessLevel : 3,
+            accessLevel : 2,
             type : mccc_InstanceConditionalTest,
             getter : null,
             setter : null
         }, {
-            name : "resultingClassDistributions",
+            name : "children",
             modifiers : 0,
-            accessLevel : 3,
-            type : $rt_arraycls($rt_arraycls($rt_doublecls())),
-            getter : null,
-            setter : null
-        }, {
-            name : "merit",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_doublecls(),
+            accessLevel : 2,
+            type : mc_AutoExpandVector,
             getter : null,
             setter : null
         }];
-    mcti_IademGreenwaldKhannaQuantileSummary.$meta.fields = [];
-    jt_DateFormatElement$Iso8601Timezone.$meta.fields = [
+    cgj_MultiChoiceOption.$meta.fields = [
         {
-            name : "size",
+            name : "optionLabels",
             modifiers : 0,
-            accessLevel : 1,
+            accessLevel : 2,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "optionDescriptions",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_arraycls(jl_String),
+            getter : null,
+            setter : null
+        }, {
+            name : "defaultOptionIndex",
+            modifiers : 0,
+            accessLevel : 2,
+            type : $rt_intcls(),
+            getter : null,
+            setter : null
+        }, {
+            name : "chosenOptionIndex",
+            modifiers : 0,
+            accessLevel : 2,
             type : $rt_intcls(),
             getter : null,
             setter : null
         }];
-    jt_DateFormatElement$Rfc822Timezone.$meta.fields = [];
-    mcrca_FIMTDDNumericAttributeClassLimitObserver.$meta.fields = [
+    jt_DateFormatElement$BaseTimezone.$meta.fields = [
         {
-            name : "maxNodesOption",
+            name : "locale",
             modifiers : 0,
-            accessLevel : 3,
-            type : cgj_IntOption,
-            getter : null,
-            setter : null
-        }];
-    jl_String.$meta.fields = [
-        {
-            name : "CASE_INSENSITIVE_ORDER",
-            modifiers : 516,
-            accessLevel : 3,
-            type : ju_Comparator,
+            accessLevel : 2,
+            type : ju_Locale,
             getter : null,
             setter : null
         }, {
-            name : "characters",
+            name : "searchTrie",
             modifiers : 0,
             accessLevel : 1,
-            type : $rt_arraycls($rt_charcls()),
-            getter : null,
-            setter : null
-        }, {
-            name : "hashCode",
-            modifiers : 12288,
-            accessLevel : 1,
-            type : $rt_intcls(),
+            type : jt_DateFormatElement$TrieNode,
             getter : null,
             setter : null
         }];
-    mo_AbstractClassOption.$meta.fields = [
-        {
-            name : "currentValue",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_Object,
-            getter : null,
-            setter : null
-        }, {
-            name : "requiredType",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_Class,
-            getter : null,
-            setter : null
-        }, {
-            name : "defaultCLIString",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "nullString",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }];
-    mct_HoeffdingTree$LearningNode.$meta.fields = [];
     mc_GreenwaldKhannaQuantileSummary.$meta.fields = [
         {
             name : "summary",
@@ -12651,6 +12662,17 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
+    otft_AbstractComponent.$meta.fields = [
+        {
+            name : "slot",
+            modifiers : 0,
+            accessLevel : 1,
+            type : otft_Slot,
+            getter : null,
+            setter : null
+        }];
+    mct_HoeffdingTree$LearningNode.$meta.fields = [];
+    jt_DateFormatElement.$meta.fields = [];
     mcca_GreenwaldKhannaNumericAttributeClassObserver.$meta.fields = [
         {
             name : "attValDistPerClass",
@@ -12673,38 +12695,6 @@ function jl_Class_createMetadata() {
             modifiers : 0,
             accessLevel : 2,
             type : mc_DoubleVector,
-            getter : null,
-            setter : null
-        }];
-    jlr_AccessibleObject.$meta.fields = [];
-    ju_AbstractCollection.$meta.fields = [];
-    cgj_AbstractOption.$meta.fields = [
-        {
-            name : "illegalNameCharacters",
-            modifiers : 516,
-            accessLevel : 3,
-            type : $rt_arraycls($rt_charcls()),
-            getter : null,
-            setter : null
-        }, {
-            name : "name",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
-            getter : null,
-            setter : null
-        }, {
-            name : "cliChar",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_charcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "purpose",
-            modifiers : 0,
-            accessLevel : 2,
-            type : jl_String,
             getter : null,
             setter : null
         }];
@@ -12745,97 +12735,75 @@ function jl_Class_createMetadata() {
             getter : null,
             setter : null
         }];
-    jl_Enum.$meta.fields = [
+    mo_AbstractClassOption.$meta.fields = [
         {
-            name : "name",
+            name : "currentValue",
             modifiers : 0,
-            accessLevel : 1,
+            accessLevel : 2,
+            type : jl_Object,
+            getter : null,
+            setter : null
+        }, {
+            name : "requiredType",
+            modifiers : 0,
+            accessLevel : 2,
+            type : jl_Class,
+            getter : null,
+            setter : null
+        }, {
+            name : "defaultCLIString",
+            modifiers : 0,
+            accessLevel : 2,
             type : jl_String,
             getter : null,
             setter : null
         }, {
-            name : "ordinal",
+            name : "nullString",
             modifiers : 0,
-            accessLevel : 1,
-            type : $rt_intcls(),
+            accessLevel : 2,
+            type : jl_String,
             getter : null,
             setter : null
         }];
-    mcti_IademNumericAttributeBinaryTest.$meta.fields = [];
-    mccc_NumericAttributeBinaryTest.$meta.fields = [
+    mo_AbstractOptionHandler.$meta.fields = [
         {
-            name : "attIndex",
+            name : "config",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "attValue",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_doublecls(),
-            getter : null,
-            setter : null
-        }, {
-            name : "equalsPassesTest",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_booleancls(),
+            type : mo_OptionsHandler,
             getter : null,
             setter : null
         }];
-    mc_GreenwaldKhannaQuantileSummary$Tuple.$meta.fields = [
+    cgj_AbstractOption.$meta.fields = [
         {
-            name : "v",
-            modifiers : 0,
+            name : "illegalNameCharacters",
+            modifiers : 516,
             accessLevel : 3,
-            type : $rt_doublecls(),
+            type : $rt_arraycls($rt_charcls()),
             getter : null,
             setter : null
         }, {
-            name : "g",
+            name : "name",
             modifiers : 0,
-            accessLevel : 3,
-            type : $rt_longcls(),
+            accessLevel : 2,
+            type : jl_String,
             getter : null,
             setter : null
         }, {
-            name : "delta",
-            modifiers : 0,
-            accessLevel : 3,
-            type : $rt_longcls(),
-            getter : null,
-            setter : null
-        }];
-    mccc_NominalAttributeMultiwayTest.$meta.fields = [
-        {
-            name : "attIndex",
+            name : "cliChar",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_intcls(),
-            getter : null,
-            setter : null
-        }];
-    mc_AutoExpandVector.$meta.fields = [];
-    mccc_NominalAttributeBinaryTest.$meta.fields = [
-        {
-            name : "attIndex",
-            modifiers : 0,
-            accessLevel : 2,
-            type : $rt_intcls(),
+            type : $rt_charcls(),
             getter : null,
             setter : null
         }, {
-            name : "attValue",
+            name : "purpose",
             modifiers : 0,
             accessLevel : 2,
-            type : $rt_intcls(),
+            type : jl_String,
             getter : null,
             setter : null
         }];
-    mccc_InstanceConditionalBinaryTest.$meta.fields = [];
-    mccc_InstanceConditionalTest.$meta.fields = [];
     ju_IdentityHashMap$HashEntry.$meta.fields = [
         {
             name : "origKeyHash",
@@ -12947,7 +12915,7 @@ function mcca_GreenwaldKhannaNumericAttributeClassObserver__init_0() {
 function mcca_GreenwaldKhannaNumericAttributeClassObserver__init_($this) {
     mo_AbstractOptionHandler__init_0($this);
     $this.$attValDistPerClass0 = mc_AutoExpandVector__init_();
-    $this.$numTuplesOption = cgj_IntOption__init_0($rt_s(210), 110, $rt_s(211), 10, 1, 2147483647);
+    $this.$numTuplesOption = cgj_IntOption__init_0($rt_s(205), 110, $rt_s(206), 10, 1, 2147483647);
 }
 function mcca_GreenwaldKhannaNumericAttributeClassObserver_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -13364,11 +13332,11 @@ function mc_Measurement_averageMeasurements($toAverage) {
         $mName = $measurementNames.$get($i);
         $mEstimator = var$7[$i];
         if ($mEstimator.$getTotalWeightObserved() <= 1.0) {
-            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(212)).$append($mName).$toString(), 0.0));
-            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(213)).$append($mName).$toString(), 0.0));
+            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(207)).$append($mName).$toString(), 0.0));
+            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(208)).$append($mName).$toString(), 0.0));
         } else {
-            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(212)).$append($mName).$toString(), $mEstimator.$getMean()));
-            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(213)).$append($mName).$toString(), $mEstimator.$getStdDev()));
+            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(207)).$append($mName).$toString(), $mEstimator.$getMean()));
+            $averagedMeasurements.$add(mc_Measurement__init_(jl_StringBuilder__init_().$append($rt_s(208)).$append($mName).$toString(), $mEstimator.$getStdDev()));
         }
         $i = $i + 1 | 0;
     }
@@ -13599,10 +13567,10 @@ function jm_BigDecimal_aproxPrecision($this) {
 function jm_BigDecimal_toIntScale($longScale) {
     jm_BigDecimal_$callClinit();
     if (Long_lt($longScale, Long_fromInt(-2147483648)))
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(214)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(209)));
     if (Long_le($longScale, Long_fromInt(2147483647)))
         return $longScale.lo;
-    $rt_throw(jl_ArithmeticException__init_0($rt_s(215)));
+    $rt_throw(jl_ArithmeticException__init_0($rt_s(210)));
 }
 function jm_BigDecimal_zeroScaledBy($longScale) {
     var var$2;
@@ -14167,16 +14135,16 @@ function cylsi_InstanceImpl_toString($this) {
     $attIndex = 0;
     while ($attIndex < $this.$numAttributes()) {
         if ($this.$isMissing($attIndex))
-            $str.$append($rt_s(216));
+            $str.$append($rt_s(211));
         else if ($this.$attribute($attIndex).$isNominal()) {
             $valueIndex = $this.$value($attIndex) | 0;
             $stringValue = $this.$attribute($attIndex).$value6($valueIndex);
-            $str.$append($stringValue).$append($rt_s(217));
+            $str.$append($stringValue).$append($rt_s(212));
         } else if ($this.$attribute($attIndex).$isNumeric())
-            $str.$append7($this.$value($attIndex)).$append($rt_s(217));
+            $str.$append7($this.$value($attIndex)).$append($rt_s(212));
         else if ($this.$attribute($attIndex).$isDate()) {
-            $dateFormatter = jt_SimpleDateFormat__init_0($rt_s(218));
-            $str.$append(jt_Format_format($dateFormatter, jl_Double_valueOf($this.$value($attIndex)))).$append($rt_s(217));
+            $dateFormatter = jt_SimpleDateFormat__init_0($rt_s(213));
+            $str.$append(jt_Format_format($dateFormatter, jl_Double_valueOf($this.$value($attIndex)))).$append($rt_s(212));
         }
         $attIndex = $attIndex + 1 | 0;
     }
@@ -14224,11 +14192,11 @@ function jn_CharBuffer_get($this, $dst, $offset, $length) {
         if ($offset < var$5) {
             var$6 = $offset + $length | 0;
             if (var$6 > var$5)
-                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(219)).$append1(var$6).$append($rt_s(220)).$append1(var$5).$toString()));
+                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(214)).$append1(var$6).$append($rt_s(215)).$append1(var$5).$toString()));
             if (jn_Buffer_remaining($this) < $length)
                 $rt_throw(jn_BufferUnderflowException__init_0());
             if ($length < 0)
-                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(221)).$append1($length).$append($rt_s(222)).$toString()));
+                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(216)).$append1($length).$append($rt_s(217)).$toString()));
             $pos = $this.$position;
             $i = 0;
             while ($i < $length) {
@@ -14244,7 +14212,7 @@ function jn_CharBuffer_get($this, $dst, $offset, $length) {
         }
     }
     var$4 = $dst.data;
-    $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(223)).$append1($offset).$append($rt_s(59)).$append1(var$4.length).$append($rt_s(224)).$toString()));
+    $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(218)).$append1($offset).$append($rt_s(61)).$append1(var$4.length).$append($rt_s(219)).$toString()));
 }
 function jn_CharBuffer_position($this, $newPosition) {
     jn_Buffer_position0($this, $newPosition);
@@ -14576,16 +14544,16 @@ function wc_Utils__clinit_() {
     wc_Utils_DF = wc_Utils$1__init_0();
     var$1 = $rt_createArray(jl_String, 10);
     var$2 = var$1.data;
-    var$2[0] = $rt_s(225);
-    var$2[1] = $rt_s(226);
-    var$2[2] = $rt_s(227);
-    var$2[3] = $rt_s(228);
-    var$2[4] = $rt_s(225);
-    var$2[5] = $rt_s(225);
-    var$2[6] = $rt_s(225);
-    var$2[7] = $rt_s(225);
-    var$2[8] = $rt_s(225);
-    var$2[9] = $rt_s(225);
+    var$2[0] = $rt_s(220);
+    var$2[1] = $rt_s(221);
+    var$2[2] = $rt_s(222);
+    var$2[3] = $rt_s(223);
+    var$2[4] = $rt_s(220);
+    var$2[5] = $rt_s(220);
+    var$2[6] = $rt_s(220);
+    var$2[7] = $rt_s(220);
+    var$2[8] = $rt_s(220);
+    var$2[9] = $rt_s(220);
     wc_Utils_ORDINAL_SUFFIXES = var$1;
 }
 function otfch_CheckedBinder() {
@@ -14720,6 +14688,7 @@ function eu_OptionHashMap() {
     var a = this; jl_Object.call(a);
     a.$optHashMap = null;
     a.$mapInit = 0;
+    a.$mapEmpty = 0;
 }
 function eu_OptionHashMap__init_0(var_0) {
     var var_1 = new eu_OptionHashMap();
@@ -14741,12 +14710,12 @@ function eu_OptionHashMap_insertOption($this, $a) {
     else if (!($a instanceof cgj_IntOption) && !($a instanceof cgj_FloatOption)) {
         if (!($a instanceof mo_ClassOption)) {
             if (!($a instanceof cgj_FlagOption))
-                $rt_throw(jl_RuntimeException__init_($rt_s(229)));
+                $rt_throw(jl_RuntimeException__init_($rt_s(224)));
             $this.$optHashMap.$put($a, $a.$getValueAsCLIString());
         } else {
             $temp = $a.$getPreMaterializedObject();
             if (!$rt_isInstance($temp, mo_OptionHandler))
-                $rt_throw(jl_RuntimeException__init_($rt_s(230)));
+                $rt_throw(jl_RuntimeException__init_($rt_s(225)));
             $arrOptions = $temp.$getOptions().$getOptionArray();
             $mapForClass = eu_OptionHashMap__init_0($arrOptions);
             $this.$optHashMap.$put($a, $mapForClass);
@@ -14760,7 +14729,9 @@ function eu_OptionHashMap__init_2($this, $arrOptions) {
     jl_Object__init_0($this);
     $this.$optHashMap = ju_HashMap__init_();
     $this.$mapInit = 0;
+    $this.$mapEmpty = 1;
     $this.$mapInit = 1;
+    $this.$mapEmpty = 0;
     var$3 = var$2.length;
     var$4 = 0;
     while (var$4 < var$3) {
@@ -14773,7 +14744,9 @@ function eu_OptionHashMap__init_1($this) {
     jl_Object__init_0($this);
     $this.$optHashMap = ju_HashMap__init_();
     $this.$mapInit = 0;
+    $this.$mapEmpty = 1;
     $this.$mapInit = 1;
+    $this.$mapEmpty = 1;
     $this.$optHashMap = ju_HashMap__init_();
 }
 function jl_IllegalMonitorStateException() {
@@ -14990,7 +14963,7 @@ function mcrca_FIMTDDNumericAttributeClassLimitObserver__init_0() {
 }
 function mcrca_FIMTDDNumericAttributeClassLimitObserver__init_($this) {
     mcca_FIMTDDNumericAttributeClassObserver__init_($this);
-    $this.$maxNodesOption = cgj_IntOption__init_0($rt_s(231), 122, $rt_s(232), 50, 0, 2147483647);
+    $this.$maxNodesOption = cgj_IntOption__init_0($rt_s(226), 122, $rt_s(227), 50, 0, 2147483647);
 }
 function mcrca_FIMTDDNumericAttributeClassLimitObserver_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
@@ -15729,7 +15702,7 @@ function jl_String_toCharArray($this) {
 }
 function jl_String_valueOf($obj) {
     jl_String_$callClinit();
-    return $obj === null ? $rt_s(54) : $obj.$toString();
+    return $obj === null ? $rt_s(56) : $obj.$toString();
 }
 function jl_String_valueOf1($c) {
     var var$2, var$3;
@@ -16255,7 +16228,7 @@ function ju_Hashtable_toString($this) {
     jl_Object_monitorEnterSync($this);
     try {
         if ($this.$isEmpty())
-            return $rt_s(233);
+            return $rt_s(228);
         $buffer = jl_StringBuilder__init_0($this.$size() * 28 | 0);
         $buffer.$append2(123);
         $i = $this.$lastSlot;
@@ -16263,12 +16236,12 @@ function ju_Hashtable_toString($this) {
             $entry = $this.$elementData1.data[$i];
             while ($entry !== null) {
                 if ($entry.$key === $this)
-                    $buffer.$append($rt_s(234));
+                    $buffer.$append($rt_s(229));
                 else
                     $buffer.$append3($entry.$key);
                 $buffer.$append2(61);
                 if ($entry.$value2 === $this)
-                    $buffer.$append($rt_s(234));
+                    $buffer.$append($rt_s(229));
                 else
                     $buffer.$append3($entry.$value2);
                 $buffer.$append($rt_s(12));
@@ -16488,15 +16461,15 @@ function mc_DoubleVector_getSingleLineDescription($this, $out) {
 }
 function mc_DoubleVector_getSingleLineDescription0($this, $out, $numValues) {
     var $i;
-    $out.$append($rt_s(235));
+    $out.$append($rt_s(230));
     $i = 0;
     while ($i < $numValues) {
         if ($i > 0)
-            $out.$append($rt_s(236));
+            $out.$append($rt_s(231));
         $out.$append(mc_StringUtils_doubleToString($this.$getValue($i), 3));
         $i = $i + 1 | 0;
     }
-    $out.$append($rt_s(205));
+    $out.$append($rt_s(200));
 }
 function mc_DoubleVector_getDescription($this, $sb, $indent) {
     $this.$getSingleLineDescription0($sb);
@@ -16621,7 +16594,7 @@ function jnci_UTF8Charset__init_0() {
     return var_0;
 }
 function jnci_UTF8Charset__init_($this) {
-    jnc_Charset__init_0($this, $rt_s(237), $rt_createArray(jl_String, 0));
+    jnc_Charset__init_0($this, $rt_s(232), $rt_createArray(jl_String, 0));
 }
 function jnci_UTF8Charset_newEncoder($this) {
     return jnci_UTF8Encoder__init_($this);
@@ -16754,24 +16727,9 @@ function ju_ArrayDeque_access$200($x0) {
 function ju_ArrayDeque_access$300($x0) {
     return $x0.$array2;
 }
-function eu_ValuePosition() {
-    var a = this; jl_Object.call(a);
-    a.$value8 = null;
-    a.$position5 = 0;
-}
-function eu_ValuePosition__init_(var_0, var_1) {
-    var var_2 = new eu_ValuePosition();
-    eu_ValuePosition__init_0(var_2, var_0, var_1);
-    return var_2;
-}
-function eu_ValuePosition__init_0($this, $value, $position) {
-    jl_Object__init_0($this);
-    $this.$value8 = $value;
-    $this.$position5 = $position;
-}
 function ju_HashMap$AbstractMapIterator() {
     var a = this; jl_Object.call(a);
-    a.$position6 = 0;
+    a.$position5 = 0;
     a.$expectedModCount2 = 0;
     a.$futureEntry1 = null;
     a.$currentEntry1 = null;
@@ -16792,10 +16750,10 @@ function ju_HashMap$AbstractMapIterator__init_0($this, $hm) {
 function ju_HashMap$AbstractMapIterator_hasNext($this) {
     if ($this.$futureEntry1 !== null)
         return 1;
-    while ($this.$position6 < $this.$associatedMap2.$elementData0.data.length) {
-        if ($this.$associatedMap2.$elementData0.data[$this.$position6] !== null)
+    while ($this.$position5 < $this.$associatedMap2.$elementData0.data.length) {
+        if ($this.$associatedMap2.$elementData0.data[$this.$position5] !== null)
             return 1;
-        $this.$position6 = $this.$position6 + 1 | 0;
+        $this.$position5 = $this.$position5 + 1 | 0;
     }
     return 0;
 }
@@ -16811,8 +16769,8 @@ function ju_HashMap$AbstractMapIterator_makeNext($this) {
         $rt_throw(ju_NoSuchElementException__init_());
     if ($this.$futureEntry1 === null) {
         var$1 = $this.$associatedMap2.$elementData0.data;
-        var$2 = $this.$position6;
-        $this.$position6 = var$2 + 1 | 0;
+        var$2 = $this.$position5;
+        $this.$position5 = var$2 + 1 | 0;
         $this.$currentEntry1 = var$1[var$2];
         $this.$futureEntry1 = $this.$currentEntry1.$next0;
         $this.$prevEntry0 = null;
@@ -16928,7 +16886,7 @@ function jt_DecimalFormatSymbols_clone($this) {
         }
         return var$1;
     }
-    $rt_throw(jl_AssertionError__init_1($rt_s(238), $e));
+    $rt_throw(jl_AssertionError__init_1($rt_s(233), $e));
 }
 function otcir_Converter() {
     jl_Object.call(this);
@@ -17167,7 +17125,7 @@ function ju_MapEntry_hashCode($this) {
     return var$1;
 }
 function ju_MapEntry_toString($this) {
-    return jl_StringBuilder__init_().$append3($this.$key).$append($rt_s(239)).$append3($this.$value2).$toString();
+    return jl_StringBuilder__init_().$append3($this.$key).$append($rt_s(234)).$append3($this.$value2).$toString();
 }
 function ju_IdentityHashMap$HashEntry() {
     var a = this; ju_MapEntry.call(a);
@@ -17250,7 +17208,7 @@ function jt_DecimalFormatParser_parse($this, $string) {
     $this.$index = 0;
     $this.$positivePrefix0 = $this.$parseText(0, 0);
     if ($this.$index == $string.$length())
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(240)).$append($string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(235)).$append($string).$toString()));
     jt_DecimalFormatParser_parseNumber($this, 1);
     $this.$negativePrefix0 = null;
     $this.$negativeSuffix0 = null;
@@ -17260,7 +17218,7 @@ function jt_DecimalFormatParser_parse($this, $string) {
         var$2 = $this.$index;
         $this.$index = var$2 + 1 | 0;
         if ($string.$charAt(var$2) != 59)
-            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(241)).$append1($this.$index).$append($rt_s(242)).$append($string).$toString()));
+            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(236)).$append1($this.$index).$append($rt_s(237)).$append($string).$toString()));
         $this.$negativePrefix0 = $this.$parseText(0, 1);
         jt_DecimalFormatParser_parseNumber($this, 0);
         $this.$negativeSuffix0 = $this.$parseText(1, 1);
@@ -17310,7 +17268,7 @@ function jt_DecimalFormatParser_parseText($this, $suffix, $end) {
                         case 48:
                             if (!$suffix)
                                 break a;
-                            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(243)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+                            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(238)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
                         case 37:
                             if ($sb.$length() > 0) {
                                 $fields.$add(jt_DecimalFormat$TextField__init_($sb.$toString()));
@@ -17324,7 +17282,7 @@ function jt_DecimalFormatParser_parseText($this, $suffix, $end) {
                             $this.$index = $this.$index + 1 | 0;
                             $next = $this.$string.$indexOf2(39, $this.$index);
                             if ($next < 0)
-                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(244)).$append1($this.$index).$append($rt_s(245)).$append($this.$string).$toString()));
+                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(239)).$append1($this.$index).$append($rt_s(240)).$append($this.$string).$toString()));
                             if ($next == $this.$index)
                                 $sb.$append2(39);
                             else
@@ -17367,10 +17325,10 @@ function jt_DecimalFormatParser_parseText($this, $suffix, $end) {
                     $this.$index = $this.$index + 1 | 0;
                 }
             }
-            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(243)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(238)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
         }
         if ($end)
-            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(243)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(238)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     }
     if ($sb.$length() > 0)
         $fields.$add(jt_DecimalFormat$TextField__init_($sb.$toString()));
@@ -17419,19 +17377,19 @@ function jt_DecimalFormatParser_parseIntegerPart($this, $apply) {
                     break c;
                 }
                 if ($lastGroup == $this.$index)
-                    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(246)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+                    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(241)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
                 if ($apply)
                     $this.$groupSize = $this.$index - $lastGroup | 0;
                 $lastGroup = $this.$index + 1 | 0;
             }
             $this.$index = $this.$index + 1 | 0;
         }
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(247)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(242)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     }
     if (!$length)
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(248)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(243)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     if ($lastGroup == $this.$index)
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(249)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(244)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     if ($apply && $lastGroup > $start)
         $this.$groupSize = $this.$index - $lastGroup | 0;
     if ($apply) {
@@ -17453,9 +17411,9 @@ function jt_DecimalFormatParser_parseFractionalPart($this, $apply) {
                     case 35:
                         break;
                     case 44:
-                        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(250)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+                        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(245)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
                     case 46:
-                        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(251)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+                        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(246)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
                     case 48:
                         if ($optionalDigits)
                             break b;
@@ -17470,7 +17428,7 @@ function jt_DecimalFormatParser_parseFractionalPart($this, $apply) {
             }
             $this.$index = $this.$index + 1 | 0;
         }
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(252)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(247)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     }
     if ($apply) {
         $this.$fracLength = $length;
@@ -17499,14 +17457,14 @@ function jt_DecimalFormatParser_parseExponent($this, $apply) {
             $length = $length + 1 | 0;
             $this.$index = $this.$index + 1 | 0;
         }
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(253)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(248)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
     }
     if ($length) {
         if ($apply)
             $this.$exponentLength = $length;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(254)).$append1($this.$index).$append($rt_s(242)).$append($this.$string).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(249)).$append1($this.$index).$append($rt_s(237)).$append($this.$string).$toString()));
 }
 function mccs_GiniSplitCriterion() {
     mo_AbstractOptionHandler.call(this);
@@ -17690,9 +17648,9 @@ function otft_Slot_append($this, $slot) {
 function otft_Slot_insertBefore($this, $space, $successor) {
     var $root, $domNodes, $successorDomNode, $i, var$7, var$8;
     if ($space.$getParent() !== null)
-        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(255)));
+        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(250)));
     if ($successor !== null && $successor.$getParent() !== $this)
-        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(256)));
+        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(251)));
     $space.$parent = $this;
     if ($successor === null) {
         $space.$previous2 = $this.$last0;
@@ -17863,7 +17821,7 @@ function otcit_DateTimeZoneBuilder$OfYear__init_(var_0, var_1, var_2, var_3, var
 function otcit_DateTimeZoneBuilder$OfYear__init_0($this, $mode, $monthOfYear, $dayOfMonth, $dayOfWeek, $advanceDayOfWeek, $millisOfDay) {
     jl_Object__init_0($this);
     if ($mode != 117 && $mode != 119 && $mode != 115)
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(257)).$append2($mode).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(252)).$append2($mode).$toString()));
     $this.$iMode = $mode;
     $this.$iMonthOfYear = $monthOfYear;
     $this.$iDayOfMonth = $dayOfMonth;
@@ -18025,6 +17983,138 @@ function jn_BufferOverflowException__init_0() {
 function jn_BufferOverflowException__init_($this) {
     jl_RuntimeException__init_1($this);
 }
+function otft_DomComponentHandler() {
+}
+function otft_DomComponentHandler$proxy$4_0_11() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture030 = null;
+    a.$proxyCapture11 = null;
+    a.$proxyCapture2 = null;
+    a.$proxyCapture3 = null;
+}
+function otft_DomComponentHandler$proxy$4_0_11__init_(var_0, var_1, var_2, var_3) {
+    var var_4 = new otft_DomComponentHandler$proxy$4_0_11();
+    otft_DomComponentHandler$proxy$4_0_11__init_0(var_4, var_0, var_1, var_2, var_3);
+    return var_4;
+}
+function otft_DomComponentHandler$proxy$4_0_11_update(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture030;
+    var$2 = var$0.$proxyCapture11;
+    var$3 = var$0.$proxyCapture2;
+    var$1.$value1 = var$2.$getElementVariable();
+    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+}
+function otft_DomComponentHandler$proxy$4_0_11_buildDom(var$0, var$1) {
+    var var$2, var$3, var$4;
+    var$2 = var$0.$proxyCapture3;
+    var$3 = var$0.$proxyCapture2;
+    var$1 = var$1.$text1($rt_s(253));
+    var$1 = var$1.$open($rt_s(254)).$text1($rt_s(255));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_28__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(255));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_29__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(257));
+    var$1.$close().$text1($rt_s(258));
+}
+function otft_DomComponentHandler$proxy$4_0_11__init_0(var$0, var$1, var$2, var$3, var$4) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture030 = var$1;
+    var$0.$proxyCapture11 = var$2;
+    var$0.$proxyCapture2 = var$3;
+    var$0.$proxyCapture3 = var$4;
+}
+function otft_DomComponentHandler$proxy$4_0_12() {
+    jl_Object.call(this);
+    this.$proxyCapture031 = null;
+}
+function otft_DomComponentHandler$proxy$4_0_12__init_(var_0) {
+    var var_1 = new otft_DomComponentHandler$proxy$4_0_12();
+    otft_DomComponentHandler$proxy$4_0_12__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_DomComponentHandler$proxy$4_0_12_update(var$0) {
+    return;
+}
+function otft_DomComponentHandler$proxy$4_0_12_buildDom(var$0, var$1) {
+    var var$2, var$3;
+    var$2 = var$0.$proxyCapture031;
+    var$1 = var$1;
+    var$3 = var$1.$text1($rt_s(259)).$openSlot($rt_s(260));
+    var$3 = var$3.$attribute0($rt_s(261), $rt_s(262)).$attribute0($rt_s(263), $rt_s(120)).$text1($rt_s(258));
+    var$3 = var$3.$open($rt_s(254)).$text1($rt_s(257));
+    var$3 = var$3.$open($rt_s(220)).$text1($rt_s(264)).$close().$text1($rt_s(265));
+    var$3 = var$3.$open($rt_s(220)).$text1($rt_s(266)).$close().$text1($rt_s(265));
+    var$3 = var$3.$open($rt_s(220)).$text1($rt_s(267)).$close().$text1($rt_s(265));
+    var$3.$open($rt_s(220)).$text1($rt_s(268));
+    var$1 = var$1.$close().$text1($rt_s(269));
+    var$1 = var$1.$close().$text1($rt_s(258));
+    var$3 = otfcs_ForEachComponent__init_(otft_Slot_create());
+    var$3.$setCollection(juf_Supplier$proxy$4_0_31__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_13__init_(var$3, var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(259));
+    var$1.$close().$text1($rt_s(270));
+}
+function otft_DomComponentHandler$proxy$4_0_12__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture031 = var$1;
+}
+function otft_DomComponentHandler$proxy$4_0_13() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture032 = null;
+    a.$proxyCapture12 = null;
+    a.$proxyCapture20 = null;
+    a.$proxyCapture30 = null;
+}
+function otft_DomComponentHandler$proxy$4_0_13__init_(var_0, var_1, var_2, var_3) {
+    var var_4 = new otft_DomComponentHandler$proxy$4_0_13();
+    otft_DomComponentHandler$proxy$4_0_13__init_0(var_4, var_0, var_1, var_2, var_3);
+    return var_4;
+}
+function otft_DomComponentHandler$proxy$4_0_13_update(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture032;
+    var$2 = var$0.$proxyCapture12;
+    var$3 = var$0.$proxyCapture20;
+    var$1.$value1 = var$2.$getElementVariable();
+    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+}
+function otft_DomComponentHandler$proxy$4_0_13_buildDom(var$0, var$1) {
+    var var$2, var$3, var$4;
+    var$2 = var$0.$proxyCapture30;
+    var$3 = var$0.$proxyCapture20;
+    var$1 = var$1.$text1($rt_s(271));
+    var$1 = var$1.$open($rt_s(254)).$text1($rt_s(255));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_32__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(272));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_33__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(272));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_34__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(272));
+    var$1 = var$1.$openSlot($rt_s(256));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_35__init_(var$2, var$3));
+    var$1 = var$1.$add6(var$4).$close().$text1($rt_s(273));
+    var$1.$close().$text1($rt_s(258));
+}
+function otft_DomComponentHandler$proxy$4_0_13__init_0(var$0, var$1, var$2, var$3, var$4) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture032 = var$1;
+    var$0.$proxyCapture12 = var$2;
+    var$0.$proxyCapture20 = var$3;
+    var$0.$proxyCapture30 = var$4;
+}
 function otfce_BaseEventBinder() {
     var a = this; jl_Object.call(a);
     a.$element0 = null;
@@ -18072,7 +18162,7 @@ function otfce_BaseEventBinder_destroy($this) {
 }
 function otfce_BaseEventBinder_lambda$new$0($this, $evt) {
     $this.$action.handleEvent($evt);
-    if ($this.$eventName.$equals($rt_s(258)))
+    if ($this.$eventName.$equals($rt_s(274)))
         $evt.preventDefault();
 }
 function jl_NoClassDefFoundError() {
@@ -18159,7 +18249,7 @@ function mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier__init_($thi
         $this.$featureIndexes.data[$i] = $featuresIndexes.$get($i).$intValue();
         $i = $i + 1 | 0;
     }
-    $this.$subset = cylsi_Instances__init_1($rt_s(259), $attSub, 100);
+    $this.$subset = cylsi_Instances__init_1($rt_s(275), $attSub, 100);
     $this.$subset.$setClassIndex($this.$subset.$numAttributes() - 1 | 0);
     $this.$prepareRandomSubspaceInstance($instance, 1.0);
 }
@@ -18229,7 +18319,7 @@ function mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_reset($this
                 $attSub.$add($instance.$attribute($this.$featureIndexes.data[$i]));
                 $i = $i + 1 | 0;
             }
-            $this.$subset = cylsi_Instances__init_1($rt_s(259), $attSub, 100);
+            $this.$subset = cylsi_Instances__init_1($rt_s(275), $attSub, 100);
             $this.$subset.$setClassIndex($this.$subset.$numAttributes() - 1 | 0);
             $this.$prepareRandomSubspaceInstance($instance, 1.0);
         }
@@ -18289,43 +18379,37 @@ function mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_getVotesFor
     $vote = mc_DoubleVector__init_($this.$classifier.$getVotesForInstance($this.$subset.$get2(0)));
     return $vote.$getArrayRef();
 }
-function otft_DomComponentHandler() {
-}
 function otft_DomComponentHandler$proxy$4_0_10() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture027 = null;
-    a.$proxyCapture15 = null;
-    a.$proxyCapture2 = null;
+    jl_Object.call(this);
+    this.$proxyCapture033 = null;
 }
-function otft_DomComponentHandler$proxy$4_0_10__init_(var_0, var_1, var_2) {
-    var var_3 = new otft_DomComponentHandler$proxy$4_0_10();
-    otft_DomComponentHandler$proxy$4_0_10__init_0(var_3, var_0, var_1, var_2);
-    return var_3;
+function otft_DomComponentHandler$proxy$4_0_10__init_(var_0) {
+    var var_1 = new otft_DomComponentHandler$proxy$4_0_10();
+    otft_DomComponentHandler$proxy$4_0_10__init_0(var_1, var_0);
+    return var_1;
 }
 function otft_DomComponentHandler$proxy$4_0_10_update(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture027;
-    var$2 = var$0.$proxyCapture15;
-    var$3 = var$0.$proxyCapture2;
-    var$1.$value1 = var$2.$getElementVariable();
-    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+    return;
 }
 function otft_DomComponentHandler$proxy$4_0_10_buildDom(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture027;
-    var$1 = var$1.$text1($rt_s(260));
-    var$1 = var$1.$openSlot($rt_s(261));
-    var$3 = otft_Modifier$proxy$4_0_15__init_(var$2);
+    var$2 = var$0.$proxyCapture033;
+    var$1 = var$1.$text1($rt_s(259)).$openSlot($rt_s(260));
+    var$1 = var$1.$attribute0($rt_s(261), $rt_s(262)).$attribute0($rt_s(263), $rt_s(120)).$text1($rt_s(258));
+    var$1 = var$1.$open($rt_s(254)).$text1($rt_s(257));
+    var$1 = var$1.$open($rt_s(220)).$text1($rt_s(276)).$close().$text1($rt_s(257));
+    var$1 = var$1.$open($rt_s(220)).$text1($rt_s(277)).$close().$text1($rt_s(269));
+    var$1 = var$1.$close().$text1($rt_s(258));
+    var$3 = otfcs_ForEachComponent__init_(otft_Slot_create());
+    var$3.$setCollection(juf_Supplier$proxy$4_0_27__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_11__init_(var$3, var$2));
     var$1 = var$1.$add6(var$3);
-    var$3 = otfch_TextComponent__init_(otft_Slot_create());
-    var$3.$setValue1(juf_Supplier$proxy$4_0_33__init_(var$2));
-    var$1.$add7(var$3).$close().$text1($rt_s(260));
+    var$1 = var$1.$text1($rt_s(259));
+    var$1.$close().$text1($rt_s(259));
 }
-function otft_DomComponentHandler$proxy$4_0_10__init_0(var$0, var$1, var$2, var$3) {
+function otft_DomComponentHandler$proxy$4_0_10__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture027 = var$1;
-    var$0.$proxyCapture15 = var$2;
-    var$0.$proxyCapture2 = var$3;
+    var$0.$proxyCapture033 = var$1;
 }
 function mc_GaussianEstimator() {
     var a = this; mc_AbstractMOAObject.call(a);
@@ -18472,7 +18556,7 @@ function mccc_NumericAttributeBinaryTest_describeConditionForBranch($this, $bran
     $compareChar = $branch ? 62 : 60;
     $equalsBranch = !$this.$equalsPassesTest ? 1 : 0;
     var$5 = jl_StringBuilder__init_().$append(cylsi_InstancesHeader_getInputAttributeNameString($context, $this.$attIndex1)).$append2(32).$append2($compareChar);
-    var$5 = var$5.$append($branch != $equalsBranch ? $rt_s(29) : $rt_s(262));
+    var$5 = var$5.$append($branch != $equalsBranch ? $rt_s(31) : $rt_s(278));
     var$6 = $this.$attIndex1;
     var$7 = $this.$attValue0;
     var$5 = var$5.$append(cylsi_InstancesHeader_getNumericValueString($context, var$6, var$7)).$toString();
@@ -18928,15 +19012,15 @@ function cylsi_Instances_get($this, $k) {
 function cylsi_Instances_toString($this) {
     var $text, var$2, var$3, $i;
     $text = jl_StringBuffer__init_();
-    var$2 = $text.$append6($rt_s(263)).$append6($rt_s(29));
+    var$2 = $text.$append6($rt_s(279)).$append6($rt_s(31));
     var$3 = $this.$instanceInformation;
-    var$2.$append6(mc_Utils_quote(var$3.$getRelationName())).$append6($rt_s(264));
+    var$2.$append6(mc_Utils_quote(var$3.$getRelationName())).$append6($rt_s(280));
     $i = 0;
     while ($i < $this.$numAttributes()) {
-        $text.$append6(cylsi_Attribute_toString($this.$attribute($i))).$append6($rt_s(265));
+        $text.$append6(cylsi_Attribute_toString($this.$attribute($i))).$append6($rt_s(281));
         $i = $i + 1 | 0;
     }
-    $text.$append6($rt_s(265)).$append6($rt_s(266)).$append6($rt_s(265));
+    $text.$append6($rt_s(281)).$append6($rt_s(282)).$append6($rt_s(281));
     $text.$append6($this.$stringWithoutHeader());
     return $text.$toString();
 }
@@ -18995,7 +19079,7 @@ function otjdh_HTMLDocument_current() {
 }
 function jl_Long() {
     jl_Number.call(this);
-    this.$value9 = Long_ZERO;
+    this.$value8 = Long_ZERO;
 }
 var jl_Long_TYPE = null;
 function jl_Long_$callClinit() {
@@ -19010,24 +19094,24 @@ function jl_Long__init_(var_0) {
 function jl_Long__init_0($this, $value) {
     jl_Long_$callClinit();
     jl_Number__init_0($this);
-    $this.$value9 = $value;
+    $this.$value8 = $value;
 }
 function jl_Long_valueOf($value) {
     jl_Long_$callClinit();
     return jl_Long__init_($value);
 }
 function jl_Long_longValue($this) {
-    return $this.$value9;
+    return $this.$value8;
 }
 function jl_Long_toString($value) {
     jl_Long_$callClinit();
     return jl_StringBuilder__init_().$append13($value).$toString();
 }
 function jl_Long_toString0($this) {
-    return jl_Long_toString($this.$value9);
+    return jl_Long_toString($this.$value8);
 }
 function jl_Long_hashCode($this) {
-    return jl_Long_hashCode0($this.$value9);
+    return jl_Long_hashCode0($this.$value8);
 }
 function jl_Long_hashCode0($value) {
     jl_Long_$callClinit();
@@ -19036,14 +19120,14 @@ function jl_Long_hashCode0($value) {
 function jl_Long_equals($this, $other) {
     if ($this === $other)
         return 1;
-    return $other instanceof jl_Long && Long_eq($other.$value9, $this.$value9) ? 1 : 0;
+    return $other instanceof jl_Long && Long_eq($other.$value8, $this.$value8) ? 1 : 0;
 }
 function jl_Long_compare(var$1, var$2) {
     jl_Long_$callClinit();
     return Long_compare(var$1, var$2);
 }
 function jl_Long_compareTo($this, $other) {
-    return jl_Long_compare($this.$value9, $other.$value9);
+    return jl_Long_compare($this.$value8, $other.$value8);
 }
 function jl_Long_numberOfLeadingZeros($i) {
     var $n, var$3, var$4;
@@ -19300,7 +19384,7 @@ function jm_BigInteger_testBit($this, $n) {
     if (!$n)
         return !($this.$digits.data[0] & 1) ? 0 : 1;
     if ($n < 0)
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(267)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(283)));
     $intCount = $n >> 5;
     if ($intCount >= $this.$numberLength)
         return $this.$sign0 >= 0 ? 0 : 1;
@@ -19366,7 +19450,7 @@ function jm_BigInteger_multiply($this, $val) {
 function jm_BigInteger_pow($this, $exp) {
     var $x;
     if ($exp < 0)
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(268)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(284)));
     if (!$exp)
         return jm_BigInteger_ONE;
     if ($exp != 1 && !$this.$equals(jm_BigInteger_ONE) && !$this.$equals(jm_BigInteger_ZERO)) {
@@ -19384,7 +19468,7 @@ function jm_BigInteger_divideAndRemainder($this, $divisor) {
     var $divisorSign, $divisorLen, $divisorDigits, $thisDigits, $thisLen, var$7, $cmp, var$9, var$10, $thisSign, $quotientLength, $quotientSign, $quotientDigits, $remainderDigits, $result0, $result1;
     $divisorSign = $divisor.$sign0;
     if (!$divisorSign)
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(269)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(285)));
     $divisorLen = $divisor.$numberLength;
     $divisorDigits = $divisor.$digits;
     if ($divisorLen == 1)
@@ -19418,7 +19502,7 @@ function jm_BigInteger_divideAndRemainder($this, $divisor) {
 function jm_BigInteger_divide($this, $divisor) {
     var $divisorSign, $thisSign, $thisLen, $divisorLen, $val, var$7, $cmp, $resLength, $resDigits, $resSign, $result;
     if (!$divisor.$sign0)
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(269)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(285)));
     $divisorSign = $divisor.$sign0;
     if ($divisor.$isOne()) {
         if ($divisor.$sign0 <= 0)
@@ -19454,7 +19538,7 @@ function jm_BigInteger_divide($this, $divisor) {
 function jm_BigInteger_remainder($this, $divisor) {
     var $thisLen, $divisorLen, var$4, $resDigits, $qLen, $result;
     if (!$divisor.$sign0)
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(269)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(285)));
     $thisLen = $this.$numberLength;
     $divisorLen = $divisor.$numberLength;
     var$4 = $rt_compare($thisLen, $divisorLen);
@@ -20581,15 +20665,15 @@ function me_BasicRegressionPerformanceEvaluator_getPerformanceMeasurements($this
     var var$1, var$2, var$3, var$4;
     var$1 = $rt_createArray(mc_Measurement, 5);
     var$2 = var$1.data;
-    var$3 = mc_Measurement__init_($rt_s(184), $this.$getTotalWeightObserved());
+    var$3 = mc_Measurement__init_($rt_s(179), $this.$getTotalWeightObserved());
     var$2[0] = var$3;
-    var$4 = mc_Measurement__init_($rt_s(270), $this.$getMeanError());
+    var$4 = mc_Measurement__init_($rt_s(286), $this.$getMeanError());
     var$2[1] = var$4;
-    var$3 = mc_Measurement__init_($rt_s(271), $this.$getSquareError());
+    var$3 = mc_Measurement__init_($rt_s(287), $this.$getSquareError());
     var$2[2] = var$3;
-    var$3 = mc_Measurement__init_($rt_s(272), me_BasicRegressionPerformanceEvaluator_getRelativeMeanError($this));
+    var$3 = mc_Measurement__init_($rt_s(288), me_BasicRegressionPerformanceEvaluator_getRelativeMeanError($this));
     var$2[3] = var$3;
-    var$3 = mc_Measurement__init_($rt_s(273), me_BasicRegressionPerformanceEvaluator_getRelativeSquareError($this));
+    var$3 = mc_Measurement__init_($rt_s(289), me_BasicRegressionPerformanceEvaluator_getRelativeSquareError($this));
     var$2[4] = var$3;
     return var$1;
 }
@@ -21269,7 +21353,7 @@ function mcca_NominalAttributeClassObserver_getClassDistsResultingFromBinarySpli
     return var$7;
 }
 function mcca_NominalAttributeClassObserver_getDescription($this, $sb, $indent) {
-    jl_System_out().$println1($rt_s(274));
+    jl_System_out().$println1($rt_s(290));
 }
 function mcca_NominalAttributeClassObserver_prepareForUseImpl($this, $monitor, $repository) {
     return;
@@ -21410,7 +21494,7 @@ function jlr_Field_toString($this) {
     $sb.$append(jlr_Modifier_toString($this.$getModifiers0()));
     if ($sb.$length() > 0)
         $sb.$append2(32);
-    $sb.$append($this.$getType().$getName()).$append2(32).$append($this.$declaringClass.$getName()).$append($rt_s(275)).$append($this.$name8);
+    $sb.$append($this.$getType().$getName()).$append2(32).$append($this.$declaringClass.$getName()).$append($rt_s(291)).$append($this.$name8);
     return $sb.$toString();
 }
 function jlr_Field_get($this, $obj) {
@@ -21472,28 +21556,28 @@ function msg_RandomRBFGenerator__init_(var_0, var_1, var_2, var_3, var_4) {
 }
 function msg_RandomRBFGenerator__init_0($this, $modelRandomSeed, $instanceRandomSeed, $numClasses, $numAtts, $numCentroids) {
     mo_AbstractOptionHandler__init_0($this);
-    $this.$modelRandomSeedOption = cgj_IntOption__init_($rt_s(276), 114, $rt_s(277), 1);
-    $this.$instanceRandomSeedOption = cgj_IntOption__init_($rt_s(278), 105, $rt_s(279), 1);
-    $this.$numClassesOption = cgj_IntOption__init_0($rt_s(280), 99, $rt_s(281), 2, 2, 2147483647);
-    $this.$numAttsOption = cgj_IntOption__init_0($rt_s(282), 97, $rt_s(283), 10, 0, 2147483647);
-    $this.$numCentroidsOption = cgj_IntOption__init_0($rt_s(284), 110, $rt_s(285), 50, 1, 2147483647);
+    $this.$modelRandomSeedOption = cgj_IntOption__init_($rt_s(292), 114, $rt_s(293), 1);
+    $this.$instanceRandomSeedOption = cgj_IntOption__init_($rt_s(294), 105, $rt_s(295), 1);
+    $this.$numClassesOption = cgj_IntOption__init_0($rt_s(296), 99, $rt_s(297), 2, 2, 2147483647);
+    $this.$numAttsOption = cgj_IntOption__init_0($rt_s(298), 97, $rt_s(299), 10, 0, 2147483647);
+    $this.$numCentroidsOption = cgj_IntOption__init_0($rt_s(300), 110, $rt_s(301), 50, 1, 2147483647);
     $this.$modelRandomSeedOption.$setValue2($modelRandomSeed);
     $this.$instanceRandomSeedOption.$setValue2($instanceRandomSeed);
     if ($numClasses > 1 && $numClasses < 51)
         $this.$numClassesOption.$setValue2($numClasses);
     else
-        jl_System_out().$println1($rt_s(286));
+        jl_System_out().$println1($rt_s(302));
     if ($numAtts > (-1))
         $this.$numAttsOption.$setValue2($numAtts);
     else
-        jl_System_out().$println1($rt_s(287));
+        jl_System_out().$println1($rt_s(303));
     if ($numCentroids > 0)
         $this.$numCentroidsOption.$setValue2($numCentroids);
     else
-        jl_System_out().$println1($rt_s(288));
+        jl_System_out().$println1($rt_s(304));
 }
 function msg_RandomRBFGenerator_prepareForUseImpl($this, $monitor, $repository) {
-    $monitor.$setCurrentActivity($rt_s(289), (-1.0));
+    $monitor.$setCurrentActivity($rt_s(305), (-1.0));
     $this.$generateHeader();
     $this.$generateCentroids();
     $this.$restart();
@@ -21541,7 +21625,7 @@ function msg_RandomRBFGenerator_generateHeader($this) {
     $i = 0;
     while ($i < $this.$numAttsOption.$getValue0()) {
         var$3 = new cylsi_Attribute;
-        var$4 = jl_StringBuilder__init_().$append($rt_s(290));
+        var$4 = jl_StringBuilder__init_().$append($rt_s(306));
         $i = $i + 1 | 0;
         cylsi_Attribute__init_2(var$3, var$4.$append1($i).$toString());
         mc_FastVector_addElement($attributes, var$3);
@@ -21549,12 +21633,12 @@ function msg_RandomRBFGenerator_generateHeader($this) {
     $classLabels = mc_FastVector__init_();
     $i = 0;
     while ($i < $this.$numClassesOption.$getValue0()) {
-        var$4 = jl_StringBuilder__init_().$append($rt_s(291));
+        var$4 = jl_StringBuilder__init_().$append($rt_s(261));
         $i = $i + 1 | 0;
         mc_FastVector_addElement($classLabels, var$4.$append1($i).$toString());
     }
-    mc_FastVector_addElement($attributes, cylsi_Attribute__init_0($rt_s(291), $classLabels));
-    $instanceInfoString = jl_StringBuilder__init_().$append($rt_s(292)).$append(jl_Integer_toString0($this.$numClassesOption.$getValue0())).$append($rt_s(293)).$append(jl_Integer_toString0($this.$numAttsOption.$getValue0())).$append($rt_s(294)).$append(jl_Integer_toString0($this.$numCentroidsOption.$getValue0())).$toString();
+    mc_FastVector_addElement($attributes, cylsi_Attribute__init_0($rt_s(261), $classLabels));
+    $instanceInfoString = jl_StringBuilder__init_().$append($rt_s(307)).$append(jl_Integer_toString0($this.$numClassesOption.$getValue0())).$append($rt_s(308)).$append(jl_Integer_toString0($this.$numAttsOption.$getValue0())).$append($rt_s(309)).$append(jl_Integer_toString0($this.$numCentroidsOption.$getValue0())).$toString();
     $this.$streamHeader = cylsi_InstancesHeader__init_(cylsi_Instances__init_1($instanceInfoString, $attributes, 0));
     $this.$streamHeader.$setClassIndex($this.$streamHeader.$numAttributes() - 1 | 0);
 }
@@ -21608,7 +21692,7 @@ function cgj_FlagOption_getValueAsCLIString($this) {
     return !$this.$isSet1 ? null : $rt_s(17);
 }
 function cgj_FlagOption_setValueViaCLIString($this, $s) {
-    if ($s !== $rt_s(55) && $s !== null)
+    if ($s !== $rt_s(57) && $s !== null)
         $this.$isSet1 = 1;
     else
         $this.$isSet1 = 0;
@@ -21653,7 +21737,7 @@ function ju_AbstractList$1_checkConcurrentModification($this) {
 function ju_AbstractMap$SimpleEntry() {
     var a = this; jl_Object.call(a);
     a.$key0 = null;
-    a.$value10 = null;
+    a.$value9 = null;
 }
 function ju_AbstractMap$SimpleEntry__init_(var_0, var_1) {
     var var_2 = new ju_AbstractMap$SimpleEntry();
@@ -21663,15 +21747,15 @@ function ju_AbstractMap$SimpleEntry__init_(var_0, var_1) {
 function ju_AbstractMap$SimpleEntry__init_0($this, $key, $value) {
     jl_Object__init_0($this);
     $this.$key0 = $key;
-    $this.$value10 = $value;
+    $this.$value9 = $value;
 }
 function ju_AbstractMap$SimpleEntry_getValue($this) {
-    return $this.$value10;
+    return $this.$value9;
 }
 function ju_AbstractMap$SimpleEntry_setValue($this, $value) {
     var $old;
-    $old = $this.$value10;
-    $this.$value10 = $value;
+    $old = $this.$value9;
+    $this.$value9 = $value;
     return $old;
 }
 function ju_AbstractMap$SimpleEntry_getKey($this) {
@@ -21696,7 +21780,7 @@ function ju_AbstractMap$SimpleEntry_hashCode($this) {
     return ($this.$getKey() === null ? 0 : $this.$getKey().$hashCode()) ^ ($this.$getValue1() === null ? 0 : $this.$getValue1().$hashCode());
 }
 function ju_AbstractMap$SimpleEntry_toString($this) {
-    return jl_StringBuilder__init_().$append(jl_String_valueOf($this.$getKey())).$append($rt_s(239)).$append(jl_String_valueOf($this.$getValue1())).$toString();
+    return jl_StringBuilder__init_().$append(jl_String_valueOf($this.$getKey())).$append($rt_s(234)).$append(jl_String_valueOf($this.$getValue1())).$toString();
 }
 function cgj_MultiChoiceOption() {
     var a = this; cgj_AbstractOption.call(a);
@@ -21716,7 +21800,7 @@ function cgj_MultiChoiceOption__init_($this, $name, $cliChar, $purpose, $optionL
     var$8 = $optionLabels.data;
     cgj_AbstractOption__init_0($this, $name, $cliChar, $purpose);
     if (var$8.length != var$7.length)
-        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(295)));
+        $rt_throw(jl_IllegalArgumentException__init_0($rt_s(310)));
     $this.$optionLabels = $optionLabels.$clone();
     $this.$optionDescriptions = $optionDescriptions.$clone();
     $this.$defaultOptionIndex = $defaultOptionIndex;
@@ -21750,7 +21834,7 @@ function cgj_MultiChoiceOption_setChosenLabel($this, $label) {
     $i = 0;
     while (true) {
         if ($i >= $this.$optionLabels.data.length)
-            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(296)).$append(var$2).$toString()));
+            $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(311)).$append(var$2).$toString()));
         if ($this.$optionLabels.data[$i].$equals(var$2))
             break;
         $i = $i + 1 | 0;
@@ -21816,12 +21900,18 @@ function mct_HoeffdingTree__init_(var_0, var_1, var_2, var_3, var_4, var_5, var_
 }
 function mct_HoeffdingTree_getOptions($this) {
     var $myOptions, var$2, $options, var$4, var$5, $option;
-    $myOptions = $rt_createArray(cgj_Option, 4);
+    $myOptions = $rt_createArray(cgj_Option, 10);
     var$2 = $myOptions.data;
     var$2[0] = $this.$nominalEstimatorOption;
     var$2[1] = $this.$numericEstimatorOption;
     var$2[2] = $this.$maxByteSizeOption;
     var$2[3] = $this.$leafpredictionOption;
+    var$2[4] = $this.$gracePeriodOption;
+    var$2[5] = $this.$splitCriterionOption;
+    var$2[6] = $this.$tieThresholdOption;
+    var$2[7] = $this.$binarySplitsOption;
+    var$2[8] = $this.$stopMemManagementOption;
+    var$2[9] = $this.$noPrePruneOption;
     $options = cgj_Options__init_();
     var$4 = var$2.length;
     var$5 = 0;
@@ -21835,38 +21925,38 @@ function mct_HoeffdingTree_getOptions($this) {
 function mct_HoeffdingTree__init_0($this) {
     var var$1, var$2, var$3, var$4;
     mc_AbstractClassifier__init_0($this);
-    $this.$maxByteSizeOption = cgj_IntOption__init_0($rt_s(297), 109, $rt_s(298), 33554432, 0, 2147483647);
-    $this.$numericEstimatorOption = mo_ClassOption__init_($rt_s(299), 110, $rt_s(300), $rt_cls(mcca_NumericAttributeClassObserver), $rt_s(301));
+    $this.$maxByteSizeOption = cgj_IntOption__init_0($rt_s(312), 109, $rt_s(313), 33554432, 0, 2147483647);
+    $this.$numericEstimatorOption = mo_ClassOption__init_($rt_s(314), 110, $rt_s(315), $rt_cls(mcca_NumericAttributeClassObserver), $rt_s(316));
     $this.$numericEstimatorDefault = mcca_GaussianNumericAttributeClassObserver__init_0();
     $this.$numericEstimatorOptionIndex = 0;
-    $this.$nominalEstimatorOption = mo_ClassOption__init_($rt_s(302), 100, $rt_s(303), $rt_cls(mcca_DiscreteAttributeClassObserver), $rt_s(304));
+    $this.$nominalEstimatorOption = mo_ClassOption__init_($rt_s(317), 100, $rt_s(318), $rt_cls(mcca_DiscreteAttributeClassObserver), $rt_s(319));
     $this.$nominalEstimatorDefault = mcca_NominalAttributeClassObserver__init_0();
     $this.$nominalEstimatorOptionIndex = 0;
-    $this.$memoryEstimatePeriodOption = cgj_IntOption__init_0($rt_s(305), 101, $rt_s(306), 1000000, 0, 2147483647);
-    $this.$gracePeriodOption = cgj_IntOption__init_0($rt_s(307), 103, $rt_s(308), 200, 0, 2147483647);
-    $this.$splitCriterionOption = mo_ClassOption__init_($rt_s(309), 115, $rt_s(310), $rt_cls(mccs_SplitCriterion), $rt_s(311));
+    $this.$memoryEstimatePeriodOption = cgj_IntOption__init_0($rt_s(320), 101, $rt_s(321), 1000000, 0, 2147483647);
+    $this.$gracePeriodOption = cgj_IntOption__init_0($rt_s(322), 103, $rt_s(323), 200, 0, 2147483647);
+    $this.$splitCriterionOption = mo_ClassOption__init_($rt_s(324), 115, $rt_s(325), $rt_cls(mccs_SplitCriterion), $rt_s(326));
     $this.$splitCriterionDefault = mccs_InfoGainSplitCriterion__init_0();
     $this.$splitCriterionIndex = 0;
-    $this.$splitConfidenceOption = cgj_FloatOption__init_($rt_s(312), 99, $rt_s(313), 1.0E-7, 0.0, 1.0);
-    $this.$tieThresholdOption = cgj_FloatOption__init_($rt_s(314), 116, $rt_s(315), 0.05, 0.0, 1.0);
-    $this.$binarySplitsOption = cgj_FlagOption__init_($rt_s(316), 98, $rt_s(317));
-    $this.$stopMemManagementOption = cgj_FlagOption__init_($rt_s(318), 122, $rt_s(319));
-    $this.$removePoorAttsOption = cgj_FlagOption__init_($rt_s(320), 114, $rt_s(321));
-    $this.$noPrePruneOption = cgj_FlagOption__init_($rt_s(322), 112, $rt_s(323));
+    $this.$splitConfidenceOption = cgj_FloatOption__init_($rt_s(327), 99, $rt_s(328), 1.0E-7, 0.0, 1.0);
+    $this.$tieThresholdOption = cgj_FloatOption__init_($rt_s(329), 116, $rt_s(330), 0.05, 0.0, 1.0);
+    $this.$binarySplitsOption = cgj_FlagOption__init_($rt_s(331), 98, $rt_s(332));
+    $this.$stopMemManagementOption = cgj_FlagOption__init_($rt_s(333), 122, $rt_s(334));
+    $this.$removePoorAttsOption = cgj_FlagOption__init_($rt_s(335), 114, $rt_s(336));
+    $this.$noPrePruneOption = cgj_FlagOption__init_($rt_s(337), 112, $rt_s(338));
     var$1 = new cgj_MultiChoiceOption;
     var$2 = $rt_createArray(jl_String, 3);
     var$3 = var$2.data;
-    var$3[0] = $rt_s(324);
-    var$3[1] = $rt_s(325);
-    var$3[2] = $rt_s(326);
+    var$3[0] = $rt_s(339);
+    var$3[1] = $rt_s(340);
+    var$3[2] = $rt_s(341);
     var$3 = $rt_createArray(jl_String, 3);
     var$4 = var$3.data;
-    var$4[0] = $rt_s(327);
-    var$4[1] = $rt_s(328);
-    var$4[2] = $rt_s(329);
-    cgj_MultiChoiceOption__init_(var$1, $rt_s(330), 108, $rt_s(331), var$2, var$3, 2);
+    var$4[0] = $rt_s(342);
+    var$4[1] = $rt_s(343);
+    var$4[2] = $rt_s(344);
+    cgj_MultiChoiceOption__init_(var$1, $rt_s(345), 108, $rt_s(346), var$2, var$3, 2);
     $this.$leafpredictionOption = var$1;
-    $this.$nbThresholdOption = cgj_IntOption__init_0($rt_s(332), 113, $rt_s(333), 0, 0, 2147483647);
+    $this.$nbThresholdOption = cgj_IntOption__init_0($rt_s(347), 113, $rt_s(348), 0, 0, 2147483647);
     $this.$maxByteSizeOption.$setValue2(33554432);
     $this.$nominalEstimatorOptionIndex = 0;
     $this.$splitCriterionIndex = 0;
@@ -21884,66 +21974,66 @@ function mct_HoeffdingTree__init_0($this) {
 function mct_HoeffdingTree__init_2($this, $maxByteSize, $numericEstimator, $splitCriterion, $memoryEstimatePeriod, $gracePeriod, $splitConfidence, $tieThreshold, $binarySplits, $stopMemManagement, $removePoorAtts, $noPrePrune, $leafprediction, $nbThreshold) {
     var var$14, var$15, var$16, var$17;
     mc_AbstractClassifier__init_0($this);
-    $this.$maxByteSizeOption = cgj_IntOption__init_0($rt_s(297), 109, $rt_s(298), 33554432, 0, 2147483647);
-    $this.$numericEstimatorOption = mo_ClassOption__init_($rt_s(299), 110, $rt_s(300), $rt_cls(mcca_NumericAttributeClassObserver), $rt_s(301));
+    $this.$maxByteSizeOption = cgj_IntOption__init_0($rt_s(312), 109, $rt_s(313), 33554432, 0, 2147483647);
+    $this.$numericEstimatorOption = mo_ClassOption__init_($rt_s(314), 110, $rt_s(315), $rt_cls(mcca_NumericAttributeClassObserver), $rt_s(316));
     $this.$numericEstimatorDefault = mcca_GaussianNumericAttributeClassObserver__init_0();
     $this.$numericEstimatorOptionIndex = 0;
-    $this.$nominalEstimatorOption = mo_ClassOption__init_($rt_s(302), 100, $rt_s(303), $rt_cls(mcca_DiscreteAttributeClassObserver), $rt_s(304));
+    $this.$nominalEstimatorOption = mo_ClassOption__init_($rt_s(317), 100, $rt_s(318), $rt_cls(mcca_DiscreteAttributeClassObserver), $rt_s(319));
     $this.$nominalEstimatorDefault = mcca_NominalAttributeClassObserver__init_0();
     $this.$nominalEstimatorOptionIndex = 0;
-    $this.$memoryEstimatePeriodOption = cgj_IntOption__init_0($rt_s(305), 101, $rt_s(306), 1000000, 0, 2147483647);
-    $this.$gracePeriodOption = cgj_IntOption__init_0($rt_s(307), 103, $rt_s(308), 200, 0, 2147483647);
-    $this.$splitCriterionOption = mo_ClassOption__init_($rt_s(309), 115, $rt_s(310), $rt_cls(mccs_SplitCriterion), $rt_s(311));
+    $this.$memoryEstimatePeriodOption = cgj_IntOption__init_0($rt_s(320), 101, $rt_s(321), 1000000, 0, 2147483647);
+    $this.$gracePeriodOption = cgj_IntOption__init_0($rt_s(322), 103, $rt_s(323), 200, 0, 2147483647);
+    $this.$splitCriterionOption = mo_ClassOption__init_($rt_s(324), 115, $rt_s(325), $rt_cls(mccs_SplitCriterion), $rt_s(326));
     $this.$splitCriterionDefault = mccs_InfoGainSplitCriterion__init_0();
     $this.$splitCriterionIndex = 0;
-    $this.$splitConfidenceOption = cgj_FloatOption__init_($rt_s(312), 99, $rt_s(313), 1.0E-7, 0.0, 1.0);
-    $this.$tieThresholdOption = cgj_FloatOption__init_($rt_s(314), 116, $rt_s(315), 0.05, 0.0, 1.0);
-    $this.$binarySplitsOption = cgj_FlagOption__init_($rt_s(316), 98, $rt_s(317));
-    $this.$stopMemManagementOption = cgj_FlagOption__init_($rt_s(318), 122, $rt_s(319));
-    $this.$removePoorAttsOption = cgj_FlagOption__init_($rt_s(320), 114, $rt_s(321));
-    $this.$noPrePruneOption = cgj_FlagOption__init_($rt_s(322), 112, $rt_s(323));
+    $this.$splitConfidenceOption = cgj_FloatOption__init_($rt_s(327), 99, $rt_s(328), 1.0E-7, 0.0, 1.0);
+    $this.$tieThresholdOption = cgj_FloatOption__init_($rt_s(329), 116, $rt_s(330), 0.05, 0.0, 1.0);
+    $this.$binarySplitsOption = cgj_FlagOption__init_($rt_s(331), 98, $rt_s(332));
+    $this.$stopMemManagementOption = cgj_FlagOption__init_($rt_s(333), 122, $rt_s(334));
+    $this.$removePoorAttsOption = cgj_FlagOption__init_($rt_s(335), 114, $rt_s(336));
+    $this.$noPrePruneOption = cgj_FlagOption__init_($rt_s(337), 112, $rt_s(338));
     var$14 = new cgj_MultiChoiceOption;
     var$15 = $rt_createArray(jl_String, 3);
     var$16 = var$15.data;
-    var$16[0] = $rt_s(324);
-    var$16[1] = $rt_s(325);
-    var$16[2] = $rt_s(326);
+    var$16[0] = $rt_s(339);
+    var$16[1] = $rt_s(340);
+    var$16[2] = $rt_s(341);
     var$16 = $rt_createArray(jl_String, 3);
     var$17 = var$16.data;
-    var$17[0] = $rt_s(327);
-    var$17[1] = $rt_s(328);
-    var$17[2] = $rt_s(329);
-    cgj_MultiChoiceOption__init_(var$14, $rt_s(330), 108, $rt_s(331), var$15, var$16, 2);
+    var$17[0] = $rt_s(342);
+    var$17[1] = $rt_s(343);
+    var$17[2] = $rt_s(344);
+    cgj_MultiChoiceOption__init_(var$14, $rt_s(345), 108, $rt_s(346), var$15, var$16, 2);
     $this.$leafpredictionOption = var$14;
-    $this.$nbThresholdOption = cgj_IntOption__init_0($rt_s(332), 113, $rt_s(333), 0, 0, 2147483647);
+    $this.$nbThresholdOption = cgj_IntOption__init_0($rt_s(347), 113, $rt_s(348), 0, 0, 2147483647);
     if ($maxByteSize > 0)
         $this.$maxByteSizeOption.$setValue2($maxByteSize);
     else
-        jl_System_out().$println1($rt_s(334));
+        jl_System_out().$println1($rt_s(349));
     if ($numericEstimator >= 0 && $numericEstimator <= 9)
         $this.$numericEstimatorOptionIndex = $numericEstimator;
     else
-        jl_System_out().$println1($rt_s(335));
+        jl_System_out().$println1($rt_s(350));
     if ($splitCriterion >= 0 && $splitCriterion <= 9)
         $this.$splitCriterionIndex = $splitCriterion;
     else
-        jl_System_out().$println1($rt_s(336));
+        jl_System_out().$println1($rt_s(351));
     if ($memoryEstimatePeriod >= 0)
         $this.$memoryEstimatePeriodOption.$setValue2($memoryEstimatePeriod);
     else
-        jl_System_out().$println1($rt_s(337));
+        jl_System_out().$println1($rt_s(352));
     if ($gracePeriod >= 0)
         $this.$gracePeriodOption.$setValue2($gracePeriod);
     else
-        jl_System_out().$println1($rt_s(338));
+        jl_System_out().$println1($rt_s(353));
     if ($splitConfidence <= 1.0 && $splitConfidence >= 0.0)
         $this.$splitConfidenceOption.$setValue3($splitConfidence);
     else
-        jl_System_out().$println1($rt_s(339));
+        jl_System_out().$println1($rt_s(354));
     if ($tieThreshold <= 1.0 && $tieThreshold >= 0.0)
         $this.$tieThresholdOption.$setValue3($tieThreshold);
     else
-        jl_System_out().$println1($rt_s(340));
+        jl_System_out().$println1($rt_s(355));
     $this.$binarySplitsOption.$setValue4($binarySplits);
     $this.$stopMemManagementOption.$setValue4($stopMemManagement);
     $this.$removePoorAttsOption.$setValue4($removePoorAtts);
@@ -21951,15 +22041,15 @@ function mct_HoeffdingTree__init_2($this, $maxByteSize, $numericEstimator, $spli
     if ($leafprediction >= 0 && $leafprediction <= 2)
         $this.$leafpredictionOption.$setChosenIndex($leafprediction);
     else
-        jl_System_out().$println1($rt_s(341));
+        jl_System_out().$println1($rt_s(356));
     if ($nbThreshold >= 0)
         $this.$nbThresholdOption.$setValue2($nbThreshold);
     else
-        jl_System_out().$println1($rt_s(342));
+        jl_System_out().$println1($rt_s(357));
 }
 function mct_HoeffdingTree_calcByteSize($this) {
     var $size;
-    $size = mc_SizeOf_sizeOf($this).lo;
+    $size = 1;
     if ($this.$treeRoot !== null)
         $size = $size + $this.$treeRoot.$calcByteSizeIncludingSubtree() | 0;
     return $size;
@@ -22024,14 +22114,14 @@ function mct_HoeffdingTree_getModelMeasurementsImpl($this) {
     var var$1, var$2, var$3;
     var$1 = $rt_createArray(mc_Measurement, 7);
     var$2 = var$1.data;
-    var$2[0] = mc_Measurement__init_($rt_s(343), ($this.$decisionNodeCount + $this.$activeLeafNodeCount | 0) + $this.$inactiveLeafNodeCount | 0);
-    var$2[1] = mc_Measurement__init_($rt_s(344), $this.$activeLeafNodeCount + $this.$inactiveLeafNodeCount | 0);
-    var$2[2] = mc_Measurement__init_($rt_s(345), $this.$activeLeafNodeCount);
-    var$3 = mc_Measurement__init_($rt_s(346), $this.$measureTreeDepth());
+    var$2[0] = mc_Measurement__init_($rt_s(358), ($this.$decisionNodeCount + $this.$activeLeafNodeCount | 0) + $this.$inactiveLeafNodeCount | 0);
+    var$2[1] = mc_Measurement__init_($rt_s(359), $this.$activeLeafNodeCount + $this.$inactiveLeafNodeCount | 0);
+    var$2[2] = mc_Measurement__init_($rt_s(360), $this.$activeLeafNodeCount);
+    var$3 = mc_Measurement__init_($rt_s(361), $this.$measureTreeDepth());
     var$2[3] = var$3;
-    var$2[4] = mc_Measurement__init_($rt_s(347), $this.$activeLeafByteSizeEstimate);
-    var$2[5] = mc_Measurement__init_($rt_s(348), $this.$inactiveLeafByteSizeEstimate);
-    var$2[6] = mc_Measurement__init_($rt_s(349), $this.$byteSizeEstimateOverheadFraction);
+    var$2[4] = mc_Measurement__init_($rt_s(362), $this.$activeLeafByteSizeEstimate);
+    var$2[5] = mc_Measurement__init_($rt_s(363), $this.$inactiveLeafByteSizeEstimate);
+    var$2[6] = mc_Measurement__init_($rt_s(364), $this.$byteSizeEstimateOverheadFraction);
     return var$1;
 }
 function mct_HoeffdingTree_measureTreeDepth($this) {
@@ -22350,33 +22440,33 @@ function mo_ClassOption$1__init_0() {
 }
 function mo_ClassOption$1__init_($this) {
     ju_HashMap__init_0($this);
-    $this.$put($rt_s(350), $rt_cls(mct_HoeffdingTree));
-    $this.$put($rt_s(304), $rt_cls(mcca_NominalAttributeClassObserver));
-    $this.$put($rt_s(301), $rt_cls(mcca_GaussianNumericAttributeClassObserver));
-    $this.$put($rt_s(311), $rt_cls(mccs_InfoGainSplitCriterion));
-    $this.$put($rt_s(351), $rt_cls(mcca_BinaryTreeNumericAttributeClassObserver));
-    $this.$put($rt_s(352), $rt_cls(mcca_BinaryTreeNumericAttributeClassObserverRegression));
-    $this.$put($rt_s(353), $rt_cls(mcca_FIMTDDNumericAttributeClassObserver));
-    $this.$put($rt_s(354), $rt_cls(mcrca_FIMTDDNumericAttributeClassLimitObserver));
-    $this.$put($rt_s(355), $rt_cls(mcca_VFMLNumericAttributeClassObserver));
-    $this.$put($rt_s(356), $rt_cls(mcti_IademGaussianNumericAttributeClassObserver));
-    $this.$put($rt_s(357), $rt_cls(mcti_IademGreenwaldKhannaNumericAttributeClassObserver));
-    $this.$put($rt_s(358), $rt_cls(mcti_IademVFMLNumericAttributeClassObserver));
-    $this.$put($rt_s(359), $rt_cls(mccs_GiniSplitCriterion));
-    $this.$put($rt_s(311), $rt_cls(mccs_InfoGainSplitCriterion));
-    $this.$put($rt_s(360), $rt_cls(mccs_InfoGainSplitCriterionMultilabel));
-    $this.$put($rt_s(361), $rt_cls(mccs_SDRSplitCriterion));
-    $this.$put($rt_s(362), $rt_cls(mcrcs_AMRulesSplitCriterion));
-    $this.$put($rt_s(363), $rt_cls(mcrcs_SDRSplitCriterionAMRules));
-    $this.$put($rt_s(364), $rt_cls(mcrcs_SDRSplitCriterionAMRulesNode));
-    $this.$put($rt_s(365), $rt_cls(mccs_VarianceReductionSplitCriterion));
-    $this.$put($rt_s(366), $rt_cls(mcrcs_VarianceRatioSplitCriterion));
-    $this.$put($rt_s(367), $rt_cls(mcrcs_VRSplitCriterion));
-    $this.$put($rt_s(368), $rt_cls(mccd_ADWINChangeDetector));
+    $this.$put($rt_s(365), $rt_cls(mct_HoeffdingTree));
+    $this.$put($rt_s(319), $rt_cls(mcca_NominalAttributeClassObserver));
+    $this.$put($rt_s(316), $rt_cls(mcca_GaussianNumericAttributeClassObserver));
+    $this.$put($rt_s(326), $rt_cls(mccs_InfoGainSplitCriterion));
+    $this.$put($rt_s(366), $rt_cls(mcca_BinaryTreeNumericAttributeClassObserver));
+    $this.$put($rt_s(367), $rt_cls(mcca_BinaryTreeNumericAttributeClassObserverRegression));
+    $this.$put($rt_s(368), $rt_cls(mcca_FIMTDDNumericAttributeClassObserver));
+    $this.$put($rt_s(369), $rt_cls(mcrca_FIMTDDNumericAttributeClassLimitObserver));
+    $this.$put($rt_s(370), $rt_cls(mcca_VFMLNumericAttributeClassObserver));
+    $this.$put($rt_s(371), $rt_cls(mcti_IademGaussianNumericAttributeClassObserver));
+    $this.$put($rt_s(372), $rt_cls(mcti_IademGreenwaldKhannaNumericAttributeClassObserver));
+    $this.$put($rt_s(373), $rt_cls(mcti_IademVFMLNumericAttributeClassObserver));
+    $this.$put($rt_s(374), $rt_cls(mccs_GiniSplitCriterion));
+    $this.$put($rt_s(326), $rt_cls(mccs_InfoGainSplitCriterion));
+    $this.$put($rt_s(375), $rt_cls(mccs_InfoGainSplitCriterionMultilabel));
+    $this.$put($rt_s(376), $rt_cls(mccs_SDRSplitCriterion));
+    $this.$put($rt_s(377), $rt_cls(mcrcs_AMRulesSplitCriterion));
+    $this.$put($rt_s(378), $rt_cls(mcrcs_SDRSplitCriterionAMRules));
+    $this.$put($rt_s(379), $rt_cls(mcrcs_SDRSplitCriterionAMRulesNode));
+    $this.$put($rt_s(380), $rt_cls(mccs_VarianceReductionSplitCriterion));
+    $this.$put($rt_s(381), $rt_cls(mcrcs_VarianceRatioSplitCriterion));
+    $this.$put($rt_s(382), $rt_cls(mcrcs_VRSplitCriterion));
+    $this.$put($rt_s(383), $rt_cls(mccd_ADWINChangeDetector));
 }
 function ju_Date() {
     jl_Object.call(this);
-    this.$value11 = Long_ZERO;
+    this.$value10 = Long_ZERO;
 }
 function ju_Date_$callClinit() {
     ju_Date_$callClinit = $rt_eraseClinit(ju_Date);
@@ -22395,28 +22485,28 @@ function ju_Date__init_0(var_0) {
 function ju_Date__init_($this) {
     ju_Date_$callClinit();
     jl_Object__init_0($this);
-    $this.$value11 = jl_System_currentTimeMillis();
+    $this.$value10 = jl_System_currentTimeMillis();
 }
 function ju_Date__init_2($this, $date) {
     ju_Date_$callClinit();
     jl_Object__init_0($this);
-    $this.$value11 = $date;
+    $this.$value10 = $date;
 }
 function ju_Date_getTime($this) {
-    return $this.$value11;
+    return $this.$value10;
 }
 function ju_Date_equals($this, $obj) {
     var $other;
     if (!($obj instanceof ju_Date))
         return 0;
     $other = $obj;
-    return Long_ne($this.$value11, $other.$value11) ? 0 : 1;
+    return Long_ne($this.$value10, $other.$value10) ? 0 : 1;
 }
 function ju_Date_hashCode($this) {
-    return $this.$value11.lo ^ $this.$value11.hi;
+    return $this.$value10.lo ^ $this.$value10.hi;
 }
 function ju_Date_toString($this) {
-    return $rt_str((new Date(Long_toNumber($this.$value11))).toString());
+    return $rt_str((new Date(Long_toNumber($this.$value10))).toString());
 }
 function ju_Date__clinit_() {
     return;
@@ -22475,36 +22565,36 @@ function cylsi_InstancesHeader__init_0($this) {
 }
 function cylsi_InstancesHeader_getClassNameString($context) {
     if ($context === null)
-        return $rt_s(369);
-    return jl_StringBuilder__init_().$append($rt_s(370)).$append($context.$classAttribute().$name7()).$append($rt_s(13)).$toString();
+        return $rt_s(384);
+    return jl_StringBuilder__init_().$append($rt_s(385)).$append($context.$classAttribute().$name7()).$append($rt_s(13)).$toString();
 }
 function cylsi_InstancesHeader_getClassLabelString($context, $classLabelIndex) {
     var var$3;
     if ($context !== null && $classLabelIndex < $context.$numClasses()) {
-        var$3 = jl_StringBuilder__init_().$append($rt_s(371)).$append1($classLabelIndex + 1 | 0).$append($rt_s(372));
-        var$3 = var$3.$append($context.$classAttribute().$value6($classLabelIndex)).$append($rt_s(373)).$toString();
+        var$3 = jl_StringBuilder__init_().$append($rt_s(386)).$append1($classLabelIndex + 1 | 0).$append($rt_s(387));
+        var$3 = var$3.$append($context.$classAttribute().$value6($classLabelIndex)).$append($rt_s(388)).$toString();
         return var$3;
     }
-    return jl_StringBuilder__init_().$append($rt_s(371)).$append1($classLabelIndex + 1 | 0).$append($rt_s(373)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(386)).$append1($classLabelIndex + 1 | 0).$append($rt_s(388)).$toString();
 }
 function cylsi_InstancesHeader_getAttributeNameString($context, $attIndex) {
     var $instAttIndex, var$4;
     if ($context !== null && $attIndex < $context.$numAttributes()) {
         $instAttIndex = $attIndex < $context.$classIndex() ? $attIndex : $attIndex + 1 | 0;
-        var$4 = jl_StringBuilder__init_().$append($rt_s(374)).$append1($attIndex + 1 | 0).$append($rt_s(372));
+        var$4 = jl_StringBuilder__init_().$append($rt_s(389)).$append1($attIndex + 1 | 0).$append($rt_s(387));
         var$4 = var$4.$append($context.$attribute($instAttIndex).$name7()).$append($rt_s(13)).$toString();
         return var$4;
     }
-    return jl_StringBuilder__init_().$append($rt_s(374)).$append1($attIndex + 1 | 0).$append($rt_s(13)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(389)).$append1($attIndex + 1 | 0).$append($rt_s(13)).$toString();
 }
 function cylsi_InstancesHeader_getInputAttributeNameString($context, $attIndex) {
     var var$3;
     if ($context !== null && $attIndex < $context.$numInputAttributes()) {
-        var$3 = jl_StringBuilder__init_().$append($rt_s(374)).$append1($attIndex + 1 | 0).$append($rt_s(372));
+        var$3 = jl_StringBuilder__init_().$append($rt_s(389)).$append1($attIndex + 1 | 0).$append($rt_s(387));
         var$3 = var$3.$append($context.$inputAttribute($attIndex).$name7()).$append($rt_s(13)).$toString();
         return var$3;
     }
-    return jl_StringBuilder__init_().$append($rt_s(374)).$append1($attIndex + 1 | 0).$append($rt_s(13)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(389)).$append1($attIndex + 1 | 0).$append($rt_s(13)).$toString();
 }
 function cylsi_InstancesHeader_getNominalValueString($context, $instAttIndex, $valIndex) {
     var var$4;
@@ -22512,12 +22602,12 @@ function cylsi_InstancesHeader_getNominalValueString($context, $instAttIndex, $v
         if ($instAttIndex >= $context.$classIndex())
             $instAttIndex = $instAttIndex + 1 | 0;
         if ($instAttIndex < $context.$numAttributes() && $valIndex < $context.$attribute($instAttIndex).$numValues()) {
-            var$4 = jl_StringBuilder__init_().$append($rt_s(375)).$append1($valIndex + 1 | 0).$append($rt_s(372));
-            var$4 = var$4.$append($context.$attribute($instAttIndex).$value6($valIndex)).$append($rt_s(205)).$toString();
+            var$4 = jl_StringBuilder__init_().$append($rt_s(390)).$append1($valIndex + 1 | 0).$append($rt_s(387));
+            var$4 = var$4.$append($context.$attribute($instAttIndex).$value6($valIndex)).$append($rt_s(200)).$toString();
             return var$4;
         }
     }
-    return jl_StringBuilder__init_().$append($rt_s(375)).$append1($valIndex + 1 | 0).$append($rt_s(205)).$toString();
+    return jl_StringBuilder__init_().$append($rt_s(390)).$append1($valIndex + 1 | 0).$append($rt_s(200)).$toString();
 }
 function cylsi_InstancesHeader_getNumericValueString($context, $instAttIndex, $value) {
     if ($context !== null) {
@@ -22707,7 +22797,7 @@ function otft_Templates$PROXY$4_0() {
     jl_Object.call(this);
 }
 function otft_Templates$PROXY$4_0_create(var$1, var$2) {
-    return otft_Fragment$proxy$4_0_11__init_(otft_Fragment$proxy$4_0_0__init_(var$2));
+    return otft_Fragment$proxy$4_0_14__init_(otft_Fragment$proxy$4_0_0__init_(var$2));
 }
 function ju_Locale() {
     var a = this; jl_Object.call(a);
@@ -22808,27 +22898,27 @@ function ju_Locale_hashCode($this) {
 }
 function ju_Locale__clinit_() {
     var $localeName, $countryIndex;
-    ju_Locale_CANADA = ju_Locale__init_($rt_s(376), $rt_s(377));
-    ju_Locale_CANADA_FRENCH = ju_Locale__init_($rt_s(378), $rt_s(377));
-    ju_Locale_CHINA = ju_Locale__init_($rt_s(379), $rt_s(380));
-    ju_Locale_CHINESE = ju_Locale__init_($rt_s(379), $rt_s(17));
-    ju_Locale_ENGLISH = ju_Locale__init_($rt_s(376), $rt_s(17));
-    ju_Locale_FRANCE = ju_Locale__init_($rt_s(378), $rt_s(381));
-    ju_Locale_FRENCH = ju_Locale__init_($rt_s(378), $rt_s(17));
-    ju_Locale_GERMAN = ju_Locale__init_($rt_s(382), $rt_s(17));
-    ju_Locale_GERMANY = ju_Locale__init_($rt_s(382), $rt_s(383));
-    ju_Locale_ITALIAN = ju_Locale__init_($rt_s(384), $rt_s(17));
-    ju_Locale_ITALY = ju_Locale__init_($rt_s(384), $rt_s(385));
-    ju_Locale_JAPAN = ju_Locale__init_($rt_s(386), $rt_s(387));
-    ju_Locale_JAPANESE = ju_Locale__init_($rt_s(386), $rt_s(17));
-    ju_Locale_KOREA = ju_Locale__init_($rt_s(388), $rt_s(389));
-    ju_Locale_KOREAN = ju_Locale__init_($rt_s(388), $rt_s(17));
-    ju_Locale_PRC = ju_Locale__init_($rt_s(379), $rt_s(380));
-    ju_Locale_SIMPLIFIED_CHINESE = ju_Locale__init_($rt_s(379), $rt_s(380));
-    ju_Locale_TAIWAN = ju_Locale__init_($rt_s(379), $rt_s(390));
-    ju_Locale_TRADITIONAL_CHINESE = ju_Locale__init_($rt_s(379), $rt_s(390));
-    ju_Locale_UK = ju_Locale__init_($rt_s(376), $rt_s(391));
-    ju_Locale_US = ju_Locale__init_($rt_s(376), $rt_s(392));
+    ju_Locale_CANADA = ju_Locale__init_($rt_s(391), $rt_s(392));
+    ju_Locale_CANADA_FRENCH = ju_Locale__init_($rt_s(393), $rt_s(392));
+    ju_Locale_CHINA = ju_Locale__init_($rt_s(394), $rt_s(395));
+    ju_Locale_CHINESE = ju_Locale__init_($rt_s(394), $rt_s(17));
+    ju_Locale_ENGLISH = ju_Locale__init_($rt_s(391), $rt_s(17));
+    ju_Locale_FRANCE = ju_Locale__init_($rt_s(393), $rt_s(396));
+    ju_Locale_FRENCH = ju_Locale__init_($rt_s(393), $rt_s(17));
+    ju_Locale_GERMAN = ju_Locale__init_($rt_s(397), $rt_s(17));
+    ju_Locale_GERMANY = ju_Locale__init_($rt_s(397), $rt_s(398));
+    ju_Locale_ITALIAN = ju_Locale__init_($rt_s(399), $rt_s(17));
+    ju_Locale_ITALY = ju_Locale__init_($rt_s(399), $rt_s(400));
+    ju_Locale_JAPAN = ju_Locale__init_($rt_s(401), $rt_s(402));
+    ju_Locale_JAPANESE = ju_Locale__init_($rt_s(401), $rt_s(17));
+    ju_Locale_KOREA = ju_Locale__init_($rt_s(403), $rt_s(404));
+    ju_Locale_KOREAN = ju_Locale__init_($rt_s(403), $rt_s(17));
+    ju_Locale_PRC = ju_Locale__init_($rt_s(394), $rt_s(395));
+    ju_Locale_SIMPLIFIED_CHINESE = ju_Locale__init_($rt_s(394), $rt_s(395));
+    ju_Locale_TAIWAN = ju_Locale__init_($rt_s(394), $rt_s(405));
+    ju_Locale_TRADITIONAL_CHINESE = ju_Locale__init_($rt_s(394), $rt_s(405));
+    ju_Locale_UK = ju_Locale__init_($rt_s(391), $rt_s(406));
+    ju_Locale_US = ju_Locale__init_($rt_s(391), $rt_s(407));
     ju_Locale_ROOT = ju_Locale__init_($rt_s(17), $rt_s(17));
     $localeName = (otciu_CLDRHelper_getDefaultLocale().value !== null ? $rt_str(otciu_CLDRHelper_getDefaultLocale().value) : null);
     $countryIndex = $localeName.$indexOf(95);
@@ -23065,7 +23155,7 @@ function ju_TimeZone_getDefault() {
     if (ju_TimeZone_defaultTz === null) {
         $innerTz = otcit_DateTimeZoneProvider_detectTimezone();
         if ($innerTz === null)
-            ju_TimeZone_defaultTz = ju_TimeZone_getTimeZone($rt_s(393));
+            ju_TimeZone_defaultTz = ju_TimeZone_getTimeZone($rt_s(408));
         else
             ju_TimeZone_defaultTz = ju_IANATimeZone__init_($innerTz);
     }
@@ -23091,7 +23181,7 @@ function ju_TimeZone_getTimeZone($name) {
     if ($jodaZone !== null)
         return ju_IANATimeZone__init_($jodaZone);
     a: {
-        if ($name.$startsWith0($rt_s(394)) && $name.$length() > 3) {
+        if ($name.$startsWith0($rt_s(409)) && $name.$length() > 3) {
             $sign = $name.$charAt(3);
             if (!($sign != 43 && $sign != 45)) {
                 $position = $rt_createIntArray(1);
@@ -23142,11 +23232,11 @@ function ju_TimeZone_formatTimeZoneName($name, $offset) {
             $buf.$append2(58);
         $offset = $offset + 1 | 0;
     }
-    if ($buf.$toString().$indexOf4($rt_s(372)) == (-1)) {
+    if ($buf.$toString().$indexOf4($rt_s(387)) == (-1)) {
         $buf.$append2(58);
-        $buf.$append($rt_s(395));
+        $buf.$append($rt_s(410));
     }
-    if ($buf.$toString().$indexOf4($rt_s(372)) == 5)
+    if ($buf.$toString().$indexOf4($rt_s(387)) == 5)
         $buf.$insert12(4, 48);
     return $buf.$toString();
 }
@@ -23173,7 +23263,7 @@ function ju_TimeZone_parseNumber($string, $offset, $position) {
     return $result;
 }
 function ju_TimeZone__clinit_() {
-    ju_TimeZone_GMT = ju_IANATimeZone__init_(otcit_FixedDateTimeZone__init_($rt_s(394), 0, 0));
+    ju_TimeZone_GMT = ju_IANATimeZone__init_(otcit_FixedDateTimeZone__init_($rt_s(409), 0, 0));
 }
 function otfce_BaseEventBinder$setHandler$lambda$_2_0() {
     jl_Object.call(this);
@@ -23458,9 +23548,9 @@ function jn_ByteBuffer_put0($this, $src, $offset, $length) {
         if ($offset < var$5) {
             var$6 = $offset + $length | 0;
             if (var$6 > var$5)
-                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(396)).$append1(var$6).$append($rt_s(220)).$append1(var$5).$toString()));
+                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(411)).$append1(var$6).$append($rt_s(215)).$append1(var$5).$toString()));
             if ($length < 0)
-                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(221)).$append1($length).$append($rt_s(222)).$toString()));
+                $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(216)).$append1($length).$append($rt_s(217)).$toString()));
             $pos = $this.$position + $this.$start0 | 0;
             $i = 0;
             while ($i < $length) {
@@ -23477,7 +23567,7 @@ function jn_ByteBuffer_put0($this, $src, $offset, $length) {
         }
     }
     var$4 = $src.data;
-    $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(223)).$append1($offset).$append($rt_s(59)).$append1(var$4.length).$append($rt_s(224)).$toString()));
+    $rt_throw(jl_IndexOutOfBoundsException__init_1(jl_StringBuilder__init_().$append($rt_s(218)).$append1($offset).$append($rt_s(61)).$append1(var$4.length).$append($rt_s(219)).$toString()));
 }
 function jn_ByteBuffer_put($this, $src) {
     return $this.$put1($src, 0, $src.data.length);
@@ -23533,11 +23623,11 @@ function jt_DateFormatElement$GeneralTimezone__init_0($this, $locale) {
 function jt_DateFormatElement$GeneralTimezone_format($this, $date, $buffer) {
     var $tz, $minutes, $hours, var$6;
     $tz = $date.$getTimeZone();
-    if (!$tz.$getID().$startsWith0($rt_s(394)))
+    if (!$tz.$getID().$startsWith0($rt_s(409)))
         $buffer.$append6(ju_TimeZone_getDisplayName($tz, $this.$locale1));
     else {
         $minutes = $tz.$getRawOffset() / 60000 | 0;
-        $buffer.$append6($rt_s(394));
+        $buffer.$append6($rt_s(409));
         if ($minutes >= 0)
             $buffer.$append5(43);
         else {
@@ -23929,7 +24019,7 @@ function otjc_JSString() {
 }
 function otft_Modifier$proxy$4_0_10() {
     jl_Object.call(this);
-    this.$proxyCapture028 = null;
+    this.$proxyCapture034 = null;
 }
 function otft_Modifier$proxy$4_0_10__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_10();
@@ -23938,18 +24028,18 @@ function otft_Modifier$proxy$4_0_10__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_10_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture028;
-    var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_23__init_(var$2));
+    var$2 = var$0.$proxyCapture034;
+    var$1 = otfch_CheckedChangeBinder__init_(var$1);
+    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_3__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_10__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture028 = var$1;
+    var$0.$proxyCapture034 = var$1;
 }
 function otft_Modifier$proxy$4_0_12() {
     jl_Object.call(this);
-    this.$proxyCapture029 = null;
+    this.$proxyCapture035 = null;
 }
 function otft_Modifier$proxy$4_0_12__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_12();
@@ -23958,18 +24048,18 @@ function otft_Modifier$proxy$4_0_12__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_12_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture029;
-    var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_25__init_(var$2));
+    var$2 = var$0.$proxyCapture035;
+    var$1 = otfch_ValueChangeBinder__init_(var$1);
+    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_4__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_12__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture029 = var$1;
+    var$0.$proxyCapture035 = var$1;
 }
 function otft_Modifier$proxy$4_0_11() {
     jl_Object.call(this);
-    this.$proxyCapture030 = null;
+    this.$proxyCapture036 = null;
 }
 function otft_Modifier$proxy$4_0_11__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_11();
@@ -23978,18 +24068,18 @@ function otft_Modifier$proxy$4_0_11__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_11_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture030;
-    var$1 = otfch_ValueChangeBinder__init_(var$1);
-    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_4__init_(var$2));
+    var$2 = var$0.$proxyCapture036;
+    var$1 = otfch_ValueBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_15__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_11__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture030 = var$1;
+    var$0.$proxyCapture036 = var$1;
 }
 function otft_Modifier$proxy$4_0_14() {
     jl_Object.call(this);
-    this.$proxyCapture031 = null;
+    this.$proxyCapture037 = null;
 }
 function otft_Modifier$proxy$4_0_14__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_14();
@@ -23998,18 +24088,18 @@ function otft_Modifier$proxy$4_0_14__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_14_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture031;
-    var$1 = otfch_ValueChangeBinder__init_(var$1);
-    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_5__init_(var$2));
+    var$2 = var$0.$proxyCapture037;
+    var$1 = otfch_ValueBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_22__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_14__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture031 = var$1;
+    var$0.$proxyCapture037 = var$1;
 }
 function otft_Modifier$proxy$4_0_13() {
     jl_Object.call(this);
-    this.$proxyCapture032 = null;
+    this.$proxyCapture038 = null;
 }
 function otft_Modifier$proxy$4_0_13__init_(var_0) {
     var var_1 = new otft_Modifier$proxy$4_0_13();
@@ -24018,14 +24108,14 @@ function otft_Modifier$proxy$4_0_13__init_(var_0) {
 }
 function otft_Modifier$proxy$4_0_13_apply(var$0, var$1) {
     var var$2;
-    var$2 = var$0.$proxyCapture032;
+    var$2 = var$0.$proxyCapture038;
     var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_30__init_(var$2));
+    var$1.$setValue1(juf_Supplier$proxy$4_0_17__init_(var$2));
     return var$1;
 }
 function otft_Modifier$proxy$4_0_13__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture032 = var$1;
+    var$0.$proxyCapture038 = var$1;
 }
 function ju_AbstractList$TListIteratorImpl() {
     var a = this; jl_Object.call(a);
@@ -24087,6 +24177,46 @@ function ju_AbstractList$TListIteratorImpl_checkConcurrentModification($this) {
         return;
     $rt_throw(ju_ConcurrentModificationException__init_());
 }
+function otft_Modifier$proxy$4_0_16() {
+    jl_Object.call(this);
+    this.$proxyCapture039 = null;
+}
+function otft_Modifier$proxy$4_0_16__init_(var_0) {
+    var var_1 = new otft_Modifier$proxy$4_0_16();
+    otft_Modifier$proxy$4_0_16__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_Modifier$proxy$4_0_16_apply(var$0, var$1) {
+    var var$2;
+    var$2 = var$0.$proxyCapture039;
+    var$1 = otfch_ValueBinder__init_(var$1);
+    var$1.$setValue1(juf_Supplier$proxy$4_0_24__init_(var$2));
+    return var$1;
+}
+function otft_Modifier$proxy$4_0_16__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture039 = var$1;
+}
+function otft_Modifier$proxy$4_0_15() {
+    jl_Object.call(this);
+    this.$proxyCapture040 = null;
+}
+function otft_Modifier$proxy$4_0_15__init_(var_0) {
+    var var_1 = new otft_Modifier$proxy$4_0_15();
+    otft_Modifier$proxy$4_0_15__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_Modifier$proxy$4_0_15_apply(var$0, var$1) {
+    var var$2;
+    var$2 = var$0.$proxyCapture040;
+    var$1 = otfch_ValueChangeBinder__init_(var$1);
+    var$1.$setListener(otft_ValueChangeListener$proxy$4_0_5__init_(var$2));
+    return var$1;
+}
+function otft_Modifier$proxy$4_0_15__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture040 = var$1;
+}
 function mc_AutoExpandVector() {
     ju_ArrayList.call(this);
 }
@@ -24129,26 +24259,6 @@ function mc_AutoExpandVector_add0($this, $arg0) {
     $result = ju_ArrayList_add($this, $arg0);
     $this.$trimToSize();
     return $result;
-}
-function otft_Modifier$proxy$4_0_15() {
-    jl_Object.call(this);
-    this.$proxyCapture033 = null;
-}
-function otft_Modifier$proxy$4_0_15__init_(var_0) {
-    var var_1 = new otft_Modifier$proxy$4_0_15();
-    otft_Modifier$proxy$4_0_15__init_0(var_1, var_0);
-    return var_1;
-}
-function otft_Modifier$proxy$4_0_15_apply(var$0, var$1) {
-    var var$2;
-    var$2 = var$0.$proxyCapture033;
-    var$1 = otfch_ValueBinder__init_(var$1);
-    var$1.$setValue1(juf_Supplier$proxy$4_0_32__init_(var$2));
-    return var$1;
-}
-function otft_Modifier$proxy$4_0_15__init_0(var$0, var$1) {
-    jl_Object__init_0(var$0);
-    var$0.$proxyCapture033 = var$1;
 }
 function oti_AsyncCallback() {
 }
@@ -24227,7 +24337,7 @@ function cgj_Options_addOption($this, $opt) {
     var var$2, var$3;
     if ($this.$getOption($opt.$getName()) !== null) {
         var$2 = new jl_IllegalArgumentException;
-        var$3 = jl_StringBuilder__init_().$append($rt_s(397));
+        var$3 = jl_StringBuilder__init_().$append($rt_s(412));
         jl_IllegalArgumentException__init_4(var$2, var$3.$append($opt.$getName()).$toString());
         $rt_throw(var$2);
     }
@@ -24236,7 +24346,7 @@ function cgj_Options_addOption($this, $opt) {
         return;
     }
     var$3 = new jl_IllegalArgumentException;
-    var$2 = jl_StringBuilder__init_().$append($rt_s(398));
+    var$2 = jl_StringBuilder__init_().$append($rt_s(413));
     jl_IllegalArgumentException__init_4(var$3, var$2.$append2($opt.$getCLIChar()).$toString());
     $rt_throw(var$3);
 }
@@ -24276,13 +24386,13 @@ function cgj_Options_getAsCLIString($this) {
         $value = $option.$getValueAsCLIString();
         if ($value !== null && !$value.$equals($option.$getDefaultCLIString())) {
             if ($commandLine.$length() > 0)
-                $commandLine.$append($rt_s(29));
+                $commandLine.$append($rt_s(31));
             $commandLine.$append(jl_StringBuilder__init_().$append($rt_s(18)).$append2($option.$getCLIChar()).$toString());
             if ($value.$length() > 0) {
                 if ($value.$indexOf(32) < 0)
-                    $commandLine.$append(jl_StringBuilder__init_().$append($rt_s(29)).$append($value).$toString());
+                    $commandLine.$append(jl_StringBuilder__init_().$append($rt_s(31)).$append($value).$toString());
                 else
-                    $commandLine.$append(jl_StringBuilder__init_().$append($rt_s(399)).$append($value).$append($rt_s(224)).$toString());
+                    $commandLine.$append(jl_StringBuilder__init_().$append($rt_s(414)).$append($value).$append($rt_s(219)).$toString());
             }
         }
     }
@@ -24514,7 +24624,7 @@ function otft_DomBuilder_text($this, $text) {
 }
 function otft_DomBuilder_attribute($this, $name, $value) {
     if ($this.$stack.$isEmpty())
-        $rt_throw(jl_IllegalStateException__init_($rt_s(400)));
+        $rt_throw(jl_IllegalStateException__init_($rt_s(415)));
     $this.$stack.$peek().$element1.setAttribute($rt_ustr($name), $rt_ustr($value));
     return $this;
 }
@@ -24538,7 +24648,7 @@ function otft_DomBuilder_add($this, $component) {
 function otft_DomBuilder_add0($this, $modifier) {
     var $renderable;
     if ($this.$stack.$isEmpty())
-        $rt_throw(jl_IllegalStateException__init_($rt_s(401)));
+        $rt_throw(jl_IllegalStateException__init_($rt_s(416)));
     $renderable = $modifier.$apply2($this.$stack.$peek());
     $this.$renderables0.$add($renderable);
     return $this;
@@ -24577,7 +24687,7 @@ function otcit_DateTimeZoneBuilder__init_($this) {
 }
 function otcit_DateTimeZoneBuilder_getGMT() {
     if (otcit_DateTimeZoneBuilder_gmtCache === null)
-        otcit_DateTimeZoneBuilder_gmtCache = ju_TimeZone_getTimeZone($rt_s(402));
+        otcit_DateTimeZoneBuilder_gmtCache = ju_TimeZone_getTimeZone($rt_s(417));
     return otcit_DateTimeZoneBuilder_gmtCache;
 }
 function otcit_DateTimeZoneBuilder_access$000() {
@@ -24647,14 +24757,14 @@ function cylsi_Attribute_isDate($this) {
 function cylsi_Attribute_toString($this) {
     var $text, $enu;
     $text = jl_StringBuffer__init_();
-    $text.$append6($rt_s(403)).$append6($rt_s(29)).$append6(mc_Utils_quote($this.$name7())).$append6($rt_s(29));
+    $text.$append6($rt_s(418)).$append6($rt_s(31)).$append6(mc_Utils_quote($this.$name7())).$append6($rt_s(31));
     if (!$this.$isNominal0) {
         if ($this.$isNumeric0)
-            $text.$append6($rt_s(404));
+            $text.$append6($rt_s(419));
         else if (!$this.$isDate0)
-            $text.$append6($rt_s(405));
+            $text.$append6($rt_s(420));
         else
-            $text.$append6($rt_s(406)).$append6($rt_s(29)).$append6(mc_Utils_quote($this.$m_DateFormat.$toPattern()));
+            $text.$append6($rt_s(421)).$append6($rt_s(31)).$append6(mc_Utils_quote($this.$m_DateFormat.$toPattern()));
     } else {
         $text.$append5(123);
         $enu = cylsi_Attribute_enumerateValues($this);
@@ -24747,7 +24857,7 @@ function jl_System_arraycopy($src, $srcPos, $dest, $destPos, $length) {
         }
         $rt_throw(jl_IndexOutOfBoundsException__init_());
     }
-    $rt_throw(jl_NullPointerException__init_0($rt_s(407)));
+    $rt_throw(jl_NullPointerException__init_0($rt_s(422)));
 }
 function jl_System_doArrayCopy(var$1, var$2, var$3, var$4, var$5) {
     if (var$1 !== var$3 || var$4 < var$2) {
@@ -24769,22 +24879,22 @@ function jl_System_initPropertiesIfNeeded() {
     var $defaults;
     if (jl_System_properties === null) {
         $defaults = ju_Properties__init_0();
-        $defaults.$put($rt_s(408), $rt_s(409));
-        $defaults.$put($rt_s(410), $rt_s(411));
-        $defaults.$put($rt_s(412), $rt_s(413));
-        $defaults.$put($rt_s(414), $rt_s(372));
-        $defaults.$put($rt_s(415), jl_System_lineSeparator());
-        $defaults.$put($rt_s(416), jl_System_getTempDir());
-        $defaults.$put($rt_s(417), $rt_s(409));
-        $defaults.$put($rt_s(418), jl_System_getHomeDir());
+        $defaults.$put($rt_s(423), $rt_s(424));
+        $defaults.$put($rt_s(425), $rt_s(426));
+        $defaults.$put($rt_s(427), $rt_s(428));
+        $defaults.$put($rt_s(429), $rt_s(387));
+        $defaults.$put($rt_s(430), jl_System_lineSeparator());
+        $defaults.$put($rt_s(431), jl_System_getTempDir());
+        $defaults.$put($rt_s(432), $rt_s(424));
+        $defaults.$put($rt_s(433), jl_System_getHomeDir());
         jl_System_properties = ju_Properties__init_1($defaults);
     }
 }
 function jl_System_getTempDir() {
-    return $rt_s(419);
+    return $rt_s(434);
 }
 function jl_System_getHomeDir() {
-    return $rt_s(413);
+    return $rt_s(428);
 }
 function jl_System_getProperty($key) {
     jl_System_initPropertiesIfNeeded();
@@ -24794,7 +24904,7 @@ function jl_System_identityHashCode($x) {
     return jl_Object_identity($x);
 }
 function jl_System_lineSeparator() {
-    return $rt_s(265);
+    return $rt_s(281);
 }
 function jm_Conversion() {
     jl_Object.call(this);
@@ -25014,12 +25124,12 @@ function cgj_IntOption__init_2($this, $name, $cliChar, $purpose, $defaultVal, $m
 }
 function cgj_IntOption_setValue($this, $v) {
     if ($v < $this.$minVal0)
-        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(113)).$append($this.$getName()).$append($rt_s(114)).$append1($this.$minVal0).$append($rt_s(115)).$append1($v).$toString()));
+        $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(115)).$append($this.$getName()).$append($rt_s(116)).$append1($this.$minVal0).$append($rt_s(117)).$append1($v).$toString()));
     if ($v <= $this.$maxVal0) {
         $this.$currentVal0 = $v;
         return;
     }
-    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(113)).$append($this.$getName()).$append($rt_s(116)).$append1($this.$maxVal0).$append($rt_s(115)).$append1($v).$toString()));
+    $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(115)).$append($this.$getName()).$append($rt_s(118)).$append1($this.$maxVal0).$append($rt_s(117)).$append1($v).$toString()));
 }
 function cgj_IntOption_getValue($this) {
     return $this.$currentVal0;
@@ -25092,7 +25202,7 @@ function mc_StringUtils_appendNewlineIndented($out, $indent, $s) {
     mc_StringUtils_appendIndented($out, $indent, $s);
 }
 function mc_StringUtils__clinit_() {
-    mc_StringUtils_newline = jl_System_getProperty($rt_s(415));
+    mc_StringUtils_newline = jl_System_getProperty($rt_s(430));
 }
 function jl_Object$monitorExit$lambda$_8_0() {
     jl_Object.call(this);
@@ -25111,61 +25221,30 @@ function jl_Object$monitorExit$lambda$_8_0_run(var$0) {
     jl_Object_lambda$monitorExit$2(var$0.$_03);
 }
 function otft_DomComponentHandler$proxy$4_0_3() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture034 = null;
-    a.$proxyCapture16 = null;
-    a.$proxyCapture20 = null;
+    jl_Object.call(this);
+    this.$proxyCapture041 = null;
 }
-function otft_DomComponentHandler$proxy$4_0_3__init_(var_0, var_1, var_2) {
-    var var_3 = new otft_DomComponentHandler$proxy$4_0_3();
-    otft_DomComponentHandler$proxy$4_0_3__init_0(var_3, var_0, var_1, var_2);
-    return var_3;
+function otft_DomComponentHandler$proxy$4_0_3__init_(var_0) {
+    var var_1 = new otft_DomComponentHandler$proxy$4_0_3();
+    otft_DomComponentHandler$proxy$4_0_3__init_0(var_1, var_0);
+    return var_1;
 }
 function otft_DomComponentHandler$proxy$4_0_3_update(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture034;
-    var$2 = var$0.$proxyCapture16;
-    var$3 = var$0.$proxyCapture20;
-    var$1.$value1 = var$2.$getElementVariable();
-    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+    return;
 }
 function otft_DomComponentHandler$proxy$4_0_3_buildDom(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture034;
-    var$1 = var$1.$text1($rt_s(420));
-    var$1 = var$1.$openSlot($rt_s(421)).$add6(otft_Modifier$proxy$4_0_3__init_(var$2)).$text1($rt_s(422));
-    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
-    var$3.$setCondition(juf_Supplier$proxy$4_0_12__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_4__init_(var$2));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(423));
-    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
-    var$3.$setCondition(juf_Supplier$proxy$4_0_15__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_5__init_(var$2));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(423));
-    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
-    var$3.$setCondition(juf_Supplier$proxy$4_0_18__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_6__init_(var$2));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(423));
-    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
-    var$3.$setCondition(juf_Supplier$proxy$4_0_21__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_7__init_(var$2));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(423));
-    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
-    var$3.$setCondition(juf_Supplier$proxy$4_0_28__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_9__init_(var$2));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(423));
-    var$1.$close().$text1($rt_s(422));
+    var$2 = var$0.$proxyCapture041;
+    var$1 = var$1.$text1($rt_s(435));
+    var$1 = var$1.$openSlot($rt_s(436));
+    var$3 = otfch_TextComponent__init_(otft_Slot_create());
+    var$3.$setValue1(juf_Supplier$proxy$4_0_5__init_(var$2));
+    var$1 = var$1.$add6(var$3).$close().$text1($rt_s(435));
+    var$1.$open($rt_s(437)).$attribute0($rt_s(438), $rt_s(439)).$attribute0($rt_s(440), $rt_s(441)).$attribute0($rt_s(442), $rt_s(64)).$attribute0($rt_s(443), $rt_s(444)).$add8(otft_Modifier$proxy$4_0_5__init_(var$2)).$add8(otft_Modifier$proxy$4_0_6__init_(var$2)).$close().$text1($rt_s(445));
 }
-function otft_DomComponentHandler$proxy$4_0_3__init_0(var$0, var$1, var$2, var$3) {
+function otft_DomComponentHandler$proxy$4_0_3__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture034 = var$1;
-    var$0.$proxyCapture16 = var$2;
-    var$0.$proxyCapture20 = var$3;
+    var$0.$proxyCapture041 = var$1;
 }
 function ju_ArrayDeque$1() {
     var a = this; jl_Object.call(a);
@@ -25206,9 +25285,67 @@ function ju_ArrayDeque$1_next($this) {
     }
     return $result;
 }
+function otft_DomComponentHandler$proxy$4_0_2() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture042 = null;
+    a.$proxyCapture13 = null;
+    a.$proxyCapture21 = null;
+}
+function otft_DomComponentHandler$proxy$4_0_2__init_(var_0, var_1, var_2) {
+    var var_3 = new otft_DomComponentHandler$proxy$4_0_2();
+    otft_DomComponentHandler$proxy$4_0_2__init_0(var_3, var_0, var_1, var_2);
+    return var_3;
+}
+function otft_DomComponentHandler$proxy$4_0_2_update(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture042;
+    var$2 = var$0.$proxyCapture13;
+    var$3 = var$0.$proxyCapture21;
+    var$1.$value1 = var$2.$getElementVariable();
+    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+}
+function otft_DomComponentHandler$proxy$4_0_2_buildDom(var$0, var$1) {
+    var var$2, var$3;
+    var$2 = var$0.$proxyCapture042;
+    var$1 = var$1.$text1($rt_s(446));
+    var$1 = var$1.$openSlot($rt_s(447)).$add8(otft_Modifier$proxy$4_0_4__init_(var$2)).$text1($rt_s(448));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_4__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_3__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(449));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_7__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_4__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(449));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_10__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_5__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(449));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_13__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_6__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(449));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_20__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_8__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(450));
+    var$1 = var$1.$close().$text1($rt_s(259));
+    var$1.$text1($rt_s(270));
+}
+function otft_DomComponentHandler$proxy$4_0_2__init_0(var$0, var$1, var$2, var$3) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture042 = var$1;
+    var$0.$proxyCapture13 = var$2;
+    var$0.$proxyCapture21 = var$3;
+}
 function otfch_TextComponent() {
     var a = this; otft_AbstractComponent.call(a);
-    a.$value12 = null;
+    a.$value11 = null;
     a.$textSlot = null;
     a.$cachedValue0 = null;
     a.$cacheInitialized = 0;
@@ -25222,11 +25359,11 @@ function otfch_TextComponent__init_0($this, $slot) {
     otft_AbstractComponent__init_0($this, $slot);
 }
 function otfch_TextComponent_setValue($this, $value) {
-    $this.$value12 = $value;
+    $this.$value11 = $value;
 }
 function otfch_TextComponent_render($this) {
     var $computedValue, var$2, var$3, var$4;
-    $computedValue = $this.$value12.$get4();
+    $computedValue = $this.$value11.$get4();
     if ($this.$cacheInitialized && ju_Objects_equals($this.$cachedValue0, $computedValue))
         return;
     $this.$cacheInitialized = 1;
@@ -25242,103 +25379,44 @@ function otfch_TextComponent_render($this) {
     $this.$textSlot = var$2;
     $this.$getSlot().$append18($this.$textSlot);
 }
-function otft_DomComponentHandler$proxy$4_0_2() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture035 = null;
-    a.$proxyCapture17 = null;
-    a.$proxyCapture21 = null;
-    a.$proxyCapture3 = null;
+function juf_Consumer$proxy$4_0_1() {
+    jl_Object.call(this);
+    this.$proxyCapture043 = null;
 }
-function otft_DomComponentHandler$proxy$4_0_2__init_(var_0, var_1, var_2, var_3) {
-    var var_4 = new otft_DomComponentHandler$proxy$4_0_2();
-    otft_DomComponentHandler$proxy$4_0_2__init_0(var_4, var_0, var_1, var_2, var_3);
-    return var_4;
+function juf_Consumer$proxy$4_0_1__init_(var_0) {
+    var var_1 = new juf_Consumer$proxy$4_0_1();
+    juf_Consumer$proxy$4_0_1__init_0(var_1, var_0);
+    return var_1;
 }
-function otft_DomComponentHandler$proxy$4_0_2_update(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture035;
-    var$2 = var$0.$proxyCapture17;
-    var$3 = var$0.$proxyCapture21;
-    var$1.$value1 = var$2.$getElementVariable();
-    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+function juf_Consumer$proxy$4_0_1_accept(var$0, var$1) {
+    var$0.$proxyCapture043.$handleClick2();
+    otft_Templates_update();
 }
-function otft_DomComponentHandler$proxy$4_0_2_buildDom(var$0, var$1) {
-    var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture3;
-    var$3 = var$0.$proxyCapture21;
-    var$1 = var$1.$text1($rt_s(424));
-    var$1 = var$1.$open0($rt_s(425)).$text1($rt_s(426));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_6__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(428));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_7__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(428));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_8__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(428));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_9__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(429));
-    var$1.$close().$text1($rt_s(420));
-}
-function otft_DomComponentHandler$proxy$4_0_2__init_0(var$0, var$1, var$2, var$3, var$4) {
+function juf_Consumer$proxy$4_0_1__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture035 = var$1;
-    var$0.$proxyCapture17 = var$2;
-    var$0.$proxyCapture21 = var$3;
-    var$0.$proxyCapture3 = var$4;
+    var$0.$proxyCapture043 = var$1;
 }
 function otft_DomComponentHandler$proxy$4_0_1() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture036 = null;
-    a.$proxyCapture18 = null;
-    a.$proxyCapture22 = null;
-    a.$proxyCapture30 = null;
+    jl_Object.call(this);
 }
-function otft_DomComponentHandler$proxy$4_0_1__init_(var_0, var_1, var_2, var_3) {
-    var var_4 = new otft_DomComponentHandler$proxy$4_0_1();
-    otft_DomComponentHandler$proxy$4_0_1__init_0(var_4, var_0, var_1, var_2, var_3);
-    return var_4;
+function otft_DomComponentHandler$proxy$4_0_1__init_0() {
+    var var_0 = new otft_DomComponentHandler$proxy$4_0_1();
+    otft_DomComponentHandler$proxy$4_0_1__init_(var_0);
+    return var_0;
 }
 function otft_DomComponentHandler$proxy$4_0_1_update(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture036;
-    var$2 = var$0.$proxyCapture18;
-    var$3 = var$0.$proxyCapture22;
-    var$1.$value1 = var$2.$getElementVariable();
-    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
+    return;
 }
 function otft_DomComponentHandler$proxy$4_0_1_buildDom(var$0, var$1) {
-    var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture30;
-    var$3 = var$0.$proxyCapture22;
-    var$1 = var$1.$text1($rt_s(430));
-    var$1 = var$1.$open0($rt_s(425)).$text1($rt_s(426));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_3__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(426));
-    var$1 = var$1.$openSlot($rt_s(427));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_4__init_(var$2, var$3));
-    var$1 = var$1.$add7(var$4).$close().$text1($rt_s(431));
-    var$1.$close().$text1($rt_s(420));
+    var$1 = var$1.$text1($rt_s(259)).$open($rt_s(451));
+    var$1.$text1($rt_s(452)).$close().$text1($rt_s(259));
 }
-function otft_DomComponentHandler$proxy$4_0_1__init_0(var$0, var$1, var$2, var$3, var$4) {
+function otft_DomComponentHandler$proxy$4_0_1__init_(var$0) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture036 = var$1;
-    var$0.$proxyCapture18 = var$2;
-    var$0.$proxyCapture22 = var$3;
-    var$0.$proxyCapture30 = var$4;
 }
 function otft_DomComponentHandler$proxy$4_0_0() {
     jl_Object.call(this);
-    this.$proxyCapture037 = null;
+    this.$proxyCapture044 = null;
 }
 function otft_DomComponentHandler$proxy$4_0_0__init_(var_0) {
     var var_1 = new otft_DomComponentHandler$proxy$4_0_0();
@@ -25350,90 +25428,87 @@ function otft_DomComponentHandler$proxy$4_0_0_update(var$0) {
 }
 function otft_DomComponentHandler$proxy$4_0_0_buildDom(var$0, var$1) {
     var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture037;
+    var$2 = var$0.$proxyCapture044;
     var$1 = var$1;
     var$1 = var$1;
-    var$3 = var$1.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$text1($rt_s(423));
-    var$3 = var$3.$open0($rt_s(433));
-    var$3 = var$3.$attribute0($rt_s(291), $rt_s(434)).$text1($rt_s(435)).$close().$text1($rt_s(423));
-    var$3 = var$3.$open0($rt_s(436));
-    var$3.$attribute0($rt_s(437), $rt_s(438)).$attribute0($rt_s(291), $rt_s(439)).$text1($rt_s(440)).$close().$text1($rt_s(432));
-    var$3 = var$1.$open0($rt_s(421));
-    var$3 = var$3.$attribute0($rt_s(291), $rt_s(441)).$text1($rt_s(420));
-    var$3 = var$3.$open0($rt_s(442)).$attribute0($rt_s(443), $rt_s(438)).$attribute0($rt_s(444), $rt_s(445)).$add6(otft_Modifier$proxy$4_0_0__init_(var$2)).$add6(otft_Modifier$proxy$4_0_1__init_(var$2)).$text1($rt_s(431));
-    var$3 = var$3.$open0($rt_s(261)).$attribute0($rt_s(446), $rt_s(127)).$text1($rt_s(127)).$close().$text1($rt_s(431));
-    var$3 = var$3.$open0($rt_s(261)).$attribute0($rt_s(446), $rt_s(125)).$text1($rt_s(125)).$close().$text1($rt_s(260));
-    var$3.$open0($rt_s(261)).$attribute0($rt_s(446), $rt_s(126));
-    var$3 = var$1.$text1($rt_s(126)).$close().$text1($rt_s(431));
-    var$3 = var$3.$open0($rt_s(261)).$attribute0($rt_s(446), $rt_s(128)).$text1($rt_s(128)).$close().$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(261)).$attribute0($rt_s(446), $rt_s(129)).$text1($rt_s(447)).$close().$text1($rt_s(448));
-    var$3 = var$3.$close().$text1($rt_s(420));
-    var$3 = var$3.$close().$text1($rt_s(420));
-    var$3.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close();
-    var$3 = var$1.$text1($rt_s(450));
-    var$3 = var$3.$openSlot($rt_s(451)).$text1($rt_s(452));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_1__init_(var$2));
-    var$3 = var$3.$add7(var$4).$text1($rt_s(432));
-    var$3 = var$3.$close().$text1($rt_s(423));
-    var$3 = var$3.$open0($rt_s(453));
-    var$3 = var$3.$attribute0($rt_s(291), $rt_s(454)).$add6(otft_Modifier$proxy$4_0_2__init_(var$2)).$text1($rt_s(455)).$close().$text1($rt_s(423));
-    var$3 = var$3.$openSlot($rt_s(456));
-    var$3 = var$3.$attribute0($rt_s(291), $rt_s(457)).$attribute0($rt_s(458), $rt_s(118)).$text1($rt_s(420));
-    var$3 = var$3.$open0($rt_s(425)).$text1($rt_s(431));
-    var$3.$open0($rt_s(225)).$text1($rt_s(459));
-    var$3 = var$1.$close().$text1($rt_s(431));
-    var$3 = var$3.$open0($rt_s(225)).$text1($rt_s(460)).$close().$text1($rt_s(448));
-    var$3 = var$3.$close().$text1($rt_s(420));
-    var$4 = otfcs_ForEachComponent__init_(otft_Slot_create());
-    var$4.$setCollection(juf_Supplier$proxy$4_0_2__init_(var$2));
-    var$4.$setBody(otft_Fragment$proxy$4_0_1__init_(var$4, var$2));
-    var$3 = var$3.$add7(var$4);
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$close().$text1($rt_s(423));
-    var$3 = var$3.$openSlot($rt_s(456));
-    var$3 = var$3.$attribute0($rt_s(291), $rt_s(457)).$attribute0($rt_s(458), $rt_s(118)).$text1($rt_s(420));
-    var$3 = var$3.$open0($rt_s(425)).$text1($rt_s(431));
-    var$3.$open0($rt_s(225)).$text1($rt_s(461)).$close();
-    var$3 = var$1.$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(225)).$text1($rt_s(462)).$close().$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(225)).$text1($rt_s(463)).$close().$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(225)).$text1($rt_s(464)).$close().$text1($rt_s(448));
-    var$3 = var$3.$close().$text1($rt_s(420));
-    var$4 = otfcs_ForEachComponent__init_(otft_Slot_create());
-    var$4.$setCollection(juf_Supplier$proxy$4_0_5__init_(var$2));
-    var$4.$setBody(otft_Fragment$proxy$4_0_2__init_(var$4, var$2));
-    var$3 = var$3.$add7(var$4);
-    var$3 = var$3.$text1($rt_s(432));
-    var$3 = var$3.$close().$text1($rt_s(465));
-    var$3 = var$3.$open0($rt_s(433));
-    var$3.$text1($rt_s(466));
-    var$1 = var$1.$close().$text1($rt_s(467));
+    var$3 = var$1.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(453));
+    var$3 = var$3.$open($rt_s(447));
+    var$3 = var$3.$attribute0($rt_s(62), $rt_s(454)).$text1($rt_s(269));
+    var$3 = var$3.$text1($rt_s(259)).$open($rt_s(447));
+    var$3 = var$3.$attribute0($rt_s(62), $rt_s(455)).$text1($rt_s(259)).$open($rt_s(447));
+    var$3.$attribute0($rt_s(62), $rt_s(456)).$text1($rt_s(259)).$open($rt_s(451));
+    var$3 = var$1.$attribute0($rt_s(261), $rt_s(457)).$text1($rt_s(458)).$close().$text1($rt_s(259));
+    var$3 = var$3.$close().$text1($rt_s(257));
+    var$3 = var$3.$text1($rt_s(459));
+    var$3 = var$3.$open($rt_s(460)).$attribute0($rt_s(461), $rt_s(462)).$attribute0($rt_s(463), $rt_s(464)).$attribute0($rt_s(62), $rt_s(465)).$close().$text1($rt_s(466));
+    var$3 = var$3.$close().$text1($rt_s(259));
+    var$3 = var$3.$close().$text1($rt_s(466));
+    var$3 = var$3.$open($rt_s(467));
+    var$3.$attribute0($rt_s(468), $rt_s(469)).$attribute0($rt_s(261), $rt_s(470)).$open($rt_s(471));
+    var$3 = var$1.$close().$text1($rt_s(472)).$open($rt_s(471)).$close().$close().$text1($rt_s(259)).$open($rt_s(447));
+    var$3 = var$3.$attribute0($rt_s(261), $rt_s(473)).$text1($rt_s(258));
+    var$3 = var$3.$open($rt_s(474)).$attribute0($rt_s(475), $rt_s(469)).$attribute0($rt_s(440), $rt_s(476)).$add8(otft_Modifier$proxy$4_0_0__init_(var$2)).$add8(otft_Modifier$proxy$4_0_1__init_(var$2)).$text1($rt_s(257));
+    var$3 = var$3.$open($rt_s(477)).$attribute0($rt_s(478), $rt_s(129)).$text1($rt_s(129)).$close().$text1($rt_s(257));
+    var$3.$open($rt_s(477));
+    var$3 = var$1.$attribute0($rt_s(478), $rt_s(127)).$text1($rt_s(479)).$close().$text1($rt_s(265));
+    var$3 = var$3.$open($rt_s(477)).$attribute0($rt_s(478), $rt_s(128)).$text1($rt_s(480)).$close().$text1($rt_s(257));
+    var$3 = var$3.$open($rt_s(477)).$attribute0($rt_s(478), $rt_s(130)).$text1($rt_s(481)).$close().$text1($rt_s(269));
+    var$3 = var$3.$close().$text1($rt_s(259));
+    var$3 = var$3.$close().$text1($rt_s(259)).$open($rt_s(482));
+    var$3.$close().$open($rt_s(482));
+    var$3 = var$1.$close().$text1($rt_s(483));
+    var$3 = var$3.$text1($rt_s(466));
+    var$3 = var$3.$text1($rt_s(259)).$open($rt_s(484));
+    var$3 = var$3.$attribute0($rt_s(261), $rt_s(485)).$add8(otft_Modifier$proxy$4_0_2__init_(var$2)).$text1($rt_s(486)).$close().$text1($rt_s(259)).$open($rt_s(484));
+    var$3 = var$3.$attribute0($rt_s(261), $rt_s(485)).$add8(otft_Modifier$proxy$4_0_3__init_(var$2)).$text1($rt_s(487)).$close().$text1($rt_s(488));
+    var$3 = var$3.$text1($rt_s(270));
+    var$4 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$4.$setCondition(juf_Supplier$proxy$4_0_1__init_(var$2));
+    var$4.$setBody(otft_Fragment$proxy$4_0_1__init_0());
+    var$3 = var$3.$add6(var$4);
+    var$3 = var$3.$text1($rt_s(259));
+    var$3 = var$3.$text1($rt_s(259));
+    var$3.$text1($rt_s(259));
+    var$1 = var$1.$openSlot($rt_s(447));
+    var$1 = var$1.$attribute0($rt_s(62), $rt_s(489)).$text1($rt_s(265));
     var$3 = otfcs_ForEachComponent__init_(otft_Slot_create());
-    var$3.$setCollection(juf_Supplier$proxy$4_0_10__init_(var$2));
-    var$3.$setBody(otft_Fragment$proxy$4_0_3__init_(var$3));
-    var$1 = var$1.$add7(var$3);
-    var$1 = var$1.$text1($rt_s(468));
-    var$1 = var$1.$open0($rt_s(421)).$text1($rt_s(420));
-    var$1 = var$1.$open0($rt_s(469)).$attribute0($rt_s(444), $rt_s(470)).$close().$text1($rt_s(432));
-    var$1.$close().$text1($rt_s(471));
+    var$3.$setCollection(juf_Supplier$proxy$4_0_2__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_2__init_(var$3));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$close();
+    var$1 = var$1.$text1($rt_s(490));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_26__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_10__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(488));
+    var$3 = otfcs_IfComponent__init_(otft_Slot_create());
+    var$3.$setCondition(juf_Supplier$proxy$4_0_30__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_12__init_(var$2));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(491));
+    var$1 = var$1.$open($rt_s(447)).$text1($rt_s(445));
+    var$1 = var$1.$open($rt_s(492)).$attribute0($rt_s(440), $rt_s(493)).$close().$text1($rt_s(446));
+    var$1 = var$1.$close().$text1($rt_s(259));
+    var$1 = var$1.$text1($rt_s(259));
+    var$1.$text1($rt_s(494));
 }
 function otft_DomComponentHandler$proxy$4_0_0__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture037 = var$1;
+    var$0.$proxyCapture044 = var$1;
 }
 function juf_Consumer$proxy$4_0_0() {
     jl_Object.call(this);
-    this.$proxyCapture038 = null;
+    this.$proxyCapture045 = null;
 }
 function juf_Consumer$proxy$4_0_0__init_(var_0) {
     var var_1 = new juf_Consumer$proxy$4_0_0();
@@ -25441,62 +25516,55 @@ function juf_Consumer$proxy$4_0_0__init_(var_0) {
     return var_1;
 }
 function juf_Consumer$proxy$4_0_0_accept(var$0, var$1) {
-    var$0.$proxyCapture038.$handleClick();
+    var$0.$proxyCapture045.$handleClick();
     otft_Templates_update();
 }
 function juf_Consumer$proxy$4_0_0__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture038 = var$1;
+    var$0.$proxyCapture045 = var$1;
 }
 function otjc_JSDate() {
     jl_Object.call(this);
 }
 function otft_DomComponentHandler$proxy$4_0_7() {
-    jl_Object.call(this);
-    this.$proxyCapture039 = null;
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture046 = null;
+    a.$proxyCapture14 = null;
+    a.$proxyCapture22 = null;
 }
-function otft_DomComponentHandler$proxy$4_0_7__init_(var_0) {
-    var var_1 = new otft_DomComponentHandler$proxy$4_0_7();
-    otft_DomComponentHandler$proxy$4_0_7__init_0(var_1, var_0);
-    return var_1;
+function otft_DomComponentHandler$proxy$4_0_7__init_(var_0, var_1, var_2) {
+    var var_3 = new otft_DomComponentHandler$proxy$4_0_7();
+    otft_DomComponentHandler$proxy$4_0_7__init_0(var_3, var_0, var_1, var_2);
+    return var_3;
 }
 function otft_DomComponentHandler$proxy$4_0_7_update(var$0) {
-    return;
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture046;
+    var$2 = var$0.$proxyCapture14;
+    var$3 = var$0.$proxyCapture22;
+    var$1.$value1 = var$2.$getElementVariable();
+    var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
 }
 function otft_DomComponentHandler$proxy$4_0_7_buildDom(var$0, var$1) {
-    var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture039;
-    var$1 = var$1;
-    var$1 = var$1;
-    var$3 = var$1.$text1($rt_s(420));
-    var$3 = var$3.$text1($rt_s(423));
-    var$3 = var$3.$open0($rt_s(436));
-    var$3 = var$3.$attribute0($rt_s(437), $rt_s(472)).$attribute0($rt_s(291), $rt_s(439)).$openSlot($rt_s(473));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_22__init_(var$2));
-    var$3 = var$3.$add7(var$4).$close().$close().$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(421)).$attribute0($rt_s(291), $rt_s(441)).$text1($rt_s(420));
-    var$3 = var$3.$openSlot($rt_s(442)).$attribute0($rt_s(443), $rt_s(472)).$attribute0($rt_s(444), $rt_s(472)).$add6(otft_Modifier$proxy$4_0_10__init_(var$2)).$add6(otft_Modifier$proxy$4_0_11__init_(var$2)).$text1($rt_s(260));
-    var$4 = otfcs_ForEachComponent__init_(otft_Slot_create());
-    var$4.$setCollection(juf_Supplier$proxy$4_0_24__init_(var$2));
-    var$4.$setBody(otft_Fragment$proxy$4_0_8__init_(var$4));
-    var$3 = var$3.$add7(var$4);
-    var$3.$text1($rt_s(420));
-    var$1 = var$1.$close().$text1($rt_s(420));
-    var$1 = var$1.$close().$text1($rt_s(474));
-    var$1 = var$1.$openSlot($rt_s(475)).$text1($rt_s(476));
+    var var$2, var$3;
+    var$2 = var$0.$proxyCapture046;
+    var$1 = var$1.$text1($rt_s(495));
+    var$1 = var$1.$openSlot($rt_s(477));
+    var$3 = otft_Modifier$proxy$4_0_13__init_(var$2);
+    var$1 = var$1.$add8(var$3);
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
-    var$3.$setValue1(juf_Supplier$proxy$4_0_27__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(420));
-    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(477));
+    var$3.$setValue1(juf_Supplier$proxy$4_0_18__init_(var$2));
+    var$1.$add6(var$3).$close().$text1($rt_s(495));
 }
-function otft_DomComponentHandler$proxy$4_0_7__init_0(var$0, var$1) {
+function otft_DomComponentHandler$proxy$4_0_7__init_0(var$0, var$1, var$2, var$3) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture039 = var$1;
+    var$0.$proxyCapture046 = var$1;
+    var$0.$proxyCapture14 = var$2;
+    var$0.$proxyCapture22 = var$3;
 }
 function otft_DomComponentHandler$proxy$4_0_6() {
     jl_Object.call(this);
-    this.$proxyCapture040 = null;
+    this.$proxyCapture047 = null;
 }
 function otft_DomComponentHandler$proxy$4_0_6__init_(var_0) {
     var var_1 = new otft_DomComponentHandler$proxy$4_0_6();
@@ -25507,23 +25575,38 @@ function otft_DomComponentHandler$proxy$4_0_6_update(var$0) {
     return;
 }
 function otft_DomComponentHandler$proxy$4_0_6_buildDom(var$0, var$1) {
-    var var$2, var$3;
-    var$2 = var$0.$proxyCapture040;
+    var var$2, var$3, var$4;
+    var$2 = var$0.$proxyCapture047;
     var$1 = var$1;
-    var$1 = var$1.$text1($rt_s(478));
-    var$1 = var$1.$openSlot($rt_s(475));
+    var$3 = var$1.$text1($rt_s(445));
+    var$3 = var$3.$open($rt_s(447)).$attribute0($rt_s(62), $rt_s(496)).$text1($rt_s(435));
+    var$3 = var$3.$open($rt_s(467)).$attribute0($rt_s(468), $rt_s(441)).$attribute0($rt_s(261), $rt_s(470)).$openSlot($rt_s(471));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_14__init_(var$2));
+    var$3 = var$3.$add6(var$4).$close().$close().$text1($rt_s(495));
+    var$3 = var$3.$open($rt_s(447)).$attribute0($rt_s(261), $rt_s(473)).$text1($rt_s(497));
+    var$3.$openSlot($rt_s(474)).$attribute0($rt_s(475), $rt_s(441)).$attribute0($rt_s(440), $rt_s(441)).$add8(otft_Modifier$proxy$4_0_11__init_(var$2)).$add8(otft_Modifier$proxy$4_0_12__init_(var$2)).$text1($rt_s(495));
+    var$3 = otfcs_ForEachComponent__init_(otft_Slot_create());
+    var$3.$setCollection(juf_Supplier$proxy$4_0_16__init_(var$2));
+    var$3.$setBody(otft_Fragment$proxy$4_0_7__init_(var$3));
+    var$1 = var$1.$add6(var$3);
+    var$1 = var$1.$text1($rt_s(497));
+    var$1 = var$1.$close().$text1($rt_s(498));
+    var$1 = var$1.$close().$text1($rt_s(499));
+    var$1 = var$1.$openSlot($rt_s(436)).$text1($rt_s(500));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
     var$3.$setValue1(juf_Supplier$proxy$4_0_19__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(260));
-    var$1.$open0($rt_s(479)).$attribute0($rt_s(480), $rt_s(481)).$attribute0($rt_s(444), $rt_s(472)).$add6(otft_Modifier$proxy$4_0_8__init_(var$2)).$add6(otft_Modifier$proxy$4_0_9__init_(var$2)).$close().$text1($rt_s(432));
+    var$1 = var$1.$add6(var$3).$close().$text1($rt_s(498));
+    var$1 = var$1.$open($rt_s(482)).$close().$open($rt_s(482)).$close().$text1($rt_s(501));
+    var$1.$close().$text1($rt_s(502));
 }
 function otft_DomComponentHandler$proxy$4_0_6__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture040 = var$1;
+    var$0.$proxyCapture047 = var$1;
 }
 function otft_DomComponentHandler$proxy$4_0_5() {
     jl_Object.call(this);
-    this.$proxyCapture041 = null;
+    this.$proxyCapture048 = null;
 }
 function otft_DomComponentHandler$proxy$4_0_5__init_(var_0) {
     var var_1 = new otft_DomComponentHandler$proxy$4_0_5();
@@ -25535,23 +25618,21 @@ function otft_DomComponentHandler$proxy$4_0_5_update(var$0) {
 }
 function otft_DomComponentHandler$proxy$4_0_5_buildDom(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture041;
-    var$1 = var$1;
-    var$1 = var$1.$text1($rt_s(420));
-    var$1 = var$1.$text1($rt_s(422));
-    var$1 = var$1.$openSlot($rt_s(475));
+    var$2 = var$0.$proxyCapture048;
+    var$1 = var$1.$text1($rt_s(435));
+    var$1 = var$1.$openSlot($rt_s(436));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
-    var$3.$setValue1(juf_Supplier$proxy$4_0_16__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(479));
-    var$1.$attribute0($rt_s(480), $rt_s(482)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(483), $rt_s(62)).$attribute0($rt_s(484), $rt_s(118)).$attribute0($rt_s(485), $rt_s(486)).$add6(otft_Modifier$proxy$4_0_6__init_(var$2)).$add6(otft_Modifier$proxy$4_0_7__init_(var$2)).$close().$text1($rt_s(432));
+    var$3.$setValue1(juf_Supplier$proxy$4_0_11__init_(var$2));
+    var$1 = var$1.$add6(var$3).$close().$text1($rt_s(435));
+    var$1.$open($rt_s(437)).$attribute0($rt_s(438), $rt_s(503)).$attribute0($rt_s(440), $rt_s(441)).$add8(otft_Modifier$proxy$4_0_9__init_(var$2)).$add8(otft_Modifier$proxy$4_0_10__init_(var$2)).$close().$text1($rt_s(445));
 }
 function otft_DomComponentHandler$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture041 = var$1;
+    var$0.$proxyCapture048 = var$1;
 }
 function otft_DomComponentHandler$proxy$4_0_4() {
     jl_Object.call(this);
-    this.$proxyCapture042 = null;
+    this.$proxyCapture049 = null;
 }
 function otft_DomComponentHandler$proxy$4_0_4__init_(var_0) {
     var var_1 = new otft_DomComponentHandler$proxy$4_0_4();
@@ -25563,93 +25644,90 @@ function otft_DomComponentHandler$proxy$4_0_4_update(var$0) {
 }
 function otft_DomComponentHandler$proxy$4_0_4_buildDom(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture042;
-    var$1 = var$1.$text1($rt_s(420));
-    var$1 = var$1.$text1($rt_s(422));
-    var$1 = var$1.$openSlot($rt_s(475));
+    var$2 = var$0.$proxyCapture049;
+    var$1 = var$1.$text1($rt_s(435));
+    var$1 = var$1.$openSlot($rt_s(436));
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
-    var$3.$setValue1(juf_Supplier$proxy$4_0_13__init_(var$2));
-    var$1 = var$1.$add7(var$3).$close().$text1($rt_s(432)).$open0($rt_s(479));
-    var$1.$attribute0($rt_s(480), $rt_s(482)).$attribute0($rt_s(444), $rt_s(472)).$attribute0($rt_s(483), $rt_s(62)).$attribute0($rt_s(484), $rt_s(487)).$add6(otft_Modifier$proxy$4_0_4__init_(var$2)).$add6(otft_Modifier$proxy$4_0_5__init_(var$2)).$close().$text1($rt_s(432));
+    var$3.$setValue1(juf_Supplier$proxy$4_0_8__init_(var$2));
+    var$1 = var$1.$add6(var$3).$close().$text1($rt_s(435));
+    var$1.$open($rt_s(437)).$attribute0($rt_s(438), $rt_s(439)).$attribute0($rt_s(440), $rt_s(441)).$attribute0($rt_s(442), $rt_s(64)).$attribute0($rt_s(443), $rt_s(120)).$attribute0($rt_s(504), $rt_s(505)).$add8(otft_Modifier$proxy$4_0_7__init_(var$2)).$add8(otft_Modifier$proxy$4_0_8__init_(var$2)).$close().$text1($rt_s(445));
 }
 function otft_DomComponentHandler$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture042 = var$1;
+    var$0.$proxyCapture049 = var$1;
 }
 function otft_DomComponentHandler$proxy$4_0_9() {
-    jl_Object.call(this);
-    this.$proxyCapture043 = null;
-}
-function otft_DomComponentHandler$proxy$4_0_9__init_(var_0) {
-    var var_1 = new otft_DomComponentHandler$proxy$4_0_9();
-    otft_DomComponentHandler$proxy$4_0_9__init_0(var_1, var_0);
-    return var_1;
-}
-function otft_DomComponentHandler$proxy$4_0_9_update(var$0) {
-    return;
-}
-function otft_DomComponentHandler$proxy$4_0_9_buildDom(var$0, var$1) {
-    var var$2, var$3, var$4;
-    var$2 = var$0.$proxyCapture043;
-    var$1 = var$1;
-    var$1 = var$1;
-    var$3 = var$1.$text1($rt_s(420));
-    var$3 = var$3.$text1($rt_s(423));
-    var$3 = var$3.$openSlot($rt_s(436));
-    var$3 = var$3.$attribute0($rt_s(437), $rt_s(472)).$attribute0($rt_s(291), $rt_s(439));
-    var$4 = otfch_TextComponent__init_(otft_Slot_create());
-    var$4.$setValue1(juf_Supplier$proxy$4_0_29__init_(var$2));
-    var$3 = var$3.$add7(var$4).$close().$text1($rt_s(260));
-    var$3 = var$3.$open0($rt_s(421)).$attribute0($rt_s(291), $rt_s(441)).$text1($rt_s(420));
-    var$3 = var$3.$openSlot($rt_s(442)).$attribute0($rt_s(443), $rt_s(472)).$attribute0($rt_s(444), $rt_s(472)).$add6(otft_Modifier$proxy$4_0_13__init_(var$2)).$add6(otft_Modifier$proxy$4_0_14__init_(var$2)).$text1($rt_s(260));
-    var$4 = otfcs_ForEachComponent__init_(otft_Slot_create());
-    var$4.$setCollection(juf_Supplier$proxy$4_0_31__init_(var$2));
-    var$4.$setBody(otft_Fragment$proxy$4_0_10__init_(var$4));
-    var$3 = var$3.$add7(var$4);
-    var$3 = var$3.$text1($rt_s(420));
-    var$3.$close().$text1($rt_s(420));
-    var$1 = var$1.$close().$text1($rt_s(420));
-    var$1.$open0($rt_s(449)).$close().$open0($rt_s(449)).$close().$text1($rt_s(488));
-}
-function otft_DomComponentHandler$proxy$4_0_9__init_0(var$0, var$1) {
-    jl_Object__init_0(var$0);
-    var$0.$proxyCapture043 = var$1;
-}
-function otft_DomComponentHandler$proxy$4_0_8() {
     var a = this; jl_Object.call(a);
-    a.$proxyCapture044 = null;
-    a.$proxyCapture19 = null;
+    a.$proxyCapture050 = null;
+    a.$proxyCapture15 = null;
     a.$proxyCapture23 = null;
 }
-function otft_DomComponentHandler$proxy$4_0_8__init_(var_0, var_1, var_2) {
-    var var_3 = new otft_DomComponentHandler$proxy$4_0_8();
-    otft_DomComponentHandler$proxy$4_0_8__init_0(var_3, var_0, var_1, var_2);
+function otft_DomComponentHandler$proxy$4_0_9__init_(var_0, var_1, var_2) {
+    var var_3 = new otft_DomComponentHandler$proxy$4_0_9();
+    otft_DomComponentHandler$proxy$4_0_9__init_0(var_3, var_0, var_1, var_2);
     return var_3;
 }
-function otft_DomComponentHandler$proxy$4_0_8_update(var$0) {
+function otft_DomComponentHandler$proxy$4_0_9_update(var$0) {
     var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture044;
-    var$2 = var$0.$proxyCapture19;
+    var$1 = var$0.$proxyCapture050;
+    var$2 = var$0.$proxyCapture15;
     var$3 = var$0.$proxyCapture23;
     var$1.$value1 = var$2.$getElementVariable();
     var$3.$value1 = jl_Integer_valueOf(var$2.$getIndexVariable());
 }
-function otft_DomComponentHandler$proxy$4_0_8_buildDom(var$0, var$1) {
+function otft_DomComponentHandler$proxy$4_0_9_buildDom(var$0, var$1) {
     var var$2, var$3;
-    var$2 = var$0.$proxyCapture044;
-    var$1 = var$1.$text1($rt_s(260));
-    var$1 = var$1.$openSlot($rt_s(261));
-    var$3 = otft_Modifier$proxy$4_0_12__init_(var$2);
-    var$1 = var$1.$add6(var$3);
+    var$2 = var$0.$proxyCapture050;
+    var$1 = var$1.$text1($rt_s(435));
+    var$1 = var$1.$openSlot($rt_s(477));
+    var$3 = otft_Modifier$proxy$4_0_16__init_(var$2);
+    var$1 = var$1.$add8(var$3);
     var$3 = otfch_TextComponent__init_(otft_Slot_create());
-    var$3.$setValue1(juf_Supplier$proxy$4_0_26__init_(var$2));
-    var$1.$add7(var$3).$close().$text1($rt_s(260));
+    var$3.$setValue1(juf_Supplier$proxy$4_0_25__init_(var$2));
+    var$1.$add6(var$3).$close().$text1($rt_s(435));
 }
-function otft_DomComponentHandler$proxy$4_0_8__init_0(var$0, var$1, var$2, var$3) {
+function otft_DomComponentHandler$proxy$4_0_9__init_0(var$0, var$1, var$2, var$3) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture044 = var$1;
-    var$0.$proxyCapture19 = var$2;
+    var$0.$proxyCapture050 = var$1;
+    var$0.$proxyCapture15 = var$2;
     var$0.$proxyCapture23 = var$3;
+}
+function otft_DomComponentHandler$proxy$4_0_8() {
+    jl_Object.call(this);
+    this.$proxyCapture051 = null;
+}
+function otft_DomComponentHandler$proxy$4_0_8__init_(var_0) {
+    var var_1 = new otft_DomComponentHandler$proxy$4_0_8();
+    otft_DomComponentHandler$proxy$4_0_8__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_DomComponentHandler$proxy$4_0_8_update(var$0) {
+    return;
+}
+function otft_DomComponentHandler$proxy$4_0_8_buildDom(var$0, var$1) {
+    var var$2, var$3, var$4;
+    var$2 = var$0.$proxyCapture051;
+    var$1 = var$1;
+    var$3 = var$1.$text1($rt_s(449));
+    var$3 = var$3.$openSlot($rt_s(467)).$attribute0($rt_s(468), $rt_s(441)).$attribute0($rt_s(261), $rt_s(470));
+    var$4 = otfch_TextComponent__init_(otft_Slot_create());
+    var$4.$setValue1(juf_Supplier$proxy$4_0_21__init_(var$2));
+    var$3 = var$3.$add6(var$4).$close().$text1($rt_s(435));
+    var$3 = var$3.$open($rt_s(447)).$attribute0($rt_s(261), $rt_s(473)).$text1($rt_s(498));
+    var$3 = var$3.$openSlot($rt_s(474)).$attribute0($rt_s(475), $rt_s(441)).$attribute0($rt_s(440), $rt_s(441)).$add8(otft_Modifier$proxy$4_0_14__init_(var$2)).$add8(otft_Modifier$proxy$4_0_15__init_(var$2)).$text1($rt_s(435));
+    var$4 = otfcs_ForEachComponent__init_(otft_Slot_create());
+    var$4.$setCollection(juf_Supplier$proxy$4_0_23__init_(var$2));
+    var$4.$setBody(otft_Fragment$proxy$4_0_9__init_(var$4));
+    var$3 = var$3.$add6(var$4);
+    var$3 = var$3.$text1($rt_s(498));
+    var$3 = var$3.$close().$text1($rt_s(498));
+    var$3.$close();
+    var$1 = var$1.$text1($rt_s(498));
+    var$1.$open($rt_s(482)).$close().$open($rt_s(482)).$close().$text1($rt_s(506));
+}
+function otft_DomComponentHandler$proxy$4_0_8__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture051 = var$1;
 }
 function otcit_CachedDateTimeZone$Info() {
     var a = this; jl_Object.call(a);
@@ -25897,7 +25975,7 @@ function jm_Multiplication_powerOf10($exp) {
         return jm_Multiplication_bigFivePows.data[1].$pow0($intExp).$shiftLeft1($intExp);
     $byteArraySize = Long_add(Long_fromInt(1), Long_fromNumber(Long_toNumber($exp) / 2.4082399653118496));
     if (Long_gt($byteArraySize, Long_fromInt(1000000)))
-        $rt_throw(jl_ArithmeticException__init_0($rt_s(489)));
+        $rt_throw(jl_ArithmeticException__init_0($rt_s(507)));
     if (Long_le($exp, Long_fromInt(2147483647)))
         return jm_Multiplication_bigFivePows.data[1].$pow0($intExp).$shiftLeft1($intExp);
     $powerOfFive = jm_Multiplication_bigFivePows.data[1].$pow0(2147483647);
@@ -25975,7 +26053,7 @@ function jm_Multiplication__clinit_() {
 }
 function juf_Supplier$proxy$4_0_15() {
     jl_Object.call(this);
-    this.$proxyCapture045 = null;
+    this.$proxyCapture052 = null;
 }
 function juf_Supplier$proxy$4_0_15__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_15();
@@ -25983,21 +26061,15 @@ function juf_Supplier$proxy$4_0_15__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_15_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture045;
-    var$2 = $rt_createArray(jl_Object, 1);
-    var$1 = var$1.$value1;
-    var$2 = var$2.data;
-    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_FloatOption);
-    return jl_Boolean_valueOf(var$2[0].$booleanValue());
+    return var$0.$proxyCapture052.$value1.$option.$getValueAsCLIString();
 }
 function juf_Supplier$proxy$4_0_15__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture045 = var$1;
+    var$0.$proxyCapture052 = var$1;
 }
 function juf_Supplier$proxy$4_0_16() {
     jl_Object.call(this);
-    this.$proxyCapture046 = null;
+    this.$proxyCapture053 = null;
 }
 function juf_Supplier$proxy$4_0_16__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_16();
@@ -26005,15 +26077,15 @@ function juf_Supplier$proxy$4_0_16__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_16_get(var$0) {
-    return var$0.$proxyCapture046.$value1.$option.$getName();
+    return var$0.$proxyCapture053.$value1.$option.$getListClasses();
 }
 function juf_Supplier$proxy$4_0_16__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture046 = var$1;
+    var$0.$proxyCapture053 = var$1;
 }
 function juf_Supplier$proxy$4_0_13() {
     jl_Object.call(this);
-    this.$proxyCapture047 = null;
+    this.$proxyCapture054 = null;
 }
 function juf_Supplier$proxy$4_0_13__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_13();
@@ -26021,11 +26093,17 @@ function juf_Supplier$proxy$4_0_13__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_13_get(var$0) {
-    return var$0.$proxyCapture047.$value1.$option.$getName();
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture054;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$1 = var$1.$value1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof mo_ClassOption);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_13__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture047 = var$1;
+    var$0.$proxyCapture054 = var$1;
 }
 function ju_HashMap$1() {
     ju_AbstractSet.call(this);
@@ -26045,7 +26123,7 @@ function ju_HashMap$1_iterator($this) {
 }
 function juf_Supplier$proxy$4_0_14() {
     jl_Object.call(this);
-    this.$proxyCapture048 = null;
+    this.$proxyCapture055 = null;
 }
 function juf_Supplier$proxy$4_0_14__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_14();
@@ -26053,15 +26131,15 @@ function juf_Supplier$proxy$4_0_14__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_14_get(var$0) {
-    return var$0.$proxyCapture048.$value1.$option.$getValueAsCLIString();
+    return var$0.$proxyCapture055.$value1.$option.$getName();
 }
 function juf_Supplier$proxy$4_0_14__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture048 = var$1;
+    var$0.$proxyCapture055 = var$1;
 }
 function juf_Supplier$proxy$4_0_11() {
     jl_Object.call(this);
-    this.$proxyCapture049 = null;
+    this.$proxyCapture056 = null;
 }
 function juf_Supplier$proxy$4_0_11__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_11();
@@ -26069,27 +26147,15 @@ function juf_Supplier$proxy$4_0_11__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_11_get(var$0) {
-    var var$1, var$2, var$3, var$4, var$5;
-    var$1 = var$0.$proxyCapture049;
-    var$2 = $rt_createArray(jl_Object, 1).data;
-    var$2[0] = $rt_s(490);
-    var$3 = $rt_createArray(jl_Object, 1).data;
-    var$4 = $rt_createArray(jl_Object, 1);
-    var$5 = var$1.$value1;
-    var$4 = var$4.data;
-    var$4[0] = jl_Integer_valueOf(var$5.$level);
-    var$3[0] = jl_Integer_valueOf(var$4[0].$intValue()).$toString();
-    var$4 = $rt_createArray(jl_Object, 1).data;
-    var$4[0] = $rt_s(491);
-    return jl_StringBuilder__init_().$append(var$4[0]).$append(var$3[0]).$append(var$2[0]).$toString();
+    return var$0.$proxyCapture056.$value1.$option.$getName();
 }
 function juf_Supplier$proxy$4_0_11__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture049 = var$1;
+    var$0.$proxyCapture056 = var$1;
 }
 function juf_Supplier$proxy$4_0_12() {
     jl_Object.call(this);
-    this.$proxyCapture050 = null;
+    this.$proxyCapture057 = null;
 }
 function juf_Supplier$proxy$4_0_12__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_12();
@@ -26097,21 +26163,38 @@ function juf_Supplier$proxy$4_0_12__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_12_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture050;
-    var$2 = $rt_createArray(jl_Object, 1);
-    var$1 = var$1.$value1;
-    var$2 = var$2.data;
-    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_IntOption);
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture057;
+    var$2 = $rt_createArray(jl_Object, 1).data;
+    var$3 = $rt_createArray(jl_Object, 1).data;
+    var$3[0] = var$1.$value1.$option.$getValueAsCLIString();
+    var$2[0] = jl_Boolean_valueOf(jl_Boolean_parseBoolean(var$3[0]));
     return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_12__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture050 = var$1;
+    var$0.$proxyCapture057 = var$1;
+}
+function mt_NullMonitor() {
+    jl_Object.call(this);
+}
+function mt_NullMonitor__init_() {
+    var var_0 = new mt_NullMonitor();
+    mt_NullMonitor__init_0(var_0);
+    return var_0;
+}
+function mt_NullMonitor__init_0($this) {
+    jl_Object__init_0($this);
+}
+function mt_NullMonitor_setCurrentActivity($this, $activityDescription, $fracComplete) {
+    return;
+}
+function mt_NullMonitor_taskShouldAbort($this) {
+    return 0;
 }
 function jl_Double() {
     jl_Number.call(this);
-    this.$value13 = 0.0;
+    this.$value12 = 0.0;
 }
 var jl_Double_NaN = 0.0;
 var jl_Double_TYPE = null;
@@ -26127,13 +26210,13 @@ function jl_Double__init_(var_0) {
 function jl_Double__init_0($this, $value) {
     jl_Double_$callClinit();
     jl_Number__init_0($this);
-    $this.$value13 = $value;
+    $this.$value12 = $value;
 }
 function jl_Double_doubleValue($this) {
-    return $this.$value13;
+    return $this.$value12;
 }
 function jl_Double_longValue($this) {
-    return Long_fromNumber($this.$value13);
+    return Long_fromNumber($this.$value12);
 }
 function jl_Double_valueOf($d) {
     jl_Double_$callClinit();
@@ -26290,15 +26373,15 @@ function jl_Double_decimalExponent($n) {
     return $result;
 }
 function jl_Double_toString0($this) {
-    return jl_Double_toString($this.$value13);
+    return jl_Double_toString($this.$value12);
 }
 function jl_Double_equals($this, $other) {
     if ($this === $other)
         return 1;
-    return $other instanceof jl_Double && $other.$value13 === $this.$value13 ? 1 : 0;
+    return $other instanceof jl_Double && $other.$value12 === $this.$value12 ? 1 : 0;
 }
 function jl_Double_hashCode($this) {
-    return jl_Double_hashCode0($this.$value13);
+    return jl_Double_hashCode0($this.$value12);
 }
 function jl_Double_hashCode0($d) {
     var $h;
@@ -26311,7 +26394,7 @@ function jl_Double_compare(var$1, var$2) {
     return $rt_compare(var$1, var$2);
 }
 function jl_Double_compareTo($this, $other) {
-    return jl_Double_compare($this.$value13, $other.$value13);
+    return jl_Double_compare($this.$value12, $other.$value12);
 }
 function jl_Double_compareTo0($this, var$1) {
     return $this.$compareTo7(var$1);
@@ -26319,23 +26402,6 @@ function jl_Double_compareTo0($this, var$1) {
 function jl_Double__clinit_() {
     jl_Double_NaN = NaN;
     jl_Double_TYPE = $rt_cls($rt_doublecls());
-}
-function mt_NullMonitor() {
-    jl_Object.call(this);
-}
-function mt_NullMonitor__init_() {
-    var var_0 = new mt_NullMonitor();
-    mt_NullMonitor__init_0(var_0);
-    return var_0;
-}
-function mt_NullMonitor__init_0($this) {
-    jl_Object__init_0($this);
-}
-function mt_NullMonitor_setCurrentActivity($this, $activityDescription, $fracComplete) {
-    return;
-}
-function mt_NullMonitor_taskShouldAbort($this) {
-    return 0;
 }
 function jm_Elementary() {
     jl_Object.call(this);
@@ -26539,7 +26605,7 @@ function jm_Elementary_subtract0($a, $aSize, $b, $bSize) {
 }
 function juf_Supplier$proxy$4_0_10() {
     jl_Object.call(this);
-    this.$proxyCapture051 = null;
+    this.$proxyCapture058 = null;
 }
 function juf_Supplier$proxy$4_0_10__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_10();
@@ -26547,11 +26613,17 @@ function juf_Supplier$proxy$4_0_10__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_10_get(var$0) {
-    return var$0.$proxyCapture051.$optHMap;
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture058;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$1 = var$1.$value1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_FlagOption);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_10__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture051 = var$1;
+    var$0.$proxyCapture058 = var$1;
 }
 function ju_TreeMap$1() {
     jl_Object.call(this);
@@ -26805,11 +26877,11 @@ function mo_AbstractClassOption_materializeObject($this, $monitor, $repository) 
         if (!var$3.$isInstance0(var$4)) {
             if ($this.$currentValue instanceof jl_String) {
                 if ($repository === null)
-                    $rt_throw(jl_RuntimeException__init_($rt_s(492)));
+                    $rt_throw(jl_RuntimeException__init_($rt_s(508)));
                 $inmemObj = $repository.$getObjectNamed($this.$currentValue);
                 if ($inmemObj !== null)
                     return $inmemObj;
-                $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(493)).$append3($this.$currentValue).$append($rt_s(494)).$toString()));
+                $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(509)).$append3($this.$currentValue).$append($rt_s(510)).$toString()));
             }
             if ($rt_isInstance($this.$currentValue, mt_Task)) {
                 $task = $this.$currentValue;
@@ -26817,11 +26889,11 @@ function mo_AbstractClassOption_materializeObject($this, $monitor, $repository) 
                 return $result;
             }
             var$4 = new jl_RuntimeException;
-            var$3 = jl_StringBuilder__init_().$append($rt_s(495));
+            var$3 = jl_StringBuilder__init_().$append($rt_s(511));
             var$8 = $this.$requiredType;
-            var$3 = var$3.$append(var$8.$getName()).$append($rt_s(496));
+            var$3 = var$3.$append(var$8.$getName()).$append($rt_s(512));
             var$8 = $this.$currentValue;
-            jl_RuntimeException__init_4(var$4, var$3.$append(jl_Object_getClass(var$8).$getName()).$append($rt_s(497)).$toString());
+            jl_RuntimeException__init_4(var$4, var$3.$append(jl_Object_getClass(var$8).$getName()).$append($rt_s(513)).$toString());
             $rt_throw(var$4);
         }
     }
@@ -26833,10 +26905,10 @@ function mo_AbstractClassOption_getDefaultCLIString($this) {
 function mo_AbstractClassOption_classToCLIString($aClass, $requiredType) {
     var $className, $packageName, var$5, var$6, var$7;
     $className = $aClass.$getName();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(498)).$append($className).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(514)).$append($className).$toString());
     $packageName = $requiredType.$getPackage0().$getName();
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(499)).$append($packageName).$toString());
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(500)).$append1($packageName.$length()).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(515)).$append($packageName).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(516)).$append1($packageName.$length()).$toString());
     if ($className.$startsWith0($packageName))
         $className = $className.$substring0($packageName.$length(), $className.$length());
     else if ($rt_cls(mt_Task).$isAssignableFrom($aClass)) {
@@ -26862,19 +26934,7 @@ function mo_ClassOption__init_(var_0, var_1, var_2, var_3, var_4) {
     mo_ClassOption__init_0(var_5, var_0, var_1, var_2, var_3, var_4);
     return var_5;
 }
-function mo_ClassOption_getListClasses($requiredType) {
-    var $listClasses, var$3, $entry;
-    mo_ClassOption_$callClinit();
-    $listClasses = ju_ArrayList__init_();
-    var$3 = mo_ClassOption_app.$entrySet().$iterator();
-    while (var$3.$hasNext()) {
-        $entry = var$3.$next();
-        if ($requiredType.$isAssignableFrom($entry.$getValue1()))
-            $listClasses.$add($entry.$getKey());
-    }
-    return $listClasses;
-}
-function mo_ClassOption_getListClasses0($this) {
+function mo_ClassOption_getListClasses($this) {
     var $listClasses, var$2, $entry;
     $listClasses = ju_ArrayList__init_();
     var$2 = mo_ClassOption_app.$entrySet().$iterator();
@@ -26884,10 +26944,6 @@ function mo_ClassOption_getListClasses0($this) {
             $listClasses.$add($entry.$getKey());
     }
     return $listClasses;
-}
-function mo_ClassOption_helloWorld() {
-    mo_ClassOption_$callClinit();
-    jl_System_out().$println1($rt_s(501));
 }
 function mo_ClassOption__init_0($this, $name, $cliChar, $purpose, $requiredType, $defaultCLIString) {
     mo_ClassOption_$callClinit();
@@ -26904,7 +26960,7 @@ function mo_ClassOption_setValueViaCLIString($this, $s) {
         if ($this.$nullString !== null && !($s !== null && $s.$length() && !$s.$equals($this.$nullString)))
             $this.$currentValue = null;
         else {
-            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(502)).$append($s).$append($rt_s(503)).$append($this.$requiredType.$getName()).$toString());
+            jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(517)).$append($s).$append($rt_s(518)).$append($this.$requiredType.$getName()).$toString());
             try {
                 $this.$currentValue = mo_ClassOption_cliStringToObject($s, $this.$requiredType, null, $rt_createArray(jl_String, 0));
                 break a;
@@ -26912,7 +26968,7 @@ function mo_ClassOption_setValueViaCLIString($this, $s) {
                 $$je = $rt_wrapException($$e);
                 if ($$je instanceof jl_Exception) {
                     $e = $$je;
-                    $rt_throw(jl_IllegalArgumentException__init_2(jl_StringBuilder__init_().$append($rt_s(504)).$append($this.$getName()).$append($rt_s(505)).$append($e.$getMessage()).$toString(), $e));
+                    $rt_throw(jl_IllegalArgumentException__init_2(jl_StringBuilder__init_().$append($rt_s(519)).$append($this.$getName()).$append($rt_s(520)).$append($e.$getMessage()).$toString(), $e));
                 } else {
                     throw $$e;
                 }
@@ -26926,30 +26982,30 @@ function mo_ClassOption_objectToCLIString($obj, $requiredType) {
     if ($obj === null)
         return $rt_s(17);
     if ($obj instanceof ji_File) {
-        jl_System_out().$println1($rt_s(506));
-        return jl_StringBuilder__init_().$append($rt_s(507)).$append($obj.$getPath()).$toString();
+        jl_System_out().$println1($rt_s(521));
+        return jl_StringBuilder__init_().$append($rt_s(522)).$append($obj.$getPath()).$toString();
     }
     if ($obj instanceof jl_String) {
-        jl_System_out().$println1($rt_s(508));
-        return jl_StringBuilder__init_().$append($rt_s(509)).$append3($obj).$toString();
+        jl_System_out().$println1($rt_s(523));
+        return jl_StringBuilder__init_().$append($rt_s(524)).$append3($obj).$toString();
     }
     $className = mo_AbstractClassOption_classToCLIString(jl_Object_getClass($obj), $requiredType);
-    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(510)).$append($className).$toString());
+    jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(525)).$append($className).$toString());
     if ($rt_isInstance($obj, mo_OptionHandler)) {
-        jl_System_out().$println1($rt_s(511));
+        jl_System_out().$println1($rt_s(526));
         $subOptions = $obj.$getOptions().$getAsCLIString();
         if ($subOptions.$length() > 0)
-            return jl_StringBuilder__init_().$append($className).$append($rt_s(29)).$append($subOptions).$toString();
+            return jl_StringBuilder__init_().$append($className).$append($rt_s(31)).$append($subOptions).$toString();
     }
     return $className;
 }
 function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOptions, $additionalPackagesToSearch) {
     var var$5, $firstSpaceIndex, $className, $classOptions, var$9, var$10, $classObject, $classInstance, $classInstance2, var$14, $ex, $options, var$17, $option, $$je;
     mo_ClassOption_$callClinit();
-    if ($cliString.$startsWith0($rt_s(507)))
-        return ji_File__init_($cliString.$substring($rt_s(507).$length()));
-    if ($cliString.$startsWith0($rt_s(509)))
-        return $cliString.$substring($rt_s(509).$length());
+    if ($cliString.$startsWith0($rt_s(522)))
+        return ji_File__init_($cliString.$substring($rt_s(522).$length()));
+    if ($cliString.$startsWith0($rt_s(524)))
+        return $cliString.$substring($rt_s(524).$length());
     var$5 = $cliString.$trim();
     $firstSpaceIndex = var$5.$indexOf2(32, 0);
     if ($firstSpaceIndex > 0) {
@@ -26964,9 +27020,9 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
     var$9[var$10 - 1 | 0] = $rt_cls(mt_Task).$getPackage0().$getName();
     $classObject = mo_ClassOption_app.$get1(var$5);
     if ($classObject === null)
-        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(512)).$append(var$5).$toString()));
+        $rt_throw(jl_RuntimeException__init_(jl_StringBuilder__init_().$append($rt_s(527)).$append(var$5).$toString()));
     if ($classObject !== null)
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(513)).$append($classObject.$getName()).$toString());
+        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(528)).$append($classObject.$getName()).$toString());
     $classInstance = jl_Object__init_();
     $classInstance2 = jl_Object__init_();
     a: {
@@ -26981,14 +27037,14 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
                 throw $$e;
             }
         }
-        $rt_throw(jl_Exception__init_1(jl_StringBuilder__init_().$append($rt_s(514)).$append(var$5).$toString(), $ex));
+        $rt_throw(jl_Exception__init_1(jl_StringBuilder__init_().$append($rt_s(529)).$append(var$5).$toString(), $ex));
     }
     b: {
-        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(515)).$append(var$14.$toString()).$toString());
+        jl_System_out().$println1(jl_StringBuilder__init_().$append($rt_s(530)).$append(var$14.$toString()).$toString());
         $options = cgj_Options__init_();
         if ($externalOptions !== null) {
             var$9 = $externalOptions.data;
-            jl_System_out().$println1($rt_s(516));
+            jl_System_out().$println1($rt_s(531));
             var$10 = var$9.length;
             var$17 = 0;
             while (true) {
@@ -27001,11 +27057,11 @@ function mo_ClassOption_cliStringToObject($cliString, $requiredType, $externalOp
         }
     }
     if ($externalOptions === null)
-        jl_System_out().$println1($rt_s(517));
+        jl_System_out().$println1($rt_s(532));
     if (!$rt_isInstance(var$14, mo_OptionHandler))
-        jl_System_out().$println1($rt_s(518));
+        jl_System_out().$println1($rt_s(533));
     else
-        jl_System_out().$println1($rt_s(519));
+        jl_System_out().$println1($rt_s(534));
     return var$14;
 }
 function mo_ClassOption__clinit_() {
@@ -27013,7 +27069,7 @@ function mo_ClassOption__clinit_() {
 }
 function juf_Supplier$proxy$4_0_19() {
     jl_Object.call(this);
-    this.$proxyCapture052 = null;
+    this.$proxyCapture059 = null;
 }
 function juf_Supplier$proxy$4_0_19__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_19();
@@ -27021,15 +27077,15 @@ function juf_Supplier$proxy$4_0_19__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_19_get(var$0) {
-    return var$0.$proxyCapture052.$value1.$option.$getName();
+    return var$0.$proxyCapture059.$value1.$option.$getValueAsCLIString();
 }
 function juf_Supplier$proxy$4_0_19__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture052 = var$1;
+    var$0.$proxyCapture059 = var$1;
 }
 function juf_Supplier$proxy$4_0_17() {
     jl_Object.call(this);
-    this.$proxyCapture053 = null;
+    this.$proxyCapture060 = null;
 }
 function juf_Supplier$proxy$4_0_17__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_17();
@@ -27037,15 +27093,15 @@ function juf_Supplier$proxy$4_0_17__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_17_get(var$0) {
-    return var$0.$proxyCapture053.$value1.$option.$getValueAsCLIString();
+    return var$0.$proxyCapture060.$value1;
 }
 function juf_Supplier$proxy$4_0_17__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture053 = var$1;
+    var$0.$proxyCapture060 = var$1;
 }
 function juf_Supplier$proxy$4_0_18() {
     jl_Object.call(this);
-    this.$proxyCapture054 = null;
+    this.$proxyCapture061 = null;
 }
 function juf_Supplier$proxy$4_0_18__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_18();
@@ -27053,17 +27109,11 @@ function juf_Supplier$proxy$4_0_18__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_18_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture054;
-    var$2 = $rt_createArray(jl_Object, 1);
-    var$1 = var$1.$value1;
-    var$2 = var$2.data;
-    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_FlagOption);
-    return jl_Boolean_valueOf(var$2[0].$booleanValue());
+    return var$0.$proxyCapture061.$value1;
 }
 function juf_Supplier$proxy$4_0_18__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture054 = var$1;
+    var$0.$proxyCapture061 = var$1;
 }
 function otjb_StorageProvider() {
 }
@@ -27103,8 +27153,8 @@ function eu_Client$1__init_(var_0) {
 function eu_Client$1__init_0($this, $this$0) {
     $this.$this$016 = $this$0;
     ju_HashMap__init_0($this);
-    $this.$put($rt_s(168), $rt_s(520));
-    $this.$put($rt_s(521), $rt_s(522));
+    $this.$put($rt_s(535), $rt_s(536));
+    $this.$put($rt_s(537), $rt_s(538));
 }
 function ju_LinkedList$SequentialListIterator() {
     var a = this; jl_Object.call(a);
@@ -27347,7 +27397,7 @@ function otcit_DateTimeZoneProvider_getIds() {
         while (var$9 < var$8) {
             $id = var$7[var$9];
             if (!$areaName.$isEmpty())
-                $id = jl_StringBuilder__init_().$append($areaName).$append($rt_s(413)).$append($id).$toString();
+                $id = jl_StringBuilder__init_().$append($areaName).$append($rt_s(428)).$append($id).$toString();
             $ids.$add($id);
             var$9 = var$9 + 1 | 0;
         }
@@ -27420,16 +27470,16 @@ function otcit_DateTimeZoneProvider_detectTimezone() {
                     break a;
                 if (Long_eq($scoreTable.$get(0).$tz.$previousTransition(var$14), var$14))
                     break a;
-                if ($scoreTable.$size() > 1 && ($scoreTable.$get(0).$value14 + 2880 | 0) < $scoreTable.$get(1).$value14)
+                if ($scoreTable.$size() > 1 && ($scoreTable.$get(0).$value13 + 2880 | 0) < $scoreTable.$get(1).$value13)
                     return $scoreTable.$get(0).$tz;
                 $i = $scoreTable.$size() - 1 | 0;
                 while ($i >= 0) {
                     $score = $scoreTable.$get($i);
                     $tzOffset = $score.$tz.$getOffset(var$14) / 60000 | 0;
                     if ($tzOffset != var$16)
-                        $score.$value14 = $score.$value14 + ($rt_imul(Long_div(Long_sub($time, var$14), Long_fromInt(60000)).lo, jl_Math_abs0($tzOffset - var$16 | 0)) / 30 | 0) | 0;
+                        $score.$value13 = $score.$value13 + ($rt_imul(Long_div(Long_sub($time, var$14), Long_fromInt(60000)).lo, jl_Math_abs0($tzOffset - var$16 | 0)) / 30 | 0) | 0;
                     $j = $i + 1 | 0;
-                    while ($j < $scoreTable.$size() && $score.$value14 > $scoreTable.$get($j).$value14) {
+                    while ($j < $scoreTable.$size() && $score.$value13 > $scoreTable.$get($j).$value13) {
                         $scoreTable.$set($j - 1 | 0, $scoreTable.$get($j));
                         $j = $j + 1 | 0;
                     }
@@ -27707,7 +27757,7 @@ function ji_File_fixSlashes($origPath) {
     $length = $origPath.$length();
     $newLength = 0;
     if (ji_File_fs().$isWindows() && $length == 3 && ji_File_isDriveLetter($origPath.$charAt(0)) && $origPath.$charAt(1) == 58 && !($origPath.$charAt(2) != 47 && $origPath.$charAt(2) != 92))
-        return jl_StringBuilder__init_().$append($origPath.$substring0(0, 2)).$append($rt_s(523)).$toString();
+        return jl_StringBuilder__init_().$append($origPath.$substring0(0, 2)).$append($rt_s(539)).$toString();
     $foundSlash = 0;
     $newPath = $origPath.$toCharArray();
     $i = 0;
@@ -27884,7 +27934,7 @@ function mct_HoeffdingTree$SplitNode_describeSubtree($this, $ht, $out, $indent) 
     while ($branch < $this.$numChildren()) {
         $child = $this.$getChild($branch);
         if ($child !== null) {
-            mc_StringUtils_appendIndented($out, $indent, $rt_s(524));
+            mc_StringUtils_appendIndented($out, $indent, $rt_s(540));
             var$6 = $this.$splitTest0;
             var$7 = $ht.$getModelContext();
             $out.$append(var$6.$describeConditionForBranch($branch, var$7));
@@ -27911,7 +27961,7 @@ function mct_HoeffdingTree$SplitNode_subtreeDepth($this) {
 }
 function otft_Fragment$proxy$4_0_0() {
     jl_Object.call(this);
-    this.$proxyCapture055 = null;
+    this.$proxyCapture062 = null;
 }
 function otft_Fragment$proxy$4_0_0__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_0();
@@ -27920,14 +27970,14 @@ function otft_Fragment$proxy$4_0_0__init_(var_0) {
 }
 function otft_Fragment$proxy$4_0_0_create(var$0) {
     var var$1, var$2;
-    var$1 = var$0.$proxyCapture055;
+    var$1 = var$0.$proxyCapture062;
     var$2 = otft_DomComponentHandler$proxy$4_0_0__init_(var$1);
     var$1 = otft_DomComponentTemplate__init_(var$2);
     return var$1;
 }
 function otft_Fragment$proxy$4_0_0__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture055 = var$1;
+    var$0.$proxyCapture062 = var$1;
 }
 function jl_IllegalStateException() {
     jl_Exception.call(this);
@@ -27948,25 +27998,84 @@ function jl_IllegalStateException__init_1($this) {
 function jl_IllegalStateException__init_2($this, $message) {
     jl_Exception__init_4($this, $message);
 }
-function juf_Supplier$proxy$4_0_33() {
-    jl_Object.call(this);
-    this.$proxyCapture056 = null;
+function juf_Supplier$proxy$4_0_35() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture063 = null;
+    a.$proxyCapture16 = null;
 }
-function juf_Supplier$proxy$4_0_33__init_(var_0) {
-    var var_1 = new juf_Supplier$proxy$4_0_33();
-    juf_Supplier$proxy$4_0_33__init_0(var_1, var_0);
-    return var_1;
+function juf_Supplier$proxy$4_0_35__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_35();
+    juf_Supplier$proxy$4_0_35__init_0(var_2, var_0, var_1);
+    return var_2;
+}
+function juf_Supplier$proxy$4_0_35_get(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture063;
+    var$2 = var$0.$proxyCapture16;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$kappaMStatArr.$get(var$3[0].$intValue());
+}
+function juf_Supplier$proxy$4_0_35__init_0(var$0, var$1, var$2) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture063 = var$1;
+    var$0.$proxyCapture16 = var$2;
+}
+function juf_Supplier$proxy$4_0_33() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture064 = null;
+    a.$proxyCapture17 = null;
+}
+function juf_Supplier$proxy$4_0_33__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_33();
+    juf_Supplier$proxy$4_0_33__init_0(var_2, var_0, var_1);
+    return var_2;
 }
 function juf_Supplier$proxy$4_0_33_get(var$0) {
-    return var$0.$proxyCapture056.$value1;
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture064;
+    var$2 = var$0.$proxyCapture17;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$kappaStatArr.$get(var$3[0].$intValue());
 }
-function juf_Supplier$proxy$4_0_33__init_0(var$0, var$1) {
+function juf_Supplier$proxy$4_0_33__init_0(var$0, var$1, var$2) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture056 = var$1;
+    var$0.$proxyCapture064 = var$1;
+    var$0.$proxyCapture17 = var$2;
+}
+function juf_Supplier$proxy$4_0_34() {
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture065 = null;
+    a.$proxyCapture18 = null;
+}
+function juf_Supplier$proxy$4_0_34__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_34();
+    juf_Supplier$proxy$4_0_34__init_0(var_2, var_0, var_1);
+    return var_2;
+}
+function juf_Supplier$proxy$4_0_34_get(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture065;
+    var$2 = var$0.$proxyCapture18;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$kappaTemporalStatArr.$get(var$3[0].$intValue());
+}
+function juf_Supplier$proxy$4_0_34__init_0(var$0, var$1, var$2) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture065 = var$1;
+    var$0.$proxyCapture18 = var$2;
 }
 function juf_Supplier$proxy$4_0_31() {
     jl_Object.call(this);
-    this.$proxyCapture057 = null;
+    this.$proxyCapture066 = null;
 }
 function juf_Supplier$proxy$4_0_31__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_31();
@@ -27974,31 +28083,36 @@ function juf_Supplier$proxy$4_0_31__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_31_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture057;
-    var$2 = $rt_createArray(jl_Object, 1).data;
-    var$2[0] = var$1.$value1.$option.$getOptionLabels();
-    return ju_Arrays_asList(var$2[0]);
+    return var$0.$proxyCapture066.$accuracyArr;
 }
 function juf_Supplier$proxy$4_0_31__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture057 = var$1;
+    var$0.$proxyCapture066 = var$1;
 }
 function juf_Supplier$proxy$4_0_32() {
-    jl_Object.call(this);
-    this.$proxyCapture058 = null;
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture067 = null;
+    a.$proxyCapture19 = null;
 }
-function juf_Supplier$proxy$4_0_32__init_(var_0) {
-    var var_1 = new juf_Supplier$proxy$4_0_32();
-    juf_Supplier$proxy$4_0_32__init_0(var_1, var_0);
-    return var_1;
+function juf_Supplier$proxy$4_0_32__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_32();
+    juf_Supplier$proxy$4_0_32__init_0(var_2, var_0, var_1);
+    return var_2;
 }
 function juf_Supplier$proxy$4_0_32_get(var$0) {
-    return var$0.$proxyCapture058.$value1;
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture067;
+    var$2 = var$0.$proxyCapture19;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$accuracyArr.$get(var$3[0].$intValue());
 }
-function juf_Supplier$proxy$4_0_32__init_0(var$0, var$1) {
+function juf_Supplier$proxy$4_0_32__init_0(var$0, var$1, var$2) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture058 = var$1;
+    var$0.$proxyCapture067 = var$1;
+    var$0.$proxyCapture19 = var$2;
 }
 function otpp_AsyncCallbackWrapper() {
     jl_Object.call(this);
@@ -28064,22 +28178,22 @@ function mcb_NaiveBayes_getModelDescription($this, $out, $indent) {
     var $i, var$4, var$5, var$6, $j;
     $i = 0;
     while ($i < $this.$observedClassDistribution0.$numValues()) {
-        mc_StringUtils_appendIndented($out, $indent, $rt_s(525));
+        mc_StringUtils_appendIndented($out, $indent, $rt_s(541));
         $out.$append($this.$getClassNameString());
         $out.$append($rt_s(3));
         $out.$append($this.$getClassLabelString($i));
-        $out.$append($rt_s(372));
+        $out.$append($rt_s(387));
         var$4 = $indent + 1 | 0;
-        mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(526));
+        mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(542));
         $out.$append7($this.$observedClassDistribution0.$getValue($i));
-        $out.$append($rt_s(527));
+        $out.$append($rt_s(543));
         var$5 = $this.$observedClassDistribution0.$getValue($i);
         var$6 = $this.$observedClassDistribution0;
         var$5 = var$5 / var$6.$sumOfValues();
         $out.$append7(var$5);
         $j = 0;
         while ($j < $this.$attributeObservers0.$size()) {
-            mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(525));
+            mc_StringUtils_appendNewlineIndented($out, var$4, $rt_s(541));
             $out.$append($this.$getAttributeNameString0($j));
             $out.$append($rt_s(7));
             $out.$append3($this.$attributeObservers0.$get($j));
@@ -28159,8 +28273,8 @@ function jl_Enum_compareTo($this, $o) {
     if (jl_Enum_getDeclaringClass($o) === jl_Enum_getDeclaringClass($this))
         return jl_Integer_compare($this.$ordinal0, jl_Enum_ordinal($o));
     var$2 = new jl_IllegalArgumentException;
-    var$3 = jl_StringBuilder__init_().$append($rt_s(528));
-    jl_IllegalArgumentException__init_4(var$2, var$3.$append(jl_Enum_getDeclaringClass($this).$getName()).$append($rt_s(529)).$append(jl_Enum_getDeclaringClass($o).$getName()).$toString());
+    var$3 = jl_StringBuilder__init_().$append($rt_s(544));
+    jl_IllegalArgumentException__init_4(var$2, var$3.$append(jl_Enum_getDeclaringClass($this).$getName()).$append($rt_s(545)).$append(jl_Enum_getDeclaringClass($o).$getName()).$toString());
     $rt_throw(var$2);
 }
 function jl_Enum_compareTo0($this, var$1) {
@@ -28168,7 +28282,7 @@ function jl_Enum_compareTo0($this, var$1) {
 }
 function otft_Fragment$proxy$4_0_9() {
     jl_Object.call(this);
-    this.$proxyCapture059 = null;
+    this.$proxyCapture068 = null;
 }
 function otft_Fragment$proxy$4_0_9__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_9();
@@ -28176,15 +28290,17 @@ function otft_Fragment$proxy$4_0_9__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_9_create(var$0) {
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_9__init_(var$0.$proxyCapture059));
+    var var$1;
+    var$1 = var$0.$proxyCapture068;
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_9__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
 }
 function otft_Fragment$proxy$4_0_9__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture059 = var$1;
+    var$0.$proxyCapture068 = var$1;
 }
 function otft_Fragment$proxy$4_0_7() {
     jl_Object.call(this);
-    this.$proxyCapture060 = null;
+    this.$proxyCapture069 = null;
 }
 function otft_Fragment$proxy$4_0_7__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_7();
@@ -28192,11 +28308,13 @@ function otft_Fragment$proxy$4_0_7__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_7_create(var$0) {
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_7__init_(var$0.$proxyCapture060));
+    var var$1;
+    var$1 = var$0.$proxyCapture069;
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_7__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
 }
 function otft_Fragment$proxy$4_0_7__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture060 = var$1;
+    var$0.$proxyCapture069 = var$1;
 }
 function mcti_IademNumericAttributeBinaryTest() {
     mccc_NumericAttributeBinaryTest.call(this);
@@ -28209,9 +28327,31 @@ function mcti_IademNumericAttributeBinaryTest__init_(var_0, var_1, var_2) {
 function mcti_IademNumericAttributeBinaryTest__init_0($this, $attIndex, $attValue, $equalsPassesTest) {
     mccc_NumericAttributeBinaryTest__init_0($this, $attIndex, $attValue, $equalsPassesTest);
 }
+function juf_Supplier$proxy$4_0_30() {
+    jl_Object.call(this);
+    this.$proxyCapture070 = null;
+}
+function juf_Supplier$proxy$4_0_30__init_(var_0) {
+    var var_1 = new juf_Supplier$proxy$4_0_30();
+    juf_Supplier$proxy$4_0_30__init_0(var_1, var_0);
+    return var_1;
+}
+function juf_Supplier$proxy$4_0_30_get(var$0) {
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture070;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$3 = var$1.$accuracyArr.$isEmpty() ? 0 : 1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$3);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
+}
+function juf_Supplier$proxy$4_0_30__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture070 = var$1;
+}
 function otft_Fragment$proxy$4_0_8() {
     jl_Object.call(this);
-    this.$proxyCapture061 = null;
+    this.$proxyCapture071 = null;
 }
 function otft_Fragment$proxy$4_0_8__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_8();
@@ -28219,13 +28359,11 @@ function otft_Fragment$proxy$4_0_8__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_8_create(var$0) {
-    var var$1;
-    var$1 = var$0.$proxyCapture061;
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_8__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_8__init_(var$0.$proxyCapture071));
 }
 function otft_Fragment$proxy$4_0_8__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture061 = var$1;
+    var$0.$proxyCapture071 = var$1;
 }
 function otfch_CheckedChangeBinder() {
     var a = this; jl_Object.call(a);
@@ -28271,25 +28409,9 @@ function otfch_CheckedChangeBinder_access$000($x0) {
 function otfch_CheckedChangeBinder_access$100($x0) {
     return $x0.$listener;
 }
-function juf_Supplier$proxy$4_0_30() {
-    jl_Object.call(this);
-    this.$proxyCapture062 = null;
-}
-function juf_Supplier$proxy$4_0_30__init_(var_0) {
-    var var_1 = new juf_Supplier$proxy$4_0_30();
-    juf_Supplier$proxy$4_0_30__init_0(var_1, var_0);
-    return var_1;
-}
-function juf_Supplier$proxy$4_0_30_get(var$0) {
-    return var$0.$proxyCapture062.$value1.$option.$getValueAsCLIString();
-}
-function juf_Supplier$proxy$4_0_30__init_0(var$0, var$1) {
-    jl_Object__init_0(var$0);
-    var$0.$proxyCapture062 = var$1;
-}
 function otft_Fragment$proxy$4_0_5() {
     jl_Object.call(this);
-    this.$proxyCapture063 = null;
+    this.$proxyCapture072 = null;
 }
 function otft_Fragment$proxy$4_0_5__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_5();
@@ -28297,15 +28419,15 @@ function otft_Fragment$proxy$4_0_5__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_5_create(var$0) {
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_5__init_(var$0.$proxyCapture063));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_5__init_(var$0.$proxyCapture072));
 }
 function otft_Fragment$proxy$4_0_5__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture063 = var$1;
+    var$0.$proxyCapture072 = var$1;
 }
 function otft_Fragment$proxy$4_0_6() {
     jl_Object.call(this);
-    this.$proxyCapture064 = null;
+    this.$proxyCapture073 = null;
 }
 function otft_Fragment$proxy$4_0_6__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_6();
@@ -28313,15 +28435,15 @@ function otft_Fragment$proxy$4_0_6__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_6_create(var$0) {
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_6__init_(var$0.$proxyCapture064));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_6__init_(var$0.$proxyCapture073));
 }
 function otft_Fragment$proxy$4_0_6__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture064 = var$1;
+    var$0.$proxyCapture073 = var$1;
 }
 function otft_Fragment$proxy$4_0_3() {
     jl_Object.call(this);
-    this.$proxyCapture065 = null;
+    this.$proxyCapture074 = null;
 }
 function otft_Fragment$proxy$4_0_3__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_3();
@@ -28329,17 +28451,15 @@ function otft_Fragment$proxy$4_0_3__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_3_create(var$0) {
-    var var$1;
-    var$1 = var$0.$proxyCapture065;
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_3__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_3__init_(var$0.$proxyCapture074));
 }
 function otft_Fragment$proxy$4_0_3__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture065 = var$1;
+    var$0.$proxyCapture074 = var$1;
 }
 function otft_Fragment$proxy$4_0_4() {
     jl_Object.call(this);
-    this.$proxyCapture066 = null;
+    this.$proxyCapture075 = null;
 }
 function otft_Fragment$proxy$4_0_4__init_(var_0) {
     var var_1 = new otft_Fragment$proxy$4_0_4();
@@ -28347,53 +28467,25 @@ function otft_Fragment$proxy$4_0_4__init_(var_0) {
     return var_1;
 }
 function otft_Fragment$proxy$4_0_4_create(var$0) {
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_4__init_(var$0.$proxyCapture066));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_4__init_(var$0.$proxyCapture075));
 }
 function otft_Fragment$proxy$4_0_4__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture066 = var$1;
+    var$0.$proxyCapture075 = var$1;
 }
 function otft_Fragment$proxy$4_0_1() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture067 = null;
-    a.$proxyCapture110 = null;
+    jl_Object.call(this);
 }
-function otft_Fragment$proxy$4_0_1__init_(var_0, var_1) {
-    var var_2 = new otft_Fragment$proxy$4_0_1();
-    otft_Fragment$proxy$4_0_1__init_0(var_2, var_0, var_1);
-    return var_2;
+function otft_Fragment$proxy$4_0_1__init_0() {
+    var var_0 = new otft_Fragment$proxy$4_0_1();
+    otft_Fragment$proxy$4_0_1__init_(var_0);
+    return var_0;
 }
 function otft_Fragment$proxy$4_0_1_create(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture067;
-    var$2 = var$0.$proxyCapture110;
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_1__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_(), var$2));
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_1__init_0());
 }
-function otft_Fragment$proxy$4_0_1__init_0(var$0, var$1, var$2) {
+function otft_Fragment$proxy$4_0_1__init_(var$0) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture067 = var$1;
-    var$0.$proxyCapture110 = var$2;
-}
-function otft_Fragment$proxy$4_0_2() {
-    var a = this; jl_Object.call(a);
-    a.$proxyCapture068 = null;
-    a.$proxyCapture111 = null;
-}
-function otft_Fragment$proxy$4_0_2__init_(var_0, var_1) {
-    var var_2 = new otft_Fragment$proxy$4_0_2();
-    otft_Fragment$proxy$4_0_2__init_0(var_2, var_0, var_1);
-    return var_2;
-}
-function otft_Fragment$proxy$4_0_2_create(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture068;
-    var$2 = var$0.$proxyCapture111;
-    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_2__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_(), var$2));
-}
-function otft_Fragment$proxy$4_0_2__init_0(var$0, var$1, var$2) {
-    jl_Object__init_0(var$0);
-    var$0.$proxyCapture068 = var$1;
-    var$0.$proxyCapture111 = var$2;
 }
 function otfcs_IfComponent() {
     var a = this; otft_AbstractComponent.call(a);
@@ -28437,6 +28529,24 @@ function otfcs_IfComponent_destroy($this) {
         $this.$childComponent.$destroy();
     otft_AbstractComponent_destroy($this);
 }
+function otft_Fragment$proxy$4_0_2() {
+    jl_Object.call(this);
+    this.$proxyCapture076 = null;
+}
+function otft_Fragment$proxy$4_0_2__init_(var_0) {
+    var var_1 = new otft_Fragment$proxy$4_0_2();
+    otft_Fragment$proxy$4_0_2__init_0(var_1, var_0);
+    return var_1;
+}
+function otft_Fragment$proxy$4_0_2_create(var$0) {
+    var var$1;
+    var$1 = var$0.$proxyCapture076;
+    return otft_DomComponentTemplate__init_(otft_DomComponentHandler$proxy$4_0_2__init_(otfte_VariableImpl__init_(), var$1, otfte_VariableImpl__init_()));
+}
+function otft_Fragment$proxy$4_0_2__init_0(var$0, var$1) {
+    jl_Object__init_0(var$0);
+    var$0.$proxyCapture076 = var$1;
+}
 function jm_RoundingMode() {
     jl_Enum.call(this);
     this.$bigDecimalRM = 0;
@@ -28470,14 +28580,14 @@ function jm_RoundingMode__init_0($this, var$1, var$2, $rm) {
 }
 function jm_RoundingMode__clinit_() {
     var var$1, var$2;
-    jm_RoundingMode_UP = jm_RoundingMode__init_($rt_s(530), 0, 0);
-    jm_RoundingMode_DOWN = jm_RoundingMode__init_($rt_s(531), 1, 1);
-    jm_RoundingMode_CEILING = jm_RoundingMode__init_($rt_s(532), 2, 2);
-    jm_RoundingMode_FLOOR = jm_RoundingMode__init_($rt_s(533), 3, 3);
-    jm_RoundingMode_HALF_UP = jm_RoundingMode__init_($rt_s(534), 4, 4);
-    jm_RoundingMode_HALF_DOWN = jm_RoundingMode__init_($rt_s(535), 5, 5);
-    jm_RoundingMode_HALF_EVEN = jm_RoundingMode__init_($rt_s(536), 6, 6);
-    jm_RoundingMode_UNNECESSARY = jm_RoundingMode__init_($rt_s(537), 7, 7);
+    jm_RoundingMode_UP = jm_RoundingMode__init_($rt_s(546), 0, 0);
+    jm_RoundingMode_DOWN = jm_RoundingMode__init_($rt_s(547), 1, 1);
+    jm_RoundingMode_CEILING = jm_RoundingMode__init_($rt_s(548), 2, 2);
+    jm_RoundingMode_FLOOR = jm_RoundingMode__init_($rt_s(549), 3, 3);
+    jm_RoundingMode_HALF_UP = jm_RoundingMode__init_($rt_s(550), 4, 4);
+    jm_RoundingMode_HALF_DOWN = jm_RoundingMode__init_($rt_s(551), 5, 5);
+    jm_RoundingMode_HALF_EVEN = jm_RoundingMode__init_($rt_s(552), 6, 6);
+    jm_RoundingMode_UNNECESSARY = jm_RoundingMode__init_($rt_s(553), 7, 7);
     var$1 = $rt_createArray(jm_RoundingMode, 8);
     var$2 = var$1.data;
     var$2[0] = jm_RoundingMode_UP;
@@ -28492,7 +28602,7 @@ function jm_RoundingMode__clinit_() {
 }
 function juf_Supplier$proxy$4_0_26() {
     jl_Object.call(this);
-    this.$proxyCapture069 = null;
+    this.$proxyCapture077 = null;
 }
 function juf_Supplier$proxy$4_0_26__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_26();
@@ -28500,15 +28610,21 @@ function juf_Supplier$proxy$4_0_26__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_26_get(var$0) {
-    return var$0.$proxyCapture069.$value1;
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture077;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$3 = var$1.$meanErrorArr.$isEmpty() ? 0 : 1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$3);
+    return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_26__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture069 = var$1;
+    var$0.$proxyCapture077 = var$1;
 }
 function juf_Supplier$proxy$4_0_27() {
     jl_Object.call(this);
-    this.$proxyCapture070 = null;
+    this.$proxyCapture078 = null;
 }
 function juf_Supplier$proxy$4_0_27__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_27();
@@ -28516,15 +28632,15 @@ function juf_Supplier$proxy$4_0_27__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_27_get(var$0) {
-    return var$0.$proxyCapture070.$value1.$option.$getValueAsCLIString();
+    return var$0.$proxyCapture078.$meanErrorArr;
 }
 function juf_Supplier$proxy$4_0_27__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture070 = var$1;
+    var$0.$proxyCapture078 = var$1;
 }
 function juf_Supplier$proxy$4_0_24() {
     jl_Object.call(this);
-    this.$proxyCapture071 = null;
+    this.$proxyCapture079 = null;
 }
 function juf_Supplier$proxy$4_0_24__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_24();
@@ -28532,11 +28648,11 @@ function juf_Supplier$proxy$4_0_24__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_24_get(var$0) {
-    return var$0.$proxyCapture071.$value1.$option.$getListClasses();
+    return var$0.$proxyCapture079.$value1;
 }
 function juf_Supplier$proxy$4_0_24__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture071 = var$1;
+    var$0.$proxyCapture079 = var$1;
 }
 function mct_HoeffdingTree$FoundNode() {
     var a = this; jl_Object.call(a);
@@ -28568,7 +28684,7 @@ function jl_IllegalAccessException__init_($this) {
 }
 function juf_Supplier$proxy$4_0_25() {
     jl_Object.call(this);
-    this.$proxyCapture072 = null;
+    this.$proxyCapture080 = null;
 }
 function juf_Supplier$proxy$4_0_25__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_25();
@@ -28576,11 +28692,11 @@ function juf_Supplier$proxy$4_0_25__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_25_get(var$0) {
-    return var$0.$proxyCapture072.$value1;
+    return var$0.$proxyCapture080.$value1;
 }
 function juf_Supplier$proxy$4_0_25__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture072 = var$1;
+    var$0.$proxyCapture080 = var$1;
 }
 function ju_IdentityHashMap() {
     var a = this; ju_AbstractMap.call(a);
@@ -28772,7 +28888,7 @@ function ju_IdentityHashMap_areSameKeys($key1, $key2) {
 }
 function juf_Supplier$proxy$4_0_22() {
     jl_Object.call(this);
-    this.$proxyCapture073 = null;
+    this.$proxyCapture081 = null;
 }
 function juf_Supplier$proxy$4_0_22__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_22();
@@ -28780,15 +28896,15 @@ function juf_Supplier$proxy$4_0_22__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_22_get(var$0) {
-    return var$0.$proxyCapture073.$value1.$option.$getName();
+    return var$0.$proxyCapture081.$value1.$option.$getValueAsCLIString();
 }
 function juf_Supplier$proxy$4_0_22__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture073 = var$1;
+    var$0.$proxyCapture081 = var$1;
 }
 function juf_Supplier$proxy$4_0_23() {
     jl_Object.call(this);
-    this.$proxyCapture074 = null;
+    this.$proxyCapture082 = null;
 }
 function juf_Supplier$proxy$4_0_23__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_23();
@@ -28796,11 +28912,15 @@ function juf_Supplier$proxy$4_0_23__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_23_get(var$0) {
-    return var$0.$proxyCapture074.$value1.$option.$getValueAsCLIString();
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture082;
+    var$2 = $rt_createArray(jl_Object, 1).data;
+    var$2[0] = var$1.$value1.$option.$getOptionLabels();
+    return ju_Arrays_asList(var$2[0]);
 }
 function juf_Supplier$proxy$4_0_23__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture074 = var$1;
+    var$0.$proxyCapture082 = var$1;
 }
 function mcca_FIMTDDNumericAttributeClassObserver$Node() {
     var a = this; jl_Object.call(a);
@@ -28811,7 +28931,7 @@ function mcca_FIMTDDNumericAttributeClassObserver$Node() {
 }
 function juf_Supplier$proxy$4_0_20() {
     jl_Object.call(this);
-    this.$proxyCapture075 = null;
+    this.$proxyCapture083 = null;
 }
 function juf_Supplier$proxy$4_0_20__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_20();
@@ -28819,21 +28939,21 @@ function juf_Supplier$proxy$4_0_20__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_20_get(var$0) {
-    var var$1, var$2, var$3;
-    var$1 = var$0.$proxyCapture075;
-    var$2 = $rt_createArray(jl_Object, 1).data;
-    var$3 = $rt_createArray(jl_Object, 1).data;
-    var$3[0] = var$1.$value1.$option.$getValueAsCLIString();
-    var$2[0] = jl_Boolean_valueOf(jl_Boolean_parseBoolean(var$3[0]));
+    var var$1, var$2;
+    var$1 = var$0.$proxyCapture083;
+    var$2 = $rt_createArray(jl_Object, 1);
+    var$1 = var$1.$value1;
+    var$2 = var$2.data;
+    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_MultiChoiceOption);
     return jl_Boolean_valueOf(var$2[0].$booleanValue());
 }
 function juf_Supplier$proxy$4_0_20__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture075 = var$1;
+    var$0.$proxyCapture083 = var$1;
 }
 function juf_Supplier$proxy$4_0_21() {
     jl_Object.call(this);
-    this.$proxyCapture076 = null;
+    this.$proxyCapture084 = null;
 }
 function juf_Supplier$proxy$4_0_21__init_(var_0) {
     var var_1 = new juf_Supplier$proxy$4_0_21();
@@ -28841,55 +28961,61 @@ function juf_Supplier$proxy$4_0_21__init_(var_0) {
     return var_1;
 }
 function juf_Supplier$proxy$4_0_21_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture076;
-    var$2 = $rt_createArray(jl_Object, 1);
-    var$1 = var$1.$value1;
-    var$2 = var$2.data;
-    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof mo_ClassOption);
-    return jl_Boolean_valueOf(var$2[0].$booleanValue());
+    return var$0.$proxyCapture084.$value1.$option.$getName();
 }
 function juf_Supplier$proxy$4_0_21__init_0(var$0, var$1) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture076 = var$1;
+    var$0.$proxyCapture084 = var$1;
 }
 function juf_Supplier$proxy$4_0_28() {
-    jl_Object.call(this);
-    this.$proxyCapture077 = null;
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture085 = null;
+    a.$proxyCapture110 = null;
 }
-function juf_Supplier$proxy$4_0_28__init_(var_0) {
-    var var_1 = new juf_Supplier$proxy$4_0_28();
-    juf_Supplier$proxy$4_0_28__init_0(var_1, var_0);
-    return var_1;
+function juf_Supplier$proxy$4_0_28__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_28();
+    juf_Supplier$proxy$4_0_28__init_0(var_2, var_0, var_1);
+    return var_2;
 }
 function juf_Supplier$proxy$4_0_28_get(var$0) {
-    var var$1, var$2;
-    var$1 = var$0.$proxyCapture077;
-    var$2 = $rt_createArray(jl_Object, 1);
-    var$1 = var$1.$value1;
-    var$2 = var$2.data;
-    var$2[0] = jl_Boolean_valueOf(var$1.$option instanceof cgj_MultiChoiceOption);
-    return jl_Boolean_valueOf(var$2[0].$booleanValue());
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture085;
+    var$2 = var$0.$proxyCapture110;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$meanErrorArr.$get(var$3[0].$intValue());
 }
-function juf_Supplier$proxy$4_0_28__init_0(var$0, var$1) {
+function juf_Supplier$proxy$4_0_28__init_0(var$0, var$1, var$2) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture077 = var$1;
+    var$0.$proxyCapture085 = var$1;
+    var$0.$proxyCapture110 = var$2;
 }
 function juf_Supplier$proxy$4_0_29() {
-    jl_Object.call(this);
-    this.$proxyCapture078 = null;
+    var a = this; jl_Object.call(a);
+    a.$proxyCapture086 = null;
+    a.$proxyCapture111 = null;
 }
-function juf_Supplier$proxy$4_0_29__init_(var_0) {
-    var var_1 = new juf_Supplier$proxy$4_0_29();
-    juf_Supplier$proxy$4_0_29__init_0(var_1, var_0);
-    return var_1;
+function juf_Supplier$proxy$4_0_29__init_(var_0, var_1) {
+    var var_2 = new juf_Supplier$proxy$4_0_29();
+    juf_Supplier$proxy$4_0_29__init_0(var_2, var_0, var_1);
+    return var_2;
 }
 function juf_Supplier$proxy$4_0_29_get(var$0) {
-    return var$0.$proxyCapture078.$value1.$option.$getName();
+    var var$1, var$2, var$3;
+    var$1 = var$0.$proxyCapture086;
+    var$2 = var$0.$proxyCapture111;
+    var$3 = $rt_createArray(jl_Object, 1);
+    var$2 = var$2.$value1;
+    var$3 = var$3.data;
+    var$3[0] = var$2;
+    return var$1.$squareErrorArr.$get(var$3[0].$intValue());
 }
-function juf_Supplier$proxy$4_0_29__init_0(var$0, var$1) {
+function juf_Supplier$proxy$4_0_29__init_0(var$0, var$1, var$2) {
     jl_Object__init_0(var$0);
-    var$0.$proxyCapture078 = var$1;
+    var$0.$proxyCapture086 = var$1;
+    var$0.$proxyCapture111 = var$2;
 }
 function msg_RandomRBFGenerator$Centroid() {
     var a = this; jl_Object.call(a);
@@ -29004,18 +29130,18 @@ function jlr_Modifier_getModifierNames() {
     if (jlr_Modifier_modifierNames === null) {
         var$1 = $rt_createArray(jl_String, 12);
         var$2 = var$1.data;
-        var$2[0] = $rt_s(538);
-        var$2[1] = $rt_s(539);
-        var$2[2] = $rt_s(540);
-        var$2[3] = $rt_s(541);
-        var$2[4] = $rt_s(542);
-        var$2[5] = $rt_s(543);
-        var$2[6] = $rt_s(544);
-        var$2[7] = $rt_s(545);
-        var$2[8] = $rt_s(546);
-        var$2[9] = $rt_s(547);
-        var$2[10] = $rt_s(548);
-        var$2[11] = $rt_s(549);
+        var$2[0] = $rt_s(554);
+        var$2[1] = $rt_s(555);
+        var$2[2] = $rt_s(556);
+        var$2[3] = $rt_s(557);
+        var$2[4] = $rt_s(558);
+        var$2[5] = $rt_s(559);
+        var$2[6] = $rt_s(560);
+        var$2[7] = $rt_s(561);
+        var$2[8] = $rt_s(562);
+        var$2[9] = $rt_s(563);
+        var$2[10] = $rt_s(564);
+        var$2[11] = $rt_s(565);
         jlr_Modifier_modifierNames = var$1;
     }
     return jlr_Modifier_modifierNames;
@@ -29041,7 +29167,7 @@ function jlr_Modifier__clinit_() {
 function otfca_ComputedAttribute() {
     var a = this; jl_Object.call(a);
     a.$element3 = null;
-    a.$value15 = null;
+    a.$value14 = null;
     a.$cachedValue1 = null;
     a.$name11 = null;
 }
@@ -29055,14 +29181,14 @@ function otfca_ComputedAttribute__init_0($this, $target) {
     $this.$element3 = $target.$getElement();
 }
 function otfca_ComputedAttribute_setValue($this, $value) {
-    $this.$value15 = $value;
+    $this.$value14 = $value;
 }
 function otfca_ComputedAttribute_setName($this, $name) {
     $this.$name11 = $name;
 }
 function otfca_ComputedAttribute_render($this) {
     var $newValue, var$2, var$3, var$4;
-    $newValue = $this.$value15.$get4();
+    $newValue = $this.$value14.$get4();
     if (!ju_Objects_equals($newValue, $this.$cachedValue1)) {
         $this.$cachedValue1 = $newValue;
         var$2 = $this.$element3;
@@ -29080,7 +29206,7 @@ function otfca_ComputedAttribute_destroy($this) {
 function otfch_ValueBinder() {
     var a = this; jl_Object.call(a);
     a.$element4 = null;
-    a.$value16 = null;
+    a.$value15 = null;
     a.$cachedValue2 = null;
 }
 function otfch_ValueBinder__init_(var_0) {
@@ -29093,11 +29219,11 @@ function otfch_ValueBinder__init_0($this, $target) {
     $this.$element4 = $target.$getElement();
 }
 function otfch_ValueBinder_setValue($this, $value) {
-    $this.$value16 = $value;
+    $this.$value15 = $value;
 }
 function otfch_ValueBinder_render($this) {
     var $newValue, var$2, var$3;
-    $newValue = $this.$value16.$get4();
+    $newValue = $this.$value15.$get4();
     if (!ju_Objects_equals($newValue, $this.$cachedValue2)) {
         $this.$cachedValue2 = $newValue;
         var$2 = $this.$element4;
@@ -29506,7 +29632,7 @@ function cgj_StringUtils_doubleToString0($value, $minFractionDigits, $maxFractio
     return jt_NumberFormat_format($numberFormat, $value);
 }
 function cgj_StringUtils__clinit_() {
-    cgj_StringUtils_newline = jl_System_getProperty($rt_s(415));
+    cgj_StringUtils_newline = jl_System_getProperty($rt_s(430));
 }
 function otfch_ValueChangeBinder() {
     var a = this; jl_Object.call(a);
@@ -29587,8 +29713,8 @@ function mc_Utils_quote($string) {
         $string = mc_Utils_backQuoteChars($string);
         $quote = 1;
     }
-    if (!($quote != 1 && $string.$indexOf(123) == (-1) && $string.$indexOf(125) == (-1) && $string.$indexOf(44) == (-1) && !$string.$equals($rt_s(32)) && $string.$indexOf(32) == (-1) && !$string.$equals($rt_s(17))))
-        $string = $rt_s(550).$concat($string).$concat($rt_s(550));
+    if (!($quote != 1 && $string.$indexOf(123) == (-1) && $string.$indexOf(125) == (-1) && $string.$indexOf(44) == (-1) && !$string.$equals($rt_s(34)) && $string.$indexOf(32) == (-1) && !$string.$equals($rt_s(17))))
+        $string = $rt_s(566).$concat($string).$concat($rt_s(566));
     return $string;
 }
 function mc_Utils_backQuoteChars($string) {
@@ -29606,14 +29732,14 @@ function mc_Utils_backQuoteChars($string) {
     var$3[7] = 30;
     $charsReplace = $rt_createArray(jl_String, 8);
     var$5 = $charsReplace.data;
-    var$5[0] = $rt_s(551);
-    var$5[1] = $rt_s(552);
-    var$5[2] = $rt_s(553);
-    var$5[3] = $rt_s(554);
-    var$5[4] = $rt_s(555);
-    var$5[5] = $rt_s(556);
-    var$5[6] = $rt_s(557);
-    var$5[7] = $rt_s(558);
+    var$5[0] = $rt_s(567);
+    var$5[1] = $rt_s(568);
+    var$5[2] = $rt_s(569);
+    var$5[3] = $rt_s(570);
+    var$5[4] = $rt_s(571);
+    var$5[5] = $rt_s(572);
+    var$5[6] = $rt_s(573);
+    var$5[7] = $rt_s(574);
     $i = 0;
     while ($i < var$3.length) {
         if ($string.$indexOf(var$3[$i]) != (-1)) {
@@ -29682,7 +29808,7 @@ function mc_Utils__clinit_() {
 function otcit_DateTimeZoneProvider$Score() {
     var a = this; jl_Object.call(a);
     a.$tz = null;
-    a.$value14 = 0;
+    a.$value13 = 0;
 }
 function otcit_DateTimeZoneProvider$Score__init_(var_0) {
     var var_1 = new otcit_DateTimeZoneProvider$Score();
@@ -29833,7 +29959,7 @@ function jt_SimpleDatePatternParser_parsePattern($this, $pattern) {
                         case 88:
                             $rep = jt_SimpleDatePatternParser_parseRepetitions($this);
                             if ($rep > 3)
-                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(559)).$append1($this.$index4).$toString()));
+                                $rt_throw(jl_IllegalArgumentException__init_0(jl_StringBuilder__init_().$append($rt_s(575)).$append1($this.$index4).$toString()));
                             $this.$elements0.$add(jt_DateFormatElement$Iso8601Timezone__init_($rep));
                             break a;
                         case 89:
@@ -30020,7 +30146,7 @@ function otcfm_InMemoryVirtualFileSystem__init_0() {
 function otcfm_InMemoryVirtualFileSystem__init_($this) {
     jl_Object__init_0($this);
     $this.$root3 = otcfm_InMemoryVirtualDirectory__init_($rt_s(17));
-    $this.$userDir = $rt_s(413);
+    $this.$userDir = $rt_s(428);
 }
 function otcfm_InMemoryVirtualFileSystem_isWindows($this) {
     return 0;
@@ -30156,7 +30282,7 @@ function sa_SizeOfAgent_sizeOf($o) {
         return sa_SizeOfAgent_inst.$getObjectSize($o);
     if (sa_SizeOfAgent_messageDisplayed === null) {
         sa_SizeOfAgent_messageDisplayed = jl_Boolean_valueOf(1);
-        jl_System_err().$println1($rt_s(560));
+        jl_System_err().$println1($rt_s(576));
     }
     return Long_ZERO;
 }
@@ -30311,11 +30437,14 @@ jl_Runnable, 0, jl_Object, [], 3, 3, 0, 0,
 jl_Thread, "Thread", 18, jl_Object, [jl_Runnable], 0, 3, jl_Thread_$callClinit, 0,
 jt_DateFormatElement, "DateFormatElement", 17, jl_Object, [], 1, 0, 0, 0,
 jt_DateFormatElement$Year, "DateFormatElement$Year", 17, jt_DateFormatElement, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$Year_format(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DateFormatElement$Year_equals(this, var_1); }, "$hashCode", function() { return jt_DateFormatElement$Year_hashCode(this); }],
-mc_Statistics, "Statistics", 52, jl_Object, [], 0, 3, mc_Statistics_$callClinit, 0,
 otft_Fragment, "Fragment", 30, jl_Object, [], 3, 3, 0, 0,
+otft_Fragment$proxy$4_0_14, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_14_create(this); }],
+mc_Statistics, "Statistics", 52, jl_Object, [], 0, 3, mc_Statistics_$callClinit, 0,
 otft_Fragment$proxy$4_0_11, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_11_create(this); }],
 otft_Fragment$proxy$4_0_10, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_10_create(this); }],
 otp_PlatformQueue, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0,
+otft_Fragment$proxy$4_0_13, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_13_create(this); }],
+otft_Fragment$proxy$4_0_12, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_12_create(this); }],
 cgj_Configurable, 0, jl_Object, [ji_Serializable], 3, 3, 0, 0,
 mo_OptionHandler, 0, jl_Object, [mc_MOAObject, cgj_Configurable], 3, 3, 0, 0,
 mo_AbstractOptionHandler, "AbstractOptionHandler", 55, mc_AbstractMOAObject, [mo_OptionHandler], 1, 3, 0, ["$getOptions", function() { return mo_AbstractOptionHandler_getOptions(this); }, "$prepareForUse", function() { mo_AbstractOptionHandler_prepareForUse(this); }, "$prepareForUse0", function(var_1, var_2) { mo_AbstractOptionHandler_prepareForUse0(this, var_1, var_2); }, "$getPreparedClassOption", function(var_1) { return mo_AbstractOptionHandler_getPreparedClassOption(this, var_1); }],
@@ -30324,11 +30453,11 @@ mccs_VarianceReductionSplitCriterion, "VarianceReductionSplitCriterion", 60, mo_
 { mccs_VarianceReductionSplitCriterion_getDescription(this, var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mccs_VarianceReductionSplitCriterion_prepareForUseImpl(this, var_1, var_2); }],
 mccs_SDRSplitCriterion, "SDRSplitCriterion", 60, mccs_VarianceReductionSplitCriterion, [], 0, 3, 0, ["$getOptions", function() { return mccs_SDRSplitCriterion_getOptions(this); }],
 otciu_CLDRHelper, "CLDRHelper", 41, jl_Object, [], 4, 3, 0, 0,
-jl_CharSequence, 0, jl_Object, [], 3, 3, 0, 0,
-jl_Throwable, "Throwable", 18, jl_Object, [], 0, 3, 0, ["$fillInStackTrace", function() { return jl_Throwable_fillInStackTrace(this); }, "$getMessage", function() { return jl_Throwable_getMessage(this); }, "$getLocalizedMessage", function() { return jl_Throwable_getLocalizedMessage(this); }, "$toString", function() { return jl_Throwable_toString(this); }, "$printStackTrace", function(var_1) { jl_Throwable_printStackTrace(this, var_1); }],
+jl_CharSequence, 0, jl_Object, [], 3, 3, 0, 0]);
+$rt_metadata([jl_Throwable, "Throwable", 18, jl_Object, [], 0, 3, 0, ["$fillInStackTrace", function() { return jl_Throwable_fillInStackTrace(this); }, "$getMessage", function() { return jl_Throwable_getMessage(this); }, "$getLocalizedMessage", function() { return jl_Throwable_getLocalizedMessage(this); }, "$toString", function() { return jl_Throwable_toString(this); }, "$printStackTrace", function(var_1) { jl_Throwable_printStackTrace(this, var_1); }],
 jl_Error, "Error", 18, jl_Throwable, [], 0, 3, 0, 0,
-jl_LinkageError, "LinkageError", 18, jl_Error, [], 0, 3, 0, 0]);
-$rt_metadata([jl_Exception, "Exception", 18, jl_Throwable, [], 0, 3, 0, 0,
+jl_LinkageError, "LinkageError", 18, jl_Error, [], 0, 3, 0, 0,
+jl_Exception, "Exception", 18, jl_Throwable, [], 0, 3, 0, 0,
 jl_RuntimeException, "RuntimeException", 18, jl_Exception, [], 0, 3, 0, 0,
 jl_IndexOutOfBoundsException, "IndexOutOfBoundsException", 18, jl_RuntimeException, [], 0, 3, 0, 0,
 jl_StringIndexOutOfBoundsException, "StringIndexOutOfBoundsException", 18, jl_IndexOutOfBoundsException, [], 0, 3, 0, 0,
@@ -30387,11 +30516,11 @@ mc_CapabilitiesHandler, 0, jl_Object, [], 3, 3, 0, 0,
 me_LearningPerformanceEvaluator, 0, jl_Object, [mc_MOAObject, mc_CapabilitiesHandler], 3, 3, 0, 0,
 me_RegressionPerformanceEvaluator, 0, jl_Object, [me_LearningPerformanceEvaluator], 3, 3, 0, 0,
 mc_SizeOf, "SizeOf", 52, jl_Object, [], 0, 3, 0, 0,
-ju_LinkedHashMap$AbstractMapIterator, 0, jl_Object, [], 0, 0, 0, ["$hasNext", function() { return ju_LinkedHashMap$AbstractMapIterator_hasNext(this); }, "$checkConcurrentMod", function() { ju_LinkedHashMap$AbstractMapIterator_checkConcurrentMod(this); }, "$makeNext", function() { ju_LinkedHashMap$AbstractMapIterator_makeNext(this); }],
-ju_Iterator, 0, jl_Object, [], 3, 3, 0, 0,
+ju_LinkedHashMap$AbstractMapIterator, 0, jl_Object, [], 0, 0, 0, ["$hasNext", function() { return ju_LinkedHashMap$AbstractMapIterator_hasNext(this); }, "$checkConcurrentMod", function() { ju_LinkedHashMap$AbstractMapIterator_checkConcurrentMod(this); }, "$makeNext", function() { ju_LinkedHashMap$AbstractMapIterator_makeNext(this); }]]);
+$rt_metadata([ju_Iterator, 0, jl_Object, [], 3, 3, 0, 0,
 ju_LinkedHashMap$EntryIterator, 0, ju_LinkedHashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, ["$next2", function() { return ju_LinkedHashMap$EntryIterator_next(this); }, "$next", function() { return ju_LinkedHashMap$EntryIterator_next0(this); }],
-ji_Flushable, 0, jl_Object, [], 3, 3, 0, 0]);
-$rt_metadata([otft_Modifier, 0, jl_Object, [], 3, 3, 0, 0,
+ji_Flushable, 0, jl_Object, [], 3, 3, 0, 0,
+otft_Modifier, 0, jl_Object, [], 3, 3, 0, 0,
 otft_Modifier$proxy$4_0_1, 0, jl_Object, [otft_Modifier], 0, 3, 0, ["$apply2", function(var_1) { return otft_Modifier$proxy$4_0_1_apply(this, var_1); }],
 ju_SortedMap, 0, jl_Object, [ju_Map], 3, 3, 0, ["$computeIfAbsent", function(var_1, var_2) { return ju_Map_computeIfAbsent(this, var_1, var_2); }],
 ju_NavigableMap, 0, jl_Object, [ju_SortedMap], 3, 3, 0, ["$computeIfAbsent", function(var_1, var_2) { return ju_Map_computeIfAbsent(this, var_1, var_2); }],
@@ -30446,13 +30575,13 @@ mcm_StreamingRandomPatches, "StreamingRandomPatches", 62, mc_AbstractClassifier,
 var_1); }, "$isRandomizable", function() { return mcm_StreamingRandomPatches_isRandomizable(this); }, "$getModelDescription", function(var_1, var_2) { mcm_StreamingRandomPatches_getModelDescription(this, var_1, var_2); }, "$getModelMeasurementsImpl", function() { return mcm_StreamingRandomPatches_getModelMeasurementsImpl(this); }, "$initEnsemble", function(var_1) { mcm_StreamingRandomPatches_initEnsemble(this, var_1); }, "$getSublearners0", function() { return mcm_StreamingRandomPatches_getSublearners(this);
 }, "$getSublearners", function() { return mcm_StreamingRandomPatches_getSublearners0(this); }],
 cgj_Option, "Option", 2, jl_Object, [ji_Serializable], 3, 3, 0, 0,
-cgj_AbstractOption, "AbstractOption", 2, jl_Object, [cgj_Option], 1, 3, cgj_AbstractOption_$callClinit, ["$getName", function() { return cgj_AbstractOption_getName(this); }, "$getCLIChar", function() { return cgj_AbstractOption_getCLIChar(this); }, "$resetToDefault", function() { cgj_AbstractOption_resetToDefault(this); }],
-cgj_FloatOption, "FloatOption", 2, cgj_AbstractOption, [], 0, 3, 0, ["$setValue3", function(var_1) { cgj_FloatOption_setValue(this, var_1); }, "$getValue2", function() { return cgj_FloatOption_getValue(this); }, "$getDefaultCLIString", function() { return cgj_FloatOption_getDefaultCLIString(this); }, "$getValueAsCLIString", function() { return cgj_FloatOption_getValueAsCLIString(this); }, "$setValueViaCLIString", function(var_1) { cgj_FloatOption_setValueViaCLIString(this, var_1); }],
+cgj_AbstractOption, "AbstractOption", 2, jl_Object, [cgj_Option], 1, 3, cgj_AbstractOption_$callClinit, ["$getName", function() { return cgj_AbstractOption_getName(this); }, "$getCLIChar", function() { return cgj_AbstractOption_getCLIChar(this); }, "$resetToDefault", function() { cgj_AbstractOption_resetToDefault(this); }]]);
+$rt_metadata([cgj_FloatOption, "FloatOption", 2, cgj_AbstractOption, [], 0, 3, 0, ["$setValue3", function(var_1) { cgj_FloatOption_setValue(this, var_1); }, "$getValue2", function() { return cgj_FloatOption_getValue(this); }, "$getDefaultCLIString", function() { return cgj_FloatOption_getDefaultCLIString(this); }, "$getValueAsCLIString", function() { return cgj_FloatOption_getValueAsCLIString(this); }, "$setValueViaCLIString", function(var_1) { cgj_FloatOption_setValueViaCLIString(this, var_1); }],
 jl_Readable, 0, jl_Object, [], 3, 3, 0, 0,
-mccd_ChangeDetector, "ChangeDetector", 61, jl_Object, [mo_OptionHandler], 3, 3, 0, 0]);
-$rt_metadata([otfw_ApplicationTemplate, 0, jl_Object, [otfr_Route], 1, 3, 0, ["$bind0", function(var_1) { otfw_ApplicationTemplate_bind(this, var_1); }, "$bind1", function(var_1) { otfw_ApplicationTemplate_bind0(this, var_1); }],
-eu_Client, "Client", 49, otfw_ApplicationTemplate, [], 0, 3, eu_Client_$callClinit, ["$getEvaluator", function() { return eu_Client_getEvaluator(this); }, "$setEvaluator", function(var_1) { eu_Client_setEvaluator(this, var_1); }, "$handleClick", function() { eu_Client_handleClick(this); }, "$runWithoutStream", function() { eu_Client_runWithoutStream(this); }, "$runRBF", function() { eu_Client_runRBF(this); }, "$runWithoutStreamNumeric", function() { eu_Client_runWithoutStreamNumeric(this); }, "$identifyOptionType",
-function() { eu_Client_identifyOptionType(this); }, "$runTest", function() { eu_Client_runTest(this); }],
+mccd_ChangeDetector, "ChangeDetector", 61, jl_Object, [mo_OptionHandler], 3, 3, 0, 0,
+otfw_ApplicationTemplate, 0, jl_Object, [otfr_Route], 1, 3, 0, ["$bind0", function(var_1) { otfw_ApplicationTemplate_bind(this, var_1); }, "$bind1", function(var_1) { otfw_ApplicationTemplate_bind0(this, var_1); }],
+eu_Client, "Client", 49, otfw_ApplicationTemplate, [], 0, 3, eu_Client_$callClinit, ["$getEvaluator", function() { return eu_Client_getEvaluator(this); }, "$setEvaluator", function(var_1) { eu_Client_setEvaluator(this, var_1); }, "$handleClick", function() { eu_Client_handleClick(this); }, "$resetGUI", function() { eu_Client_resetGUI(this); }, "$handleClick2", function() { eu_Client_handleClick2(this); }, "$getClickCount", function() { return eu_Client_getClickCount(this); }, "$populateOptions", function() {
+eu_Client_populateOptions(this); }, "$startRBF", function() { eu_Client_startRBF(this); }, "$runWithoutStream", function() { eu_Client_runWithoutStream(this); }, "$runWithoutStreamNumeric", function() { eu_Client_runWithoutStreamNumeric(this); }],
 otji_JS, "JS", 33, jl_Object, [], 4, 0, 0, 0,
 otcit_DateTimeZone, "DateTimeZone", 40, jl_Object, [], 1, 3, 0, ["$getID", function() { return otcit_DateTimeZone_getID(this); }],
 otcit_StorableDateTimeZone, 0, otcit_DateTimeZone, [], 1, 3, 0, 0,
@@ -30510,11 +30639,11 @@ mcca_DiscreteAttributeClassObserver, "DiscreteAttributeClassObserver", 59, jl_Ob
 sa_Statistics, "Statistics", 21, jl_Object, [ji_Serializable], 0, 3, 0, ["$toString", function() { return sa_Statistics_toString(this); }],
 mcca_GaussianNumericAttributeClassObserver, "GaussianNumericAttributeClassObserver", 59, mo_AbstractOptionHandler, [mcca_NumericAttributeClassObserver], 0, 3, 0, ["$getOptions", function() { return mcca_GaussianNumericAttributeClassObserver_getOptions(this); }, "$observeAttributeClass", function(var_1, var_2, var_3) { mcca_GaussianNumericAttributeClassObserver_observeAttributeClass(this, var_1, var_2, var_3); }, "$probabilityOfAttributeValueGivenClass", function(var_1, var_2) { return mcca_GaussianNumericAttributeClassObserver_probabilityOfAttributeValueGivenClass(this,
 var_1, var_2); }, "$getBestEvaluatedSplitSuggestion", function(var_1, var_2, var_3, var_4) { return mcca_GaussianNumericAttributeClassObserver_getBestEvaluatedSplitSuggestion(this, var_1, var_2, var_3, var_4); }, "$getSplitPointSuggestions", function() { return mcca_GaussianNumericAttributeClassObserver_getSplitPointSuggestions(this); }, "$getClassDistsResultingFromBinarySplit", function(var_1) { return mcca_GaussianNumericAttributeClassObserver_getClassDistsResultingFromBinarySplit(this, var_1); }, "$getDescription",
-function(var_1, var_2) { mcca_GaussianNumericAttributeClassObserver_getDescription(this, var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mcca_GaussianNumericAttributeClassObserver_prepareForUseImpl(this, var_1, var_2); }],
-mcti_IademGaussianNumericAttributeClassObserver, "IademGaussianNumericAttributeClassObserver", 69, mcca_GaussianNumericAttributeClassObserver, [mcti_IademNumericAttributeObserver], 0, 3, 0, 0,
+function(var_1, var_2) { mcca_GaussianNumericAttributeClassObserver_getDescription(this, var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mcca_GaussianNumericAttributeClassObserver_prepareForUseImpl(this, var_1, var_2); }]]);
+$rt_metadata([mcti_IademGaussianNumericAttributeClassObserver, "IademGaussianNumericAttributeClassObserver", 69, mcca_GaussianNumericAttributeClassObserver, [mcti_IademNumericAttributeObserver], 0, 3, 0, 0,
 jlr_AnnotatedElement, 0, jl_Object, [], 3, 3, 0, 0,
-jl_Package, "Package", 18, jl_Object, [jlr_AnnotatedElement], 0, 3, jl_Package_$callClinit, ["$getName", function() { return jl_Package_getName(this); }]]);
-$rt_metadata([mccs_InfoGainSplitCriterion, "InfoGainSplitCriterion", 60, mo_AbstractOptionHandler, [mccs_SplitCriterion], 0, 3, 0, ["$getOptions", function() { return mccs_InfoGainSplitCriterion_getOptions(this); }, "$getMeritOfSplit", function(var_1, var_2) { return mccs_InfoGainSplitCriterion_getMeritOfSplit(this, var_1, var_2); }, "$getRangeOfMerit", function(var_1) { return mccs_InfoGainSplitCriterion_getRangeOfMerit(this, var_1); }, "$getDescription", function(var_1, var_2) { mccs_InfoGainSplitCriterion_getDescription(this,
+jl_Package, "Package", 18, jl_Object, [jlr_AnnotatedElement], 0, 3, jl_Package_$callClinit, ["$getName", function() { return jl_Package_getName(this); }],
+mccs_InfoGainSplitCriterion, "InfoGainSplitCriterion", 60, mo_AbstractOptionHandler, [mccs_SplitCriterion], 0, 3, 0, ["$getOptions", function() { return mccs_InfoGainSplitCriterion_getOptions(this); }, "$getMeritOfSplit", function(var_1, var_2) { return mccs_InfoGainSplitCriterion_getMeritOfSplit(this, var_1, var_2); }, "$getRangeOfMerit", function(var_1) { return mccs_InfoGainSplitCriterion_getRangeOfMerit(this, var_1); }, "$getDescription", function(var_1, var_2) { mccs_InfoGainSplitCriterion_getDescription(this,
 var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mccs_InfoGainSplitCriterion_prepareForUseImpl(this, var_1, var_2); }],
 otft_ValueChangeListener, "ValueChangeListener", 30, jl_Object, [], 3, 3, 0, 0,
 otft_ValueChangeListener$proxy$4_0_1, "ValueChangeListener$proxy$4_0_1", 30, jl_Object, [otft_ValueChangeListener], 0, 3, 0, ["$changed", function(var_1) { otft_ValueChangeListener$proxy$4_0_1_changed(this, var_1); }],
@@ -30527,7 +30656,7 @@ var_2, var_3) { jt_DecimalFormat_formatRegular(this, var_1, var_2, var_3); }, "$
 function(var_1, var_2, var_3) { return jt_DecimalFormat_applyRounding0(this, var_1, var_2, var_3); }, "$fastLn10", function(var_1) { return jt_DecimalFormat_fastLn10(this, var_1); }, "$fastLn100", function(var_1) { return jt_DecimalFormat_fastLn100(this, var_1); }, "$pow10", function(var_1, var_2) { return jt_DecimalFormat_pow10(this, var_1, var_2); }, "$getMantissaAndExponent", function(var_1) { return jt_DecimalFormat_getMantissaAndExponent(this, var_1); }, "$forDigit0", function(var_1) { return jt_DecimalFormat_forDigit(this,
 var_1); }],
 otft_ValueChangeListener$proxy$4_0_0, "ValueChangeListener$proxy$4_0_0", 30, jl_Object, [otft_ValueChangeListener], 0, 3, 0, ["$changed", function(var_1) { otft_ValueChangeListener$proxy$4_0_0_changed(this, var_1); }],
-jt_DecimalFormat$FormatField, "DecimalFormat$FormatField", 17, jl_Object, [], 3, 0, 0, 0,
+jt_DecimalFormat$FormatField, 0, jl_Object, [], 3, 0, 0, 0,
 jt_DecimalFormat$PerMillField, "DecimalFormat$PerMillField", 17, jl_Object, [jt_DecimalFormat$FormatField], 0, 0, 0, ["$render0", function(var_1, var_2) { jt_DecimalFormat$PerMillField_render(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DecimalFormat$PerMillField_equals(this, var_1); }, "$hashCode", function() { return jt_DecimalFormat$PerMillField_hashCode(this); }],
 mccs_InfoGainSplitCriterionMultilabel, "InfoGainSplitCriterionMultilabel", 60, mccs_InfoGainSplitCriterion, [], 0, 3, 0, 0,
 juf_Consumer, 0, jl_Object, [], 3, 3, 0, 0,
@@ -30540,9 +30669,8 @@ otft_ValueChangeListener$proxy$4_0_2, "ValueChangeListener$proxy$4_0_2", 30, jl_
 wc_RevisionHandler, 0, jl_Object, [], 3, 3, 0, 0,
 otjde_EventListener, "EventListener", 36, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 otfce_BaseEventBinder$_init_$lambda$_0_0, 0, jl_Object, [otjde_EventListener], 0, 3, 0, ["$handleEvent", function(var_1) { otfce_BaseEventBinder$_init_$lambda$_0_0_handleEvent(this, var_1); }, "$handleEvent$exported$0", function(var_1) { return otfce_BaseEventBinder$_init_$lambda$_0_0_handleEvent$exported$0(this, var_1); }],
-jl_Class, "Class", 18, jl_Object, [jlr_AnnotatedElement], 0, 3, 0, ["$getPlatformClass", function() { return jl_Class_getPlatformClass(this); }, "$isInstance0", function(var_1) { return jl_Class_isInstance(this, var_1); }, "$isAssignableFrom", function(var_1) { return jl_Class_isAssignableFrom(this, var_1); }, "$getName", function() { return jl_Class_getName(this); }, "$getSimpleName", function() { return jl_Class_getSimpleName(this); }, "$getSimpleNameCache", function() { return jl_Class_getSimpleNameCache(this);
-}, "$setSimpleNameCache", function(var_1) { jl_Class_setSimpleNameCache(this, var_1); }, "$isPrimitive0", function() { return jl_Class_isPrimitive(this); }, "$isArray", function() { return jl_Class_isArray(this); }, "$getComponentType", function() { return jl_Class_getComponentType(this); }, "$getDeclaredFields", function() { return jl_Class_getDeclaredFields(this); }, "$desiredAssertionStatus", function() { return jl_Class_desiredAssertionStatus(this); }, "$getSuperclass", function() { return jl_Class_getSuperclass(this);
-}, "$newInstance1", function() { return jl_Class_newInstance(this); }, "$getPackage0", function() { return jl_Class_getPackage(this); }],
+jl_Class, "Class", 18, jl_Object, [jlr_AnnotatedElement], 0, 3, 0, ["$getPlatformClass", function() { return jl_Class_getPlatformClass(this); }, "$isInstance0", function(var_1) { return jl_Class_isInstance(this, var_1); }, "$isAssignableFrom", function(var_1) { return jl_Class_isAssignableFrom(this, var_1); }, "$getName", function() { return jl_Class_getName(this); }, "$isPrimitive0", function() { return jl_Class_isPrimitive(this); }, "$isArray", function() { return jl_Class_isArray(this); }, "$getComponentType",
+function() { return jl_Class_getComponentType(this); }, "$getDeclaredFields", function() { return jl_Class_getDeclaredFields(this); }, "$desiredAssertionStatus", function() { return jl_Class_desiredAssertionStatus(this); }, "$getSuperclass", function() { return jl_Class_getSuperclass(this); }, "$newInstance1", function() { return jl_Class_newInstance(this); }, "$getPackage0", function() { return jl_Class_getPackage(this); }],
 mcca_GreenwaldKhannaNumericAttributeClassObserver, "GreenwaldKhannaNumericAttributeClassObserver", 59, mo_AbstractOptionHandler, [mcca_NumericAttributeClassObserver], 0, 3, 0, ["$getOptions", function() { return mcca_GreenwaldKhannaNumericAttributeClassObserver_getOptions(this); }, "$getBestEvaluatedSplitSuggestion", function(var_1, var_2, var_3, var_4) { return mcca_GreenwaldKhannaNumericAttributeClassObserver_getBestEvaluatedSplitSuggestion(this, var_1, var_2, var_3, var_4); }, "$getClassDistsResultingFromBinarySplit",
 function(var_1) { return mcca_GreenwaldKhannaNumericAttributeClassObserver_getClassDistsResultingFromBinarySplit(this, var_1); }, "$getDescription", function(var_1, var_2) { mcca_GreenwaldKhannaNumericAttributeClassObserver_getDescription(this, var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mcca_GreenwaldKhannaNumericAttributeClassObserver_prepareForUseImpl(this, var_1, var_2); }],
 ju_Arrays, "Arrays", 10, jl_Object, [], 0, 3, 0, 0,
@@ -30579,11 +30707,11 @@ otcit_DateTimeZoneBuilder$DSTZone, "DateTimeZoneBuilder$DSTZone", 40, otcit_Stor
 var_1); }, "$findMatchingRecurrence", function(var_1) { return otcit_DateTimeZoneBuilder$DSTZone_findMatchingRecurrence(this, var_1); }],
 wc_Utils, "Utils", 8, jl_Object, [wc_RevisionHandler], 4, 3, wc_Utils_$callClinit, 0,
 otfch_CheckedBinder, "CheckedBinder", 28, jl_Object, [otft_Renderable], 0, 3, 0, ["$setValue1", function(var_1) { otfch_CheckedBinder_setValue(this, var_1); }, "$render", function() { otfch_CheckedBinder_render(this); }, "$destroy", function() { otfch_CheckedBinder_destroy(this); }],
-ju_AbstractMap$KeySet, 0, ju_AbstractSet, [], 0, 0, 0, ["$iterator", function() { return ju_AbstractMap$KeySet_iterator(this); }],
-mc_SemiSupervisedLearner, 0, jl_Object, [], 3, 3, 0, 0,
+ju_AbstractMap$KeySet, 0, ju_AbstractSet, [], 0, 0, 0, ["$iterator", function() { return ju_AbstractMap$KeySet_iterator(this); }]]);
+$rt_metadata([mc_SemiSupervisedLearner, 0, jl_Object, [], 3, 3, 0, 0,
 mc_GreenwaldKhannaQuantileSummary$Tuple, "GreenwaldKhannaQuantileSummary$Tuple", 52, jl_Object, [ji_Serializable], 0, 3, 0, 0,
-jl_AssertionError, "AssertionError", 18, jl_Error, [], 0, 3, 0, 0]);
-$rt_metadata([ju_NavigableSet, 0, jl_Object, [ju_SortedSet], 3, 3, 0, 0,
+jl_AssertionError, "AssertionError", 18, jl_Error, [], 0, 3, 0, 0,
+ju_NavigableSet, 0, jl_Object, [ju_SortedSet], 3, 3, 0, 0,
 ju_TreeSet, "TreeSet", 10, ju_AbstractSet, [ju_NavigableSet], 0, 3, ju_TreeSet_$callClinit, ["$size", function() { return ju_TreeSet_size(this); }, "$iterator", function() { return ju_TreeSet_iterator(this); }, "$add", function(var_1) { return ju_TreeSet_add(this, var_1); }],
 eu_OptionHashMap, "OptionHashMap", 49, jl_Object, [jl_Iterable], 0, 3, 0, ["$iterator", function() { return eu_OptionHashMap_iterator(this); }, "$insertOption", function(var_1) { eu_OptionHashMap_insertOption(this, var_1); }],
 jl_IllegalMonitorStateException, "IllegalMonitorStateException", 18, jl_RuntimeException, [], 0, 3, 0, 0,
@@ -30621,7 +30749,6 @@ jnci_UTF8Charset, "UTF8Charset", 14, jnc_Charset, [], 0, 3, 0, ["$newEncoder", f
 ju_Deque, 0, jl_Object, [ju_Queue], 3, 3, 0, 0,
 ju_ArrayDeque, "ArrayDeque", 10, ju_AbstractCollection, [ju_Deque], 0, 3, 0, ["$addFirst", function(var_1) { ju_ArrayDeque_addFirst(this, var_1); }, "$removeFirst", function() { return ju_ArrayDeque_removeFirst(this); }, "$pollFirst", function() { return ju_ArrayDeque_pollFirst(this); }, "$peekFirst", function() { return ju_ArrayDeque_peekFirst(this); }, "$peek", function() { return ju_ArrayDeque_peek(this); }, "$push", function(var_1) { ju_ArrayDeque_push(this, var_1); }, "$pop", function() { return ju_ArrayDeque_pop(this);
 }, "$size", function() { return ju_ArrayDeque_size(this); }, "$isEmpty", function() { return ju_ArrayDeque_isEmpty(this); }, "$iterator", function() { return ju_ArrayDeque_iterator(this); }, "$ensureCapacity", function(var_1) { ju_ArrayDeque_ensureCapacity(this, var_1); }],
-eu_ValuePosition, "ValuePosition", 49, jl_Object, [], 0, 3, 0, 0,
 ju_HashMap$AbstractMapIterator, 0, jl_Object, [], 0, 0, 0, ["$hasNext", function() { return ju_HashMap$AbstractMapIterator_hasNext(this); }, "$checkConcurrentMod", function() { ju_HashMap$AbstractMapIterator_checkConcurrentMod(this); }, "$makeNext", function() { ju_HashMap$AbstractMapIterator_makeNext(this); }],
 jt_DecimalFormatSymbols, "DecimalFormatSymbols", 17, jl_Object, [jl_Cloneable], 0, 3, 0, ["$initData", function() { jt_DecimalFormatSymbols_initData(this); }, "$getZeroDigit", function() { return jt_DecimalFormatSymbols_getZeroDigit(this); }, "$getGroupingSeparator", function() { return jt_DecimalFormatSymbols_getGroupingSeparator(this); }, "$getPerMill", function() { return jt_DecimalFormatSymbols_getPerMill(this); }, "$getPercent", function() { return jt_DecimalFormatSymbols_getPercent(this); }, "$getLocale",
 function() { return jt_DecimalFormatSymbols_getLocale(this); }, "$getDecimalSeparator", function() { return jt_DecimalFormatSymbols_getDecimalSeparator(this); }, "$getNaN", function() { return jt_DecimalFormatSymbols_getNaN(this); }, "$getInfinity", function() { return jt_DecimalFormatSymbols_getInfinity(this); }, "$getMinusSign", function() { return jt_DecimalFormatSymbols_getMinusSign(this); }, "$getExponentSeparator", function() { return jt_DecimalFormatSymbols_getExponentSeparator(this); }, "$clone", function()
@@ -30649,15 +30776,18 @@ otft_Slot, "Slot", 30, otft_Space, [], 1, 3, 0, ["$append18", function(var_1) { 
 otft_ContainerSlot, "ContainerSlot", 30, otft_Slot, [], 0, 0, 0, 0,
 mcrcs_SDRSplitCriterionAMRulesNode, "SDRSplitCriterionAMRulesNode", 67, mcrcs_SDRSplitCriterionAMRules, [mcrcs_AMRulesSplitCriterion], 0, 3, 0, ["$getOptions", function() { return mcrcs_SDRSplitCriterionAMRulesNode_getOptions(this); }, "$getMeritOfSplit", function(var_1, var_2) { return mcrcs_SDRSplitCriterionAMRulesNode_getMeritOfSplit(this, var_1, var_2); }, "$getRangeOfMerit", function(var_1) { return mcrcs_SDRSplitCriterionAMRulesNode_getRangeOfMerit(this, var_1); }],
 otcit_DateTimeZoneBuilder$OfYear, 0, jl_Object, [], 4, 0, 0, ["$next6", function(var_1, var_2, var_3) { return otcit_DateTimeZoneBuilder$OfYear_next(this, var_1, var_2, var_3); }, "$previous1", function(var_1, var_2, var_3) { return otcit_DateTimeZoneBuilder$OfYear_previous(this, var_1, var_2, var_3); }, "$setDayOfMonthNext", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfMonthNext(this, var_1); }, "$setDayOfMonthPrevious", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfMonthPrevious(this,
-var_1); }, "$setDayOfMonth", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfMonth(this, var_1); }, "$setDayOfWeek", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfWeek(this, var_1); }],
-ju_Collections$18, 0, jl_Object, [ju_Enumeration], 4, 0, 0, ["$hasMoreElements", function() { return ju_Collections$18_hasMoreElements(this); }, "$nextElement", function() { return ju_Collections$18_nextElement(this); }],
-jn_BufferOverflowException, "BufferOverflowException", 12, jl_RuntimeException, [], 0, 3, 0, 0]);
-$rt_metadata([otfce_BaseEventBinder, "BaseEventBinder", 29, jl_Object, [otft_Renderable], 1, 3, 0, ["$setEventName", function(var_1) { otfce_BaseEventBinder_setEventName(this, var_1); }, "$setHandler", function(var_1) { otfce_BaseEventBinder_setHandler(this, var_1); }, "$render", function() { otfce_BaseEventBinder_render(this); }, "$destroy", function() { otfce_BaseEventBinder_destroy(this); }, "$lambda$new$0", function(var_1) { otfce_BaseEventBinder_lambda$new$0(this, var_1); }],
+var_1); }, "$setDayOfMonth", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfMonth(this, var_1); }, "$setDayOfWeek", function(var_1) { otcit_DateTimeZoneBuilder$OfYear_setDayOfWeek(this, var_1); }]]);
+$rt_metadata([ju_Collections$18, 0, jl_Object, [ju_Enumeration], 4, 0, 0, ["$hasMoreElements", function() { return ju_Collections$18_hasMoreElements(this); }, "$nextElement", function() { return ju_Collections$18_nextElement(this); }],
+jn_BufferOverflowException, "BufferOverflowException", 12, jl_RuntimeException, [], 0, 3, 0, 0,
+otft_DomComponentHandler, "DomComponentHandler", 30, jl_Object, [], 3, 3, 0, 0,
+otft_DomComponentHandler$proxy$4_0_11, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_11_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_11_buildDom(this, var_1); }],
+otft_DomComponentHandler$proxy$4_0_12, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_12_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_12_buildDom(this, var_1); }],
+otft_DomComponentHandler$proxy$4_0_13, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_13_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_13_buildDom(this, var_1); }],
+otfce_BaseEventBinder, "BaseEventBinder", 29, jl_Object, [otft_Renderable], 1, 3, 0, ["$setEventName", function(var_1) { otfce_BaseEventBinder_setEventName(this, var_1); }, "$setHandler", function(var_1) { otfce_BaseEventBinder_setHandler(this, var_1); }, "$render", function() { otfce_BaseEventBinder_render(this); }, "$destroy", function() { otfce_BaseEventBinder_destroy(this); }, "$lambda$new$0", function(var_1) { otfce_BaseEventBinder_lambda$new$0(this, var_1); }],
 jl_NoClassDefFoundError, "NoClassDefFoundError", 18, jl_LinkageError, [], 0, 3, 0, 0,
 mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier, 0, jl_Object, [], 0, 3, 0, ["$init", function(var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9) { mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_init(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8, var_9); }, "$prepareRandomSubspaceInstance", function(var_1, var_2) { mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_prepareRandomSubspaceInstance(this, var_1, var_2); }, "$applySubsetResetStrategy", function(var_1,
 var_2) { return mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_applySubsetResetStrategy(this, var_1, var_2); }, "$reset1", function(var_1, var_2, var_3) { mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_reset(this, var_1, var_2, var_3); }, "$trainOnInstance", function(var_1, var_2, var_3, var_4) { mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_trainOnInstance(this, var_1, var_2, var_3, var_4); }, "$triggerWarning", function(var_1, var_2, var_3) { mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_triggerWarning(this,
 var_1, var_2, var_3); }, "$getVotesForInstance", function(var_1) { return mcm_StreamingRandomPatches$StreamingRandomPatchesClassifier_getVotesForInstance(this, var_1); }],
-otft_DomComponentHandler, "DomComponentHandler", 30, jl_Object, [], 3, 3, 0, 0,
 otft_DomComponentHandler$proxy$4_0_10, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_10_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_10_buildDom(this, var_1); }],
 mc_GaussianEstimator, "GaussianEstimator", 52, mc_AbstractMOAObject, [], 0, 3, mc_GaussianEstimator_$callClinit, ["$addObservation", function(var_1, var_2) { mc_GaussianEstimator_addObservation(this, var_1, var_2); }, "$getTotalWeightObserved", function() { return mc_GaussianEstimator_getTotalWeightObserved(this); }, "$getMean", function() { return mc_GaussianEstimator_getMean(this); }, "$getStdDev", function() { return mc_GaussianEstimator_getStdDev(this); }, "$getVariance", function() { return mc_GaussianEstimator_getVariance(this);
 }, "$probabilityDensity", function(var_1) { return mc_GaussianEstimator_probabilityDensity(this, var_1); }, "$estimatedWeight_LessThan_EqualTo_GreaterThan_Value", function(var_1) { return mc_GaussianEstimator_estimatedWeight_LessThan_EqualTo_GreaterThan_Value(this, var_1); }, "$getDescription", function(var_1, var_2) { mc_GaussianEstimator_getDescription(this, var_1, var_2); }],
@@ -30717,15 +30847,15 @@ ju_Hashtable$Entry, 0, ju_MapEntry, [], 0, 0, 0, ["$getKeyHash", function() { re
 ju_Hashtable$3, 0, ju_AbstractSet, [], 0, 0, 0, ["$contains", function(var_1) { return ju_Hashtable$3_contains(this, var_1); }, "$iterator", function() { return ju_Hashtable$3_iterator(this); }],
 mccd_ADWIN, "ADWIN", 61, mc_AbstractMOAObject, [], 0, 3, 0, ["$getWidth", function() { return mccd_ADWIN_getWidth(this); }, "$getTotal", function() { return mccd_ADWIN_getTotal(this); }, "$getEstimation", function() { return mccd_ADWIN_getEstimation(this); }, "$getVariance", function() { return mccd_ADWIN_getVariance(this); }, "$initBuckets", function() { mccd_ADWIN_initBuckets(this); }, "$insertElement", function(var_1) { mccd_ADWIN_insertElement(this, var_1); }, "$insertElementBucket", function(var_1, var_2,
 var_3) { mccd_ADWIN_insertElementBucket(this, var_1, var_2, var_3); }, "$bucketSize", function(var_1) { return mccd_ADWIN_bucketSize(this, var_1); }, "$deleteElement", function() { return mccd_ADWIN_deleteElement(this); }, "$compressBuckets", function() { mccd_ADWIN_compressBuckets(this); }, "$setInput", function(var_1) { return mccd_ADWIN_setInput(this, var_1); }, "$setInput0", function(var_1, var_2) { return mccd_ADWIN_setInput0(this, var_1, var_2); }, "$blnCutexpression", function(var_1, var_2, var_3, var_4,
-var_5, var_6, var_7, var_8) { return mccd_ADWIN_blnCutexpression(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8); }, "$getDescription", function(var_1, var_2) { mccd_ADWIN_getDescription(this, var_1, var_2); }],
-jt_DateFormatElement$MonthText, "DateFormatElement$MonthText", 17, jt_DateFormatElement, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$MonthText_format(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DateFormatElement$MonthText_equals(this, var_1); }, "$hashCode", function() { return jt_DateFormatElement$MonthText_hashCode(this); }],
+var_5, var_6, var_7, var_8) { return mccd_ADWIN_blnCutexpression(this, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8); }, "$getDescription", function(var_1, var_2) { mccd_ADWIN_getDescription(this, var_1, var_2); }]]);
+$rt_metadata([jt_DateFormatElement$MonthText, "DateFormatElement$MonthText", 17, jt_DateFormatElement, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$MonthText_format(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DateFormatElement$MonthText_equals(this, var_1); }, "$hashCode", function() { return jt_DateFormatElement$MonthText_hashCode(this); }],
 mcca_NominalAttributeClassObserver, "NominalAttributeClassObserver", 59, mo_AbstractOptionHandler, [mcca_DiscreteAttributeClassObserver], 0, 3, 0, ["$getOptions", function() { return mcca_NominalAttributeClassObserver_getOptions(this); }, "$observeAttributeClass", function(var_1, var_2, var_3) { mcca_NominalAttributeClassObserver_observeAttributeClass(this, var_1, var_2, var_3); }, "$probabilityOfAttributeValueGivenClass", function(var_1, var_2) { return mcca_NominalAttributeClassObserver_probabilityOfAttributeValueGivenClass(this,
 var_1, var_2); }, "$getBestEvaluatedSplitSuggestion", function(var_1, var_2, var_3, var_4) { return mcca_NominalAttributeClassObserver_getBestEvaluatedSplitSuggestion(this, var_1, var_2, var_3, var_4); }, "$getMaxAttValsObserved", function() { return mcca_NominalAttributeClassObserver_getMaxAttValsObserved(this); }, "$getClassDistsResultingFromMultiwaySplit", function(var_1) { return mcca_NominalAttributeClassObserver_getClassDistsResultingFromMultiwaySplit(this, var_1); }, "$getClassDistsResultingFromBinarySplit0",
 function(var_1) { return mcca_NominalAttributeClassObserver_getClassDistsResultingFromBinarySplit(this, var_1); }, "$getDescription", function(var_1, var_2) { mcca_NominalAttributeClassObserver_getDescription(this, var_1, var_2); }, "$prepareForUseImpl", function(var_1, var_2) { mcca_NominalAttributeClassObserver_prepareForUseImpl(this, var_1, var_2); }],
 ju_HashMap$HashEntry, 0, ju_MapEntry, [], 0, 0, 0, 0,
 ju_LinkedHashMap$LinkedHashMapEntry, 0, ju_HashMap$HashEntry, [], 4, 0, 0, 0,
-jl_NoSuchMethodError, "NoSuchMethodError", 18, jl_IncompatibleClassChangeError, [], 0, 3, 0, 0]);
-$rt_metadata([ju_Hashtable$3$iterator$lambda$_5_0, "Hashtable$3$iterator$lambda$_5_0", 10, jl_Object, [ju_MapEntry$Type], 0, 3, 0, ["$get3", function(var_1) { return ju_Hashtable$3$iterator$lambda$_5_0_get(this, var_1); }, "$get7", function(var_1) { return ju_Hashtable$3$iterator$lambda$_5_0_get0(this, var_1); }],
+jl_NoSuchMethodError, "NoSuchMethodError", 18, jl_IncompatibleClassChangeError, [], 0, 3, 0, 0,
+ju_Hashtable$3$iterator$lambda$_5_0, "Hashtable$3$iterator$lambda$_5_0", 10, jl_Object, [ju_MapEntry$Type], 0, 3, 0, ["$get3", function(var_1) { return ju_Hashtable$3$iterator$lambda$_5_0_get(this, var_1); }, "$get7", function(var_1) { return ju_Hashtable$3$iterator$lambda$_5_0_get0(this, var_1); }],
 ji_IOException, "IOException", 15, jl_Exception, [], 0, 3, 0, 0,
 jt_DateFormatElement$NumericWeekday, "DateFormatElement$NumericWeekday", 17, jt_DateFormatElement$Numeric, [], 0, 3, 0, ["$processBeforeFormat", function(var_1) { return jt_DateFormatElement$NumericWeekday_processBeforeFormat(this, var_1); }],
 jl_ArrayIndexOutOfBoundsException, "ArrayIndexOutOfBoundsException", 18, jl_IndexOutOfBoundsException, [], 0, 3, 0, 0,
@@ -30779,13 +30909,13 @@ ju_HashMap$KeyIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 
 jt_DateFormatElement$GeneralTimezone, "DateFormatElement$GeneralTimezone", 17, jt_DateFormatElement$BaseTimezone, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$GeneralTimezone_format(this, var_1, var_2); }],
 jt_DateFormatElement$WeekdayText, "DateFormatElement$WeekdayText", 17, jt_DateFormatElement, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$WeekdayText_format(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DateFormatElement$WeekdayText_equals(this, var_1); }, "$hashCode", function() { return jt_DateFormatElement$WeekdayText_hashCode(this); }],
 ju_TreeMap$EntrySet, 0, ju_AbstractSet, [], 0, 0, 0, ["$size", function() { return ju_TreeMap$EntrySet_size(this); }, "$iterator", function() { return ju_TreeMap$EntrySet_iterator(this); }, "$ascendingIterator", function() { return ju_TreeMap$EntrySet_ascendingIterator(this); }, "$descendingIterator", function() { return ju_TreeMap$EntrySet_descendingIterator(this); }],
-otft_ModifierTarget, "ModifierTarget", 30, jl_Object, [], 3, 3, 0, 0,
-otcir_JSFieldGetter, "JSFieldGetter", 39, jl_Object, [otj_JSObject], 3, 3, 0, 0,
+otft_ModifierTarget, "ModifierTarget", 30, jl_Object, [], 3, 3, 0, 0]);
+$rt_metadata([otcir_JSFieldGetter, "JSFieldGetter", 39, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 ju_Stack, "Stack", 10, ju_Vector, [], 0, 3, 0, ["$pop", function() { return ju_Stack_pop(this); }],
 ju_HashSet, "HashSet", 10, ju_AbstractSet, [jl_Cloneable, ji_Serializable], 0, 3, 0, ["$add", function(var_1) { return ju_HashSet_add(this, var_1); }, "$contains", function(var_1) { return ju_HashSet_contains(this, var_1); }, "$iterator", function() { return ju_HashSet_iterator(this); }, "$remove1", function(var_1) { return ju_HashSet_remove(this, var_1); }, "$size", function() { return ju_HashSet_size(this); }],
 otcit_DateTimeZoneProvider$detectTimezone$lambda$_5_0, "DateTimeZoneProvider$detectTimezone$lambda$_5_0", 40, jl_Object, [juf_Function], 0, 3, 0, ["$apply", function(var_1) { return otcit_DateTimeZoneProvider$detectTimezone$lambda$_5_0_apply(this, var_1); }, "$apply1", function(var_1) { return otcit_DateTimeZoneProvider$detectTimezone$lambda$_5_0_apply0(this, var_1); }],
-eu_OptionAndLevel, "OptionAndLevel", 49, jl_Object, [], 0, 3, 0, 0]);
-$rt_metadata([otcf_VirtualFileSystemProvider, "VirtualFileSystemProvider", 44, jl_Object, [], 4, 3, otcf_VirtualFileSystemProvider_$callClinit, 0,
+eu_OptionAndLevel, "OptionAndLevel", 49, jl_Object, [], 0, 3, 0, 0,
+otcf_VirtualFileSystemProvider, "VirtualFileSystemProvider", 44, jl_Object, [], 4, 3, otcf_VirtualFileSystemProvider_$callClinit, 0,
 ju_LinkedList, "LinkedList", 10, ju_AbstractSequentialList, [ju_Deque], 0, 3, 0, ["$size", function() { return ju_LinkedList_size(this); }, "$listIterator0", function() { return ju_LinkedList_listIterator(this); }, "$listIterator", function(var_1) { return ju_LinkedList_listIterator0(this, var_1); }, "$removeEntry0", function(var_1) { ju_LinkedList_removeEntry(this, var_1); }],
 otcir_JSFieldSetter, "JSFieldSetter", 39, jl_Object, [otj_JSObject], 3, 3, 0, 0,
 otjc_JSString, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0,
@@ -30796,8 +30926,9 @@ otft_Modifier$proxy$4_0_14, 0, jl_Object, [otft_Modifier], 0, 3, 0, ["$apply2", 
 otft_Modifier$proxy$4_0_13, 0, jl_Object, [otft_Modifier], 0, 3, 0, ["$apply2", function(var_1) { return otft_Modifier$proxy$4_0_13_apply(this, var_1); }],
 ju_AbstractList$TListIteratorImpl, 0, jl_Object, [ju_ListIterator], 0, 0, 0, ["$hasNext", function() { return ju_AbstractList$TListIteratorImpl_hasNext(this); }, "$next", function() { return ju_AbstractList$TListIteratorImpl_next(this); }, "$hasPrevious", function() { return ju_AbstractList$TListIteratorImpl_hasPrevious(this); }, "$previous0", function() { return ju_AbstractList$TListIteratorImpl_previous(this); }, "$nextIndex", function() { return ju_AbstractList$TListIteratorImpl_nextIndex(this); }, "$previousIndex",
 function() { return ju_AbstractList$TListIteratorImpl_previousIndex(this); }, "$checkConcurrentModification", function() { ju_AbstractList$TListIteratorImpl_checkConcurrentModification(this); }],
-mc_AutoExpandVector, "AutoExpandVector", 52, ju_ArrayList, [mc_MOAObject], 0, 3, 0, ["$add0", function(var_1, var_2) { mc_AutoExpandVector_add(this, var_1, var_2); }, "$get", function(var_1) { return mc_AutoExpandVector_get(this, var_1); }, "$set", function(var_1, var_2) { return mc_AutoExpandVector_set(this, var_1, var_2); }, "$add", function(var_1) { return mc_AutoExpandVector_add0(this, var_1); }],
+otft_Modifier$proxy$4_0_16, 0, jl_Object, [otft_Modifier], 0, 3, 0, ["$apply2", function(var_1) { return otft_Modifier$proxy$4_0_16_apply(this, var_1); }],
 otft_Modifier$proxy$4_0_15, 0, jl_Object, [otft_Modifier], 0, 3, 0, ["$apply2", function(var_1) { return otft_Modifier$proxy$4_0_15_apply(this, var_1); }],
+mc_AutoExpandVector, "AutoExpandVector", 52, ju_ArrayList, [mc_MOAObject], 0, 3, 0, ["$add0", function(var_1, var_2) { mc_AutoExpandVector_add(this, var_1, var_2); }, "$get", function(var_1) { return mc_AutoExpandVector_get(this, var_1); }, "$set", function(var_1, var_2) { return mc_AutoExpandVector_set(this, var_1, var_2); }, "$add", function(var_1) { return mc_AutoExpandVector_add0(this, var_1); }],
 oti_AsyncCallback, 0, jl_Object, [], 3, 3, 0, 0,
 otcit_AliasDateTimeZone, "AliasDateTimeZone", 40, otcit_StorableDateTimeZone, [], 0, 3, 0, ["$getOffset", function(var_1) { return otcit_AliasDateTimeZone_getOffset(this, var_1); }, "$getStandardOffset", function(var_1) { return otcit_AliasDateTimeZone_getStandardOffset(this, var_1); }, "$previousTransition", function(var_1) { return otcit_AliasDateTimeZone_previousTransition(this, var_1); }],
 ju_HashMap$HashMapEntrySet, 0, ju_AbstractSet, [], 0, 0, 0, ["$hashMap", function() { return ju_HashMap$HashMapEntrySet_hashMap(this); }, "$size", function() { return ju_HashMap$HashMapEntrySet_size(this); }, "$iterator", function() { return ju_HashMap$HashMapEntrySet_iterator(this); }],
@@ -30806,8 +30937,8 @@ cgj_Options, "Options", 2, jl_Object, [ji_Serializable], 0, 3, 0, ["$addOption",
 jt_DecimalFormat$PercentField, "DecimalFormat$PercentField", 17, jl_Object, [jt_DecimalFormat$FormatField], 0, 0, 0, ["$render0", function(var_1, var_2) { jt_DecimalFormat$PercentField_render(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DecimalFormat$PercentField_equals(this, var_1); }, "$hashCode", function() { return jt_DecimalFormat$PercentField_hashCode(this); }],
 otcit_DateTimeZoneBuilder$PrecalculatedZone, "DateTimeZoneBuilder$PrecalculatedZone", 40, otcit_StorableDateTimeZone, [], 4, 0, 0, ["$getOffset", function(var_1) { return otcit_DateTimeZoneBuilder$PrecalculatedZone_getOffset(this, var_1); }, "$getStandardOffset", function(var_1) { return otcit_DateTimeZoneBuilder$PrecalculatedZone_getStandardOffset(this, var_1); }, "$nextTransition", function(var_1) { return otcit_DateTimeZoneBuilder$PrecalculatedZone_nextTransition(this, var_1); }, "$previousTransition", function(var_1)
 { return otcit_DateTimeZoneBuilder$PrecalculatedZone_previousTransition(this, var_1); }, "$isCachable", function() { return otcit_DateTimeZoneBuilder$PrecalculatedZone_isCachable(this); }],
-otft_DomBuilder, 0, jl_Object, [], 0, 3, otft_DomBuilder_$callClinit, ["$open0", function(var_1) { return otft_DomBuilder_open(this, var_1); }, "$openSlot", function(var_1) { return otft_DomBuilder_openSlot(this, var_1); }, "$open", function(var_1, var_2) { return otft_DomBuilder_open0(this, var_1, var_2); }, "$close", function() { return otft_DomBuilder_close(this); }, "$text1", function(var_1) { return otft_DomBuilder_text(this, var_1); }, "$attribute0", function(var_1, var_2) { return otft_DomBuilder_attribute(this,
-var_1, var_2); }, "$add7", function(var_1) { return otft_DomBuilder_add(this, var_1); }, "$add6", function(var_1) { return otft_DomBuilder_add0(this, var_1); }, "$appendNode", function(var_1) { otft_DomBuilder_appendNode(this, var_1); }, "$getRenderables", function() { return otft_DomBuilder_getRenderables(this); }],
+otft_DomBuilder, 0, jl_Object, [], 0, 3, otft_DomBuilder_$callClinit, ["$open", function(var_1) { return otft_DomBuilder_open(this, var_1); }, "$openSlot", function(var_1) { return otft_DomBuilder_openSlot(this, var_1); }, "$open0", function(var_1, var_2) { return otft_DomBuilder_open0(this, var_1, var_2); }, "$close", function() { return otft_DomBuilder_close(this); }, "$text1", function(var_1) { return otft_DomBuilder_text(this, var_1); }, "$attribute0", function(var_1, var_2) { return otft_DomBuilder_attribute(this,
+var_1, var_2); }, "$add6", function(var_1) { return otft_DomBuilder_add(this, var_1); }, "$add8", function(var_1) { return otft_DomBuilder_add0(this, var_1); }, "$appendNode", function(var_1) { otft_DomBuilder_appendNode(this, var_1); }, "$getRenderables", function() { return otft_DomBuilder_getRenderables(this); }],
 otcit_DateTimeZoneBuilder, "DateTimeZoneBuilder", 40, jl_Object, [], 0, 3, 0, 0,
 cylsi_Attribute, "Attribute", 6, jl_Object, [ji_Serializable], 0, 3, 0, ["$isNominal", function() { return cylsi_Attribute_isNominal(this); }, "$name7", function() { return cylsi_Attribute_name(this); }, "$value6", function(var_1) { return cylsi_Attribute_value(this, var_1); }, "$isNumeric", function() { return cylsi_Attribute_isNumeric(this); }, "$numValues", function() { return cylsi_Attribute_numValues(this); }, "$formatDate", function(var_1) { return cylsi_Attribute_formatDate(this, var_1); }, "$isDate",
 function() { return cylsi_Attribute_isDate(this); }, "$toString", function() { return cylsi_Attribute_toString(this); }, "$enumerateValues", function() { return cylsi_Attribute_enumerateValues(this); }],
@@ -30821,9 +30952,10 @@ mc_StringUtils, "StringUtils", 52, jl_Object, [], 0, 3, mc_StringUtils_$callClin
 jl_Object$monitorExit$lambda$_8_0, 0, jl_Object, [otp_PlatformRunnable], 0, 3, 0, ["$run", function() { jl_Object$monitorExit$lambda$_8_0_run(this); }],
 otft_DomComponentHandler$proxy$4_0_3, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_3_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_3_buildDom(this, var_1); }],
 ju_ArrayDeque$1, 0, jl_Object, [ju_Iterator], 0, 0, 0, ["$hasNext", function() { return ju_ArrayDeque$1_hasNext(this); }, "$next", function() { return ju_ArrayDeque$1_next(this); }],
-otfch_TextComponent, "TextComponent", 28, otft_AbstractComponent, [], 0, 3, 0, ["$setValue1", function(var_1) { otfch_TextComponent_setValue(this, var_1); }, "$render", function() { otfch_TextComponent_render(this); }],
 otft_DomComponentHandler$proxy$4_0_2, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_2_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_2_buildDom(this, var_1); }],
-otft_DomComponentHandler$proxy$4_0_1, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_1_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_1_buildDom(this, var_1); }],
+otfch_TextComponent, "TextComponent", 28, otft_AbstractComponent, [], 0, 3, 0, ["$setValue1", function(var_1) { otfch_TextComponent_setValue(this, var_1); }, "$render", function() { otfch_TextComponent_render(this); }],
+juf_Consumer$proxy$4_0_1, 0, jl_Object, [juf_Consumer], 0, 3, 0, ["$accept", function(var_1) { juf_Consumer$proxy$4_0_1_accept(this, var_1); }],
+otft_DomComponentHandler$proxy$4_0_1, "DomComponentHandler$proxy$4_0_1", 30, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_1_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_1_buildDom(this, var_1); }],
 otft_DomComponentHandler$proxy$4_0_0, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_0_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_0_buildDom(this, var_1); }],
 juf_Consumer$proxy$4_0_0, 0, jl_Object, [juf_Consumer], 0, 3, 0, ["$accept", function(var_1) { juf_Consumer$proxy$4_0_0_accept(this, var_1); }],
 otjc_JSDate, 0, jl_Object, [otj_JSObject], 1, 3, 0, 0,
@@ -30831,21 +30963,21 @@ otft_DomComponentHandler$proxy$4_0_7, 0, jl_Object, [otft_DomComponentHandler], 
 otft_DomComponentHandler$proxy$4_0_6, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_6_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_6_buildDom(this, var_1); }],
 otft_DomComponentHandler$proxy$4_0_5, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_5_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_5_buildDom(this, var_1); }],
 otft_DomComponentHandler$proxy$4_0_4, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_4_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_4_buildDom(this, var_1); }],
-otft_DomComponentHandler$proxy$4_0_9, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_9_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_9_buildDom(this, var_1); }],
-otft_DomComponentHandler$proxy$4_0_8, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_8_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_8_buildDom(this, var_1); }],
+otft_DomComponentHandler$proxy$4_0_9, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_9_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_9_buildDom(this, var_1); }]]);
+$rt_metadata([otft_DomComponentHandler$proxy$4_0_8, 0, jl_Object, [otft_DomComponentHandler], 0, 3, 0, ["$update", function() { otft_DomComponentHandler$proxy$4_0_8_update(this); }, "$buildDom", function(var_1) { otft_DomComponentHandler$proxy$4_0_8_buildDom(this, var_1); }],
 otcit_CachedDateTimeZone$Info, 0, jl_Object, [], 4, 0, 0, ["$getOffset", function(var_1) { return otcit_CachedDateTimeZone$Info_getOffset(this, var_1); }, "$getStandardOffset", function(var_1) { return otcit_CachedDateTimeZone$Info_getStandardOffset(this, var_1); }],
 otfte_VariableImpl, "VariableImpl", 31, jl_Object, [], 0, 3, 0, 0,
 jm_Multiplication, "Multiplication", 16, jl_Object, [], 0, 0, jm_Multiplication_$callClinit, 0,
 juf_Supplier$proxy$4_0_15, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_15_get(this); }],
 juf_Supplier$proxy$4_0_16, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_16_get(this); }],
-juf_Supplier$proxy$4_0_13, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_13_get(this); }]]);
-$rt_metadata([ju_HashMap$1, 0, ju_AbstractSet, [], 0, 0, 0, ["$iterator", function() { return ju_HashMap$1_iterator(this); }],
+juf_Supplier$proxy$4_0_13, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_13_get(this); }],
+ju_HashMap$1, 0, ju_AbstractSet, [], 0, 0, 0, ["$iterator", function() { return ju_HashMap$1_iterator(this); }],
 juf_Supplier$proxy$4_0_14, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_14_get(this); }],
 juf_Supplier$proxy$4_0_11, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_11_get(this); }],
 juf_Supplier$proxy$4_0_12, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_12_get(this); }],
+mt_NullMonitor, "NullMonitor", 70, jl_Object, [mt_TaskMonitor], 0, 3, 0, ["$setCurrentActivity", function(var_1, var_2) { mt_NullMonitor_setCurrentActivity(this, var_1, var_2); }, "$taskShouldAbort", function() { return mt_NullMonitor_taskShouldAbort(this); }],
 jl_Double, "Double", 18, jl_Number, [jl_Comparable], 0, 3, jl_Double_$callClinit, ["$doubleValue", function() { return jl_Double_doubleValue(this); }, "$longValue", function() { return jl_Double_longValue(this); }, "$toString", function() { return jl_Double_toString0(this); }, "$equals", function(var_1) { return jl_Double_equals(this, var_1); }, "$hashCode", function() { return jl_Double_hashCode(this); }, "$compareTo7", function(var_1) { return jl_Double_compareTo(this, var_1); }, "$compareTo6", function(var_1)
 { return jl_Double_compareTo0(this, var_1); }],
-mt_NullMonitor, "NullMonitor", 70, jl_Object, [mt_TaskMonitor], 0, 3, 0, ["$setCurrentActivity", function(var_1, var_2) { mt_NullMonitor_setCurrentActivity(this, var_1, var_2); }, "$taskShouldAbort", function() { return mt_NullMonitor_taskShouldAbort(this); }],
 jm_Elementary, "Elementary", 16, jl_Object, [], 0, 0, 0, 0,
 juf_Supplier$proxy$4_0_10, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_10_get(this); }],
 ju_TreeMap$1, 0, jl_Object, [ju_Comparator], 0, 0, 0, ["$compare2", function(var_1, var_2) { return ju_TreeMap$1_compare(this, var_1, var_2); }],
@@ -30854,7 +30986,7 @@ otft_DomBuilder$Item, "DomBuilder$Item", 30, jl_Object, [otft_ModifierTarget], 0
 jt_SimpleDateFormat, "SimpleDateFormat", 17, jt_DateFormat, [], 0, 3, 0, ["$format2", function(var_1, var_2, var_3) { return jt_SimpleDateFormat_format(this, var_1, var_2, var_3); }, "$applyPattern", function(var_1) { jt_SimpleDateFormat_applyPattern(this, var_1); }, "$reparsePattern", function() { jt_SimpleDateFormat_reparsePattern(this); }, "$equals", function(var_1) { return jt_SimpleDateFormat_equals(this, var_1); }, "$hashCode", function() { return jt_SimpleDateFormat_hashCode(this); }],
 otjb_WindowEventTarget, 0, jl_Object, [otjde_EventTarget, otjde_FocusEventTarget, otjde_MouseEventTarget, otjde_KeyboardEventTarget, otjde_LoadEventTarget], 3, 3, 0, 0,
 mo_AbstractClassOption, "AbstractClassOption", 55, cgj_AbstractOption, [], 1, 3, 0, ["$getPreMaterializedObject", function() { return mo_AbstractClassOption_getPreMaterializedObject(this); }, "$materializeObject", function(var_1, var_2) { return mo_AbstractClassOption_materializeObject(this, var_1, var_2); }, "$getDefaultCLIString", function() { return mo_AbstractClassOption_getDefaultCLIString(this); }],
-mo_ClassOption, "ClassOption", 55, mo_AbstractClassOption, [], 0, 3, mo_ClassOption_$callClinit, ["$getListClasses", function() { return mo_ClassOption_getListClasses0(this); }, "$getValueAsCLIString", function() { return mo_ClassOption_getValueAsCLIString(this); }, "$setValueViaCLIString", function(var_1) { mo_ClassOption_setValueViaCLIString(this, var_1); }],
+mo_ClassOption, "ClassOption", 55, mo_AbstractClassOption, [], 0, 3, mo_ClassOption_$callClinit, ["$getListClasses", function() { return mo_ClassOption_getListClasses(this); }, "$getValueAsCLIString", function() { return mo_ClassOption_getValueAsCLIString(this); }, "$setValueViaCLIString", function(var_1) { mo_ClassOption_setValueViaCLIString(this, var_1); }],
 juf_Supplier$proxy$4_0_19, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_19_get(this); }],
 juf_Supplier$proxy$4_0_17, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_17_get(this); }],
 juf_Supplier$proxy$4_0_18, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_18_get(this); }],
@@ -30882,27 +31014,29 @@ mct_HoeffdingTree$SplitNode, "HoeffdingTree$SplitNode", 68, mct_HoeffdingTree$No
 }],
 otft_Fragment$proxy$4_0_0, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_0_create(this); }],
 jl_IllegalStateException, "IllegalStateException", 18, jl_Exception, [], 0, 3, 0, 0,
+juf_Supplier$proxy$4_0_35, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_35_get(this); }],
 juf_Supplier$proxy$4_0_33, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_33_get(this); }],
+juf_Supplier$proxy$4_0_34, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_34_get(this); }],
 juf_Supplier$proxy$4_0_31, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_31_get(this); }],
 juf_Supplier$proxy$4_0_32, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_32_get(this); }],
 otpp_AsyncCallbackWrapper, 0, jl_Object, [oti_AsyncCallback], 0, 0, 0, ["$complete", function(var_1) { otpp_AsyncCallbackWrapper_complete(this, var_1); }, "$error", function(var_1) { otpp_AsyncCallbackWrapper_error(this, var_1); }],
 mcb_NaiveBayes, "NaiveBayes", 63, mc_AbstractClassifier, [mc_MultiClassClassifier, mc_CapabilitiesHandler], 0, 3, 0, ["$resetLearningImpl", function() { mcb_NaiveBayes_resetLearningImpl(this); }, "$trainOnInstanceImpl", function(var_1) { mcb_NaiveBayes_trainOnInstanceImpl(this, var_1); }, "$getVotesForInstance", function(var_1) { return mcb_NaiveBayes_getVotesForInstance(this, var_1); }, "$getModelMeasurementsImpl", function() { return mcb_NaiveBayes_getModelMeasurementsImpl(this); }, "$getModelDescription",
 function(var_1, var_2) { mcb_NaiveBayes_getModelDescription(this, var_1, var_2); }, "$isRandomizable", function() { return mcb_NaiveBayes_isRandomizable(this); }, "$newNominalClassObserver", function() { return mcb_NaiveBayes_newNominalClassObserver(this); }, "$newNumericClassObserver", function() { return mcb_NaiveBayes_newNumericClassObserver(this); }],
 jl_Enum, "Enum", 18, jl_Object, [jl_Comparable, ji_Serializable], 1, 3, 0, ["$ordinal", function() { return jl_Enum_ordinal(this); }, "$toString", function() { return jl_Enum_toString(this); }, "$equals", function(var_1) { return jl_Enum_equals(this, var_1); }, "$hashCode", function() { return jl_Enum_hashCode(this); }, "$getDeclaringClass", function() { return jl_Enum_getDeclaringClass(this); }, "$compareTo8", function(var_1) { return jl_Enum_compareTo(this, var_1); }, "$compareTo6", function(var_1) { return jl_Enum_compareTo0(this,
-var_1); }],
-otft_Fragment$proxy$4_0_9, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_9_create(this); }],
+var_1); }]]);
+$rt_metadata([otft_Fragment$proxy$4_0_9, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_9_create(this); }],
 otft_Fragment$proxy$4_0_7, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_7_create(this); }],
 mcti_IademNumericAttributeBinaryTest, "IademNumericAttributeBinaryTest", 69, mccc_NumericAttributeBinaryTest, [], 0, 3, 0, 0,
+juf_Supplier$proxy$4_0_30, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_30_get(this); }],
 otft_Fragment$proxy$4_0_8, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_8_create(this); }],
 otfch_CheckedChangeBinder, "CheckedChangeBinder", 28, jl_Object, [otft_Renderable], 0, 3, 0, ["$setListener", function(var_1) { otfch_CheckedChangeBinder_setListener(this, var_1); }, "$render", function() { otfch_CheckedChangeBinder_render(this); }, "$destroy", function() { otfch_CheckedChangeBinder_destroy(this); }],
-juf_Supplier$proxy$4_0_30, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_30_get(this); }],
 otft_Fragment$proxy$4_0_5, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_5_create(this); }],
 otft_Fragment$proxy$4_0_6, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_6_create(this); }],
-otft_Fragment$proxy$4_0_3, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_3_create(this); }]]);
-$rt_metadata([otft_Fragment$proxy$4_0_4, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_4_create(this); }],
-otft_Fragment$proxy$4_0_1, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_1_create(this); }],
-otft_Fragment$proxy$4_0_2, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_2_create(this); }],
+otft_Fragment$proxy$4_0_3, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_3_create(this); }],
+otft_Fragment$proxy$4_0_4, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_4_create(this); }],
+otft_Fragment$proxy$4_0_1, "Fragment$proxy$4_0_1", 30, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_1_create(this); }],
 otfcs_IfComponent, "IfComponent", 26, otft_AbstractComponent, [], 0, 3, 0, ["$setCondition", function(var_1) { otfcs_IfComponent_setCondition(this, var_1); }, "$setBody", function(var_1) { otfcs_IfComponent_setBody(this, var_1); }, "$render", function() { otfcs_IfComponent_render(this); }, "$destroy", function() { otfcs_IfComponent_destroy(this); }],
+otft_Fragment$proxy$4_0_2, 0, jl_Object, [otft_Fragment], 0, 3, 0, ["$create", function() { return otft_Fragment$proxy$4_0_2_create(this); }],
 jm_RoundingMode, "RoundingMode", 16, jl_Enum, [], 12, 3, jm_RoundingMode_$callClinit, 0,
 juf_Supplier$proxy$4_0_26, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_26_get(this); }],
 juf_Supplier$proxy$4_0_27, 0, jl_Object, [juf_Supplier], 0, 3, 0, ["$get4", function() { return juf_Supplier$proxy$4_0_27_get(this); }],
@@ -30941,8 +31075,8 @@ jt_SimpleDatePatternParser, 0, jl_Object, [], 0, 0, 0, ["$getElements", function
 jl_ConsoleOutputStreamStderr, "ConsoleOutputStreamStderr", 18, ji_OutputStream, [], 0, 0, 0, ["$write", function(var_1) { jl_ConsoleOutputStreamStderr_write(this, var_1); }],
 jt_DateFormatElement$EraText, "DateFormatElement$EraText", 17, jt_DateFormatElement, [], 0, 3, 0, ["$format5", function(var_1, var_2) { jt_DateFormatElement$EraText_format(this, var_1, var_2); }, "$equals", function(var_1) { return jt_DateFormatElement$EraText_equals(this, var_1); }, "$hashCode", function() { return jt_DateFormatElement$EraText_hashCode(this); }],
 otcfm_InMemoryVirtualFileSystem, "InMemoryVirtualFileSystem", 45, jl_Object, [otcf_VirtualFileSystem], 0, 3, 0, ["$isWindows", function() { return otcfm_InMemoryVirtualFileSystem_isWindows(this); }],
-ju_HashMap$EntryIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, ["$next2", function() { return ju_HashMap$EntryIterator_next(this); }, "$next", function() { return ju_HashMap$EntryIterator_next0(this); }],
-ju_Arrays$ArrayAsList, 0, ju_AbstractList, [ju_RandomAccess], 0, 0, 0, ["$get", function(var_1) { return ju_Arrays$ArrayAsList_get(this, var_1); }, "$size", function() { return ju_Arrays$ArrayAsList_size(this); }],
+ju_HashMap$EntryIterator, 0, ju_HashMap$AbstractMapIterator, [ju_Iterator], 0, 0, 0, ["$next2", function() { return ju_HashMap$EntryIterator_next(this); }, "$next", function() { return ju_HashMap$EntryIterator_next0(this); }]]);
+$rt_metadata([ju_Arrays$ArrayAsList, 0, ju_AbstractList, [ju_RandomAccess], 0, 0, 0, ["$get", function(var_1) { return ju_Arrays$ArrayAsList_get(this, var_1); }, "$size", function() { return ju_Arrays$ArrayAsList_size(this); }],
 ju_Collections, "Collections", 10, jl_Object, [], 0, 3, ju_Collections_$callClinit, 0,
 mcti_IademVFMLNumericAttributeClassObserver$Bin, "IademVFMLNumericAttributeClassObserver$Bin", 69, jl_Object, [ji_Serializable], 0, 3, 0, 0,
 sa_SizeOfAgent, "SizeOfAgent", 21, jl_Object, [], 0, 3, sa_SizeOfAgent_$callClinit, 0]);
@@ -30977,28 +31111,29 @@ $rt_setCloneMethod($rt_array.prototype, function() {
     }
     return new $rt_array(this.type, dataCopy);
 });
-$rt_stringPool(["Can\'t enter monitor from another thread synchronously", "@", "Leaf ", " = ", " weights: ", "String contains invalid digits: ", "String contains digits out of radix ", ": ", "The value is too big for int type: ", "String is null or empty", "Illegal radix: ", "[", ", ", "]", "[]", "(this Collection)", "main", "", "-", "    at ", "Caused by: ", "BIG_ENDIAN", "LITTLE_ENDIAN", "Currency not found: ", "Materializing option ", "...", "Preparing option ", " != ", "Out ", " ", "001", "[time=", "?",
-",areFieldsSet=", ",lenient=", ",firstDayOfWeek=", ",minimalDaysInFirstWeek=", "ERA=", "YEAR=", "MONTH=", "WEEK_OF_YEAR=", "WEEK_OF_MONTH=", "DAY_OF_MONTH=", "DAY_OF_YEAR=", "DAY_OF_WEEK=", "DAY_OF_WEEK_IN_MONTH=", "AM_PM=", "HOUR=", "HOUR_OF_DAY", "MINUTE=", "SECOND=", "MILLISECOND=", "ZONE_OFFSET=", "DST_OFFSET=", "null", "false", "true", "Index out of bounds", "New position ", " is outside of range [0;", "style", "click", "0", "randomSeed", "Seed for random behaviour of the classifier.", "Context for a classifier must include a class to learn",
-"New context is not compatible with existing model", "model training instances", "model serialized size (bytes)", "Model type: ", "Model description:", "Model has not been trained.", "baseLearner", "Classifier to train on instances.", "trees.HoeffdingTree -g 50 -c 0.01", "ensembleSize", "The number of models.", "Specified m (integer value)", "sqrt(M)+1", "M-(sqrt(M)+1)", "Percentage (M * (m / 100))", "SpecifiedM", "SqrtM1", "MSqrtM1", "Percentage", "subspaceMode", "Defines how m, defined by mFeaturesPerTreeSize, is interpreted. M represents the total number of features.",
-"subspaceSize", "# attributes per subset for each classifier. Negative values = totalAttributes - #attributes", "Random Subspaces", "Resampling (bagging)", "Random Patches", "RandomSubspaces", "Resampling", "RandomPatches", "trainingMethod", "The training method to use: Random Patches, Random Subspaces or Bagging.", "lambda", "The lambda parameter for bagging.", "driftDetectionMethod", "Change detector for drifts and its parameters", "ADWINChangeDetector -a 1.0E-5", "warningDetectionMethod", "Change detector for warnings (start training bkg learner)",
-"ADWINChangeDetector -a 1.0E-4", "disableWeightedVote", "Should use weighted voting?", "disableDriftDetection", "Should use drift detection? If disabled, then the bkg learner is also disabled.", "disableBackgroundLearner", "Should use bkg learner? If disabled, then trees are reset immediately.", "Illegal option name: ", "Default CLI String is: ", "Option ", " cannot be less than ", ", out of range: ", " cannot be greater than ", "application-content", "1", "Title 1", "Author 1", "Title 2", "Author 2", "Title 3",
-"Author 3", "runRBF", "runSRP", "runWithoutStream", "runWithoutStreamNumeric", "test", "Failed to create", "A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10", "Benign", "Malignant", "diagnosedCond", "Attribute diagnosis is isNominal: ", "Rounded down double to int of: ", " is: ", "usedToDescribeInformation", "Weight of instance at index 2 is: ", "Num classes is : ", "Accuracy is: ", "OptHashMap ", "OptHashMap iterator ", "Option 0 of Hoeffding is: ", "#.##", "Hit samp freq. accuracy: ", "Hit samp freq. Kappa stat: ",
-"Hit samp freq. Kappa Temporal stat: ", "Hit samp freq. Kappa M stat: ", "Attribute A10 is isNumeric: ", "Hit samp freq. Mean error: ", "Hit samp freq. Square error: ", "Mean error is: ", "Num instance arraylist to string is: ", "Square error is: ", "Option type is: ", " done", "Reached here", "key1", "Is assignable: ", "Class names:", "Hi Jonathan", "Id must not be null", "Unknown zone type: ", "Replacement preconditions do not hold", "Action must be non-null", "precisionRecallOutput", "Outputs average precision, recall and F1 scores.",
+$rt_stringPool(["Can\'t enter monitor from another thread synchronously", "@", "Leaf ", " = ", " weights: ", "String contains invalid digits: ", "String contains digits out of radix ", ": ", "The value is too big for int type: ", "String is null or empty", "Illegal radix: ", "[", ", ", "]", "[]", "(this Collection)", "main", "", "-", "    at ", "Caused by: ", "BIG_ENDIAN", "LITTLE_ENDIAN", "px * 150)", "margin-left: calc(", "Currency not found: ", "Materializing option ", "...", "Preparing option ", " != ",
+"Out ", " ", "001", "[time=", "?", ",areFieldsSet=", ",lenient=", ",firstDayOfWeek=", ",minimalDaysInFirstWeek=", "ERA=", "YEAR=", "MONTH=", "WEEK_OF_YEAR=", "WEEK_OF_MONTH=", "DAY_OF_MONTH=", "DAY_OF_YEAR=", "DAY_OF_WEEK=", "DAY_OF_WEEK_IN_MONTH=", "AM_PM=", "HOUR=", "HOUR_OF_DAY", "MINUTE=", "SECOND=", "MILLISECOND=", "ZONE_OFFSET=", "DST_OFFSET=", "null", "false", "true", "Index out of bounds", "New position ", " is outside of range [0;", "style", "click", "0", "randomSeed", "Seed for random behaviour of the classifier.",
+"Context for a classifier must include a class to learn", "New context is not compatible with existing model", "model training instances", "model serialized size (bytes)", "Model type: ", "Model description:", "Model has not been trained.", "baseLearner", "Classifier to train on instances.", "trees.HoeffdingTree -g 50 -c 0.01", "ensembleSize", "The number of models.", "Specified m (integer value)", "sqrt(M)+1", "M-(sqrt(M)+1)", "Percentage (M * (m / 100))", "SpecifiedM", "SqrtM1", "MSqrtM1", "Percentage", "subspaceMode",
+"Defines how m, defined by mFeaturesPerTreeSize, is interpreted. M represents the total number of features.", "subspaceSize", "# attributes per subset for each classifier. Negative values = totalAttributes - #attributes", "Random Subspaces", "Resampling (bagging)", "Random Patches", "RandomSubspaces", "Resampling", "RandomPatches", "trainingMethod", "The training method to use: Random Patches, Random Subspaces or Bagging.", "lambda", "The lambda parameter for bagging.", "driftDetectionMethod", "Change detector for drifts and its parameters",
+"ADWINChangeDetector -a 1.0E-5", "warningDetectionMethod", "Change detector for warnings (start training bkg learner)", "ADWINChangeDetector -a 1.0E-4", "disableWeightedVote", "Should use weighted voting?", "disableDriftDetection", "Should use drift detection? If disabled, then the bkg learner is also disabled.", "disableBackgroundLearner", "Should use bkg learner? If disabled, then trees are reset immediately.", "Illegal option name: ", "Default CLI String is: ", "Option ", " cannot be less than ", ", out of range: ",
+" cannot be greater than ", "application-content", "1", "Title 1", "Author 1", "Title 2", "Author 2", "Title 3", "Author 3", "runRBF", "runSRP", "runWithoutStream", "runWithoutStreamNumeric", "test", "Failed to create", "arrOptions 0 is ", "OptHashMap ", "#.##", "Hit samp freq. accuracy: ", "Hit samp freq. Kappa stat: ", "Hit samp freq. Kappa Temporal stat: ", "Hit samp freq. Kappa M stat: ", "A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10", "Benign", "Malignant", "diagnosedCond", "Attribute diagnosis is isNominal: ",
+"Rounded down double to int of: ", " is: ", "usedToDescribeInformation", "Weight of instance at index 2 is: ", "Num classes is : ", "Accuracy is: ", "Attribute A10 is isNumeric: ", "Hit samp freq. Mean error: ", "Hit samp freq. Square error: ", "Mean error is: ", "Num instance arraylist to string is: ", "Square error is: ", "Hi Jonathan", "Id must not be null", "Unknown zone type: ", "Replacement preconditions do not hold", "Action must be non-null", "precisionRecallOutput", "Outputs average precision, recall and F1 scores.",
 "precisionPerClass", "Report precision per class.", "recallPerClass", "Report recall per class.", "f1PerClass", "Report F1 per class.", "classified instances", "classifications correct (percent)", "Kappa Statistic (percent)", "Kappa Temporal Statistic (percent)", "Kappa M Statistic (percent)", "F1 Score (percent)", "F1 Score for class ", " (percent)", "Precision (percent)", "Precision for class ", "Recall (percent)", "Recall for class ", "numBins", "The number of bins.", "deltaAdwin", "Delta of Adwin change detection",
 "IGNORE", "REPLACE", "REPORT", "{count:", ", total:", "}", "minBranchFrac", "Minimum fraction of weight required down at least two branches.", "Can\'t avoid rounding", "default", "numTuples", "The number of tuples.", "[avg] ", "[err] ", "Overflow", "Underflow", "?,", ",", "yyyy-MM-dd\'T\'HH:mm:ss", "The last char in dst ", " is outside of array of size ", "Length ", " must be non-negative", "Offset ", ")", "th", "st", "nd", "rd", "Unexpected option type", "Temp is not an option handler", "maxNodesOption", "Maximum number of nodes",
 "{}", "(this Map)", "{", "|", "UTF-8", "This exception should not been thrown", "=", "Positive number pattern not found in ", "Expected \';\' at ", " in ", "Prefix contains special character at ", "Quote opened at ", " was not closed in ", "Two group separators at ", "Unexpected \'#\' at non-optional digit part at ", "Pattern does not specify integer digits at ", "Group separator at the end of number at ", "Group separator found at fractional part at ", "Unexpected second decimal separator at ", "Unexpected \'0\' at optional digit part at ",
-"Unexpected char at exponent at ", "Pattern does not specify exponent digits at ", "The given space is already hosted by a slot", "Successor does not belong to this slot", "Unknown mode: ", "submit", "Subsets Candidate Instances", "\r\n\t", "option", "= ", "@relation", "\n\n", "\n", "@data", "Negative bit address", "Negative exponent", "BigInteger divide by zero", "mean absolute error", "root mean squared error", "relative mean absolute error", "relative root mean squared error", "Description is NominalAttributeClassObserver",
-".", "modelRandomSeed", "Seed for random generation of model.", "instanceRandomSeed", "Seed for random generation of instances.", "numClasses", "The number of classes to generate.", "numAtts", "The number of attributes to generate.", "numCentroids", "The number of centroids in the model.", "Invalid numClasses", "Invalid numAtts", "Invalid numCentroids", "Preparing random RBF...", "att", "class", "InstanceStream -c ", " -a ", " -n ", "Labels/descriptions mismatch.", "Label not recognised: ", "maxByteSize", "Maximum memory consumed by the tree.",
-"numericEstimator", "Numeric estimator to use.", "GaussianNumericAttributeClassObserver", "nominalEstimator", "Nominal estimator to use.", "NominalAttributeClassObserver", "memoryEstimatePeriod", "How many instances between memory consumption checks.", "gracePeriod", "The number of instances a leaf should observe between split attempts.", "splitCriterion", "Split criterion to use.", "InfoGainSplitCriterion", "splitConfidence", "The allowable error in split decision, values closer to 0 will take longer to decide.",
-"tieThreshold", "Threshold below which a split will be forced to break ties.", "binarySplits", "Only allow binary splits.", "stopMemManagement", "Stop growing as soon as memory limit is hit.", "removePoorAtts", "Disable poor attributes.", "noPrePrune", "Disable pre-pruning.", "MC", "NB", "NBAdaptive", "Majority class", "Naive Bayes", "Naive Bayes Adaptive", "leafprediction", "Leaf prediction to use.", "nbThreshold", "The number of instances a leaf should observe before permitting Naive Bayes.", "Invalid maxByteSize",
-"Invalid numericEstimator", "Invalid splitCriterion", "Invalid memoryEstimatePeriod", "Invalid gracePeriod", "Invalid splitConfidence", "Invalid tieThreshold", "Invalid leafprediction option", "Invalid nbThreshold", "tree size (nodes)", "tree size (leaves)", "active learning leaves", "tree depth", "active leaf byte size estimate", "inactive leaf byte size estimate", "byte size estimate overhead", "trees.HoeffdingTree", "BinaryTreeNumericAttributeClassObserver", "BinaryTreeNumericAttributeClassObserverRegression",
-"FIMTDDNumericAttributeClassObserver", "FIMTDDNumericAttributeClassLimitObserver", "VFMLNumericAttributeClassObserver", "IademGaussianNumericAttributeClassObserver", "IademGreenwaldKhannaNumericAttributeClassObserver", "IademVFMLNumericAttributeClassObserver", "GiniSplitCriterion", "InfoGainSplitCriterionMultilabel", "SDRSplitCriterion", "AMRulesSplitCriterion", "SDRSplitCriterionAMRules", "SDRSplitCriterionAMRulesNode", "VarianceReductionSplitCriterion", "VarianceRatioSplitCriterion", "VRSplitCriterion", "ADWINChangeDetector",
-"[class]", "[class:", "<class ", ":", ">", "[att ", "{val ", "en", "CA", "fr", "zh", "CN", "FR", "de", "DE", "it", "IT", "ja", "JP", "ko", "KR", "TW", "GB", "US", "UTC", "GMT", "00", "The last byte in src ", "Duplicate option name: ", "Duplicate option command line character: ", " (", "Can\'t set attribute to root node", "Can\'t apply modifier to root node", "GMT+00:00", "@attribute", "numeric", "UNKNOW", "date", "Either src or dest is null", "java.version", "1.8", "os.name", "TeaVM", "file.separator", "/",
-"path.separator", "line.separator", "java.io.tmpdir", "java.vm.version", "user.home", "/tmp", "\r\n  ", "div", "\r\n ", "\r\n\r\n", "\r\n  \r\n  \r\n    ", "tr", "\r\n      ", "td", "\r\n\t  ", "\r\n\r\n    ", "\r\n   \r\n    ", "\r\n    ", "\r\n", "h1", "extra-large", "MOA", "label", "for", "evaluator", "customLabel", "Choose function", "select-container", "select", "name", "id", "h", "value", "Test", "\r\n\r\n  ", "br", "\r\n  \r\n  ", "p", "\r\n  Evaluator is ", "button", "apple-button", "Start function",
-"table", "table-container", "border", "Mean Error", "Square Error ", "Accuracy", "Kappa Stat", "Kappa Temporal Stat", "Kappa M Stat", "\r\n\r\n\r\n\r\n", "Dynamic Options", "\r\n\r\n ", "\r\n \r\n \r\n ", "canvas", "myChart", "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", "check{{optionLevel.id_dom}}", "b", "\r\n     ", "span", "cliString is: ", "\r\n  \r\n\r\n  \r\n", "\r\n   ", "input", "type", "checkbox", "number", "min", "max", "step", "0.01", "100000000", "\r\n\r\n\r\n", "power of ten too big", "px * 150)", "margin-left: calc(",
-"No object repository available.", "No object named ", " found in repository.", "Could not materialize object of required type ", ", found ", " instead.", "Class to CLI class name is:", "Class to CLI required type is:", "packageNameLength is: ", "Hello World", "String S is: ", " Required type is: ", "Problems with option: ", "Error: ", "objectToCLIString Is file", "file:", "objectToCLIString Is string", "inmem:", "className is ", "objectToCLIString Is an optionhandler", "Unknown class name: ", "class<?> classObject class name is: ",
-"Problem creating instance of class: ", "classInstance2 class name is ", "External options found", "No external options", "Class Instance 2 not an option handler", "Class Instance 2 is an option handler", "value1", "key2", "value2", "\\", "if ", "Observations for ", "Total observed weight = ", " / prob = ", "Can\'t compare ", " to ", "UP", "DOWN", "CEILING", "FLOOR", "HALF_UP", "HALF_DOWN", "HALF_EVEN", "UNNECESSARY", "public", "protected", "private", "abstract", "static", "final", "transient", "volatile", "synchronized",
-"native", "strictfp", "interface", "\'", "\\\\", "\\\'", "\\t", "\\n", "\\r", "\\\"", "\\%", "\\u001E", "Wrong number of repetitions of X pattern at ", "Can not access instrumentation environment.\nPlease check if jar file containing SizeOfAgent class is \nspecified in the java\'s \"-javaagent\" command line argument."]);
+"Unexpected char at exponent at ", "Pattern does not specify exponent digits at ", "The given space is already hosted by a slot", "Successor does not belong to this slot", "Unknown mode: ", "\r\n   \r\n    ", "tr", "\r\n      ", "td", "\r\n    ", "\r\n  ", "\r\n", "table", "class", "table-container", "border", "Accuracy", "\r\n\t", "Kappa Stat", "Kappa Temporal Stat", "Kappa M Stat", "\r\n\r\n  ", "\r\n ", "\r\n  \r\n  \r\n    ", "\r\n\t  ", "\r\n\r\n    ", "submit", "Subsets Candidate Instances", "Mean Error",
+"Square Error ", "= ", "@relation", "\n\n", "\n", "@data", "Negative bit address", "Negative exponent", "BigInteger divide by zero", "mean absolute error", "root mean squared error", "relative mean absolute error", "relative root mean squared error", "Description is NominalAttributeClassObserver", ".", "modelRandomSeed", "Seed for random generation of model.", "instanceRandomSeed", "Seed for random generation of instances.", "numClasses", "The number of classes to generate.", "numAtts", "The number of attributes to generate.",
+"numCentroids", "The number of centroids in the model.", "Invalid numClasses", "Invalid numAtts", "Invalid numCentroids", "Preparing random RBF...", "att", "InstanceStream -c ", " -a ", " -n ", "Labels/descriptions mismatch.", "Label not recognised: ", "maxByteSize", "Maximum memory consumed by the tree.", "numericEstimator", "Numeric estimator to use.", "GaussianNumericAttributeClassObserver", "nominalEstimator", "Nominal estimator to use.", "NominalAttributeClassObserver", "memoryEstimatePeriod", "How many instances between memory consumption checks.",
+"gracePeriod", "The number of instances a leaf should observe between split attempts.", "splitCriterion", "Split criterion to use.", "InfoGainSplitCriterion", "splitConfidence", "The allowable error in split decision, values closer to 0 will take longer to decide.", "tieThreshold", "Threshold below which a split will be forced to break ties.", "binarySplits", "Only allow binary splits.", "stopMemManagement", "Stop growing as soon as memory limit is hit.", "removePoorAtts", "Disable poor attributes.", "noPrePrune",
+"Disable pre-pruning.", "MC", "NB", "NBAdaptive", "Majority class", "Naive Bayes", "Naive Bayes Adaptive", "leafprediction", "Leaf prediction to use.", "nbThreshold", "The number of instances a leaf should observe before permitting Naive Bayes.", "Invalid maxByteSize", "Invalid numericEstimator", "Invalid splitCriterion", "Invalid memoryEstimatePeriod", "Invalid gracePeriod", "Invalid splitConfidence", "Invalid tieThreshold", "Invalid leafprediction option", "Invalid nbThreshold", "tree size (nodes)", "tree size (leaves)",
+"active learning leaves", "tree depth", "active leaf byte size estimate", "inactive leaf byte size estimate", "byte size estimate overhead", "trees.HoeffdingTree", "BinaryTreeNumericAttributeClassObserver", "BinaryTreeNumericAttributeClassObserverRegression", "FIMTDDNumericAttributeClassObserver", "FIMTDDNumericAttributeClassLimitObserver", "VFMLNumericAttributeClassObserver", "IademGaussianNumericAttributeClassObserver", "IademGreenwaldKhannaNumericAttributeClassObserver", "IademVFMLNumericAttributeClassObserver",
+"GiniSplitCriterion", "InfoGainSplitCriterionMultilabel", "SDRSplitCriterion", "AMRulesSplitCriterion", "SDRSplitCriterionAMRules", "SDRSplitCriterionAMRulesNode", "VarianceReductionSplitCriterion", "VarianceRatioSplitCriterion", "VRSplitCriterion", "ADWINChangeDetector", "[class]", "[class:", "<class ", ":", ">", "[att ", "{val ", "en", "CA", "fr", "zh", "CN", "FR", "de", "DE", "it", "IT", "ja", "JP", "ko", "KR", "TW", "GB", "US", "UTC", "GMT", "00", "The last byte in src ", "Duplicate option name: ", "Duplicate option command line character: ",
+" (", "Can\'t set attribute to root node", "Can\'t apply modifier to root node", "GMT+00:00", "@attribute", "numeric", "UNKNOW", "date", "Either src or dest is null", "java.version", "1.8", "os.name", "TeaVM", "file.separator", "/", "path.separator", "line.separator", "java.io.tmpdir", "java.vm.version", "user.home", "/tmp", "\r\n\t\t\t\t", "span", "input", "type", "number", "id", "check{{optionLevel.id_dom}}", "min", "max", "100000000", "\r\n\t\t\t", "\r\n\t\t", "div", "\r\n\t\t\r\n\t\t\t", "\r\n\r\n\t\t\t",
+"\r\n\r\n\t\t", "h1", "Learner Options", "\r\n\r\n\r\n", "background: linear-gradient(to right, #3F8EFC, #0A63D8); color: #fff; padding: 10px 20px; text-align: center; font-size: 18px; font-weight: bold; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 4px; transition: all 0.3s ease;", "display:flex;", "flex:1; align: center;", "extra-large", "MOA", "\r\n\t    ", "img", "src", "MOA_Shell_Swirl.png", "alt", "Local Image", "max-width: 10%;", "\r\n\r\n", "label", "for", "evaluator", "customLabel", "b",
+"Choose function", "select-container", "select", "name", "h", "option", "value", "HoeffdingTree", "runSRP (test)", "runWithoutStreamNumeric(test)", "br", "\r\n  \r\n  ", "button", "apple-button", "Initialize/Reset Options", "Start function", "\r\n\r\n ", "background: linear-gradient(to right, #f5f5f5, #dddddd);", "\r\n \r\n ", "\r\n \r\n\t\t", "canvas", "myChart", "\r\n\r\n\r\n\r\n\r\n\r\n\r\n", "\r\n\t\t\t\t\t", "border-top: 7px dashed #fdfdfd", "\r\n\t\t\t\t  ", "\r\n\t\t\t  ", "\r\n\t\t\t\t ", "cliString is: ",
+"\r\n\t\t\t  \r\n\t\t\t  ", "\r\n\t\t\t  \r\n\r\n\t\t\t  \r\n\t\t\t", "checkbox", "step", "0.01", "\r\n\r\n\r\n\t\t\t", "power of ten too big", "No object repository available.", "No object named ", " found in repository.", "Could not materialize object of required type ", ", found ", " instead.", "Class to CLI class name is:", "Class to CLI required type is:", "packageNameLength is: ", "String S is: ", " Required type is: ", "Problems with option: ", "Error: ", "objectToCLIString Is file", "file:", "objectToCLIString Is string",
+"inmem:", "className is ", "objectToCLIString Is an optionhandler", "Unknown class name: ", "class<?> classObject class name is: ", "Problem creating instance of class: ", "classInstance2 class name is ", "External options found", "No external options", "Class Instance 2 not an option handler", "Class Instance 2 is an option handler", "key1", "value1", "key2", "value2", "\\", "if ", "Observations for ", "Total observed weight = ", " / prob = ", "Can\'t compare ", " to ", "UP", "DOWN", "CEILING", "FLOOR", "HALF_UP",
+"HALF_DOWN", "HALF_EVEN", "UNNECESSARY", "public", "protected", "private", "abstract", "static", "final", "transient", "volatile", "synchronized", "native", "strictfp", "interface", "\'", "\\\\", "\\\'", "\\t", "\\n", "\\r", "\\\"", "\\%", "\\u001E", "Wrong number of repetitions of X pattern at ", "Can not access instrumentation environment.\nPlease check if jar file containing SizeOfAgent class is \nspecified in the java\'s \"-javaagent\" command line argument."]);
 jl_String.prototype.toString = function() {
     return $rt_ustr(this);
 };

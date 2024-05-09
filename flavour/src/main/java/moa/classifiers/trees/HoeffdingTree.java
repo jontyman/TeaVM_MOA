@@ -188,7 +188,7 @@ public class HoeffdingTree extends AbstractClassifier implements MultiClassClass
 	
 	@Override
 	public Options getOptions(){
-		Option[] myOptions = {nominalEstimatorOption,numericEstimatorOption,maxByteSizeOption,leafpredictionOption};
+		Option[] myOptions = {nominalEstimatorOption,numericEstimatorOption,maxByteSizeOption,leafpredictionOption,gracePeriodOption,splitCriterionOption,tieThresholdOption,binarySplitsOption,stopMemManagementOption,noPrePruneOption};
 		Options options = new Options();	
 		
 		for (Option option : myOptions) {
@@ -754,7 +754,8 @@ public FlagOption binarySplitsOption = new FlagOption("binarySplits", 'b',
     protected boolean growthAllowed;
 
     public int calcByteSize() {
-        int size = (int) SizeOf.sizeOf(this);
+		int size=1;
+        //int size = (int) SizeOf.sizeOf(this);
         if (this.treeRoot != null) {
             size += this.treeRoot.calcByteSizeIncludingSubtree();
         }

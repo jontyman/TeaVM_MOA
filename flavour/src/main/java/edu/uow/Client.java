@@ -259,7 +259,7 @@ public class Client extends ApplicationTemplate {
     this.value = value;
   }
   
-  private int clickCount = 0;
+  public int clickCount = 0;
 
   public void handleClick() {
     try{
@@ -285,28 +285,37 @@ public class Client extends ApplicationTemplate {
 		this.kappaStatArr=new ArrayList<>();
 		this.kappaTemporalStatArr=new ArrayList<>();
 		this.kappaMStatArr = new ArrayList<>();
+		optHMap = new OptionHashMap();
 		
 		switch(this.evaluator){
 			case "runWithoutStream":
 				runWithoutStream();
 				break;
 			case "runRBF":
-				if(this.prevEvaluator!=this.evaluator){
+				this.learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+
+				/*if(this.prevEvaluator!=this.evaluator){
 					this.learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
-				}
-				runRBF();
+				}*/
+				populateOptions();
+				//runRBF();
 				break;
 			case "runSRP":
-				if(this.prevEvaluator!=this.evaluator){
+				this.learner = new StreamingRandomPatches();
+
+				/*if(this.prevEvaluator!=this.evaluator){
 					this.learner = new StreamingRandomPatches();
-				}
-				runRBF();
+				}*/
+				populateOptions();
+				//runRBF();
 				break;
 			case "runWithoutStreamNumeric":
 				runWithoutStreamNumeric();
 				break;
 			case "test":
-				runTest();
+				//runTest();
+				this.learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+				populateOptions();
 				break;
 			default:
 				runWithoutStream();
@@ -333,8 +342,38 @@ public class Client extends ApplicationTemplate {
 		
 	}
 	
+	
+	
 
   }
+  
+  private void resetGUI(){
+	  	this.numInstanceArr = new ArrayList<>();
+		this.accuracy=0;
+		this.meanError=0.0;
+		this.squareError=0.0;
+		this.kappaStat=0.0;
+		this.kappaTemporalStat=0.0;		
+		this.accuracyArr=new ArrayList<>();
+		this.meanErrorArr=new ArrayList<>();
+		this.squareErrorArr=new ArrayList<>();
+		this.kappaStatArr=new ArrayList<>();
+		this.kappaTemporalStatArr=new ArrayList<>();
+		this.kappaMStatArr = new ArrayList<>();
+		if(chartPresent){
+			destroyChartWithoutImport("myChart");
+			chartPresent=false;
+		}
+		//optHMap = new OptionHashMap();
+
+  }
+  
+    public void handleClick2() {
+		resetGUI();
+		startRBF();
+		
+	}
+
 
   public int getClickCount() {
     return clickCount;
@@ -396,6 +435,88 @@ public class Client extends ApplicationTemplate {
   public void setColor2(String color2) {
     this.color2 = color2;
     Templates.update();
+  }
+  
+  public void populateOptions(){
+	  
+	  
+		learner.prepareForUse();		
+		// Have error with Class Option
+		optHMap = new OptionHashMap();
+		arrOptions = learner.getOptions().getOptionArray(); // Options->Option[]
+		System.out.println("arrOptions 0 is " + arrOptions[0].getValueAsCLIString()); // Looks to stay same
+		optHMap = new OptionHashMap(arrOptions);
+		Iterator<OptionAndLevel> iterator = optHMap.iterator();
+		 for (OptionAndLevel i : optHMap) {
+            System.out.println("OptHashMap " + (i.option).getValueAsCLIString());
+        }
+		Templates.update();
+
+		
+  }
+  
+  public void startRBF(){
+	  this.prevEvaluator=this.evaluator;
+		//public RandomRBFGenerator (int modelRandomSeed, int instanceRandomSeed, int numClasses, int numAtts, int numCentroids){
+		RandomRBFGenerator stream = new RandomRBFGenerator(1,1,2,10,50);
+		BasicClassificationPerformanceEvaluator bClass = new BasicClassificationPerformanceEvaluator();
+		stream.prepareForUseImpl(new NullMonitor(),null);
+		
+		//int numInstance=1000000; // old
+		int numInstance=100;
+		
+		int numberSamplesCorrect=0;
+		int numberSamples=0;
+		boolean isTesting=true;
+		int counter=0;
+		
+		chartPresent = true;
+		
+		initLineGraphWithoutImport("Accuracy");
+
+		
+		for (int j = 0; j < numInstance; j++){
+			Instance trainInst = stream.nextInstance();
+			if (isTesting){
+				bClass.addResult(trainInst,learner.getVotesForInstance(trainInst));
+				if (learner.correctlyClassifies(trainInst)){
+					numberSamplesCorrect++;
+				}
+				
+			}
+			numberSamples++;
+			counter++;
+			DecimalFormat df = new DecimalFormat("#.##");
+			if(counter >= this.sampleFrequency ){
+					counter=0;
+					System.out.println("Hit samp freq. accuracy: " + bClass.getFractionCorrectlyClassified()*100);
+					System.out.println("Hit samp freq. Kappa stat: " + bClass.getKappaStatistic());
+					System.out.println("Hit samp freq. Kappa Temporal stat: " + bClass.getKappaTemporalStatistic());
+					System.out.println("Hit samp freq. Kappa M stat: " + bClass.getKappaMStatistic());
+
+					double temp = bClass.getFractionCorrectlyClassified()*100;
+					double temp2= bClass.getKappaStatistic();
+					double temp3 = bClass.getKappaTemporalStatistic();
+					double temp4 = bClass.getKappaMStatistic();
+					this.accuracyArr.add(temp);
+					this.kappaStatArr.add(temp2);
+					this.kappaTemporalStatArr.add(temp3);
+					this.kappaMStatArr.add(temp4);
+					this.numInstanceArr.add(j+1);
+					//updateLineGraphWithInp(Integer.toString(j+1),Double.toString(temp),"myChart");
+					
+					//Runs with jumble of order of points
+					//updateLineGraphWithoutCanvasID(Integer.toString(j+1),Double.toString(temp));
+					
+					updateLineGraphWithoutImport(Integer.toString(j+1),Double.toString(temp));
+					
+					//updateLineGraphWithoutCanvasID(Integer.toString(j+1),Integer.toString(j+10));
+
+			}
+			learner.trainOnInstance(trainInst);
+			
+		}
+	  
   }
   
   public void runWithoutStream(){

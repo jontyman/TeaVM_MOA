@@ -1,15 +1,17 @@
 body{
 	
 }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 .extra-large {
 	font-size: 3em;
 	font-weight: bold;
+	flex:1;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .customLabel{
-	margin-right: 10px;
-	
+	margin-right: 10px;	
 }
 
 /* Apple-style button */
