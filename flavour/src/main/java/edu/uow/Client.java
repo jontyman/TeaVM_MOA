@@ -132,6 +132,9 @@ public class Client extends ApplicationTemplate {
 	public Map<Integer,String[]> mpStrClass = new HashMap<>();
 	public OptionHashMap optHMap = new OptionHashMap();
 	
+	private int currentLevel = 0;
+	private int previousLevel=0;
+	
 	public Classifier learner; // = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
 	
 	public boolean chartPresent = false;
@@ -259,36 +262,17 @@ public class Client extends ApplicationTemplate {
     this.value = value;
   }
   
-  public int clickCount = 0;
+  private int clickCount = 0;
 
   public void handleClick() {
     try{
 		clickCount++;
-		
-		if(chartPresent){
-			destroyChartWithoutImport("myChart");
-			chartPresent=false;
-		}
-		
-		this.numInstanceArr = new ArrayList<>();
-
-		
-		this.accuracy=0;
-		this.meanError=0.0;
-		this.squareError=0.0;
-		this.kappaStat=0.0;
-		this.kappaTemporalStat=0.0;
-		
-		this.accuracyArr=new ArrayList<>();
-		this.meanErrorArr=new ArrayList<>();
-		this.squareErrorArr=new ArrayList<>();
-		this.kappaStatArr=new ArrayList<>();
-		this.kappaTemporalStatArr=new ArrayList<>();
-		this.kappaMStatArr = new ArrayList<>();
+		resetGUI();
 		optHMap = new OptionHashMap();
 		
 		switch(this.evaluator){
 			case "runWithoutStream":
+				learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
 				runWithoutStream();
 				break;
 			case "runRBF":
@@ -370,7 +354,24 @@ public class Client extends ApplicationTemplate {
   
     public void handleClick2() {
 		resetGUI();
-		startRBF();
+		switch(this.evaluator){
+		case "runWithoutStream":
+				this.learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+				runWithoutStream();
+				break;
+			case "runRBF":
+				startRBF();
+				break;
+			case "runSRP":
+				startRBF();
+				break;
+			case "runWithoutStreamNumeric":
+				runWithoutStreamNumeric();
+				break;
+			default:
+				this.learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+				runWithoutStream();
+		}
 		
 	}
 
@@ -570,7 +571,7 @@ public class Client extends ApplicationTemplate {
 		System.out.println("Weight of instance at index 2 is: " + multiInst.get(2).weight());
 		System.out.println("Num classes is : " + multiInst.numClasses());
 		
-		Classifier learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+		//Classifier learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
 		learner.setModelContext(multiInstHeader);
 		
 		for (int k = 0; k < numInstance; k++){
@@ -755,7 +756,7 @@ public class Client extends ApplicationTemplate {
 
 		
 		//GaussianNumericEstimator, InfoGainSplitCriterion
-		Classifier learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);
+		/*Classifier learner = new HoeffdingTree(33554432, 0,1, 1000000, 200, 0.0f, 0.05f, false, false, false, false, 2, 0);*/
 		learner.setModelContext(multiInstHeader);
 		
 
@@ -789,6 +790,7 @@ public class Client extends ApplicationTemplate {
 		System.out.println("Mean error is: " + meanError);
 		System.out.println("Num instance arraylist to string is: " + this.numInstanceArr.toString());
 		plotLineGraphWithInp(this.numInstanceArr.toString(),this.meanErrorArr.toString(),"Mean Error");
+		this.chartPresent=true;
 		squareError = bEval.getSquareError();
 		System.out.println("Square error is: " + squareError);
 		
@@ -837,6 +839,11 @@ public void identifyOptionType(){
 
 }
 
+	public String variableNameToTitle(String name){
+		    String tempName =  name.replaceAll("([A-Z])", " $1").trim();
+			return tempName.substring(0, 1).toUpperCase() + tempName.substring(1);			
+	}
+
 
 public void runTest(){
 		System.out.println("Reached here");
@@ -862,6 +869,34 @@ public void runTest(){
 		
 
 
+}
+
+public boolean detectDecreaseLevel(int level){
+	if(level < this.previousLevel){
+		this.previousLevel = level;
+		return true;
+	}
+	
+	else{
+		this.previousLevel = level;
+		return false;
+	}
+}
+
+public String firstStringOnly(String cliPhrase){
+	String condensedString = cliPhrase;
+	int indexSpace = condensedString.indexOf(' ');
+
+	if(indexSpace!=-1){
+		condensedString = condensedString.substring(0,indexSpace);
+	}
+	
+	int indexDot= condensedString.lastIndexOf('.');
+	if(indexDot!=-1){
+		condensedString = condensedString.substring(indexDot+1);
+	}
+	
+	return condensedString;
 }
 
 @JSBody(params = { "message" }, script = "console.log(message)")
@@ -908,7 +943,7 @@ public static native void fooAsync(String arg, JsConsumer<String> callback);*/
 	@JSBody(params={"xAxis", "yAxis"},script="import('https://cdn.jsdelivr.net/npm/chart.js').then(({default : chartJs}) => {const yAxisParse = JSON.parse(yAxis);const xAxisParse = JSON.parse(xAxis);const ctx = Chart.getChart('myChart');console.log('ctx is: ' + ctx);ctx.data.labels.push(xAxisParse);ctx.data.datasets.forEach((dataset) => { dataset.data.push(yAxisParse);});ctx.update()})")
 	private static native void updateLineGraphWithoutCanvasID(String xAxis, String yAxis);
 	
-	@JSBody(params={"labelText"},script="var addedXDataSet=[]; const addedYDataSet=[];console.log('new data is: ' + addedXDataSet); const ctx=document.getElementById('myChart');new Chart(ctx, {type: 'line',data: {labels: addedXDataSet,datasets: [{label: labelText,data: addedYDataSet,borderWidth: 1}]},options: {scales: {y: {beginAtZero: true}}}});")
+	@JSBody(params={"labelText"},script="var addedXDataSet=[]; const addedYDataSet=[];console.log('new data is: ' + addedXDataSet); const ctx=document.getElementById('myChart');new Chart(ctx, {type: 'line',data: {labels: addedXDataSet,datasets: [{label: labelText,data: addedYDataSet,borderWidth: 1}]},options: {scales: {y: {beginAtZero: true}}}});ctx.style.display='block';")
 	private static native void initLineGraphWithoutImport(String labelText);
 	
 	@JSBody(params={"xAxis", "yAxis"},script="const yAxisParse = JSON.parse(yAxis);const xAxisParse = JSON.parse(xAxis);const ctx = Chart.getChart('myChart');console.log('ctx is: ' + ctx);ctx.data.labels.push(xAxisParse);ctx.data.datasets.forEach((dataset) => { dataset.data.push(yAxisParse);});ctx.update()")
@@ -918,7 +953,7 @@ public static native void fooAsync(String arg, JsConsumer<String> callback);*/
 	@JSBody(params={"canvasID"},script="import('https://cdn.jsdelivr.net/npm/chart.js').then(({default : chartJs}) => {const chart = Chart.getChart(canvasID);console.log('Destroying chart' + chart);if(chart){chart.destroy();}})")
 	private static native void destroyChart(String canvasID);
 
-@JSBody(params={"canvasID"},script="const chart = Chart.getChart(canvasID);console.log('Destroying chart' + chart);if(chart){chart.destroy();}")
+@JSBody(params={"canvasID"},script="const chart = Chart.getChart(canvasID);console.log('Destroying chart' + chart);if(chart){chart.destroy();};document.getElementById(canvasID).style.display='none';")
 	private static native void destroyChartWithoutImport(String canvasID);
 
 	

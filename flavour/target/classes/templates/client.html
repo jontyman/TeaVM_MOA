@@ -8,15 +8,16 @@
 <?import moa.options.ClassOption?>
 <?import com.github.javacliparser.MultiChoiceOption?>
 <?import moa.classifiers.trees.HoeffdingTree?>
+<?import java.lang.Object?>
 
 
-<div style="background: linear-gradient(to right, #3F8EFC, #0A63D8); color: #fff; padding: 10px 20px; text-align: center; font-size: 18px; font-weight: bold; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 4px; transition: all 0.3s ease;">
-
+<div class="background">
+<div class="titleBanner">
   <!--<div style="background: linear-gradient(to right, #007bff, #0056b3); color: #fff; padding: 2px; text-align: center; font-size: 24px; font-weight: bold; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; transition: all 0.3s ease;">
 -->
 <div style="display:flex;">
 <div style="flex:1; align: center;">
-<h1 class="extra-large">MOA</h1>
+	<h1 class="mainHeading">MOA</h1>
 </div>
     <!--<img src="https://moa.cms.waikato.ac.nz/wp-content/uploads/2020/07/MOA.jpeg" alt="Banner Image" style="max-width: 50%; height: auto;">-->
 	    <img src="MOA_Shell_Swirl.png" alt="Local Image" style="max-width: 10%;">
@@ -24,15 +25,19 @@
 </div>
 </div>
 
-<label for="evaluator" class="customLabel"><b>Choose function<b></label>
+<div class="functionSelect">
+
+<!--<label for="evaluator" class="customLabel"><b>Choose function<b></label>-->
 <div class="select-container">
-  <select name="evaluator" id="evaluator" id="h" html:value="evaluator" html:change="evaluator">
-    <option value="runWithoutStream">runWithoutStream</option>
+  <select name="evaluator" id="evaluator" id="h" html:value="evaluator" html:change="evaluator" event:change="handleClick()">
+	<option value="" disabled selected>Select a function</option>
+    <option value="runWithoutStream">runWithoutStream(test)</option>
     <option value="runRBF">HoeffdingTree</option>
 	<option value="runSRP">runSRP (test)</option>
     <option value="runWithoutStreamNumeric">runWithoutStreamNumeric(test)</option>
 
   </select>
+</div>
 </div>
 <br><br>
   
@@ -40,49 +45,59 @@
   Evaluator is <html:text value="evaluator"/>
 </p>-->
 
-<!--<button class="apple-button" event:click="handleClick()">Start function</button>-->
+<div class="button-Container">
 <button class="apple-button" event:click="handleClick()">Initialize/Reset Options</button>
-<button class="apple-button" event:click="handleClick2()">Start function</button>
+<button class="apple-button" event:click="handleClick2()">Start function ▶</button>
+</div>
 
- <!--<std:if condition="!optHMap.mapEmpty">-->
- <std:if condition="getClickCount()goe 1">
-<h1>Learner Options</h1>
-</std:if>
+ <!--<std:if condition="getClickCount()goe 1">-->
+ <!--<div style="background-color: white; display: inline-block;">-->
+<!--<div class="secondHeading-Container">-->
+<!--<h1 class="secondaryHeading">Learner Options</h1>-->
+<!--</div>-->
+<!--</std:if>-->
 <!--<div style="background-color: #f0f0f0">-->
 <!--<div style="background: linear-gradient(135deg, #7EC8E3, #55B9E6)">-->
-<div style="background: linear-gradient(to right, #f5f5f5, #dddddd);">
+<div class="optionList">
+ <std:if condition="getClickCount()goe 1">
+<h1 class="secondaryHeading">Learner Options</h1>
+</std:if>
+
+	<!-- 'box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);-->
 	<std:foreach var="optionLevel" index="v" in="optHMap">
-		<div attr:style="'margin-left: calc('+ (optionLevel.level).toString() + 'px * 150)'">
+		<!--<div attr:style="'margin-left: calc('+ (optionLevel.level).toString() + 'px * 150);' + 'min-height:55px;' + 'padding: 7px ;' + 'border-top: ' + '1px solid #ccc' + ';'">--> <!-- border-top: 7px dashed #dcdcdc-->
+		<div attr:style="'margin-left: calc('+ (optionLevel.level).toString() + 'px * 150);' + 'min-height:55px;' + 'padding: 7px ;' + 'border-top: ' + (detectDecreaseLevel(optionLevel.level)? '1px solid #ccc': 'none') + ';'"> <!-- border-top: 7px dashed #dcdcdc-->
 		
 			<std:if condition="optionLevel.option instanceof IntOption">
-				<span><html:text value="(optionLevel.option).getName()"></span>
+				<span class="numSpan"><html:text value="variableNameToTitle((optionLevel.option).getName())"></span>
 				<input type="number" id="check{{optionLevel.id_dom}}"  min="0" max="100000000"  html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)"/>
 			</std:if>
 
 			<std:if condition="optionLevel.option instanceof FloatOption">
-				<span><html:text value="(optionLevel.option).getName()"></span>
+				<span class="numSpan"><html:text value="variableNameToTitle((optionLevel.option).getName())"></span>
 				<input type="number" id="check{{optionLevel.id_dom}}"  min="0" max="1" step="0.01"  html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)"/>
 			</std:if>
 
 			<std:if condition="optionLevel.option instanceof FlagOption">
-				<span><html:text value="(optionLevel.option).getName()"></span>
+				<span class="flagSpan"><html:text value="(optionLevel.option).getName()"></span>
 				<input type="checkbox" id="check{{optionLevel.id_dom}}" html:checked="Boolean.parseBoolean((optionLevel.option).getValueAsCLIString())" html:checked-change="newValue->(optionLevel.option).setValueViaCLIString(Boolean.toString(newValue))"/>
 			</std:if>
 
 			<std:if condition="optionLevel.option instanceof ClassOption">
-			<div style="border-top: 7px dashed #fdfdfd">
+			<!--<div class="classOption-Container">-->
 				<label for="check{{optionLevel.id_dom}}" class="customLabel"><b><html:text value="(optionLevel.option).getName()"/></b></label>
 					<div class="select-container">
-				  <select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">
+					<select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="firstStringOnly((optionLevel.option).getValueAsCLIString())" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">
+				  <!--<select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">-->
 					<std:foreach var="optName3" index="r" in="((ClassOption)(optionLevel.option)).getListClasses()">
 					<option html:value="optName3"><html:text value="optName3"></option>
 					</std:foreach>
 				  </select>
 			  </div>
-				 <span>cliString is: <html:text value="(optionLevel.option).getValueAsCLIString()"></span>
+				 <span>cliString is: <i><html:text value="(optionLevel.option).getValueAsCLIString()"></i></span>
 			  <br><br>
 			  
-			  </div>
+			  <!--</div>-->
 			  
 
 			  
@@ -94,20 +109,21 @@
 				<div class="select-container">
 			  <select name="check{{optionLevel.id_dom}}" id="check{{optionLevel.id_dom}}" html:value="(optionLevel.option).getValueAsCLIString()" html:change="newValue->(optionLevel.option).setValueViaCLIString(newValue)">
 				<std:foreach var="optName2" index="r" in="Arrays.asList(((MultiChoiceOption)(optionLevel.option)).getOptionLabels())">
-				<option html:value="optName2"><html:text value="optName2"></option>
+					<option html:value="optName2"><html:text value="optName2"></option>
 				</std:foreach>
 			  </select>
 			  </div>
 			  <br><br>
 
 
-			</std:if>
+			</std:if>			
 
 		</div>
-</div>
  </std:foreach>
+ </div>
  
  <std:if condition="!meanErrorArr.isEmpty()">
+ <!--<div style="background-color: red">-->
 <table class="table-container" border="1">
   <tr>
     <th>Mean Error</th>
@@ -145,12 +161,16 @@
     </tr>
   </std:foreach>
 </table>
+ <!--</div>-->
  </std:if>
  
-		<div>
+		<div id="graph-container">
 			<canvas id="myChart"></canvas>
 		</div>
 <!--<std:if condition="!optHMap.isEmpty()">-->
+<!-- Note using form in "Learner options" hides some of the options as it cannot fit-->
+
+</div>
 </div>
 
 

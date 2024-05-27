@@ -53,7 +53,7 @@ import moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeCl
 import moa.classifiers.core.attributeclassobservers.DiscreteAttributeClassObserver;
 import moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver;
 import moa.classifiers.rules.core.attributeclassobservers.FIMTDDNumericAttributeClassLimitObserver;
-import moa.classifiers.rules.core.splitcriteria.AMRulesSplitCriterion;
+//import moa.classifiers.rules.core.splitcriteria.AMRulesSplitCriterion;
 import moa.classifiers.rules.core.splitcriteria.SDRSplitCriterionAMRules;
 import moa.classifiers.rules.core.splitcriteria.SDRSplitCriterionAMRulesNode;
 import moa.classifiers.rules.core.splitcriteria.VarianceRatioSplitCriterion;
@@ -120,7 +120,7 @@ public class ClassOption extends AbstractClassOption {
 	  put("InfoGainSplitCriterion", InfoGainSplitCriterion.class);	  
 	  put("InfoGainSplitCriterionMultilabel", InfoGainSplitCriterionMultilabel.class);	  
 	  put("SDRSplitCriterion", SDRSplitCriterion.class);	
-	  put("AMRulesSplitCriterion", AMRulesSplitCriterion.class);
+	  /*put("AMRulesSplitCriterion", AMRulesSplitCriterion.class);*/
 	  put("SDRSplitCriterionAMRules", SDRSplitCriterionAMRules.class);
 	  put("SDRSplitCriterionAMRulesNode", SDRSplitCriterionAMRulesNode.class);	  
 	  put("VarianceReductionSplitCriterion", VarianceReductionSplitCriterion.class);
@@ -277,31 +277,6 @@ public class ClassOption extends AbstractClassOption {
         additionalPackagesToSearch[additionalPackagesToSearch.length - 1] = Task.class.getPackage().getName();
 
         //Class<?> classObject = classForName(className, additionalPackagesToSearch);
-		/*Map<String,Class<?>> app = new HashMap<>();
-	  app.put("HoeffdingTree", HoeffdingTree.class);
-	  app.put("NominalAttributeClassObserver", NominalAttributeClassObserver.class);
-	  app.put("GaussianNumericAttributeClassObserver", GaussianNumericAttributeClassObserver.class);
-	  app.put("InfoGainSplitCriterion",InfoGainSplitCriterion.class);
-	  app.put("BinaryTreeNumericAttributeClassObserver", BinaryTreeNumericAttributeClassObserver.class);
-	  app.put("FIMTDDNumericAttributeClassObserver", FIMTDDNumericAttributeClassObserver.class);
-	  app.put("FIMTDDNumericAttributeClassLimitObserver", FIMTDDNumericAttributeClassLimitObserver.class);
-	  app.put("VFMLNumericAttributeClassObserver", VFMLNumericAttributeClassObserver.class);
-	  app.put("IademGaussianNumericAttributeClassObserver", IademGaussianNumericAttributeClassObserver.class);
-	  app.put("IademGreenwaldKhannaNumericAttributeClassObserver", IademGreenwaldKhannaNumericAttributeClassObserver.class);
-	  app.put("IademVFMLNumericAttributeClassObserver", IademVFMLNumericAttributeClassObserver.class);	  
-	  app.put("GiniSplitCriterion", GiniSplitCriterion.class);	  
-	  app.put("InfoGainSplitCriterion", InfoGainSplitCriterion.class);	  
-	  app.put("InfoGainSplitCriterionMultilabel", InfoGainSplitCriterionMultilabel.class);	  
-	  app.put("SDRSplitCriterion", SDRSplitCriterion.class);	
-	  app.put("AMRulesSplitCriterion", AMRulesSplitCriterion.class);
-	  app.put("SDRSplitCriterionAMRules", SDRSplitCriterionAMRules.class);
-	  app.put("SDRSplitCriterionAMRulesNode", SDRSplitCriterionAMRulesNode.class);	  
-	  app.put("VarianceReductionSplitCriterion", VarianceReductionSplitCriterion.class);
-	  app.put("VarianceRatioSplitCriterion", VarianceRatioSplitCriterion.class);
-	  app.put("VRSplitCriterion", VRSplitCriterion.class);*/
-	  
-
-
 	  //Class<?> classObject = app.get(className);
 	  
 	 
